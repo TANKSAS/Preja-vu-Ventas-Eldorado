@@ -1,0 +1,2666 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Texts_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: bb91e6e67d47c0a4dac1a413bd1c7d81, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 163159986176
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227508998144
+    m_Localized: Theoretical Module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363632705536
+    m_Localized: Practical Module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844660654080
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3139358412800
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364669975384064
+    m_Localized: "Prospecci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305889329795072
+    m_Localized: of the Practical Module has not been completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364493751701504
+    m_Localized: 'TANK Tool Box '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365362605969408
+    m_Localized: "Preparaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365647151747072
+    m_Localized: Contacto Inicial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365836897865728
+    m_Localized: " Indagaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366932378767360
+    m_Localized: "Indagaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367303499173888
+    m_Localized: "Presentaci\xF3n de la soluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367746811940864
+    m_Localized: 'Cierre de la Venta
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368090895863808
+    m_Localized: Elevator Pitch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368517116841984
+    m_Localized: 3.P.V
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369160560824320
+    m_Localized: 'Tool incomplete:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369979364462592
+    m_Localized: Locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 610828589453312
+    m_Localized: Estilo de venta Colchones ElDorado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 611893728759808
+    m_Localized: Iniciar desde la necesidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612464892301312
+    m_Localized: Case #09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612445124546560
+    m_Localized: Case #08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612419388297216
+    m_Localized: Case #07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612379181699072
+    m_Localized: Case #06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612351537041408
+    m_Localized: "Acompa\xF1ar la decisi\xF3n final"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612334248120320
+    m_Localized: Resolver dudas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612312395796480
+    m_Localized: "Mostrar con intenci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612294918131712
+    m_Localized: "Indagar con intenci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5079989348716544
+    m_Localized: 'Case incomplete:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 632556111777792
+    m_Localized: Do's and Don'ts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634416545648640
+    m_Localized: Tip # 01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634458765512704
+    m_Localized: Tip # 02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634477551800320
+    m_Localized: Tip # 03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634494584868864
+    m_Localized: Tip # 04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634512251277312
+    m_Localized: Tip # 05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634532891447296
+    m_Localized: Tip # 06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643224131063808
+    m_Localized: 'Congratulations you have completed the tool:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645542062837760
+    m_Localized: 'Unfortunately, you have not completed the tool:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647323702513664
+    m_Localized: Congratulations! You have completed the TANK Tool Box, which gives
+      you the opportunity to put your new knowledge into practice in the Practical
+      Module, which is already enabled in the Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657639073107968
+    m_Localized: Module results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 974861666603008
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 975213178638336
+    m_Localized: "Volume\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 977610785411072
+    m_Localized: "Welcome to the final test of Preja-V\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 976316637106176
+    m_Localized: +                                                -
+    m_Metadata:
+      m_Items: []
+  - m_Id: 977275824099328
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1001200578711552
+    m_Localized: Get ready to face a "Real" press conference scenario, where you
+      will need to apply the previously covered tools to resolve the assigned case.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2485419653976064
+    m_Localized: "The case to be resolved is as follows: \n\nA controversial video
+      has gone viral on social media, questioning one of our procedures and raising
+      concerns about the company's reputation. We are being accused of leaking confidential
+      and highly sensitive information from numerous users."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2488224984846336
+    m_Localized: "Identificar su necesidad real antes de hablar de productos.\r\n\r\nGuiarlo
+      en una experiencia personalizada de prueba de colchones usando la t\xE9cnica
+      FAB.\r\n\r\nResponder a sus dudas con empat\xEDa y argumentos de valor.\r\n\r\nAcompa\xF1arlo
+      en el cierre de manera natural, generando confianza y credibilidad.\r\n\r\nTu
+      meta es dejar una impresi\xF3n profesional, convincente y memorable, demostrando
+      que eres un asesor experto de Colchones El Dorado capaz de ofrecer soluciones
+      que mejoren su descanso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2489268485738496
+    m_Localized: "Ficha T\xE9cnica:\r\nNombre: Silk Sabor a Coco.\r\nMarca: Silk.\r\nPresentaci\xF3n:
+      Envase de 946 ml.\r\nIngredientes: Agua filtrada, crema de coco, az\xFAcar
+      de ca\xF1a, fosfato tric\xE1lcico, sal marina, gellan, lecitina de girasol,
+      vitamina D2, vitamina B12.\r\nAl\xE9rgenos: Contiene soya. Puede contener almendras,
+      leche y nuez de la india.\r\nBeneficios: Contiene vitaminas, calcio, sodio
+      y grasas saturadas. No contiene az\xFAcar a\xF1adida.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501721617584128
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501778496540672
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501824906514432
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2503303780356096
+    m_Localized: Practice Test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2504258970177536
+    m_Localized: Introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2504968885489664
+    m_Localized: Finish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2507519999594496
+    m_Localized: Interview results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2508116559646720
+    m_Localized: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2508635613155328
+    m_Localized: Question
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2509529436114944
+    m_Localized: 'Voice frequency rating: Low'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2510480301608960
+    m_Localized: 'Voice frequency rating: Medium'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2519574458650624
+    m_Localized: 'Voice frequency rating: Perfect'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2520208637415424
+    m_Localized: 'Voice frequency rating: High'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521115970228224
+    m_Localized: 'Question difficulty: Easy'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521531420233728
+    m_Localized: 'Question difficulty:  Medium'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521543105564672
+    m_Localized: 'Question difficulty: Difficult'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2799217174630400
+    m_Localized: Voice tone (dB)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800925640478720
+    m_Localized: '                       Practical Module Rating:
+
+
+      Voice intensity
+      is measured in decibels (dB) and varies between 30 and 120 dB.
+
+
+      According
+      to intensity, we differentiate between:
+
+
+      Weak voice (less than 50 dB)
+
+
+      Conversational
+      voice (between 50 and 65 dB)
+
+
+      Projected voice (between 65 and 80 dB)
+
+
+      Shouting
+      (between 90 and 110 dB)
+
+
+      Now, we will analyze which tones were reached
+      in this technical test'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508498219913216
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516072575094784
+    m_Localized: Perfect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516074814853120
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516851784503296
+    m_Localized: Details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3517491092901888
+    m_Localized: Question details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3521762819559424
+    m_Localized: 'Voice tone: Weak'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3522268103168000
+    m_Localized: 'Voice tone: Conversational'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3522982640603136
+    m_Localized: 'Voice tone: Projected'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3523847434784768
+    m_Localized: 'Voice tone: Shouting'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030761159184384
+    m_Localized: Module results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5079989571014656
+    m_Localized: Tip incomplete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5323297438289920
+    m_Localized: 'Congratulations, you have improved your knowledge in the Tool:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402832259239936
+    m_Localized: Question
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5405191890784256
+    m_Localized: Questionnaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5413576270925824
+    m_Localized: "\xBFCu\xE1l es el objetivo principal de la prospecci\xF3n en ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418015937515520
+    m_Localized: "Identificar clientes potenciales con necesidad, capacidad y disposici\xF3n
+      para comprar.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418143654072320
+    m_Localized: "Realizar campa\xF1as masivas sin considerar si el p\xFAblico encaja
+      con el perfil ideal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418128747515904
+    m_Localized: " Crear una base de contactos amplia, enfoc\xE1ndose en cantidad
+      sobre calidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428485910155264
+    m_Localized: What is the main benefit the spokesperson gains from applying this
+      Tool?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5430703950385152
+    m_Localized: "Es secundario; si hay presupuesto y necesidad, la compra llegar\xE1
+      tarde o temprano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5430736993112064
+    m_Localized: "Solo importa en sectores con alta rotaci\xF3n, donde se debe comprar
+      r\xE1pido para evitar faltantes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5432155611582464
+    m_Localized: Is it possible to avoid a question?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433147912605696
+    m_Localized: Yes, the answer can be diverted to a topic that generates security
+      and confidence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433161938358272
+    m_Localized: No, avoiding the journalist's question is a high risk and must be
+      answered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433172310872064
+    m_Localized: Yes, one should not respond to the media by their demand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078515952209920
+    m_Localized: What are the fundamental elements that the spokesperson should employ
+      when addressing a topic?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078582876524544
+    m_Localized: Predefined key messages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078713772363776
+    m_Localized: Personal opinions of the spokesperson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078727726813184
+    m_Localized: Third-party arguments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078999517712384
+    m_Localized: 'According to this Tool, what is the primary recommendation when
+      responding?
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079169307332608
+    m_Localized: Answer exactly what is asked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079183869956096
+    m_Localized: Ignore the initial question, changing it to another
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079195878248448
+    m_Localized: Stick to the message you want to share
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079216082210816
+    m_Localized: What should be taken into account for the use of this Tool?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079234507788288
+    m_Localized: Not answering what they ask, but rather what you want to share
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079390229712896
+    m_Localized: Answering any question even if you don't have knowledge about the
+      topic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079402074427392
+    m_Localized: It's better to be direct and say you don't know the answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6130572998463488
+    m_Localized: What is the objective of applying vectors in the mentioned personal
+      defense technique?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6131942656823296
+    m_Localized: Generate more aggression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6132169619001344
+    m_Localized: Avoid the attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6132216595206144
+    m_Localized: Turn the situation in favor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135301358997504
+    m_Localized: "How has the situation changed in your favor?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135353234149376
+    m_Localized: Avoiding the questions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135361320767488
+    m_Localized: Using key messages and support from other tools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135393126174720
+    m_Localized: Denying the accusations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6137806495141888
+    m_Localized: What does the change in the situation with the personal defense
+      technique generate?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139026035167232
+    m_Localized: Changing the perspective on the crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139111158566912
+    m_Localized: Accusing another person or company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139134852190208
+    m_Localized: Rejecting the crisis as a mechanism of self-defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139878921719808
+    m_Localized: When using this Tool, what type of communication should be used?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140416329502720
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140431194116096
+    m_Localized: Aggressive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140470649933824
+    m_Localized: Assertive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140928697290752
+    m_Localized: 'True or false: When using this Tool, the situation can be strategically
+      changed through publicity, data, among others'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140986389942272
+    m_Localized: True, this allows changing the focus of the situation and highlighting
+      key points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141009538306048
+    m_Localized: False, publicity does not apply within this Tool
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141027661893632
+    m_Localized: True, it's always a good time to use publicity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141582446678016
+    m_Localized: What are the types of opinions that audiences can have in the face
+      of crises?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142234476400640
+    m_Localized: Totally unfavorable, unfavorable, favorable, and completely favorable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142240214208512
+    m_Localized: Totally unfavorable, unfavorable, neutral, favorable, and completely
+      favorable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142243838087168
+    m_Localized: Unfavorable, neutral, and favorable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159790230720512
+    m_Localized: "\xBFCu\xE1l es el objetivo principal del contacto inicial en el
+      proceso de  ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159802075435008
+    m_Localized: "  Obtener informaci\xF3n detallada sobre el producto antes de presentarlo.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159805258911744
+    m_Localized: "Establecer una conexi\xF3n genuina y generar una impresi\xF3n positiva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159807502864384
+    m_Localized: " Evitar cualquier tipo de conversaci\xF3n personal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161644318609408
+    m_Localized: "\xBFCu\xE1l de las siguientes acciones es clave para \"romper el
+      hielo\" durante el contacto inicial?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161692297252864
+    m_Localized: " Hablar solo sobre las caracter\xEDsticas del producto.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161704443957248
+    m_Localized: 'Hacer una pregunta abierta relacionada con el contexto del cliente.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161714107633664
+    m_Localized: "Evitar cualquier tipo de interacci\xF3n personal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161740649189376
+    m_Localized: "\xBFQu\xE9 aspecto es fundamental para establecer confianza desde
+      el inicio?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161753836081152
+    m_Localized: Prometer resultados que no se pueden cumplir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161769942208512
+    m_Localized: Ser honesto, transparente y demostrar experiencia.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161780138561536
+    m_Localized: "Evitar compartir cualquier tipo de informaci\xF3n personal.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162728894320640
+    m_Localized: "\xBFQu\xE9 demuestra el vendedor cuando refleja emociones y valida
+      las preocupaciones del cliente?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162790735138816
+    m_Localized: "Que est\xE1 siguiendo un protocolo sin involucrarse emocionalmente.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162797475385344
+    m_Localized: "Que comprende los desaf\xEDos del cliente y se interesa genuinamente
+      por ayudar.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162808149889024
+    m_Localized: "Que evita entrar en detalles t\xE9cnicos innecesarios en esta fase."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162842140528640
+    m_Localized: "\xBFCu\xE1l es una forma efectiva de explicar qu\xE9 ofreces durante
+      el contacto inicial?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162874617024512
+    m_Localized: 'Haciendo una lista exhaustiva de todas las funcionalidades del
+      producto.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162888680525824
+    m_Localized: "Mencionando la propuesta de valor enfocada en c\xF3mo resuelve
+      un problema espec\xEDfico del cliente.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162898977542144
+    m_Localized: ' Describiendo en detalle la historia completa de tu empresa.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162934381662208
+    m_Localized: " \xBFCu\xE1l de las siguientes afirmaciones representa mejor una
+      acci\xF3n clave durante el contacto inicial en una reuni\xF3n de ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162966321287168
+    m_Localized: "Iniciar con una presentaci\xF3n detallada del producto para captar
+      r\xE1pidamente la atenci\xF3n del cliente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162972264615936
+    m_Localized: 'Explicar de inmediato los precios y condiciones comerciales para
+      aprovechar el momento inicial.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162983333384192
+    m_Localized: "Romper el hielo con empat\xEDa, generar confianza desde el primer
+      momento y explicar qui\xE9n eres y qu\xE9 ofreces.\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7606229087539200
+    m_Localized: "What is the main purpose of the \"Bridge\" technique in crisis
+      management?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607312518205440
+    m_Localized: Vender el producto de inmediato.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607326258745344
+    m_Localized: "Comprender las necesidades del cliente y c\xF3mo su producto o
+      servicio puede ayudarle.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607346013917184
+    m_Localized: "Presentar directamente las caracter\xEDsticas del producto sin
+      hacer muchas preguntas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607390570008576
+    m_Localized: "\xBFCu\xE1l de las siguientes es una pregunta abierta adecuada
+      para la indagaci\xF3n?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607421079375872
+    m_Localized: "\xBFEst\xE1 buscando una soluci\xF3n a corto o largo plazo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607452041728000
+    m_Localized: " \xBFCu\xE1les son los principales desaf\xEDos que enfrenta en
+      este momento?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607468282073088
+    m_Localized: "\xBFTiene un presupuesto definido para este tipo de inversi\xF3n?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607644379926528
+    m_Localized: "What is the greatest benefit of the Tool?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607688642416640
+    m_Localized: Being able to use the journalist's statements as a basis for the
+      response
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607745429098496
+    m_Localized: Having a moment to think and introduce what you want to answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607768439050240
+    m_Localized: Avoiding the journalist's questions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607854661357568
+    m_Localized: "What would be a good phrase to use according to this Tool?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607879093178368
+    m_Localized: "\"Thank you for your question, but at this time, we will not give
+      statements\"\r "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607903919263744
+    m_Localized: '"Very interesting topic you touch on, and we can address it another
+      time, I would like to reiterate that the central issue..." '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607922919460864
+    m_Localized: '"I disagree with you; we are not responsible for those accusations" '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608037100998656
+    m_Localized: " \xBFCu\xE1l es un error com\xFAn al presentar credenciales ante
+      un cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608054712881152
+    m_Localized: "Extenderse m\xE1s de lo necesario, perdiendo la atenci\xF3n del
+      interlocutor. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608100049113088
+    m_Localized: ' Hablar brevemente sobre el equipo o empresa que representas.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608111726055424
+    m_Localized: Preparar una historia corta que refuerce la credibilidad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608209398812672
+    m_Localized: " \xBFPor qu\xE9 es importante practicar la presentaci\xF3n de credenciales
+      antes de una reuni\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608227518205952
+    m_Localized: "Para memorizarlo y evitar cualquier improvisaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608258493140992
+    m_Localized: 'Para lograr transmitir un mensaje claro y convincente en poco tiempo. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608270031671296
+    m_Localized: Para incluir todos los temas posibles en menos de un minuto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7849393824190464
+    m_Localized: "\xBFCu\xE1l es el objetivo principal de la indagaci\xF3n en el
+      proceso de ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852510791847936
+    m_Localized: Vender el producto de inmediato.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852561492594688
+    m_Localized: "Comprender las necesidades del cliente y c\xF3mo tu producto o
+      servicio puede ayudarle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852575417683968
+    m_Localized: "Presentar directamente las caracter\xEDsticas del producto sin
+      hacer muchas preguntas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853470343745536
+    m_Localized: "\xBFCu\xE1l de las siguientes es una pregunta abierta adecuada
+      para la indagaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853488266006528
+    m_Localized: "\xBFEst\xE1 buscando una soluci\xF3n a corto o largo plazo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853753744478208
+    m_Localized: "\xBFCu\xE1les son los principales desaf\xEDos que enfrenta en este
+      momento?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853773373820928
+    m_Localized: "\xBFTiene un presupuesto definido para este tipo de inversi\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853870249660416
+    m_Localized: "\xBFQu\xE9 estrategia es clave para identificar el \"pain point\"
+      del cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853892429139968
+    m_Localized: " Hablar solo sobre las caracter\xEDsticas del producto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853912150757376
+    m_Localized: "Escuchar activamente y prestar atenci\xF3n a las frustraciones
+      expresadas por el cliente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853923311800320
+    m_Localized: ' Hacer suposiciones sobre los problemas del cliente sin preguntarle
+      directamente.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853948192411648
+    m_Localized: "\xBFQu\xE9 es lo m\xE1s importante cuando se hace una indagaci\xF3n
+      sobre las necesidades de un cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853967926611968
+    m_Localized: "Observar los problemas m\xE1s peque\xF1os para abordar cada detalle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853993696415744
+    m_Localized: ' Escuchar de manera activa para comprender los problemas clave
+      del cliente. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854004802932736
+    m_Localized: "Hacer una lista de preguntas r\xE1pidas para ahorrar tiempo en
+      la reuni\xF3n.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854028324589568
+    m_Localized: "\xBFCu\xE1l es la ventaja de combinar preguntas abiertas y cerradas
+      durante la indagaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854056942325760
+    m_Localized: "Dirigir la conversaci\xF3n de manera efectiva y obtener tanto contexto
+      como detalles espec\xEDficos del cliente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854080564645888
+    m_Localized: "Asegurarse de que el cliente solo d\xE9 respuestas r\xE1pidas y
+      concretas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854090568060928
+    m_Localized: "Reducir el tiempo de la reuni\xF3n evitando que el cliente hable
+      demasiado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854111908679680
+    m_Localized: "\xBFQu\xE9 resultado se logra cuando se indaga con prop\xF3sito
+      durante una conversaci\xF3n de ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854136638296064
+    m_Localized: "Se pueden ofrecer soluciones est\xE1ndar que aplican a todos los
+      clientes.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854144829771776
+    m_Localized: "Se descubre informaci\xF3n sensible que puede usarse como presi\xF3n
+      para el cierre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854167806169088
+    m_Localized: "Se construyen soluciones alineadas con las verdaderas necesidades
+      del cliente, fortaleciendo la relaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854182742085632
+    m_Localized: "\xBFQu\xE9 aspecto es fundamental al presentar una soluci\xF3n
+      efectiva a un cliente?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860503868592128
+    m_Localized: Blaming the industry or the government for the crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860543185997824
+    m_Localized: Using the company's current situation to justify errors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860563683561472
+    m_Localized: "Hablar solo de casos de \xE9xito sin relacionarlos con el cliente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860714280046592
+    m_Localized: "\xBFPor qu\xE9 es importante utilizar la t\xE9cnica FAB en una
+      presentaci\xF3n de ventas?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860754679582720
+    m_Localized: "Permite resaltar c\xF3mo el producto resuelve un problema espec\xEDfico
+      para el cliente. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860774346674176
+    m_Localized: To change the perception of the crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860790280835072
+    m_Localized: Because particular crises are easier to handle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860836221046784
+    m_Localized: "\xBFQu\xE9 estrategia ayuda a generar confianza y valor en el cliente
+      al presentar una soluci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860872690520064
+    m_Localized: True, because it shows an industry or country problem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860941611323392
+    m_Localized: False, a crisis is always individual and only affects the involved
+      company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860973089574912
+    m_Localized: True, the crisis only occurs when there is an imbalance or problem
+      at a general level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861047672688640
+    m_Localized: "\xBFCu\xE1l de las siguientes opciones representa un error com\xFAn
+      al presentar una soluci\xF3n de ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861066475753472
+    m_Localized: Make the issue something alien and distant from the company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861179147341824
+    m_Localized: Judge the current situation and the decisions made by the authorities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861205655343104
+    m_Localized: Try to empathize with the audience that it is a problem where there
+      are more affected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861633335939072
+    m_Localized: "\xBFQu\xE9 tipo de objeci\xF3n representa la frase: \u201CNo estoy
+      seguro de confiar en esta soluci\xF3n todav\xEDa\u201D?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861660884127744
+    m_Localized: Confianza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861747588780032
+    m_Localized: Precio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861763124482048
+    m_Localized: ' Necesidad'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861824852054016
+    m_Localized: "\xBFCu\xE1l es una estrategia efectiva cuando un cliente expresa
+      que el precio es muy alto?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861864089767936
+    m_Localized: Reducir el precio inmediatamente para evitar perder la venta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861929713848320
+    m_Localized: ' Cambiar de tema para no incomodar al cliente.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861947267010560
+    m_Localized: "Reforzar el valor de la propuesta, mostrando c\xF3mo la soluci\xF3n
+      genera retorno sobre la inversi\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7863924126371840
+    m_Localized: When can you offer a NO  as a response to negative questions?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866010087968768
+    m_Localized: "Why is it essential to respond with firmness and confidence to
+      negative questions?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866198819065856
+    m_Localized: To engage in controversial issues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866266968117248
+    m_Localized: What is the relevance of learning to say NO when responding to negative
+      - questions?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866431296753664
+    m_Localized: "How can one learn to say NO effectively?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866579494096896
+    m_Localized: In what cases might it be appropriate to offer reasons why we cannot
+      address certain topics?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866702672416768
+    m_Localized: 'True or false: It is valid to use the tool No without a complement
+      to the response'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865917968470016
+    m_Localized: It is always inappropriate to offer arguments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865968434335744
+    m_Localized: When there are no valid reasons not to address them
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865985748422656
+    m_Localized: When there are valid reasons not to address them
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866051146010624
+    m_Localized: To demonstrate ignorance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866168653631488
+    m_Localized: To avoid insecurity and handle difficult questions effectively
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866283271376896
+    m_Localized: To always accept challenges
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866378725347328
+    m_Localized: To avoid getting involved in topics you are not an expert on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866390913994752
+    m_Localized: To show inflexibility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866448292073472
+    m_Localized: Completely ignoring difficult questions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866497013108736
+    m_Localized: Understanding when and how it is appropriate to say no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866510707511296
+    m_Localized: Saying no without explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866605867880448
+    m_Localized: Only in specific situations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866646112227328
+    m_Localized: It is never appropriate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866652181385216
+    m_Localized: It is always appropriate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866735685783552
+    m_Localized: 'True, just say "no, next question" '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866833769582592
+    m_Localized: True, no need to complement the response
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866846822256640
+    m_Localized: False, it must connect with an argument
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866997188055040
+    m_Localized: "\xBFCu\xE1l de las siguientes es una se\xF1al de compra que indica
+      que el cliente est\xE1 listo para cerrar?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873034091745280
+    m_Localized: "\xBFCu\xE1l de las siguientes se\xF1ales puede indicar que un cliente
+      est\xE1 listo para cerrar la venta?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873308566999040
+    m_Localized: "\xBFQu\xE9 t\xE9cnica de cierre puede ayudar a guiar al cliente
+      hacia una decisi\xF3n final?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873379433959424
+    m_Localized: "\xBFCu\xE1l de las siguientes acciones es clave para concretar
+      el compromiso con el cliente de forma profesional?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873466876809216
+    m_Localized: "\xBFPor qu\xE9 el cierre debe considerarse una consecuencia l\xF3gica
+      del proceso de ventas y no un momento aislado?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873523516690432
+    m_Localized: "\xBFCu\xE1l es el objetivo principal de utilizar un cierre de prueba
+      durante una conversaci\xF3n con un cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7867638803320832
+    m_Localized: El cliente evita hacer preguntas sobre el producto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7872990974300160
+    m_Localized: "El cliente pregunta sobre t\xE9rminos de pago o garant\xEDas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873009001418752
+    m_Localized: "El cliente no muestra inter\xE9s en la propuesta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873050432753664
+    m_Localized: "Cambia de tema r\xE1pidamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873244733886464
+    m_Localized: "Comienza a hacer preguntas espec\xEDficas sobre la implementaci\xF3n
+      o el precio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873255983009792
+    m_Localized: " Muestra desinter\xE9s en los beneficios del producto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873327726579712
+    m_Localized: "Repetir todas las caracter\xEDsticas t\xE9cnicas del producto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873350476484608
+    m_Localized: Evitar hablar de precios para no presionar al cliente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873363596267520
+    m_Localized: Ofrecer opciones claras y resumir los beneficios discutidos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873417866366976
+    m_Localized: "Terminar la reuni\xF3n en cuanto el cliente diga que le interesa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873445947232256
+    m_Localized: "Establecer detalles espec\xEDficos como formas de pago y fechas
+      de entrega."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873456776925184
+    m_Localized: ' Pedir al cliente que firme sin explicarle el siguiente paso.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873484962648064
+    m_Localized: "Porque la mayor\xEDa de los cierres ocurren de forma espont\xE1nea,
+      sin preparaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873503996399616
+    m_Localized: "Porque solo se necesita una buena t\xE9cnica de cierre, sin importar
+      lo anterior."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873514033369088
+    m_Localized: "Porque se basa en una relaci\xF3n construida desde la indagaci\xF3n
+      hasta la soluci\xF3n y manejo de objeciones."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873558111309824
+    m_Localized: "Obtener una confirmaci\xF3n inmediata de la compra sin necesidad
+      de explicar todos los detalles de la propuesta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873580659888128
+    m_Localized: Hacer preguntas que asumen que el cliente ya ha decidido comprar,
+      con el fin de medir su nivel de compromiso y preparar el terreno para un cierre
+      formal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873591342780416
+    m_Localized: "Disimular el momento de cierre para que el cliente no sienta presi\xF3n
+      y evitar que pida tiempo para pensarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873630588882944
+    m_Localized: "Why is it suggested to use a third-party validator in crisis management?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874200246669312
+    m_Localized: Can the third-party validator replace the designated spokesperson?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874265942052864
+    m_Localized: Who can fulfill the role of the third-party validator?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874323378851840
+    m_Localized: "Are the opinions of the third-party validator the key messages?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874388851937280
+    m_Localized: Why is it important for a third-party validator to understand the
+      company's processes?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874455323267072
+    m_Localized: 'True or false: it is always necessary to have a third-party validator
+      in crises'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874141794848768
+    m_Localized: Because it provides immediate solutions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874180051095552
+    m_Localized: It is not advisable to use it in a crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874189974818816
+    m_Localized: Because being relevant reinforces the credibility of the arguments
+      presented
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874215811731456
+    m_Localized: No, because the spokesperson speaks on behalf of the company and
+      conveys the messages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874244811149312
+    m_Localized: Yes, because the third validator is a source of authority
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874255007502336
+    m_Localized: Yes, because the third validator is sought to prevent the company
+      from speaking about the crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874281725218816
+    m_Localized: A high-ranking person within the company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874304126996480
+    m_Localized: Someone external to the company who is an expert on the topic being
+      discussed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874314642116608
+    m_Localized: A consumer or someone from the audience who likes the company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874344564281344
+    m_Localized: Yes, because only the expert's opinions are communicated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874365531607040
+    m_Localized: Yes, because it is a source of authority
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874378391343104
+    m_Localized: No, because their opinions are used as supporting ideas for the
+      key messages of the company's spokesperson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874405260054528
+    m_Localized: Because they know the weaknesses of the company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874432082628608
+    m_Localized: Because it supports the company's arguments more convincingly and
+      accurately
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874440760643584
+    m_Localized: It does not contribute to having a third validator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874477846679552
+    m_Localized: True, because it must always be linked to the company
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874512466464768
+    m_Localized: False, because not all crises use a third validator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874527859560448
+    m_Localized: True, because it is a neutral argument in a crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7969655102099456
+    m_Localized: Test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7972778101166080
+    m_Localized: Details of
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7978239982555136
+    m_Localized: Failed with
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7978240179687424
+    m_Localized: Passed with
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7979367151423488
+    m_Localized: Points out of
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7973795270217728
+    m_Localized: '1.Focus on your posture and bodily relaxation: before speaking,
+      make sure to release any tension in your body muscles, especially in the jaw,
+      neck, and shoulders. Maintain an upright and relaxed posture to allow the air
+      to flow freely and support vocal projection.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974104897933312
+    m_Localized: '2. Use controlled breathing from the diaphragm: instead of shallow
+      breathing, practice taking deep, controlled breaths from the diaphragm. This
+      will provide you with the necessary support to effectively project your voice
+      without the need to raise the volume.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974115048148992
+    m_Localized: '3. Focus on improving the quality of your voice: work on vocalization
+      exercises that strengthen the vocal muscles and enhance the clarity and resonance
+      of your voice. This will help you to project more easily and maintain a clear
+      and crisp voice without straining it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974371122991104
+    m_Localized: '1.Work on diaphragmatic breathing: practice breathing exercises
+      that help you utilize the diaphragm to project your voice more powerfully and
+      controlled. This will allow you to maintain a stable tone and a strong voice
+      without straining it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974441885093888
+    m_Localized: '2. Engage in vocalization exercises: set aside time to perform
+      vocalization exercises that strengthen your vocal muscles and enhance the clarity
+      and resonance of your voice. This will assist you in projecting more easily
+      and maintaining a clear and crisp voice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974454367342592
+    m_Localized: '3. Work on posture and jaw position: maintain an upright and relaxed
+      posture to allow air to flow freely and support vocal projection. Additionally,
+      ensure to keep the jaw relaxed and open to facilitate articulation and enhance
+      the quality of your projected voice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975691867377664
+    m_Localized: '1.Practice regularly: dedicate time to regularly practice breathing
+      exercises, vocalization, and posture to maintain the strength and quality of
+      your projected voice. Consistent practice will help you to keep your vocal
+      skills in optimal condition.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975735815294976
+    m_Localized: '2. Take care of your vocal health: avoid vocal abuse, such as excessive
+      talking or shouting, and make sure to rest enough to allow your vocal cords
+      to recover. Additionally, maintain good hydration and avoid excessive consumption
+      of alcohol and caffeine, as they can negatively affect your voice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975788562862080
+    m_Localized: '3. Receive feedback: seek the opinion of voice professionals, such
+      as vocal coaches or speech therapists, to receive feedback on your technique
+      and continuously improve your vocal skills. External feedback will help you
+      identify areas for improvement and maintain a high-quality projected voice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975803557498880
+    m_Localized: '1.Clear your mind: Before responding, take a moment to release
+      any built-up mental tension. Breathe deeply and focus on clearing your thoughts.
+      Visualize a peaceful image or repeat a positive affirmation to calm your mind.
+      By releasing mental tension, you''ll be better prepared to address challenging
+      questions with a projected and serene voice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975942137303040
+    m_Localized: '2. Control your breathing: instead of taking shallow breaths and
+      yelling from your throat, try taking a deep, controlled breath from your diaphragm.
+      This will help you to get the necessary support to effectively project your
+      voice without needing to shout. Practice diaphragmatic breathing exercises
+      to strengthen this technique and improve your breath control.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975968410423296
+    m_Localized: '3. Focus on resonance: when speaking, concentrate on producing
+      a resonant and full sound that comes from your chest and diaphragm rather than
+      your throat. This will help you to project your voice naturally and effectively
+      without the need to raise the volume. Imagine that you are speaking towards
+      a distant wall and project your voice towards that point, using resonance to
+      amplify your sound without shouting.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7977335220850688
+    m_Localized: 'Incorrect, the correct answer is:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7977147005652992
+    m_Localized: Correct Answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31825811025154048
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31826642956963840
+    m_Localized: 'Enter text '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31827409650569216
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31833256338378752
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31850530797506560
+    m_Localized: Welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31850424161521664
+    m_Localized: Incorrect Username and/or Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31903988460277760
+    m_Localized: "To update your application for Preja-vu Training, contact the Tank
+      Consultor\xEDa sales team"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33225850326863872
+    m_Localized: Email
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33225993952415744
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33233239457386496
+    m_Localized: 'Welcome
+
+      Wait a moment please'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33291799449030656
+    m_Localized: "Important Note: Device License Limitation\n\nDear user:\n\nWe would
+      like to inform you that our license policy allows the use of our application
+      on a single device per license. This means that each purchased license is valid
+      only for a specific device.\n\nIf you need to use the application on multiple
+      devices, we encourage you to consider purchasing additional licenses as needed.\n\nIf
+      you have any questions or need further information, please feel free to contact
+      us.\n\nSincerely,\n\nTank Consultor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69864949375856640
+    m_Localized: "\xA1Enhorabuena! Has finalizado los Do's And Don'ts  de TANK.\nEsto
+      te brinda la oportunidad de poner en pr\xE1ctica tus nuevos conocimientos en
+      el M\xF3dulo Pr\xE1ctico, el cual ya est\xE1 habilitado en el Men\xFA Principal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76730808057450496
+    m_Localized: 'Congratulations you have completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 88735079833522176
+    m_Localized: Recorrido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99599122987208704
+    m_Localized: Stadistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636161514295296
+    m_Localized: Movement in Safe Zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636543883825152
+    m_Localized: Movement in Unsafe Zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636584316915712
+    m_Localized: 'Kinesthesia:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636849065578496
+    m_Localized: 'Vision:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637720604200960
+    m_Localized: 'Gestures:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637814690828288
+    m_Localized: No Change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637958941331456
+    m_Localized: Increased
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638031016251392
+    m_Localized: Negative Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638113459490816
+    m_Localized: Positive Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638170619465728
+    m_Localized: Test without Training
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638242342064128
+    m_Localized: Test with Training
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638641211985920
+    m_Localized: HeatMap Details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638738746331136
+    m_Localized: 'To improve the score in this aspect, keep in mind the following
+      tips:
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638830924550144
+    m_Localized: Tips to improve this score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638891150561280
+    m_Localized: Unsafe hand gestures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638957017911296
+    m_Localized: Safe hand gestures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639221431029760
+    m_Localized: Body Gesture Tracking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639478894186496
+    m_Localized: Negative eye contact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639537476030464
+    m_Localized: Positive eye contact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639549320744960
+    m_Localized: Heatmap View
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639775276290048
+    m_Localized: Vision Tracking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639838627057664
+    m_Localized: Tone of Voice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639895233384448
+    m_Localized: Kinesthesia Tracking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640191821008896
+    m_Localized: Previous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640258594328576
+    m_Localized: Progress Comparison
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640337547907072
+    m_Localized: Attempt #02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640681044627456
+    m_Localized: Attempt #01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640782513229824
+    m_Localized: "Use pauses to look around: Don\u2019t be afraid to take small pauses
+      during your speech to look around. This not only allows you to capture the
+      attention of different parts of your audience, but it also helps you take a
+      breath and organize your thoughts."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640849118777344
+    m_Localized: "Don\u2019t avoid direct eye contact: Avoiding direct eye contact
+      can seem like a sign of insecurity. Although looking directly at people can
+      be intimidating, doing so with confidence creates a sense of sincerity and
+      empathy with your audience."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640873143750656
+    m_Localized: 'Engage the whole audience in a virtual event: In virtual presentations,
+      try to look at the camera and take pauses while observing the participants
+      on the screen. This simulates more realistic eye contact and maintains a sense
+      of interaction. Also, make sure not to focus only on one group of participants
+      for the entire time.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641186810580992
+    m_Localized: 'Avoid crossing your arms: Keep your arms open or relaxed at your
+      sides. Crossing them can project a defensive or closed attitude, creating a
+      barrier between you and your audience.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641245660860416
+    m_Localized: 'Take care of your personal space: Make sure to maintain an appropriate
+      distance from your audience to avoid invading their personal space. This conveys
+      respect and comfort, both for you and for them.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641258520596480
+    m_Localized: 'Expand your posture by using your arms: Use your arms to complement
+      your posture and give more presence to your speech. Avoid limited or rigid
+      movements; your arms should move smoothly and naturally to match the energy
+      of your words.
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641439441899520
+    m_Localized: "Natural and expansive gestures: Use hand movements that are natural
+      and broad, without forcing or exaggerating. Gestures that accompany your words
+      help reinforce the message and keep the audience\u2019s attention."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641448572899328
+    m_Localized: 'Visible and open hands: Avoid hiding your hands in your pockets
+      or behind you. Keeping them visible and open conveys sincerity and openness,
+      which enhances the connection with your audience.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641450347089920
+    m_Localized: "Coordinate gestures with the rhythm of your speech: Gestures should
+      flow with the rhythm of your speech. Don\u2019t rush your movements or make
+      them too slow; make sure they synchronize with the tone and message of what
+      you are saying."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641882964381696
+    m_Localized: 'Distribute your gaze evenly: Avoid constantly looking at the floor
+      or focusing on a single point on the stage. Make sure to move your gaze naturally
+      and smoothly between different areas of the audience, which will help maintain
+      everyone''s attention.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641961418838016
+    m_Localized: 'Make eye contact with different sections of the audience: Alternate
+      your gaze between various areas of the audience, which will foster a stronger
+      emotional connection. Use the heatmap to identify areas where your gaze is
+      less frequent and work on improving that aspect.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641974534426624
+    m_Localized: 'Simulate eye contact in virtual environments: If your presentation
+      is online, make sure to direct your gaze toward the camera rather than the
+      screen, creating an illusion of eye contact with your audience. Use the heatmap
+      to evaluate which areas of the video or virtual stage receive more or less
+      attention.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643109085270016
+    m_Localized: Duration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643240580894720
+    m_Localized: Topic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643306179809280
+    m_Localized: Scenario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643435465035776
+    m_Localized: "Welcome to the diagnostic test of \nPreja-V\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645645875826688
+    m_Localized: Get ready to face a "Real" press conference scenario, where you
+      will need to apply the previously covered tools to resolve the assigned case.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645670513168384
+    m_Localized: "The case to be resolved is as follows: \n\nA controversial video
+      has gone viral on social media, questioning one of our procedures and raising
+      concerns about the company's reputation. We are being accused of leaking confidential
+      and highly sensitive information from numerous users."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645684819939328
+    m_Localized: This has triggered a wave of opinions and negative comments in society,
+      causing a real crisis. As a result, you must make statements and convey reassurance
+      to everyone who may be affected by the situation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645701781704704
+    m_Localized: 'Important!
+
+
+      1.This practical exercise is a continuous test;
+      you will not be able to pause it at any time.
+
+
+      2.You have 30 seconds
+      to answer each question.
+
+
+      3.Stay calm. Remember, this exercise is designed
+      to assess your skills under pressure.
+
+
+      Organize your thoughts before
+      answering.
+
+      Good luck!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122175995976331264
+    m_Localized: "\xA1Importante!\n\n1.Este ejercicio pr\xE1ctico es una prueba continua;
+      no podr\xE1s pausarlo en ning\xFAn momento.\n\n2.Tienes 30 segundos para responder
+      cada pregunta.\n\n3.Mant\xE9n la calma. Recuerda que este ejercicio est\xE1
+      dise\xF1ado para evaluar tus habilidades bajo presi\xF3n.\n\nOrganiza tus ideas
+      antes de responder.\n\xA1Mucha suerte!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122126979276189696
+    m_Localized: "El producto que deber\xE1s vender es:\r\nSilk Sabor a Coco\r\nUna
+      bebida vegetal de coco, deliciosa y nutritiva, ideal para quienes buscan una
+      alternativa l\xE1ctea. \xA1Tu misi\xF3n es convencer al cliente de sus beneficios!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122442840253386752
+    m_Localized: "\xA1Felicidades! \U0001F389 Has aprobado el m\xF3dulo pr\xE1ctico
+      y completado la demo con \xE9xito. Sigue practicando para perfeccionar tus
+      habilidades. \xA1Bien hecho!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125317475588362240
+    m_Localized: "A\xFAn no has aprobado el m\xF3dulo pr\xE1ctico. \u274C Sigue practicando
+      y vuelve a intentarlo para completar la demo con \xE9xito. \xA1T\xFA puedes
+      lograrlo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132179567578697728
+    m_Localized: Effective Communication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132180916022267904
+    m_Localized: Trust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181073090564096
+    m_Localized: Persuasion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181649291464704
+    m_Localized: Objection Handling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181998496632832
+    m_Localized: Conversation Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 155038654996131840
+    m_Localized: "Ayuda a saber cu\xE1ndo el prospecto est\xE1 listo para decidir,
+      evitando adelantarse o llegar tarde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164829352142286848
+    m_Localized: ElevatorPitch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164826677820502016
+    m_Localized: Golf Car Pitch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831454021267456
+    m_Localized: "Contar toda la historia de la empresa desde su fundaci\xF3n.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831685706231808
+    m_Localized: "Generar confianza destacando brevemente qu\xE9 te hace relevante
+      y cre\xEDble."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831751376449536
+    m_Localized: 'Detallar la lista completa de productos o servicios que se ofrecen.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831910923579392
+    m_Localized: " \xBFQu\xE9 se recomienda hacer al presentar credenciales en menos
+      de un minuto?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832241640255488
+    m_Localized: Explicar la estructura organizacional de la empresa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832441251377152
+    m_Localized: ' Enfatizar lo que te diferencia de manera clara y contundente.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832478433882112
+    m_Localized: Evitar mencionar emociones y centrarse solo en hechos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832580439355392
+    m_Localized: "\xBFQu\xE9 actitud refuerza la conexi\xF3n con el cliente durante
+      la presentaci\xF3n?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832699205267456
+    m_Localized: Ser neutral y objetivo para no parecer emocional.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832744486973440
+    m_Localized: " Transmitir orgullo genuino por tu trabajo o empresa. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832803865735168
+    m_Localized: Usar tecnicismos para demostrar conocimiento experto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833005469151232
+    m_Localized: "\xBFQu\xE9 debe incluir un recurso visual usado en la presentaci\xF3n
+      de credenciales?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833038797090816
+    m_Localized: "T\xE9rminos complejos del sector para mostrar profundidad t\xE9cnica."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833864965926912
+    m_Localized: "Est\xE9tica corporativa sin importar el p\xFAblico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833870905061376
+    m_Localized: Lenguaje visual alineado con el cliente y su contexto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834091567394816
+    m_Localized: " \xBFCu\xE1l es un error com\xFAn al presentar credenciales ante
+      un cliente?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834093807153152
+    m_Localized: "Extenderse m\xE1s de lo necesario, perdiendo la atenci\xF3n del
+      interlocutor. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834096424398848
+    m_Localized: ' Hablar brevemente sobre el equipo o empresa que representas.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834100123774976
+    m_Localized: 'Preparar una historia corta que refuerce la credibilidad.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834554698248192
+    m_Localized: "\xBFPor qu\xE9 es importante practicar la presentaci\xF3n de credenciales
+      antes de una reuni\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834560515747840
+    m_Localized: "Para memorizarlo y evitar cualquier improvisaci\xF3n.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834564445810688
+    m_Localized: "Para lograr transmitir un mensaje claro y convincente en poco tiempo.
+      \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834685304680448
+    m_Localized: Para incluir todos los temas posibles en menos de un minuto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835125178118144
+    m_Localized: "Explicar detalladamente todas las caracter\xEDsticas del producto.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834997172154368
+    m_Localized: " \xBFCu\xE1l es el prop\xF3sito principal del Golf Car Pitch?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835127422070784
+    m_Localized: "Generar una conexi\xF3n natural y dejar una idea clara y valiosa.
+      \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835129103986688
+    m_Localized: 'Convencer al cliente de hacer una compra en ese mismo momento.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835160376717312
+    m_Localized: " \xBFPor qu\xE9 se usa la met\xE1fora de \u201Cla reuni\xF3n familiar\u201D
+      para explicar esta herramienta?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835494004240384
+    m_Localized: 'Porque es una estrategia para vender productos directamente a los
+      familiares.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835496118169600
+    m_Localized: " Porque muchas ventas exitosas ocurren en el n\xFAcleo familiar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835497556815872
+    m_Localized: "Porque representa espacios informales donde surgen conversaciones
+      aut\xE9nticas y confiables. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836522174951424
+    m_Localized: "\xBFQu\xE9 diferencia al Golf Cart Pitch de un Elevator Pitch tradicional?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836524058193920
+    m_Localized: "El Golf Cart Pitch es m\xE1s breve y directo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836525698166784
+    m_Localized: "El Golf Cart Pitch permite profundizar m\xE1s en el mensaje, entre
+      2 y 5 minutos. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836527287808000
+    m_Localized: 'El Elevator Pitch se enfoca en las emociones y no en el contenido.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836816719949824
+    m_Localized: "\xBFQu\xE9 tipo de contenido puede incluir un buen Golf Cart Pitch?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836818007601152
+    m_Localized: "El problema, la soluci\xF3n, el diferenciador y una invitaci\xF3n
+      a seguir conversando.  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836819446247424
+    m_Localized: "Informaci\xF3n t\xE9cnica detallada y condiciones comerciales."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836820696150016
+    m_Localized: "Un saludo protocolario seguido de la presentaci\xF3n de precios.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837054750896128
+    m_Localized: "\xBFPor qu\xE9 el Golf Cart Pitch evita intentar convencer al cliente
+      de inmediato?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837057301032960
+    m_Localized: "Porque se basa en la idea de dejar una impresi\xF3n memorable sin
+      presi\xF3n. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837058450272256
+    m_Localized: "Porque se asume que la venta ya est\xE1 cerrada previamente.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837066297815040
+    m_Localized: 'Porque no se permite hablar de beneficios en espacios informales.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837324599832576
+    m_Localized: " \xBFCu\xE1l ser\xEDa un cierre apropiado para un Golf Cart Pitch
+      en una reuni\xF3n casual?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837326277554176
+    m_Localized: "\xBFQuiere que le mande el contrato ya?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837327422599168
+    m_Localized: "Si le parece interesante, estar\xE9 encantado de contarle m\xE1s
+      en otro momento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837328597004288
+    m_Localized: "Tengo una promoci\xF3n que termina hoy, \xBFcerramos ya?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165528537210015744
+    m_Localized: TANK Learning path
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485141240860672
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485487824588800
+    m_Localized: Complemento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485842352328704
+    m_Localized: Ejercicio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606620902928384
+    m_Localized: "\xBFCu\xE1l es el objetivo principal de un elevator pitch en el
+      contexto de las ventas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175401988345802752
+    m_Localized: "Los 3 \xBFPor qu\xE9?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175402235188981760
+    m_Localized: F.A.B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175406632803479552
+    m_Localized: "Se\xF1ales de compra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606859370082304
+    m_Localized: "\xBFPor qu\xE9 es fundamental que un \u201Celevator pitch\u201D
+      destaque un valor diferencial frente a otras opciones del mercado?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606700523401216
+    m_Localized: " \xBFQu\xE9 componente es esencial para que un elevator pitch genere
+      una conversaci\xF3n posterior con el cliente?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606882589749248
+    m_Localized: "\xBFQu\xE9 aspecto es clave para que el elevator pitch logre conectar
+      emocionalmente con el cliente?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606898893008896
+    m_Localized: "\xBFC\xF3mo debe estructurarse un elevator pitch para que sea efectivo
+      en eventos de networking?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606915133353984
+    m_Localized: " \xBFPor qu\xE9 el elevator pitch debe ser flexible y adaptarse
+      a diferentes contextos de ventas?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607092745351168
+    m_Localized: "Compartir toda la informaci\xF3n t\xE9cnica del producto desde
+      el primer momento para que el cliente tenga una base completa para decidir.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552189475401728
+    m_Localized: Walkaround
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554143115096064
+    m_Localized: "\xBFCu\xE1l es el primer paso del Walkaround?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552465859063808
+    m_Localized: 'Iniciar desde la necesidad
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552696818413568
+    m_Localized: "Indagar con intenci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552718494576640
+    m_Localized: "Mostrar con intenci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552742150451200
+    m_Localized: Resolver dudas,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552770369728512
+    m_Localized: "Acompa\xF1ar la decisi\xF3n final"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176553890852876288
+    m_Localized: "Dar todos los datos t\xE9cnicos del producto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554607277748224
+    m_Localized: "Hacer una demostraci\xF3n r\xE1pida del producto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554632737173504
+    m_Localized: Hacer una pausa e invitar al cliente a observar sin intervenir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606735956881408
+    m_Localized: "\xBFQu\xE9 se busca al invitar al cliente a interactuar f\xEDsicamente
+      con el producto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554916003688448
+    m_Localized: Acelerar el cierre de la venta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176562519408619520
+    m_Localized: Involucrarlo emocionalmente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176562567584395264
+    m_Localized: Ver si el cliente lo sabe usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554764106969088
+    m_Localized: "\xBFCu\xE1l es el objetivo final del ejercicio de visualizaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555466904547328
+    m_Localized: Hacer que el producto se sienta propio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555385937702912
+    m_Localized: " Generar presi\xF3n para cerrar la venta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176563685257359360
+    m_Localized: Mostrar las especificaciones del producto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556465278922752
+    m_Localized: "\xBFCu\xE1l es el objetivo principal de la t\xE9cnica los 3 \xBFPor
+      qu\xE9??\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556607113506816
+    m_Localized: "Aumentar el volumen de ventas a trav\xE9s de promociones\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556675249975296
+    m_Localized: " Descubrir la verdadera motivaci\xF3n detr\xE1s de lo que el cliente
+      dice que necesita"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556692513730560
+    m_Localized: "Clasificar a los clientes seg\xFAn su presupuesto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556721974521856
+    m_Localized: "\xBFQu\xE9 tipo de preguntas sugiere la t\xE9cnica los 3 \xBFPor
+      qu\xE9? para profundizar en las necesidades del cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556770460676096
+    m_Localized: "Preguntas cerradas como \u201C\xBFS\xED o no?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556819265597440
+    m_Localized: "Preguntas de comparaci\xF3n de precios\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556856297107456
+    m_Localized: "Preguntas sucesivas como \u201C\xBFPor qu\xE9?\u201D o \u201C\xBFQu\xE9
+      pasar\xEDa si no lo solucionas?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556900542820352
+    m_Localized: "\xBFQu\xE9 permite lograr la t\xE9cnica los 3 \xBFPor qu\xE9? en
+      una conversaci\xF3n con el cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556932708937728
+    m_Localized: "Conectar con su motivaci\xF3n real y construir una propuesta relevante"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557001784930304
+    m_Localized: "Evitar hablar de emociones y centrarse en lo t\xE9cnico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557018247573504
+    m_Localized: Ofrecer descuentos desde el primer contacto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555684639256576
+    m_Localized: "\xBFQu\xE9 representa la letra \"B\" en la herramienta FAB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555585448161280
+    m_Localized: Balance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555729069518848
+    m_Localized: Beneficio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555753564254208
+    m_Localized: Base
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555808954232832
+    m_Localized: "\xBFQu\xE9 se necesita hacer para aplicar correctamente la herramienta
+      FAB?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555845360791552
+    m_Localized: Adaptar el beneficio al contexto de cada cliente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555901505744896
+    m_Localized: Memorizar el nombre del producto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555942337294336
+    m_Localized: "Hablar solo de caracter\xEDsticas t\xE9cnicas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555948582612992
+    m_Localized: "\xBFCu\xE1l es una de las claves del enfoque FAB seg\xFAn el video?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556043839451136
+    m_Localized: "Usar t\xE9rminos t\xE9cnicos en todo momento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556110956703744
+    m_Localized: Conocer al cliente solo si es necesario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556128128184320
+    m_Localized: Conectar desde lo que ofreces hasta lo que transforma la vida del
+      cliente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557273680687104
+    m_Localized: "\xBFQu\xE9 son las se\xF1ales de compra?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557513687150592
+    m_Localized: Promociones que incentivan al cliente a comprar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557545836490752
+    m_Localized: "Comentarios, gestos o preguntas que indican inter\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557569060352000
+    m_Localized: "T\xE9cnicas para cerrar una venta r\xE1pidamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557628380393472
+    m_Localized: "\xBFCu\xE1l de estos comportamientos puede ser una se\xF1al de
+      compra?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557661435703296
+    m_Localized: Cambiar de tema
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557711566024704
+    m_Localized: "Preguntar por m\xE9todos de pago"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557731593826304
+    m_Localized: Evitar el contacto visual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557810379632640
+    m_Localized: "\xBFQu\xE9 se recomienda hacer cuando se detecta una se\xF1al de
+      compra?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557843640463360
+    m_Localized: "Presionar al cliente para cerrar r\xE1pido"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557877580771328
+    m_Localized: Ignorarla si no es muy clara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557904701140992
+    m_Localized: "Avanzar en la conversaci\xF3n y reforzar el valor sin presionar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558326211915776
+    m_Localized: "Seg\xFAn la t\xE9cnica, \xBFc\xF3mo debe comenzar una interacci\xF3n
+      con un cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558411494699008
+    m_Localized: Preguntando si quiere pagar en efectivo o tarjeta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558446500360192
+    m_Localized: "Mostrando el cat\xE1logo de productos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558464464564224
+    m_Localized: Con un saludo institucional y una pregunta que invite a conversar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558570756616192
+    m_Localized: "\xBFCu\xE1l es la frase institucional que se propone en el ejemplo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558630915518464
+    m_Localized: "\"Bienvenido, \xBFqu\xE9 tipo de colch\xF3n busca hoy?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558691753897984
+    m_Localized: "\"Hola, mi nombre es [su nombre], \xBFya conoce nuestras ofertas?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558709307060224
+    m_Localized: "\"Bienvenido a Colchones El Dorado. Mi nombre es [su nombre], cu\xE9nteme,
+      \xBFqu\xE9 le est\xE1 quitando el sue\xF1o \xFAltimamente?\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558751141048320
+    m_Localized: "\xBFPara qu\xE9 se utiliza la t\xE9cnica de \u201CLos 3 por qu\xE9?\u201D
+      en este contexto?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558781377785856
+    m_Localized: "Convencer r\xE1pidamente al cliente de comprar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558842912419840
+    m_Localized: Profundizar para encontrar la causa real del problema o necesidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558861044396032
+    m_Localized: ' Presentar tres opciones de producto distintas'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558984382099456
+    m_Localized: "\xBFCu\xE1l es la diferencia entre preguntar con intenci\xF3n y
+      hablar de forma casual?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559060789735424
+    m_Localized: No hay ninguna diferencia, las dos son iguales.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559321939685376
+    m_Localized: "En una conversaci\xF3n com\xFAn, se habla sin un prop\xF3sito claro;
+      al indagar con intenci\xF3n, cada pregunta busca informaci\xF3n \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559357582880768
+    m_Localized: "Indagar con intenci\xF3n es solo una t\xE9cnica para que la conversaci\xF3n
+      sea m\xE1s larga."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559379087077376
+    m_Localized: "\xBFCu\xE1l de estas es una pregunta inteligente que ayuda a abrir
+      la conversaci\xF3n?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559416500269056
+    m_Localized: "\u201C\xBFQuiere pagar de contado o en cuotas?\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559451396878336
+    m_Localized: "\u201C\xBFQu\xE9 tipo de cambio espera lograr con este producto?\u201D\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559472070602752
+    m_Localized: "\u201C\xBFQuiere que se lo empaque para regalo?\u201D\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559513032175616
+    m_Localized: "\xBFQu\xE9 se logra al adaptar la propuesta a partir de lo que
+      dice el cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559570074710016
+    m_Localized: "Ahorrar tiempo en la atenci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559607286575104
+    m_Localized: Incrementar el inventario de la tienda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559678757515264
+    m_Localized: " Generar confianza y ofrecer una soluci\xF3n m\xE1s acertada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559906629857280
+    m_Localized: "\xBFPor qu\xE9 es m\xE1s efectivo mostrar solo dos o tres modelos
+      al cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559967195607040
+    m_Localized: "Porque mostrar 2 o 3 modelos ayuda al cliente a enfocarse, comparar
+      mejor y decidir con m\xE1s seguridad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560034937810944
+    m_Localized: "Porque as\xED el asesor necesita menos tiempo para explicar cada
+      producto"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560058388164608
+    m_Localized: "Porque el cliente percibe que esos modelos son los m\xE1s exclusivos
+      y limitados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560076989902848
+    m_Localized: "Cuando el cliente prueba un colch\xF3n, \xBFqu\xE9 objetivo persigue
+      el asesor?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560079024140288
+    m_Localized: "Que el cliente identifique cu\xE1l le resulta m\xE1s c\xF3modo
+      y adecuado a su forma de dormir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560164755714048
+    m_Localized: "Que el cliente se acostumbre a la sensaci\xF3n de los modelos m\xE1s
+      firmes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560242471972864
+    m_Localized: "Que el cliente se sienta comprometido a comprar despu\xE9s de probarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560305520750592
+    m_Localized: "En la explicaci\xF3n de un producto, \xBFcu\xE1l es la mejor forma
+      de presentar una caracter\xEDstica t\xE9cnica?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560366841475072
+    m_Localized: 'Relacionarla directamente con una ventaja y un beneficio aplicable
+      a la vida del cliente. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560384755347456
+    m_Localized: "Detallar todos los aspectos t\xE9cnicos para demostrar conocimiento.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560402681802752
+    m_Localized: 'Compararla brevemente con lo que ofrecen otras marcas del mercado.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560450954047488
+    m_Localized: "Si el cliente dice \u201Cme parece muy costoso\u201D, \xBFcu\xE1l
+      ser\xEDa una respuesta alineada con la t\xE9cnica?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560511142309888
+    m_Localized: "Explicar que la inversi\xF3n se compensa con a\xF1os de descanso
+      y beneficios para la salud. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560535100174336
+    m_Localized: "Sugerir un modelo m\xE1s barato para cerrar la venta r\xE1pido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560555639681024
+    m_Localized: 'Aclarar que el precio es alto porque es un producto importado.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560575197720576
+    m_Localized: "\xBFPor qu\xE9 anticipar preguntas sobre materiales, garant\xEDa
+      o cambios es una buena pr\xE1ctica?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560616234790912
+    m_Localized: "Porque evita que surjan sorpresas que frenen la compra en el \xFAltimo
+      momento. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560652607795200
+    m_Localized: Porque demuestra que el asesor conoce a fondo las objeciones del
+      cliente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560684790689792
+    m_Localized: "Porque as\xED el cliente se siente que est\xE1 recibiendo informaci\xF3n
+      exclusiva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560711802007552
+    m_Localized: "Cuando se responde una duda del cliente, \xBFqu\xE9 se debe buscar
+      principalmente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560759281528832
+    m_Localized: 'Reforzar la confianza del cliente para que sienta seguridad en
+      avanzar con la compra. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560783126147072
+    m_Localized: "Eliminar por completo cualquier inquietud sin dar espacio a m\xE1s
+      preguntas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560799492321280
+    m_Localized: "Redirigir la conversaci\xF3n hacia las caracter\xEDsticas m\xE1s
+      atractivas del producto.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560953029013504
+    m_Localized: "\xBFCu\xE1l de estos comportamientos del cliente puede ser una
+      se\xF1al de compra?\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561011216592896
+    m_Localized: "Pregunta detalles sobre la entrega o la garant\xEDa del producto.
+      \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561058582867968
+    m_Localized: Comenta que quiere comparar precios en otros lugares.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561079625691136
+    m_Localized: "Pregunta si habr\xE1 promociones el pr\xF3ximo mes.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561098789466112
+    m_Localized: " Antes de cerrar la venta, \xBFqu\xE9 paso es clave para confirmar
+      la decisi\xF3n del cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561124014010368
+    m_Localized: Hacer preguntas que validen que el producto elegido se ajusta a
+      sus necesidades.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561178682568704
+    m_Localized: "Resumir nuevamente todas las caracter\xEDsticas t\xE9cnicas del
+      producto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561204699836416
+    m_Localized: 'Ofrecer un obsequio adicional para incentivar la compra.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561333527883776
+    m_Localized: "En el momento de coordinar la entrega, \xBFqu\xE9 actitud refuerza
+      la confianza del cliente?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561302221598720
+    m_Localized: "Confirmar la informaci\xF3n con calma y mostrar disposici\xF3n
+      para adaptarse a su disponibilidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561353245306880
+    m_Localized: 'Agilizar el proceso para que el cliente no tenga tiempo de pensarlo
+      demasiado.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561371880599552
+    m_Localized: "Hacer hincapi\xE9 en que la entrega se realiza solo en ciertos
+      d\xEDas y horarios fijos.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177850894142394368
+    m_Localized: "\xA1Enhorabuena! Has finalizado el modulo \"Estilo de venta Colchones
+      El Dorado\" lo que te da la oportunidad de poner en pr\xE1ctica tus nuevos
+      conocimientos en el M\xF3dulo Pr\xE1ctico, que ya est\xE1 habilitado en el
+      Men\xFA Principal."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179032643940102144
+    m_Localized: Pitching
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

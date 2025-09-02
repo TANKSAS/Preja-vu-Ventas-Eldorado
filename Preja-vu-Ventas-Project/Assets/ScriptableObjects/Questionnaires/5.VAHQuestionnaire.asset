@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4b4f3607e7ec040a6b9041fab44a6e, type: 3}
+  m_Name: 5.VAHQuestionnaire
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 6ebcc483da3b3004b88103b0ce7f9186, type: 2}
+  - {fileID: 11400000, guid: 95bf24606eb6e5a43b86f9670010a402, type: 2}
+  - {fileID: 11400000, guid: 483f27b6e6a6703459c436308856b11c, type: 2}
+  - {fileID: 11400000, guid: 22dd2b9084ac9b540b4b855defa8a147, type: 2}
+  - {fileID: 11400000, guid: 5e73b333d33d59a47a44b338b38efb1a, type: 2}
+  - {fileID: 11400000, guid: eee7dfd07f3aee449914c057394a68e2, type: 2}

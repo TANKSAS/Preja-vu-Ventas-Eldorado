@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4b4f3607e7ec040a6b9041fab44a6e, type: 3}
+  m_Name: 10.GolfCartPitchQuestionnaire
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 86b145c142d6be647bbd83405a7b319e, type: 2}
+  - {fileID: 11400000, guid: c4239a24e704ff54b8324dc7a6e9ac4c, type: 2}
+  - {fileID: 11400000, guid: 3484c2d2cbeaf6d47b4609dadc29dc18, type: 2}
+  - {fileID: 11400000, guid: 6bd954a60d325ba4b87cba0794fc0820, type: 2}
+  - {fileID: 11400000, guid: c5b35d58e0a677f4384388dc6480cd2b, type: 2}
+  - {fileID: 11400000, guid: 9c86525a09b0f4f4e91814f5837f5779, type: 2}

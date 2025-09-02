@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7734165613414291000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897492537012886216}
+  - component: {fileID: 5806993859386274393}
+  - component: {fileID: 5876912733710114269}
+  m_Layer: 0
+  m_Name: JourneyController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &897492537012886216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734165613414291000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5866425, y: 0.9013391, z: 2.6975782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5806993859386274393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734165613414291000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbb53d2142056846804cb99cdd3a69a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalAnswer: 
+  helperController: {fileID: 0}
+  audioRecordingController: {fileID: 0}
+  robertaPrefab: {fileID: 0}
+  robertaObjects: {fileID: 0}
+  startEffect: {fileID: 11400000, guid: 6393760d8245ece4a83b99202e08588a, type: 2}
+  hasCompletedFirstJourney: 0
+  productsObjectsByPlace:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &5876912733710114269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7734165613414291000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 28bc9311ec8c8874e95fa3853356dde9, type: 2}
+    - {fileID: 11400000, guid: 126e83461b7674d44b2aa7390f886cd8, type: 2}
+    - {fileID: 11400000, guid: 99c13063bf3abb84dbfae3d53eaed9f7, type: 2}
+    - {fileID: 11400000, guid: ebbe8b58e387ebc46b4f231ede8ae4fc, type: 2}
+    - {fileID: 11400000, guid: df748fec2d60ed04eaa383b41a739297, type: 2}
+    - {fileID: 11400000, guid: 9aeccf415c827e6449eec895113b94d5, type: 2}
+    - {fileID: 11400000, guid: 62d65e5a06ef8bf408e6ca7fc05ac5d1, type: 2}
+    - {fileID: 11400000, guid: bd984e2a8c6dcd3498b2092a61b03710, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: JourneyController, Assembly-CSharp
+          m_MethodName: SetproductPlace
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5806993859386274393}
+          m_TargetAssemblyTypeName: AssessmentModule, Assembly-CSharp
+          m_MethodName: StopAssementModule
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

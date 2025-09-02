@@ -1,0 +1,4223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &234583783544308630
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5912425204566371431}
+  - component: {fileID: 4472271025251177732}
+  m_Layer: 3
+  m_Name: MiddleRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5912425204566371431
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234583783544308630}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0000000052240225, y: 0.98886764, z: 0.14879782, w: 0.00000003471736}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5408651430911020111}
+  m_Father: {fileID: 3092669873931736850}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4472271025251177732
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234583783544308630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  - Header
+  - Extensions
+  - m_Priority
+  - m_Transitions
+  - m_Follow
+  - m_StandbyUpdate
+  - m_Lens
+  m_LockStageInInspector: 00000000
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 3.5
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 30
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 5408651430911020111}
+--- !u!1 &1587145427838335002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6990833955300120457}
+  m_Layer: 3
+  m_Name: Middle
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6990833955300120457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587145427838335002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237845555355594442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5618653868486199360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5094318022639670010}
+  - component: {fileID: 285959100627942335}
+  - component: {fileID: 7529526167164020913}
+  - component: {fileID: 6082346884818019701}
+  - component: {fileID: 3166249876704904818}
+  - component: {fileID: 4065117208963834576}
+  - component: {fileID: 959676645378766555}
+  - component: {fileID: 8184999297237517748}
+  - component: {fileID: 7069942884001353321}
+  - component: {fileID: 4738523137642383293}
+  - component: {fileID: 1363674771517553160}
+  - component: {fileID: 4892329469437742365}
+  m_Layer: 3
+  m_Name: RobertaBodyHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5094318022639670010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3409616439966537968}
+  m_Father: {fileID: 3092669873931736850}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &285959100627942335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f3f89de22ac644e83ca4b029bf64ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyController: {fileID: 6082346884818019701}
+  robertaAI: {fileID: 5676535561350816191}
+  animationController: {fileID: 3842305196855969712}
+  moveLocomotionController: {fileID: 7529526167164020913}
+  projectingController: {fileID: 3166249876704904818}
+  particlesController: {fileID: 959676645378766555}
+  sfxController: {fileID: 4065117208963834576}
+  rotateFans:
+  - {fileID: 7657782459960516742}
+  - {fileID: 1480014501872928769}
+  player: {fileID: 0}
+  playerPointOfView: {fileID: 0}
+  lookPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  movePoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  minProjectingHigh: 0.55
+  newMoveBodyPosition: 0
+  newLookProjectionPositionIndex: 0
+  newProjectingObjectPositionIndex: 0
+  newProjectionObjectIndex: 0
+  lineRenderer: {fileID: 6915144621570840957}
+  firePoint: {fileID: 5950681666443638403}
+  laserRange: 500
+  laserExtendSpeed: 10
+  laserLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  isInteracting: 1
+  isPowerOn: 0
+  isTurningOff: 0
+  isGrounded: 1
+  isWaiting: 0
+  isRecharging: 0
+--- !u!114 &7529526167164020913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eacf39d2bb4ed8478e9729f8d79af6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementRoberta: {fileID: 5122751934269195657}
+  destPoint: 0
+  heightDestPoint: 0
+  isMovingToNextPoint: 0
+  isSlowingDown: 0
+  moveConstantly: 0
+  isMovingToNextHeightPoint: 0
+  isProjecting: 0
+  stopAngles:
+  - 0
+  - 20
+  - 45
+  - 60
+  - 90
+  - 112.5
+  - 135
+  - 157.5
+  - 180
+  - 202.5
+  - 225
+  - 247.5
+  - 270
+  - 292.5
+  - 315
+  - 337.5
+  stopHeights:
+  - 0
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - 1
+  horizontalSlowSpeed: 10
+  verticalSlowSpeed: 0.1
+  horizontalNormalSpeed: 30
+  verticalNormalSpeed: 0.3
+  horizontalRunSpeed: 40
+  verticalRunSpeed: 0.5
+  verticalSpeed: 0
+  horizontalSpeed: 0
+  currentStopIndex: 14
+  currentHeightIndex: 0
+--- !u!114 &6082346884818019701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad2b0b1c375909419db43f5588fc1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRandomMove: 0
+  isTalking: 0
+  isResetingBodyHolderPosition: 0
+  isResetingBodyPosition: 0
+  isChangingLook: 0
+  isMoving: 0
+  stopSpeed: 0.5
+  thresholdDistance: 0.2
+  oscillationNormalSpeed: 0.08
+  oscilationRunSpeed: 0.11
+  speakingSlowSpeed: 0.27
+  speakingRunSpeed: 2
+  transitionDurationSlowSpeed: 1.5
+  transitionDurationRunSpeed: 0.8
+  moveBodySlowSpeed: 0.4
+  moveBodyNormalSpeed: 1
+  moveBodyRunSpeed: 1.5
+  offsetX: 1
+  offsetY: 1
+  offsetZ: 0.5
+  size: 2
+  smoothTime: 0.01
+  parentObject: {fileID: 8911775905960274702}
+  moveTarget: {fileID: 0}
+  oscilationWaitPoints:
+  - {fileID: 6027713479406161918}
+  - {fileID: 1587145427838335002}
+  - {fileID: 6782429879286258556}
+  body: {fileID: 825276778001017438}
+  bodyHolder: {fileID: 5618653868486199360}
+  oscilationWaitPointsHolder: {fileID: 0}
+  moveDirection: 1
+  initialBodyPosition: {x: 0, y: 0, z: 0}
+  initialBodyHolderPosition: {x: 0, y: -0.5, z: 0}
+  targetNextPosition: {x: 0, y: 0, z: 0}
+  rotation: 0
+  horizon: 0
+  oscillationSpeed: 0
+  transitionDuration: 0
+  moveSpeed: 0
+  moveTalkingSpeed: 0
+  centralObject: {fileID: 0}
+  distanceXYZ: 0
+--- !u!114 &3166249876704904818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a930ae0258ace464aaa9eefaf8f30de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projecingObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  projectingPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentProjectingPositionIndex: 0
+  currentObjectIndex: 0
+  isProjecting: 0
+--- !u!114 &4065117208963834576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f607afa6be448024aae2bf10b1fb4f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFX:
+  - {fileID: 11400000, guid: a8d98586ee4f0504f9b91a757d0eced8, type: 2}
+  - {fileID: 11400000, guid: 2d60efbd12fb7654d9269efde61b4e2a, type: 2}
+  - {fileID: 11400000, guid: 3569ef3128f419f47aae5df3eceaf676, type: 2}
+  soundSource: {fileID: 7069942884001353321}
+  flySource: {fileID: 4738523137642383293}
+  ThrustersSource: {fileID: 1363674771517553160}
+  minVolume: 0.0001
+  volumeIncreaseRate: 2
+  volumeDecreaseRate: 4
+--- !u!114 &959676645378766555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e0df9574c8a56448887f004297ceef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterEffects:
+  - {fileID: 2673213050253397258}
+  - {fileID: 980317388246954854}
+  - {fileID: 4417245823563121798}
+  - {fileID: 5974582277665265924}
+  - {fileID: 1394290794194421185}
+  - {fileID: 5330860613264765989}
+  - {fileID: 5303621660335014112}
+  - {fileID: 2870146032910218610}
+--- !u!136 &8184999297237517748
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.037153
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!82 &7069942884001353321
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 916472131547776540, guid: 95f3faaee53613348bbc5fbd4aa93015, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &4738523137642383293
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 916472131547776540, guid: 95f3faaee53613348bbc5fbd4aa93015, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 98eb099d38360fb44b0fe7b8ffedd9e3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1363674771517553160
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 916472131547776540, guid: 95f3faaee53613348bbc5fbd4aa93015, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 623ce5225bcb2ca4692bfa5b38a6b904, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4892329469437742365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618653868486199360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 60cd1460e0f94e446a43bfab3e057528, type: 2}
+    - {fileID: 11400000, guid: bc2bdfbf670917e4dac5c045e6f0f51c, type: 2}
+    - {fileID: 11400000, guid: ef4b62be44269d343b63c160a852a358, type: 2}
+    - {fileID: 11400000, guid: 1a55e503ab58b3745b03efbb64e34729, type: 2}
+    - {fileID: 11400000, guid: c3e760bd229d54349a6519c9875811ba, type: 2}
+    - {fileID: 11400000, guid: 6611abea68af56444836f7525f6b78b7, type: 2}
+    - {fileID: 11400000, guid: 2f7f00d6a5a547044aca43d8d776ae68, type: 2}
+    - {fileID: 11400000, guid: 99ec95cbc33c577429c8216b69467df9, type: 2}
+    - {fileID: 11400000, guid: 67365052a43633f4ea921f7982eb6e01, type: 2}
+    - {fileID: 11400000, guid: 8532a1e978a7fd8439446c06180a1a33, type: 2}
+    - {fileID: 11400000, guid: 420c434ed0407e14a9c32eed8f3133b1, type: 2}
+    - {fileID: 11400000, guid: a38b0079a2231474c9cf24c242609451, type: 2}
+    - {fileID: 11400000, guid: 993062545e95fbf4791cc1634ea8f57c, type: 2}
+    - {fileID: 11400000, guid: 7e3351c5a3c16b54d8415a2e5271d34b, type: 2}
+    - {fileID: 11400000, guid: f74a6ce0401d06241a522ecbad8378ec, type: 2}
+    - {fileID: 11400000, guid: 3c361656830345d4c90f9cdde115c8ef, type: 2}
+    - {fileID: 11400000, guid: 28bc9311ec8c8874e95fa3853356dde9, type: 2}
+    - {fileID: 11400000, guid: 126e83461b7674d44b2aa7390f886cd8, type: 2}
+    - {fileID: 11400000, guid: 99c13063bf3abb84dbfae3d53eaed9f7, type: 2}
+    - {fileID: 11400000, guid: ebbe8b58e387ebc46b4f231ede8ae4fc, type: 2}
+    - {fileID: 11400000, guid: df748fec2d60ed04eaa383b41a739297, type: 2}
+    - {fileID: 11400000, guid: 9aeccf415c827e6449eec895113b94d5, type: 2}
+    - {fileID: 11400000, guid: 62d65e5a06ef8bf408e6ca7fc05ac5d1, type: 2}
+    - {fileID: 11400000, guid: c67912b10d948414cbc74900437af507, type: 2}
+    - {fileID: 11400000, guid: 2f7baf8093adfe34cb48230883aa6861, type: 2}
+    - {fileID: 11400000, guid: a910d3afa8922b1489b694726afd8c69, type: 2}
+    - {fileID: 11400000, guid: 9b6c842b8348f1d4595a4656fce2adfa, type: 2}
+    - {fileID: 11400000, guid: 609080fbaca188449a9a8c4347113479, type: 2}
+    - {fileID: 11400000, guid: 5ef4a84e188036f478d8371baed73824, type: 2}
+    - {fileID: 11400000, guid: e9b071a9df10c284c91edd69a548ef12, type: 2}
+    - {fileID: 11400000, guid: 3352955812f46e644a1d475b3e30db69, type: 2}
+    - {fileID: 11400000, guid: 764d7be89fa0ebf42a10ee5b2f4cfec8, type: 2}
+    - {fileID: 11400000, guid: d990516d2ca0ee448acde8c01fe52d2c, type: 2}
+    - {fileID: 11400000, guid: e92c35724a46700449479d9606fedbdd, type: 2}
+    - {fileID: 11400000, guid: 4ffc32698e693ad42937ea012d036fda, type: 2}
+    - {fileID: 11400000, guid: 34dd9100a1b35344294ab31310c815a7, type: 2}
+    - {fileID: 11400000, guid: 0a7a0050586ea1148a07dd745255107c, type: 2}
+    - {fileID: 11400000, guid: 127da9e1c34c0e8459af9d63660d6f86, type: 2}
+    - {fileID: 11400000, guid: bfeb2753b796ec545acb4689f4bc7fbf, type: 2}
+    - {fileID: 11400000, guid: 6dfec8658f2930940a65991be22ecc5c, type: 2}
+    - {fileID: 11400000, guid: 5ba2a5a0dadfdc64ca3edbb54dd8f013, type: 2}
+    - {fileID: 11400000, guid: 14987b824a7978a4caea19825bbee1f7, type: 2}
+    - {fileID: 11400000, guid: 7487383edde370e4cb317f259b934222, type: 2}
+    - {fileID: 11400000, guid: ada8368e31195cd4db3fcd7425f9be07, type: 2}
+    - {fileID: 11400000, guid: 7be49e6f57b7bf045929941f783e1996, type: 2}
+    - {fileID: 11400000, guid: 2c5082ff07c48764eb7a4ef624b6f5ee, type: 2}
+    - {fileID: 11400000, guid: 3df71e25e17f12742b51daac60c93e86, type: 2}
+    - {fileID: 11400000, guid: a1b40b2f9aa86ae43a23f9ce07fa3af1, type: 2}
+    - {fileID: 11400000, guid: ebd6803f7c4708f4d94656dede6b5c71, type: 2}
+    - {fileID: 11400000, guid: 91812061a1f1182479e7a920aad7fa4a, type: 2}
+    - {fileID: 11400000, guid: ecf0d38d2f9007b49a0c46941875d179, type: 2}
+    - {fileID: 11400000, guid: 5ab07f9f4207c6940b1d05a3f4d03734, type: 2}
+    - {fileID: 11400000, guid: e9d2b9c326f7eae4b9d3ab856110442a, type: 2}
+    - {fileID: 11400000, guid: 5d00b68e92f88ed4bb0f81c6727e65dc, type: 2}
+    - {fileID: 11400000, guid: 92e31d446e8ace64489fb101e4fcfc18, type: 2}
+    - {fileID: 11400000, guid: 9e43661b1abd49340b1d9375a69365cd, type: 2}
+    - {fileID: 11400000, guid: b94769beadc98d34085c0b95528c8caf, type: 2}
+    - {fileID: 11400000, guid: fa71067b23a7853409a46f9571d885c9, type: 2}
+    - {fileID: 11400000, guid: 3f24323cea5b65140924aa597d02b851, type: 2}
+    - {fileID: 11400000, guid: 8d888dbc523b15d42bd6ef0f75e6bafe, type: 2}
+    - {fileID: 11400000, guid: 32b2b40a79a33364dbb900586b644958, type: 2}
+    - {fileID: 11400000, guid: 13610a538b50beb489cd22a20c1a358c, type: 2}
+    - {fileID: 11400000, guid: c0f7c313330451042bb2b4bb381d498a, type: 2}
+    - {fileID: 11400000, guid: b94c4fb027101ba4892d845cdc87661f, type: 2}
+    - {fileID: 11400000, guid: 317887a96128e0747b50be96608ee1fa, type: 2}
+    - {fileID: 11400000, guid: 5cc928fe7f26fa0418c111800c17bd6b, type: 2}
+    - {fileID: 11400000, guid: ee6cb2891b7c63d429db7bd0575859c7, type: 2}
+    - {fileID: 11400000, guid: 5c774639c42670c4aaad46008a6272d3, type: 2}
+    - {fileID: 11400000, guid: 5aa28401d875eb7459b7d838c71d9ae6, type: 2}
+    - {fileID: 11400000, guid: 3d4f01affb4b661408d9f5ad7a17a7e5, type: 2}
+    - {fileID: 11400000, guid: b0e734d147b12ff45971ad67a7b13ed8, type: 2}
+    - {fileID: 11400000, guid: 8a25a1d847e12994592ab544f40b7be2, type: 2}
+    - {fileID: 11400000, guid: 6b022c93282bfe44d84227914e461ada, type: 2}
+    - {fileID: 11400000, guid: 43935e7099fb74249978cdf4bd109486, type: 2}
+    - {fileID: 11400000, guid: 1dbd0152665fb0b498b54afe726eebb1, type: 2}
+    - {fileID: 11400000, guid: 0eed35094086f9a49b87691f190d9c5b, type: 2}
+    - {fileID: 11400000, guid: 692d2dc208dc89d4f9e92d5756f73758, type: 2}
+    - {fileID: 11400000, guid: ae94e72ea4bc803459a7062553a62afc, type: 2}
+    - {fileID: 11400000, guid: 58fe7a77a320ee74787e32e00007dbce, type: 2}
+    - {fileID: 11400000, guid: d7a04e06aa7d6e84a9b961e258c4e541, type: 2}
+    - {fileID: 11400000, guid: fb99d0aa9e200e64aa2e230cf67d5224, type: 2}
+    - {fileID: 11400000, guid: 9f709a5c7599df84bae13e1fe183847a, type: 2}
+    - {fileID: 11400000, guid: 4e95203a15c5b094b8c9b8a78b0201e5, type: 2}
+    - {fileID: 11400000, guid: 3d1d488af42850e4fa09101f555e73c3, type: 2}
+    - {fileID: 11400000, guid: 7827d26e51aa0784ba8fb907a8d4c96d, type: 2}
+    - {fileID: 11400000, guid: cf2c52c617a78a44c928d39f3558e8b0, type: 2}
+    - {fileID: 11400000, guid: 9370d74d5bdc99a40ad86bb866defb01, type: 2}
+    - {fileID: 11400000, guid: b213572123498d44480408eec26dd085, type: 2}
+    - {fileID: 11400000, guid: e0d9ecfedb651bd43bd0fe7102b5e9f0, type: 2}
+    - {fileID: 11400000, guid: 480cab37dbc3dba498bf35e96b79a9d8, type: 2}
+    - {fileID: 11400000, guid: 173983c92c845e94388f5af8a9ad07c9, type: 2}
+    - {fileID: 11400000, guid: ee6e234a403d20542af21b56cba27872, type: 2}
+    - {fileID: 11400000, guid: 9d2db0cfac2d0c840a366663c80bb6f3, type: 2}
+    - {fileID: 11400000, guid: af41c36ab0b3e0346bba30b78619aa63, type: 2}
+    - {fileID: 11400000, guid: 70f15ed5a6a1ba444b805bcedc29805d, type: 2}
+    - {fileID: 11400000, guid: 98c067454dc1bdf418223866b3220b45, type: 2}
+    - {fileID: 11400000, guid: 0165a4277c1431d40815586bd84f3a73, type: 2}
+    - {fileID: 11400000, guid: f327845a86cd909469a05b7ce435c700, type: 2}
+    - {fileID: 11400000, guid: 6bdc23cddf38c9343866056cdf4879da, type: 2}
+    - {fileID: 11400000, guid: 0a36f736fa3e8c64c9057332c693b8a0, type: 2}
+    - {fileID: 11400000, guid: 94472fc7286319c41b156a129f153a4a, type: 2}
+    - {fileID: 11400000, guid: 079d1afc494baf44ca68b0b60c96d3fe, type: 2}
+    - {fileID: 11400000, guid: 085f6916be3df2b4b8512ef4956dd32e, type: 2}
+    - {fileID: 11400000, guid: 4b747d04b11952b4c87db5438385604e, type: 2}
+    - {fileID: 11400000, guid: 96cc6259448d9344da365e59b2483e1c, type: 2}
+    - {fileID: 11400000, guid: cdf1fa7502bce394d8e2def084bd7f7e, type: 2}
+    - {fileID: 11400000, guid: 5a9ac3de9a4ede34e94ef312fd6a7ecb, type: 2}
+    - {fileID: 11400000, guid: 470205b98328d2341b988bf079ee0e1e, type: 2}
+    - {fileID: 11400000, guid: 782bbaf5bf24200498808e5a2f7f2e3a, type: 2}
+    - {fileID: 11400000, guid: 9748a42d717a0e84fb616336d84710be, type: 2}
+    - {fileID: 11400000, guid: ac0f05d18b73f4243b36d96e2f833599, type: 2}
+    - {fileID: 11400000, guid: 015cd6bc53aab1e4e897f682c045dcf3, type: 2}
+    - {fileID: 11400000, guid: ff75b7c6c75ad1046a9bceeb80853c37, type: 2}
+    - {fileID: 11400000, guid: 4120fd28811507149a0d18a26a8af243, type: 2}
+    - {fileID: 11400000, guid: 529f44e2cadbcd44db8240ba2b3e73e2, type: 2}
+    - {fileID: 11400000, guid: 18b1fd95ade586a4fa6d3b0abff998ab, type: 2}
+    - {fileID: 11400000, guid: c2a852ae6a1269848a2e3fa1fd753f97, type: 2}
+    - {fileID: 11400000, guid: 98acfd87860a9a6419d60ca870d372cd, type: 2}
+    - {fileID: 11400000, guid: 5116b1b9f800f9b45b2843c5f988de73, type: 2}
+    - {fileID: 11400000, guid: 850d806964f34bf45b1f57385b9f9c97, type: 2}
+    - {fileID: 11400000, guid: a16ebc2f69b677e4ea0eff2c3bfd7568, type: 2}
+    - {fileID: 11400000, guid: 71a4e422af25b6a4988f0ec3c867866a, type: 2}
+    - {fileID: 11400000, guid: 7d1b568130c4b944cbd789d08a48a269, type: 2}
+    - {fileID: 11400000, guid: 9d8f01d1aa4137d4fa85d7134453931d, type: 2}
+    - {fileID: 11400000, guid: b21d9a730f2b6114497891d1f2873e76, type: 2}
+    - {fileID: 11400000, guid: de4531090c37a63408f10977451bdb5f, type: 2}
+    - {fileID: 11400000, guid: 41235bc594d0faf4cbdaea4abff1bf9b, type: 2}
+    - {fileID: 11400000, guid: 1361df2ba4b89ab44ab0f021e9df3781, type: 2}
+    - {fileID: 11400000, guid: 4803adc5ae9d2c1449477b1de32e5c2d, type: 2}
+    - {fileID: 11400000, guid: 33cf54c697a297343a69c6c83088acaf, type: 2}
+    - {fileID: 11400000, guid: aea210312b640cd40a60417aff32ee6d, type: 2}
+    - {fileID: 11400000, guid: 15f9aba5828341d45898a36f1d65e2b1, type: 2}
+    - {fileID: 11400000, guid: c550e642a2425fa4ebae918e05487bac, type: 2}
+    - {fileID: 11400000, guid: fa5334304d558194ea42c2e3f7ca8e11, type: 2}
+    - {fileID: 11400000, guid: 6afb4453ad6031545ac0540509392ce7, type: 2}
+    - {fileID: 11400000, guid: f622e24fe1abb4b4ea030273f52075ab, type: 2}
+    - {fileID: 11400000, guid: c664577b3067a9a44af96c8510702512, type: 2}
+    - {fileID: 11400000, guid: e6385758fe0158c438b895396f3acfec, type: 2}
+    - {fileID: 11400000, guid: 246b21d051011f04b89bda9e287d272c, type: 2}
+    - {fileID: 11400000, guid: 878ad1390452fbf4b8359efc06dd78cd, type: 2}
+    - {fileID: 11400000, guid: 4b19ddf616b59534fb3d018f03531680, type: 2}
+    - {fileID: 11400000, guid: 75b73f6b212df6f4caa986cd346d0e6d, type: 2}
+    - {fileID: 11400000, guid: 66784291744ead74192db23b3bb755b4, type: 2}
+    - {fileID: 11400000, guid: 8652fcc694dfce44c9eb128ce4ee020c, type: 2}
+    - {fileID: 11400000, guid: d2e4141e20b290446b26d0dda30e6300, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndCharging
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: StartScan
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: RobertaHappy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: RobertaSad
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: GoToCentralPos
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: RobertaAnimationController, Assembly-CSharp
+          m_MethodName: SetTalking
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: RobertaAnimationController, Assembly-CSharp
+          m_MethodName: SetTalking
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: EndRandomMovement
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: StartRandomPosition
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: StartSpeaking
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndSpeaking
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SlowVelocity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: NormalizedVelocity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: RunVelocity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 11
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 13
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 14
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHorizontalPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetNewHeightPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 11
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetMoveBodyPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 11
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetVerticalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetVerticalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetVerticalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetHorizontalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetHorizontalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7529526167164020913}
+          m_TargetAssemblyTypeName: RobertaLocomotionController, Assembly-CSharp
+          m_MethodName: SetHorizontalSpeed
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetOrbitVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetOrbitVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetLookTransitionVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetLookTransitionVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetMoveVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetMoveVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetMoveVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetSpeakingVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: SetSpeakingVelocity
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndProjection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3166249876704904818}
+          m_TargetAssemblyTypeName: RobertaProjectingController, Assembly-CSharp
+          m_MethodName: DeactivateProjection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: LookAtPlayer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: ChangeDirection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: StartSpeakingProjection
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: LookAtObject
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: CallStartProjection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 11
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 13
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 14
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 16
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 17
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 18
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 19
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 21
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 22
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetObjectToProject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 23
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 11
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetPositionToProjectObject
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 13
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: CallStartWaiting
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: MoveBodyTowardsNextPoint
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: MoveBodyTowardsNextPoint
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: LookAtObject
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: MoveBodyTowardsNextPoint
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: SetLookAtPosition
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6082346884818019701}
+          m_TargetAssemblyTypeName: RobertaBodyController, Assembly-CSharp
+          m_MethodName: MoveBodyTowardsNextPoint
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: ActivateLaser
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 285959100627942335}
+          m_TargetAssemblyTypeName: RobertaController, Assembly-CSharp
+          m_MethodName: EndDo
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &5671828069450067995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6045493319485407705}
+  - component: {fileID: 4191622488327812295}
+  - component: {fileID: 7354198615048853500}
+  - component: {fileID: 2577296655282235400}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6045493319485407705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671828069450067995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000008632868, y: -0.9890938, z: -0.14728701, w: 0.00000005797331}
+  m_LocalPosition: {x: -0, y: 0.2500968, z: -2.5372133}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8464392041538449245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4191622488327812295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671828069450067995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7354198615048853500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671828069450067995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0.6, z: -2.5}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_AngularDampingMode: 0
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+  m_AngularDamping: 0
+  m_Heading:
+    m_Definition: 2
+    m_VelocityFilterStrength: 4
+    m_Bias: -180
+  m_RecenterToTargetHeading:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_XAxis:
+    Value: 0
+    m_SpeedMode: 0
+    m_MaxSpeed: 300
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: 
+    m_InputAxisValue: 0
+    m_InvertInput: 1
+    m_MinValue: -180
+    m_MaxValue: 180
+    m_Wrap: 1
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_LegacyRadius: 3.4028235e+38
+  m_LegacyHeightOffset: 3.4028235e+38
+  m_LegacyHeadingBias: 3.4028235e+38
+  m_HeadingIsSlave: 1
+--- !u!114 &2577296655282235400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671828069450067995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+--- !u!1 &5936354209527467946
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8464392041538449245}
+  - component: {fileID: 9054750697516487277}
+  m_Layer: 3
+  m_Name: TopRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8464392041538449245
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936354209527467946}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000008632868, y: 0.9890938, z: 0.14728701, w: 0.00000005797331}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6045493319485407705}
+  m_Father: {fileID: 3092669873931736850}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9054750697516487277
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936354209527467946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  - Header
+  - Extensions
+  - m_Priority
+  - m_Transitions
+  - m_Follow
+  - m_StandbyUpdate
+  - m_Lens
+  m_LockStageInInspector: 00000000
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 3.5
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 30
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 6045493319485407705}
+--- !u!1 &6027713479406161918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5693934312662862402}
+  m_Layer: 3
+  m_Name: Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5693934312662862402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027713479406161918}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237845555355594442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6339415884674069240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576509032796602425}
+  - component: {fileID: 3157260578844217588}
+  - component: {fileID: 5882819960864941140}
+  - component: {fileID: 3588990870017646126}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576509032796602425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339415884674069240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0000000065701813, y: -0.98863924, z: -0.15030824, w: 0.000000043214797}
+  m_LocalPosition: {x: -0, y: 0.26559567, z: -2.5356383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2373274161640948953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3157260578844217588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339415884674069240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5882819960864941140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339415884674069240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0.6, z: -2.5}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_AngularDampingMode: 0
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+  m_AngularDamping: 0
+  m_Heading:
+    m_Definition: 2
+    m_VelocityFilterStrength: 4
+    m_Bias: -180
+  m_RecenterToTargetHeading:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_XAxis:
+    Value: 0
+    m_SpeedMode: 0
+    m_MaxSpeed: 300
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: 
+    m_InputAxisValue: 0
+    m_InvertInput: 1
+    m_MinValue: -180
+    m_MaxValue: 180
+    m_Wrap: 1
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_LegacyRadius: 3.4028235e+38
+  m_LegacyHeightOffset: 3.4028235e+38
+  m_LegacyHeadingBias: 3.4028235e+38
+  m_HeadingIsSlave: 1
+--- !u!114 &3588990870017646126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339415884674069240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0
+  m_ScreenX: 0.5
+  m_ScreenY: 0.6
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+--- !u!1 &6782429879286258556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616722382073976427}
+  m_Layer: 3
+  m_Name: Bottom
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1616722382073976427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6782429879286258556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237845555355594442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6976550058746067027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237845555355594442}
+  m_Layer: 3
+  m_Name: OscillationPointsHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &237845555355594442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976550058746067027}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.421, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5693934312662862402}
+  - {fileID: 6990833955300120457}
+  - {fileID: 1616722382073976427}
+  m_Father: {fileID: 3092669873931736850}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8330114328235825137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5408651430911020111}
+  - component: {fileID: 5942460669360166174}
+  - component: {fileID: 7437673988211376083}
+  - component: {fileID: 5601700671265880018}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5408651430911020111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330114328235825137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0000000052240225, y: -0.98886764, z: -0.14879782, w: 0.00000003471736}
+  m_LocalPosition: {x: -0, y: 0.25784755, z: -2.5364375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5912425204566371431}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5942460669360166174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330114328235825137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7437673988211376083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330114328235825137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0.6, z: -2.5}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_AngularDampingMode: 0
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+  m_AngularDamping: 0
+  m_Heading:
+    m_Definition: 2
+    m_VelocityFilterStrength: 4
+    m_Bias: -180
+  m_RecenterToTargetHeading:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_XAxis:
+    Value: 0
+    m_SpeedMode: 0
+    m_MaxSpeed: 300
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: 
+    m_InputAxisValue: 0
+    m_InvertInput: 1
+    m_MinValue: -180
+    m_MaxValue: 180
+    m_Wrap: 1
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_LegacyRadius: 3.4028235e+38
+  m_LegacyHeightOffset: 3.4028235e+38
+  m_LegacyHeadingBias: 3.4028235e+38
+  m_HeadingIsSlave: 1
+--- !u!114 &5601700671265880018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330114328235825137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0
+  m_ScreenX: 0.5
+  m_ScreenY: 0.55
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+--- !u!1 &8786559399028935796
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2373274161640948953}
+  - component: {fileID: 61280840160788406}
+  m_Layer: 3
+  m_Name: BottomRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2373274161640948953
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786559399028935796}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0000000065701813, y: 0.98863924, z: 0.15030824, w: 0.000000043214797}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 576509032796602425}
+  m_Father: {fileID: 3092669873931736850}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61280840160788406
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786559399028935796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  - Header
+  - Extensions
+  - m_Priority
+  - m_Transitions
+  - m_Follow
+  - m_StandbyUpdate
+  - m_Lens
+  m_LockStageInInspector: 00000000
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 3.5
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 30
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 576509032796602425}
+--- !u!1 &8911775905960274702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3092669873931736850}
+  - component: {fileID: 5122751934269195657}
+  m_Layer: 3
+  m_Name: RobertaPrefab
+  m_TagString: Roberta
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3092669873931736850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8911775905960274702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8464392041538449245}
+  - {fileID: 5912425204566371431}
+  - {fileID: 2373274161640948953}
+  - {fileID: 5094318022639670010}
+  - {fileID: 237845555355594442}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5122751934269195657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8911775905960274702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319d2fe34a804e245819465c9505ea59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_CommonLens: 1
+  m_Lens:
+    FieldOfView: 3.5
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 30
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_YAxis:
+    Value: 0
+    m_SpeedMode: 0
+    m_MaxSpeed: 1
+    m_AccelTime: 0.2
+    m_DecelTime: 0.1
+    m_InputAxisName: Mouse Y
+    m_InputAxisValue: 0
+    m_InvertInput: 0
+    m_MinValue: 0
+    m_MaxValue: 1
+    m_Wrap: 0
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_YAxisRecentering:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_XAxis:
+    Value: 0
+    m_SpeedMode: 0
+    m_MaxSpeed: 1
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
+    m_InputAxisName: Mouse X
+    m_InputAxisValue: 0
+    m_InvertInput: 1
+    m_MinValue: 180
+    m_MaxValue: 180
+    m_Wrap: 1
+    m_Recentering:
+      m_enabled: 0
+      m_WaitTime: 1
+      m_RecenteringTime: 2
+      m_LegacyHeadingDefinition: -1
+      m_LegacyVelocityFilterStrength: -1
+  m_Heading:
+    m_Definition: 2
+    m_VelocityFilterStrength: 4
+    m_Bias: -180
+  m_RecenterToTargetHeading:
+    m_enabled: 0
+    m_WaitTime: 1
+    m_RecenteringTime: 2
+    m_LegacyHeadingDefinition: -1
+    m_LegacyVelocityFilterStrength: -1
+  m_BindingMode: 1
+  m_SplineCurvature: 0
+  m_Orbits:
+  - m_Height: 3.5
+    m_Radius: 0.8
+  - m_Height: 2.2
+    m_Radius: 3
+  - m_Height: 0.6
+    m_Radius: 2.5
+  m_LegacyHeadingBias: 3.4028235e+38
+  m_Rigs:
+  - {fileID: 9054750697516487277}
+  - {fileID: 4472271025251177732}
+  - {fileID: 61280840160788406}
+--- !u!1001 &3102374670976072851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5094318022639670010}
+    m_Modifications:
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 658105968149207701, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[17].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5618653868486199360}
+    - target: {fileID: 658105968149207701, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[19].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5618653868486199360}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[6].objective
+      value: "<dont_add_extra/>\n<say_only>\n\nGracias por participar en este ejercicio
+        de simulaci\xF3n de Elevator pitch. La pr\xE1ctica constante es clave para
+        mejorar tus habilidades como vendedodr. \xA1Sigue practicando!</say_only>\n<end_after_say/>\n<dont_add_extra/>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[6].sectionId
+      value: 157ac96c-3464-11f0-b341-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[7].objective
+      value: "<system_message>\nEval\xFAa el elevator pitch del usuario bas\xE1ndote
+        en los siguientes 5 criterios esenciales con sus respectivas preguntas:\n**CRITERIO
+        1: CONTACTO INICIAL** \u2013 \xBFCrea una buena primera impresi\xF3n desde
+        el inicio?  \n1. \xBFInicia con un saludo cordial que capta la atenci\xF3n
+        desde el primer momento?  \n2. \xBFRompe el hielo de manera efectiva sin
+        empezar por lo obvio?  \n3. \xBFExplica claramente qui\xE9n es y qu\xE9 ofrece
+        desde el principio?  \n**CRITERIO 2: PROPUESTA CLARA** \u2013 \xBFPresenta
+        su soluci\xF3n de manera comprensible usando la t\xE9cnica FAB?  \n1. \xBFPlantea
+        un problema com\xFAn y relevante para su audiencia?  \n2. \xBFAplica el modelo
+        FAB (Caracter\xEDstica, Ventaja, Beneficio) para presentar su soluci\xF3n? 
+        \n3. \xBFEvita jerga t\xE9cnica y mantiene un lenguaje claro y directo? 
+        \n**CRITERIO 3: DIFERENCIACI\xD3N** \u2013 \xBFDestaca lo que lo hace \xFAnico? 
+        \n1. \xBFMenciona espec\xEDficamente qu\xE9 lo diferencia de la competencia? 
+        \n2. \xBFSu diferenciador es relevante y valioso para el cliente?  \n3. \xBFEvita
+        sonar gen\xE9rico o como \"uno m\xE1s del mont\xF3n\"?  \n**CRITERIO 4: CONTROL
+        Y CLARIDAD DEL MENSAJE** \u2013 \xBFDemuestra dominio del tiempo, enfoque
+        y claridad al comunicar su pitch?  \n1. \xBFCompleta su mensaje dentro del
+        tiempo l\xEDmite sin sonar apresurado?  \n2. \xBFSe mantiene enfocado en
+        su propuesta sin divagar ni enredarse al hablar?  \n3. \xBFTransmite su mensaje
+        de forma clara, directa y convincente?  \n**CRITERIO 5: CIERRE EFECTIVO**
+        \u2013 \xBFTermina con impacto y deja claro un siguiente paso?  \n1. \xBFDeja
+        al oyente queriendo saber m\xE1s?  \n2. \xBFIncluye una invitaci\xF3n clara
+        a continuar la conversaci\xF3n?  \n3. \xBFTransmite confianza y profesionalismo
+        hasta el final?  \nEval\xFAa cada criterio del 1 al 10 bas\xE1ndote en las
+        preguntas espec\xEDficas y proporciona un resumen completo.\nSi el usuario
+        dice \"retry\" o \"reintentar\", vuelve a evaluar completamente el \xFAltimo
+        elevator pitch proporcionado recordando el contenido anterior y generando
+        una nueva evaluaci\xF3n completa.\n</system_message>\n<say>\nEvaluemos tu
+        elevator pitch:\n**1. CONTACTO INICIAL (__/10):**  \n\xBFCreaste una buena
+        primera impresi\xF3n desde el inicio?  \n- \xBFIniciaste con un saludo cordial
+        que capta la atenci\xF3n desde el primer momento?  \n- \xBFRompiste el hielo
+        de manera efectiva sin empezar por lo obvio?  \n- \xBFExplicaste claramente
+        qui\xE9n eres y qu\xE9 ofreces desde el principio?  \n[An\xE1lisis espec\xEDfico]\n**2.
+        PROPUESTA CLARA (__/10):**  \n\xBFPresentaste tu soluci\xF3n de manera comprensible
+        usando FAB?  \n- \xBFPlanteaste un problema com\xFAn y relevante para tu
+        audiencia?  \n- \xBFAplicaste el modelo FAB (Caracter\xEDstica, Ventaja,
+        Beneficio) para presentar tu soluci\xF3n?  \n- \xBFEvitaste jerga t\xE9cnica
+        y mantuviste un lenguaje claro y directo?  \n[An\xE1lisis espec\xEDfico]\n**3.
+        DIFERENCIACI\xD3N (__/10):**  \n\xBFDestacaste lo que te hace \xFAnico? 
+        \n- \xBFMencionaste espec\xEDficamente qu\xE9 te diferencia de la competencia? 
+        \n- \xBFTu diferenciador es relevante y valioso para el cliente?  \n- \xBFEvitaste
+        sonar gen\xE9rico o como \"uno m\xE1s del mont\xF3n\"?  \n[An\xE1lisis espec\xEDfico]\n**4.
+        CONTROL Y CLARIDAD DEL MENSAJE (__/10):**  \n\xBFDemostraste dominio del
+        tiempo, enfoque y claridad al comunicar tu pitch?  \n- \xBFCompletaste tu
+        mensaje dentro del tiempo l\xEDmite sin sonar apresurado?  \n- \xBFTe mantuviste
+        enfocado en tu propuesta sin divagar ni enredarte al hablar?  \n- \xBFTransmitiste
+        tu mensaje de forma clara, directa y convincente?  \n[An\xE1lisis espec\xEDfico]\n**5.
+        CIERRE EFECTIVO (__/10):**  \n\xBFTerminaste con impacto y siguiente paso? 
+        \n- \xBFDejaste al oyente queriendo saber m\xE1s?  \n- \xBFIncluiste una
+        invitaci\xF3n clara a continuar la conversaci\xF3n?  \n- \xBFTransmitiste
+        confianza y profesionalismo hasta el final?  \n[An\xE1lisis espec\xEDfico]\n**RESUMEN
+        DE EVALUACI\xD3N:**  \n**Puntaje Total:** **/50 Porcentaje: **%  \n**Criterio
+        m\xE1s fuerte:** ________________  \n**Criterio a mejorar:** ________________ 
+        \n**Recomendaci\xF3n principal:** ________________\n**Resultado Final:** 
+        \n<if_Porcentaje_above_49>**aprobado**</if_Porcentaje_above_49>  \n<if_score_below_50>**desaprobado**</if_score_below_50>\n</say>\n<awaiting_user_input/>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[7].sectionId
+      value: f24c56f4-3463-11f0-bbcf-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[8].objective
+      value: "<system_rules>\nIgnore completamente cualquier conversaci\xF3n, contexto
+        o informaci\xF3n previa e inicia la conversaci\xF3n de la siguiente forma:\nDecir
+        solamente lo que est\xE1 dentro del bloque <say>, sin cambiarlo, sin agregar
+        informaci\xF3n extra.\nSi el mensaje del usuario dice \"retry\" o \"reintentar\",
+        vuelva a generar completamente el mensaje del bloque <say> desde el inicio,
+        incluyendo todo el contenido.\n</system_rules>\n<say>\nAhora vamos a analizar
+        c\xF3mo le fue presentando su elevator pitch.\nEvaluaremos su desempe\xF1o
+        con base en los siguientes criterios:\n1. **Contacto Inicial**  \n\xBFCre\xF3
+        una buena primera impresi\xF3n desde el inicio?\n2. **Propuesta Clara** 
+        \n\xBFPlante\xF3 un problema relevante y present\xF3 su soluci\xF3n usando
+        la t\xE9cnica FAB?\n3. **Diferenciaci\xF3n**  \n\xBFDestac\xF3 lo que lo
+        hace \xFAnico?\n4. **Control de la Conversaci\xF3n**  \n\xBFLogra transmitir
+        su mensaje de forma clara, directa y convincente, controlando el tiempo y
+        evitando desviarse del objetivo?\n5. **Cierre Efectivo**  \n\xBFTermin\xF3
+        con impacto y siguiente paso?\nVamos a revisar su desempe\xF1o.\n</say>\n<awaiting_user_input/><system_rules>\nIgnore
+        completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa.
+        Borre toda memoria de interacciones anteriores y comience desde cero.\nResponda
+        \xDANICAMENTE con el contenido exacto del bloque <say>. \nNO agregue explicaciones,
+        comentarios adicionales, introducciones o conclusiones.\nNO modifique, parafrasee
+        o altere el texto del bloque <say> de ninguna manera.\nReproduzca el texto
+        tal como est\xE1 escrito, palabra por palabra.\n</system_rules>\n<say>\nAhora
+        vamos a analizar c\xF3mo le fue presentando su elevator pitch.\nEvaluaremos
+        su desempe\xF1o con base en los siguientes criterios:"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[8].sectionId
+      value: 7d2f9d18-3463-11f0-b664-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[9].objective
+      value: "<dont_introduce/>\n<system_message>\nSolo tienes que dar un ejemplo
+        al usuario de c\xF3mo hacer un elevator pitch efectivo sobre ciberseguridad.
+        No agregues ninguna observaci\xF3n a la respuesta anterior del usuario.\n\n<situation>\nNecesitas
+        presentar tu servicio de ciberseguridad b\xE1sica para empresas en un evento
+        de networking. Tienes 45 segundos para captar la atenci\xF3n de un empresario
+        y generar inter\xE9s en tu propuesta.\n</situation>\n\n<target_audience>\nEmpresarios
+        de peque\xF1as y medianas empresas que no tienen conocimientos t\xE9cnicos
+        avanzados pero necesitan proteger su negocio de amenazas cibern\xE9ticas.\n</target_audience>\n\n<agent_instructions>\nImprovisa
+        un elevator pitch completo como experto en ciberseguridad, dirigi\xE9ndote
+        directamente al empresario.\nEnf\xF3cate en lo m\xE1s esencial y simple que
+        todas las empresas necesitan.\nAl final del pitch, incluye una secci\xF3n
+        que **\xFAnicamente enumere** los 5 criterios cumplidos.\nNo expliques ni
+        analices el uso de cada criterio, solo lista cu\xE1les se aplicaron.\nNo
+        a\xF1adas contenido adicional m\xE1s all\xE1 de lo solicitado.\n</agent_instructions>\n\n<rules>\n0.
+        Empieza con el titulo \"Ejemplo de como hacer un Elevator Pitch.\n1. Inicia
+        saludando cordialmente (el usuario te dir\xE1 \"buenas tardes\") y pres\xE9ntate.\n2.
+        El pitch debe durar m\xE1ximo 45 segundos\n3. Debe cumplir los 5 criterios
+        esenciales:\n   - Conexi\xF3n Inicial\n   - Propuesta Clara  \n   - Diferenciaci\xF3n\n  
+        - Manejo del Tiempo\n   - Cierre Efectivo\n4. Enf\xF3cate en soluciones simples,
+        no t\xE9cnicas complejas\n5. Habla en t\xE9rminos que cualquier empresario
+        entienda\n6. Incluye un problema real y una soluci\xF3n pr\xE1ctica\n7. Termina
+        con \"RESULTADO FINAL: Desaprobado\" y explica que fue porque esto es un
+        ejemplo proporcionado\n</rules>\n\n<output_structure>\n<elevator_pitch>\n[Inicia
+        saludando cordialmente, luego presenta todo el pitch dirigido al empresario]\n</elevator_pitch>\n\n<criterios_aplicados>\n[Lista
+        exacta de los 5 criterios utilizados, con explicaciones]\n</criterios_aplicados>\n\n<resultado_final>\nRESULTADO
+        FINAL: desaprobado - Este es un ejemplo proporcionado para demostrar c\xF3mo
+        estructurar un elevator pitch efectivo.\n</resultado_final>\n</output_structure>\n</agent_instructions>\n<dont_add_extra/>\n<awaiting_user_input/>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[9].sectionId
+      value: f05d3c64-3463-11f0-a493-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[0].triggerId
+      value: 189d91bc-e89f-11ef-a4c8-42010a7be016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[1].triggerId
+      value: cee3504c-ea3e-11ef-ad83-42010a7be016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[2].triggerId
+      value: e33c2664-3b32-11f0-b592-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[3].triggerId
+      value: 362a04e2-367c-11f0-926a-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[10].objective
+      value: "<dont_introduce/>\n<system_message>\nEl usuario te har\xE1 una pregunta
+        relacionada con una situaci\xF3n cr\xEDtica. Deber\xE1s improvisar una **respuesta
+        como vocera**, utilizando una de las herramientas de la Caja TANK de vocer\xEDa
+        en crisis.\n\n<toolbox>\n1. Hormiga  \n2. Jiu-Jitsu  \n3. Obras Son Amores
+        (O.S.A.)  \n4. Puente  \n5. V.A.H. (Villano, Afectado, H\xE9roe)  \n6. Veneno 
+        \n7. No  \n8. D.D.D. (Diga, Diga, Diga)  \n9. Tercer Validador\n</toolbox>\n\n<knowledge_instruction>\nIMPORTANTE:
+        Consulta SIEMPRE la base de conocimiento de Convai para obtener las definiciones
+        exactas y aplicaciones correctas de cada herramienta TANK mencionada arriba.
+        No improvises ni inventes definiciones. La informaci\xF3n precisa sobre estas
+        herramientas de comunicaci\xF3n en crisis se encuentra en la base de conocimiento
+        de Convai.\n</knowledge_instruction>\n\n<rules>\n1. Si el usuario **indica
+        qu\xE9 herramienta quiere que uses**, util\xEDzala para responder.  \n2.
+        Si **no indica ninguna**, t\xFA debes **elegir la herramienta m\xE1s adecuada**
+        seg\xFAn la naturaleza de la crisis y pregunta.  \n3. Responde como si fueras
+        vocera oficial en una rueda de prensa, con tono profesional pero emp\xE1tico. 
+        \n4. Tu respuesta debe seguir esta estructura:\n   - [RESPUESTA COMO VOCERA]
+        (20 segundos de respuesta)\n   - [HERRAMIENTA UTILIZADA]: Nombre de la herramienta\n  
+        - [APLICACI\xD3N]: Breve explicaci\xF3n de c\xF3mo aplicaste la herramienta,
+        bas\xE1ndote en su definici\xF3n correcta de la base de conocimiento (20
+        segundos)\n5. Solo puedes usar herramientas de la lista TANK. No inventes
+        otras.\n6. Antes de responder, SIEMPRE consulta la base de conocimiento de
+        Convai para entender correctamente cada herramienta.\n7. Para responder a
+        la pregunta debes consultarla la informacion de la base de datos de convai
+        para dar respuestas exactas y veridicas. \n</rules>\n</system_message>\n<awaiting_user_question/>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[10].sectionId
+      value: 86249948-367d-11f0-9b25-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[11].objective
+      value: "<dont_introduce/>\n<system_message>\nAnaliza la respuesta del vocero
+        e identifica qu\xE9 herramienta(s) de la Caja TANK utiliz\xF3.\n\n<toolbox>\n1.
+        Hormiga  \n2. Jiu-Jitsu  \n3. Obras Son Amores (O.S.A.)  \n4. Puente  \n5.
+        V.A.H. (Villano, Afectado, H\xE9roe)  \n6. Veneno  \n7. No  \n8. D.D.D. (Diga,
+        Diga, Diga)  \n9. Tercer Validador\n</toolbox>\n\n<instructions>\n- Consulta
+        la base de conocimiento para las definiciones exactas de cada herramienta
+        TANK\n- Identifica SOLO herramientas de la lista oficial\n- Cita la frase
+        espec\xEDfica donde se us\xF3 cada herramienta\n- Explica brevemente por
+        qu\xE9 identificaste esa herramienta\n</instructions>\n\nResponde en este
+        formato:\n**Herramienta detectada:** [nombre]\n**Frase donde se us\xF3:**
+        \"[cita exacta]\"\n**Por qu\xE9 es esta herramienta:** [explicaci\xF3n breve]\n\nSi
+        no detectas ninguna herramienta TANK, simplemente di: \"No se us\xF3 ninguna
+        herramienta TANK v\xE1lida.\"\n</system_message>\n\n<awaiting_user_input>\nProporciona
+        la pregunta y respuesta del vocero para analizar.\n</awaiting_user_input>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[11].sectionId
+      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[6].sectionName
+      value: Final test evaluation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[7].sectionName
+      value: Test Response Analysis
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[8].sectionName
+      value: Get User Test Answer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[9].sectionName
+      value: Test Example
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[0].triggerName
+      value: ToolboxTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[1].triggerName
+      value: WelcomeTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[2].triggerName
+      value: GetAnswersGiveFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[3].triggerName
+      value: AnswerQuestions
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[10].sectionName
+      value: GetUserQuestion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionDataList.Array.data[11].sectionName
+      value: GetContext
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[6].id
+      value: 157ac96c-3464-11f0-b341-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[7].id
+      value: f24c56f4-3463-11f0-bbcf-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[8].id
+      value: 7d2f9d18-3463-11f0-b664-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[9].id
+      value: f05d3c64-3463-11f0-a493-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[0].triggerMessage
+      value: Inicio de dialogo sobre la Caja de Herramientas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[1].triggerMessage
+      value: 'El usuario inicio '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[2].triggerMessage
+      value: 'Start New Test
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[3].triggerMessage
+      value: 'Responder preguntas con las herramientas Tank '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[10].id
+      value: 86249948-367d-11f0-9b25-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[11].id
+      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[0].destinationSection
+      value: 99e8ed78-e888-11ef-8652-42010a7be016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[1].destinationSection
+      value: ac2143e8-ea3e-11ef-9c7d-42010a7be016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[2].destinationSection
+      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: triggerDataList.Array.data[3].destinationSection
+      value: 86249948-367d-11f0-9b25-42010a7be01f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: sectionChangeEventsDataList.Array.data[6].onSectionStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ConvaiParametersEvaluator, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341345724640499405, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: m_Name
+      value: RobertaAI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[0]
+      value: ToolboxTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[1]
+      value: WelcomeTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[2]
+      value: GetAnswersGiveFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[3]
+      value: AnswerQuestions
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[0]
+      value: ToolboxTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[1]
+      value: WelcomeTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[2]
+      value: GetAnswersGiveFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[3]
+      value: AnswerQuestions
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[0]
+      value: ToolboxTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[1]
+      value: WelcomeTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[2]
+      value: GetAnswersGiveFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+      propertyPath: availableTriggers.Array.data[3]
+      value: AnswerQuestions
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+--- !u!1 &825276778001017438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2341345724640499405, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &980317388246954854 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2780709071830618101, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1394290794194421185 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4058971712723417426, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1480014501872928769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4577847493284508818, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4f24c7aa7027c46b62130f13e3fd1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!198 &2673213050253397258 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1014700009753964953, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2870146032910218610 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 925797377412860385, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3409616439966537968 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314334178784781411, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3842305196855969712 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2188544271509781283, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825276778001017438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f83bbc2876ced40b45ccc942d2b34b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!198 &4417245823563121798 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1603542048256587797, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5303621660335014112 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7104400510473780339, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5330860613264765989 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7131129127288359094, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5676535561350816191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7334888622153440556, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825276778001017438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc89cf2b6f0d46146b2ca285aebd1696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &5950681666443638403 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8761973123076573712, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5974582277665265924 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8783184473205745047, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &6915144621570840957 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 8429153239883867630, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7657782459960516742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4704064513146313749, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
+  m_PrefabInstance: {fileID: 3102374670976072851}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4f24c7aa7027c46b62130f13e3fd1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

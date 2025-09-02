@@ -1,0 +1,463 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-English (United States) (en-US)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-English (United States) (en-US)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 40d0bdb4d65db774082667a592fcc697
+  m_SerializeEntries:
+  - m_GUID: 9ae69d701c06e2847bd2d8eaf039ab56
+    m_Address: Hormiga Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b5e440c850e98d4bb40c9d192d5e6ad
+    m_Address: Hormiga Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85b9d22aaf9891647ba4da578f094e79
+    m_Address: Hormiga Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25845bf06f9cc774bbd6cb4bc733816c
+    m_Address: Hormiga Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd0b31e7c5441224880838de8cc9ad0c
+    m_Address: Hormiga Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89ed10306e0f72c41841cca2e578ac79
+    m_Address: Hormiga Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9da2b9f207b2ef34a9ba156421265f83
+    m_Address: PreparacionQuestions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f5cb525ee23a094aa419d068a78266d
+    m_Address: PreparacionQuestions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a8a78f469710554cbfc027e8587b5d3
+    m_Address: PreparacionQuestions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ad5dad4cb54a3b4c8ee426011f488d6
+    m_Address: PreparacionQuestions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf1c53dcff77b7b46be94df6bef3f9e6
+    m_Address: PreparacionQuestions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8e367d6e2a0d154aa6f2a90723804ac
+    m_Address: ElevatorPitch_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41f3cad7cfb51974392e741466d45205
+    m_Address: Objeciones_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8108a5419f1060348a4073af046394ef
+    m_Address: Objeciones_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 244a0d14212689947a3b442c3b13bc09
+    m_Address: ElevatorPitch_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bac5ce97da7c3f4ba009162199ead17
+    m_Address: ElevatorPitch_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9670e7e3782f06c4ba5e2c6dd827b2c2
+    m_Address: ElevatorPitch_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f42fba96048ba046b24759f2ce553ee
+    m_Address: Objeciones_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 782535181ad8a2949b7bdd131788859d
+    m_Address: PresentacionDeLasolucion_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6aa687bce7b346c4d88c37a3020d9a72
+    m_Address: PresentacionDeLasolucion_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a914b155f5d7404ebc20cf595893bc9
+    m_Address: Indagacion_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a16635e42ffa6949b7adf03af106a03
+    m_Address: Objeciones_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bd28cfd44b6e1140b6dbda2372f0939
+    m_Address: PresentacionDeLasolucion_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6116357e06aaa57468c04104062705bc
+    m_Address: Objeciones_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 219febf16fd998e40a80080cb2839af9
+    m_Address: Indagacion_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a54f7dfb6f92c741a41fe64fc313f7e
+    m_Address: Indagacion_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c08026d68c244c44958d5687e6aaeac
+    m_Address: Indagacion_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9127eaefef012c24bb2448f5d458ca0d
+    m_Address: Objeciones_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba5e6f0e824395647aa2b6cd05310e1d
+    m_Address: Indagacion_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e338e1c40951254ab28ea6f36fd2bb0
+    m_Address: PresentacionDeLasolucion_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7fc729edc86824478d7c6e9d57cd85b
+    m_Address: PresentacionDeLasolucion_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 063f24dd9b325f74fbcc6a5a12d3f792
+    m_Address: Indagacion_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4a6985fa623f8f4ea4de8ff782600b9
+    m_Address: ContactoInicial_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88cb8387dd565ae419321891aa8ad4e3
+    m_Address: ContactoInicial_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 105a5d17ca8199b429efe3ded37dfa05
+    m_Address: ContactoInicial_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b7b090957d42a842ae9478f197665b8
+    m_Address: ContactoInicial_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c75e62ed77b7377489a78e9bc44424f4
+    m_Address: ContactoInicial_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a80270dbd4507a499701e2b7d0f3bda
+    m_Address: ContactoInicial_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9caece32fd04b1f4b821adcb264ff6e4
+    m_Address: PreparacionQuestions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f51fb3162ce60e748b5c696db59278a7
+    m_Address: PresentacionDeLasolucion_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db46a39d560fe6f46a4adfa75078c14a
+    m_Address: ElevatorPitch_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3f21d32153e25748befd7aac9c01cc6
+    m_Address: ElevatorPitch_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c346f1cce4b1c647ba0051aa0565ed4
+    m_Address: PresentacionDeCredencialesQuestions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d77b84a01394ff74bbd1724bdf2d5cd7
+    m_Address: PresentacionDeCredencialesQuestions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2d1e94fed46ee4488e4b035008ef2c9
+    m_Address: PresentacionDeCredencialesQuestions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 386d3a0e6473ae045805ff8e3adfd277
+    m_Address: PresentacionDeCredencialesQuestions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b136545e10fd0364ab048c77864bc547
+    m_Address: PresentacionDeCredencialesQuestions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69c140faf3b3001499d3b8ed91ca3503
+    m_Address: PresentacionDeCredencialesQuestions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b42453fa1d949444d9cab3bd0663b9d3
+    m_Address: GolfCartPitchQuestions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94def5eb0aba90d438927374ac0406da
+    m_Address: GolfCartPitchQuestions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7eaef3c730e3ded4e9e8a6dc4e035e29
+    m_Address: GolfCartPitchQuestions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 972d8342e4b2c7f4499b69850a6c1ea1
+    m_Address: GolfCartPitchQuestions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc57e1e5c15d24f4eaac70b3cafff05a
+    m_Address: GolfCartPitchQuestions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d6e95eddcd8d7b4392fcaac82b9b6be
+    m_Address: GolfCartPitchQuestions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebb6032c36eceee43ad8d76c534450f8
+    m_Address: ToolProspeccion_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95d324a0d0677bc43bf8fab899635ba8
+    m_Address: ToolPreparacion_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d53938c83926a547a9ec37ccc1217c9
+    m_Address: ToolContactoinicial_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e3d419b4a07a744db2af118434d6dcc
+    m_Address: ToolIndagacion_Eng.mp3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a2f247ff7a3c7a469e0b9a9d4b89343
+    m_Address: ToolPresentacionDeLaSolucion_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24b357b4b1dbd64479a11197c4b98293
+    m_Address: ToolManejoDeObjeciones_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77f4f258f697abb42800c48a5a9f2df2
+    m_Address: ToolCierreDeLaVenta-Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41b5614b1667d85449605a59f27e3ab2
+    m_Address: ToolPresentacionDeCredenciales_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 669577395197e934b847afb3e6e5ecfb
+    m_Address: ToolElevatorPitchEng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10ead9919bcb1524599435667ee2618f
+    m_Address: CierreDeLaVenta_Questions_Eng_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56ea6ab150f485e4fb164e606eb9d6a5
+    m_Address: CierreDeLaVenta_Questions_Eng_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e345bedebf4fd0447bf64d45a40dc23a
+    m_Address: CierreDeLaVenta_Questions_Eng_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23432771fa37c81429cdd8cc0caf99a7
+    m_Address: CierreDeLaVenta_Questions_Eng_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b14dc938a6c8ba41a0308f85c408548
+    m_Address: CierreDeLaVenta_Questions_Eng_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: deede046a82ffcb4aa04479df4fc3a9b
+    m_Address: CierreDeLaVenta_Questions_Eng_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 651134d6755e7884eaa7a67b8b198a06
+    m_Address: "ToolSe\xF1ales de compra_Eng"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50dc4161d4db7d941b427b9722674602
+    m_Address: ToolLos3PorQ_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94971cc85f7c64e4895bd049f7192ab5
+    m_Address: ToolFAB_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42d13ab0f9c07de45ab9c03ced7ab80d
+    m_Address: ToolGolf Cart Pitch_Eng
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: a2ce748a4d82d2747ba14fefc0a46369, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a93d71ef609367240aa46c34343092f9, type: 2}
+    - {fileID: 11400000, guid: 2147a97974eea244780ab801d8d72714, type: 2}

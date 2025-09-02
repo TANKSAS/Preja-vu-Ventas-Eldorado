@@ -1,0 +1,1079 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Assets Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Assets
+  m_TableCollectionNameGuidString: be2843fb83503264f9fd1bb6e5e6a944
+  m_Entries:
+  - m_Id: 5157145365958656
+    m_Key: AntQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5157332163481600
+    m_Key: AntQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5157342934454272
+    m_Key: AntQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5157354946940928
+    m_Key: AntQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5157366422556672
+    m_Key: AntQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5157385850572800
+    m_Key: AntQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686806893481984
+    m_Key: DDDQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686807904309248
+    m_Key: DDDQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686808709615616
+    m_Key: DDDQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686810051792896
+    m_Key: DDDQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686810890653696
+    m_Key: DDDQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686812367048704
+    m_Key: DDDQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743754575400960
+    m_Key: DDDToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1098938568704
+    m_Key: 'FlagIcon
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801846409211904
+    m_Key: GolfCartPitch1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801861508706304
+    m_Key: GolfCartPitch2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801884761927680
+    m_Key: GolfCartPitch3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801889186918400
+    m_Key: GolfCartPitch4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801891305041920
+    m_Key: GolfCartPitch5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801898716377088
+    m_Key: GolfCartPitch6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162804585218420736
+    m_Key: GolfCartPitchToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105098434301952
+    m_Key: HormigaToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5873251751809024
+    m_Key: JiujitsuQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5886513310584832
+    m_Key: JiujitsuQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5886536219873280
+    m_Key: JiujitsuQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5886554171494400
+    m_Key: JiujitsuQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5886570546057216
+    m_Key: JiujitsuQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5886588636090368
+    m_Key: JiujitsuQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743430598971392
+    m_Key: JiuJitsuToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686499702657024
+    m_Key: NoQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686500407300096
+    m_Key: NoQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686501074194432
+    m_Key: NoQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686501711728640
+    m_Key: NoQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686502391205888
+    m_Key: NoQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686697136934912
+    m_Key: NoQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743733612269568
+    m_Key: NoToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901326459850752
+    m_Key: OSAQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901351852167168
+    m_Key: OSAQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901354200977408
+    m_Key: OSAQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901356180688896
+    m_Key: OSAQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901358391087104
+    m_Key: OSAQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5901360437907456
+    m_Key: OSAQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743607548268544
+    m_Key: OSAToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801381516750848
+    m_Key: PresentacionDeCredencialesQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801416270753792
+    m_Key: PresentacionDeCredencialesQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801438924189696
+    m_Key: PresentacionDeCredencialesQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801471773978624
+    m_Key: PresentacionDeCredencialesQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801513440194560
+    m_Key: PresentacionDeCredencialesQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162801539247747072
+    m_Key: PresentacionDeCredencialesQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 162804395338084352
+    m_Key: PresentacionDeCredencialesToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350398559440896
+    m_Key: PuenteQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350407048712192
+    m_Key: PuenteQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350419468046336
+    m_Key: PuenteQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350431983849472
+    m_Key: PuenteQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350444126359552
+    m_Key: PuenteQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7350460920352768
+    m_Key: PuenteQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743647742283776
+    m_Key: PuenteToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4794907031490560
+    m_Key: TutorialSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686364658651136
+    m_Key: VAHQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686380349542400
+    m_Key: VAHQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686396392755200
+    m_Key: VAHQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686398338912256
+    m_Key: VAHQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686400050188288
+    m_Key: VAHQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686401555943424
+    m_Key: VAHQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743658618114048
+    m_Key: VAHToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3743664423030784
+    m_Key: VenenoToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686402361249792
+    m_Key: VenomQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686404307406848
+    m_Key: VenomQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686404982689792
+    m_Key: VenomQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686405578280960
+    m_Key: VenomQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686498293370880
+    m_Key: VenomQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686499027374080
+    m_Key: VenomQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169688255929757696
+    m_Key: ElevatorPitchToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335646882181120
+    m_Key: ElevatorPitchQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335682449879040
+    m_Key: ElevatorPitchQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335708215488512
+    m_Key: ElevatorPitchQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335732265627648
+    m_Key: ElevatorPitchQuestion4Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335757263679488
+    m_Key: ElevatorPitchQuestion5Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170335783348056064
+    m_Key: ElevatorPitchQuestion6Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176278353941082112
+    m_Key: WalkaroundToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176278770913619968
+    m_Key: WalkaroundQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176279100283924480
+    m_Key: WalkaroundQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176279169573826560
+    m_Key: WalkaroundQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176279391469285376
+    m_Key: Los3PorqueQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176279512806305792
+    m_Key: Los3PorqueQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176279572394782720
+    m_Key: Los3PorqueQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280166819934208
+    m_Key: FABQuestion1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280290770006016
+    m_Key: FABQuestion2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280313243086848
+    m_Key: FABQuestion3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280694723424256
+    m_Key: "Se\xF1alesDeCompraQuestion1Sound"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280823740215296
+    m_Key: "Se\xF1alesDeCompraQuestion2Sound"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176280855591759872
+    m_Key: "Se\xF1alesDeCompraQuestion3Sound"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281103311548416
+    m_Key: Tool1Question1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281388264173568
+    m_Key: Tool1Question2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281434929999872
+    m_Key: Tool1Question3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281601867493376
+    m_Key: Tool2Question1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281680149983232
+    m_Key: Tool2Question2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176281783266947072
+    m_Key: Tool2Question3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288160022507520
+    m_Key: Tool3Question1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288269737111552
+    m_Key: Tool3Question2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288363186204672
+    m_Key: Tool3Question3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288450494836736
+    m_Key: Tool4Question1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288614882193408
+    m_Key: Tool4Question2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288640681357312
+    m_Key: Tool4Question3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288836811206656
+    m_Key: Tool5Question1Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288922609889280
+    m_Key: Tool5Question2Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176288953979088896
+    m_Key: Tool5Question3Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176289871730552832
+    m_Key: Los3PorqueToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176290017293873152
+    m_Key: "Se\xF1alesDeCompraToolSound"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176292898642309120
+    m_Key: FABToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177559848154025984
+    m_Key: EldoradoTool_1ToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177559851295559680
+    m_Key: EldoradoTool_2ToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177559853476597760
+    m_Key: EldoradoTool_3ToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177559855926071296
+    m_Key: EldoradoTool_4ToolSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177559880622133248
+    m_Key: EldoradoTool_5ToolSound
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 846567154546900995
+    - rid: 846567154546901061
+  m_KeyGenerator:
+    rid: 846567154546900994
+  references:
+    version: 2
+    RefIds:
+    - rid: 846567154546900994
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713279551465
+    - rid: 846567154546900995
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 1098938568704
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - rid: 846567154546901061
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 105098434301952
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743430598971392
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743607548268544
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743647742283776
+          m_TableCodes:
+          - es-CO
+          - pt-BR
+          - en-US
+        - m_KeyId: 5157145365958656
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5157332163481600
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5157342934454272
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5157354946940928
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5157366422556672
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5157385850572800
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5873251751809024
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5886513310584832
+          m_TableCodes:
+          - en-US
+          - pt-BR
+          - es-CO
+        - m_KeyId: 5886536219873280
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5886554171494400
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5886570546057216
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5886588636090368
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 4794907031490560
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901326459850752
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901351852167168
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901354200977408
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901356180688896
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901358391087104
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 5901360437907456
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743658618114048
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743664423030784
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743733612269568
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 3743754575400960
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7350398559440896
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7350407048712192
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7350419468046336
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7350431983849472
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7350444126359552
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7350460920352768
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686364658651136
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686380349542400
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686396392755200
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686398338912256
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686400050188288
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686401555943424
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686402361249792
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686404307406848
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686404982689792
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686405578280960
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686498293370880
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686499027374080
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686499702657024
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686500407300096
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686501074194432
+          m_TableCodes:
+          - pt-BR
+          - es-CO
+          - en-US
+        - m_KeyId: 7686501711728640
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686502391205888
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686697136934912
+          m_TableCodes:
+          - en-US
+          - es-CO
+          - pt-BR
+        - m_KeyId: 7686806893481984
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686807904309248
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686808709615616
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686810051792896
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 7686810890653696
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 7686812367048704
+          m_TableCodes:
+          - pt-BR
+          - en-US
+          - es-CO
+        - m_KeyId: 162801381516750848
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801416270753792
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801438924189696
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801471773978624
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801513440194560
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801539247747072
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801846409211904
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801861508706304
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801884761927680
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801889186918400
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801891305041920
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162801898716377088
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162804395338084352
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 162804585218420736
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 169688255929757696
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335646882181120
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335682449879040
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335708215488512
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335732265627648
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335757263679488
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 170335783348056064
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176278770913619968
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176279100283924480
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176279169573826560
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176279391469285376
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176279512806305792
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176279572394782720
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280166819934208
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280290770006016
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280313243086848
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280694723424256
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280823740215296
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176280855591759872
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281103311548416
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281388264173568
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281434929999872
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281601867493376
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281680149983232
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176281783266947072
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288160022507520
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288269737111552
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288363186204672
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288450494836736
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288614882193408
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288640681357312
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288836811206656
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288922609889280
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176288953979088896
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176290017293873152
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176289871730552832
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176292898642309120
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 176278353941082112
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 177559848154025984
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 177559851295559680
+          m_TableCodes:
+          - es-CO
+          - en-US
+          - pt-BR
+        - m_KeyId: 177559853476597760
+          m_TableCodes:
+          - es-CO
+          - pt-BR
+          - en-US
+        - m_KeyId: 177559855926071296
+          m_TableCodes:
+          - es-CO
+          - pt-BR
+          - en-US
+        - m_KeyId: 177559880622133248
+          m_TableCodes:
+          - es-CO
+          - pt-BR
+          - en-US
+        m_TypeString: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null

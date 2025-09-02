@@ -1,0 +1,395 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f21deab63110f94b816d9b009650bb4, type: 3}
+  m_Name: NewPlayerStatsSales
+  m_EditorClassIdentifier: 
+  playerName: 
+  playerId: 
+  isLoged: 0
+  isNewPlayer: 1
+  toolsModule:
+  - unitStats:
+      moduleName: AntButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: AntButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 0
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 0
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: JiuJitsuButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: JiuJitsuButtonText
+      levelIndex: 1
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 1
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 1
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: OSAButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: OSAButtonText
+      levelIndex: 2
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 2
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 2
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: BridgeButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: BridgeButtonText
+      levelIndex: 3
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 3
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 3
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: VAHButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: VAHButtonText
+      levelIndex: 4
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 4
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 4
+        lessonType: 1
+        isDone: 0
+        score: 0
+    - levelName: Los3PorQueButtonText
+      levelIndex: 12
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 11
+        lessonType: 0
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: VenomButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: VenomButtonText
+      levelIndex: 5
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 5
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 5
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: NoButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: NoButtonText
+      levelIndex: 6
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 6
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 6
+        lessonType: 1
+        isDone: 0
+        score: 0
+    - levelName: FABButtonText
+      levelIndex: 13
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 12
+        lessonType: 0
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: DDDButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: DDDButtonText
+      levelIndex: 7
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 7
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 7
+        lessonType: 1
+        isDone: 0
+        score: 0
+    - levelName: "Se\xF1alesDeCompraButtonText"
+      levelIndex: 14
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 13
+        lessonType: 0
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: 3PVButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: ElevatorPitchButtonText
+      levelIndex: 9
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 8
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 8
+        lessonType: 1
+        isDone: 0
+        score: 0
+    - levelName: GolfCartPitchButtonText
+      levelIndex: 10
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 9
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 9
+        lessonType: 1
+        isDone: 0
+        score: 0
+    - levelName: WalkaroundButtonText
+      levelIndex: 11
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 10
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 10
+        lessonType: 1
+        isDone: 0
+        score: 0
+  methodologyModule:
+  - unitStats:
+      moduleName: Tool1ButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: Tool1ButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 14
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 14
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: Tool2ButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: Tool2ButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 15
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 15
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: Tool3ButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: Tool3ButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 16
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 16
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: Tool4ButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: Tool4ButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 17
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 17
+        lessonType: 1
+        isDone: 0
+        score: 0
+  - unitStats:
+      moduleName: Tool5ButtonText
+      isDone: 0
+      score: 0
+    levels:
+    - levelName: Tool5ButtonText
+      levelIndex: 0
+      isDone: 0
+      score: 0
+      lessons:
+      - lessonName: VideoButtonText
+        lessonIndex: 18
+        lessonType: 0
+        isDone: 0
+        score: 0
+      - lessonName: QuizButtonText
+        lessonIndex: 18
+        lessonType: 1
+        isDone: 0
+        score: 0
+  doandDontModule:
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  - unitStats:
+      moduleName: 
+      isDone: 0
+      score: 0
+    levels: []
+  sessions: []
+  volumen: 0
+  language: 0
+  lastSessionIndex: 0

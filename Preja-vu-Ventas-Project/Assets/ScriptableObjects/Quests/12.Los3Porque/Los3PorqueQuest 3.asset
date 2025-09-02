@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f153e82f56ce94283abfcc4aaca917, type: 3}
+  m_Name: Los3PorqueQuest 3
+  m_EditorClassIdentifier: 
+  question: {fileID: 11400000, guid: c1e841460d95d1447b53a39cc74797eb, type: 2}
+  answers:
+  - Los3PorQueQuestion3AnswerA
+  - Los3PorQueQuestion3AnswerB
+  - Los3PorQueQuestion3AnswerC
+  trueAnswer: 0
+  isAnswerCorrect: 0

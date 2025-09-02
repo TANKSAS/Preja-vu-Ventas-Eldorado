@@ -1,0 +1,2396 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Texts Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Texts
+  m_TableCollectionNameGuidString: bb91e6e67d47c0a4dac1a413bd1c7d81
+  m_Entries:
+  - m_Id: 163159986176
+    m_Key: TutorialButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227508998144
+    m_Key: TheoreticalModuleButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1363632705536
+    m_Key: PracticalModuleButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1844660654080
+    m_Key: SettingsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3139358412800
+    m_Key: ExitButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 305889329795072
+    m_Key: PercentageTheoreticalModuleResultsPanelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364493751701504
+    m_Key: TitleToolsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364669975384064
+    m_Key: AntButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365362605969408
+    m_Key: JiuJitsuButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365647151747072
+    m_Key: OSAButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365836897865728
+    m_Key: BridgeButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 366932378767360
+    m_Key: VAHButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367303499173888
+    m_Key: VenomButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367746811940864
+    m_Key: NoButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368090895863808
+    m_Key: DDDButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368517116841984
+    m_Key: 3PVButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369160560824320
+    m_Key: InfoToolPanelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369979364462592
+    m_Key: LockedPanelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 610828589453312
+    m_Key: TitleMethodologyText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 611893728759808
+    m_Key: Case#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612294918131712
+    m_Key: Case#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612312395796480
+    m_Key: Case#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612334248120320
+    m_Key: Case#4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612351537041408
+    m_Key: Case#5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612379181699072
+    m_Key: Case#6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612419388297216
+    m_Key: Case#7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612445124546560
+    m_Key: Case#8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 612464892301312
+    m_Key: Case#9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 632556111777792
+    m_Key: TitleD&DText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634416545648640
+    m_Key: Tip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634458765512704
+    m_Key: Tip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634477551800320
+    m_Key: Tip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634494584868864
+    m_Key: Tip#4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634512251277312
+    m_Key: Tip#5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 634532891447296
+    m_Key: Tip#6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 643224131063808
+    m_Key: PositiveResponseToolDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 645542062837760
+    m_Key: NegativeResponseToolDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647323702513664
+    m_Key: ToolsModuleResultsDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 657639073107968
+    m_Key: ModuleResultsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 974861666603008
+    m_Key: OptionsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 975213178638336
+    m_Key: VolumenButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 976316637106176
+    m_Key: ValueButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 977275824099328
+    m_Key: LanguageButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 977610785411072
+    m_Key: Card1Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1001200578711552
+    m_Key: Card2Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2485419653976064
+    m_Key: Card3Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2488224984846336
+    m_Key: Card4Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2489268485738496
+    m_Key: Card5Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501721617584128
+    m_Key: ContinueButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501778496540672
+    m_Key: BackButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501824906514432
+    m_Key: NextButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2503303780356096
+    m_Key: FinalTestButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2504258970177536
+    m_Key: InstructionsMauroButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2504968885489664
+    m_Key: EndButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2507519999594496
+    m_Key: TitleAnswersFinalTest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2508116559646720
+    m_Key: TimeLabelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2508635613155328
+    m_Key: FinalTestQuestionEnumText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2509529436114944
+    m_Key: FrequencyRatingLowText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2510480301608960
+    m_Key: FrequencyRatingMediumText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2519574458650624
+    m_Key: FrequencyRatingPerfectText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2520208637415424
+    m_Key: FrequencyRatingHightText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521115970228224
+    m_Key: QuestionDifficultEasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521531420233728
+    m_Key: QuestionDifficultMedium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2521543105564672
+    m_Key: QuestionDifficultHard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2799217174630400
+    m_Key: ' VoiceToneLabelText'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800925640478720
+    m_Key: PracticalModuleRatingText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3508498219913216
+    m_Key: TopLimit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516072575094784
+    m_Key: 'MiddleLimit '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516074814853120
+    m_Key: LowLimit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3516851784503296
+    m_Key: DetailsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3517491092901888
+    m_Key: TitleDetailsQuestionResults
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3521762819559424
+    m_Key: VoiceToneWeak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3522268103168000
+    m_Key: VoiceToneConversational
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3522982640603136
+    m_Key: VoiceToneProjected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3523847434784768
+    m_Key: VoiceToneShouting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5030761159184384
+    m_Key: ToolsModuleResultsDetailsTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5079989348716544
+    m_Key: InfoMethodologyPanelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5079989571014656
+    m_Key: InfoDosAndDontsPanelText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5323297438289920
+    m_Key: CongratulationsImprovedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402832259239936
+    m_Key: QuestIndicator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5405191890784256
+    m_Key: QuestionnaireText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5413576270925824
+    m_Key: AntQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418015937515520
+    m_Key: AntQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418128747515904
+    m_Key: AntQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5418143654072320
+    m_Key: AntQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5428485910155264
+    m_Key: AntQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5430703950385152
+    m_Key: AntQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5430736993112064
+    m_Key: AntQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5432155611582464
+    m_Key: AntQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433147912605696
+    m_Key: AntQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433161938358272
+    m_Key: AntQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5433172310872064
+    m_Key: AntQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078515952209920
+    m_Key: AntQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078582876524544
+    m_Key: AntQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078713772363776
+    m_Key: AntQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078727726813184
+    m_Key: AntQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6078999517712384
+    m_Key: AntQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079169307332608
+    m_Key: AntQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079183869956096
+    m_Key: AntQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079195878248448
+    m_Key: AntQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079216082210816
+    m_Key: AntQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079234507788288
+    m_Key: AntQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079390229712896
+    m_Key: AntQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6079402074427392
+    m_Key: AntQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6130572998463488
+    m_Key: JiujitsuQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6131942656823296
+    m_Key: JiujitsuQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6132169619001344
+    m_Key: JiujitsuQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6132216595206144
+    m_Key: JiujitsuQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135301358997504
+    m_Key: JiujitsuQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135353234149376
+    m_Key: JiujitsuQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135361320767488
+    m_Key: JiujitsuQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135393126174720
+    m_Key: JiujitsuQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6137806495141888
+    m_Key: JiujitsuQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139026035167232
+    m_Key: JiujitsuQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139111158566912
+    m_Key: JiujitsuQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139134852190208
+    m_Key: JiujitsuQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6139878921719808
+    m_Key: JiujitsuQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140416329502720
+    m_Key: JiujitsuQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140431194116096
+    m_Key: JiujitsuQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140470649933824
+    m_Key: JiujitsuQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140928697290752
+    m_Key: JiujitsuQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6140986389942272
+    m_Key: JiujitsuQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141009538306048
+    m_Key: JiujitsuQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141027661893632
+    m_Key: JiujitsuQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6141582446678016
+    m_Key: JiujitsuQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142234476400640
+    m_Key: JiujitsuQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142240214208512
+    m_Key: JiujitsuQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6142243838087168
+    m_Key: JiujitsuQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159790230720512
+    m_Key: OSAQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159802075435008
+    m_Key: OSAQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159805258911744
+    m_Key: OSAQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6159807502864384
+    m_Key: OSAQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161644318609408
+    m_Key: OSAQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161692297252864
+    m_Key: OSAQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161704443957248
+    m_Key: OSAQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161714107633664
+    m_Key: OSAQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161740649189376
+    m_Key: OSAQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161753836081152
+    m_Key: OSAQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161769942208512
+    m_Key: OSAQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6161780138561536
+    m_Key: OSAQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162728894320640
+    m_Key: OSAQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162790735138816
+    m_Key: OSAQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162797475385344
+    m_Key: OSAQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162808149889024
+    m_Key: OSAQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162842140528640
+    m_Key: OSAQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162874617024512
+    m_Key: OSAQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162888680525824
+    m_Key: OSAQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162898977542144
+    m_Key: OSAQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162934381662208
+    m_Key: OSAQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162966321287168
+    m_Key: OSAQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162972264615936
+    m_Key: OSAQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6162983333384192
+    m_Key: OSAQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7606229087539200
+    m_Key: PuenteQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607312518205440
+    m_Key: PuenteQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607326258745344
+    m_Key: PuenteQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607346013917184
+    m_Key: PuenteQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607390570008576
+    m_Key: PuenteQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607421079375872
+    m_Key: PuenteQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607452041728000
+    m_Key: PuenteQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607468282073088
+    m_Key: PuenteQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607644379926528
+    m_Key: PuenteQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607688642416640
+    m_Key: PuenteQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607745429098496
+    m_Key: PuenteQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607768439050240
+    m_Key: PuenteQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607854661357568
+    m_Key: PuenteQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607879093178368
+    m_Key: PuenteQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607903919263744
+    m_Key: PuenteQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607922919460864
+    m_Key: PuenteQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608037100998656
+    m_Key: PuenteQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608054712881152
+    m_Key: PuenteQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608100049113088
+    m_Key: PuenteQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608111726055424
+    m_Key: PuenteQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608209398812672
+    m_Key: PuenteQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608227518205952
+    m_Key: PuenteQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608258493140992
+    m_Key: PuenteQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7608270031671296
+    m_Key: PuenteQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7849393824190464
+    m_Key: VAHQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852510791847936
+    m_Key: VAHQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852561492594688
+    m_Key: VAHQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7852575417683968
+    m_Key: VAHQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853470343745536
+    m_Key: VAHQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853488266006528
+    m_Key: VAHQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853753744478208
+    m_Key: VAHQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853773373820928
+    m_Key: VAHQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853870249660416
+    m_Key: VAHQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853892429139968
+    m_Key: VAHQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853912150757376
+    m_Key: VAHQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853923311800320
+    m_Key: VAHQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853948192411648
+    m_Key: VAHQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853967926611968
+    m_Key: VAHQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7853993696415744
+    m_Key: VAHQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854004802932736
+    m_Key: VAHQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854028324589568
+    m_Key: VAHQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854056942325760
+    m_Key: VAHQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854080564645888
+    m_Key: VAHQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854090568060928
+    m_Key: VAHQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854111908679680
+    m_Key: VAHQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854136638296064
+    m_Key: VAHQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854144829771776
+    m_Key: VAHQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854167806169088
+    m_Key: VAHQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7854182742085632
+    m_Key: VenomQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860503868592128
+    m_Key: VenomQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860543185997824
+    m_Key: VenomQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860563683561472
+    m_Key: VenomQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860714280046592
+    m_Key: VenomQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860754679582720
+    m_Key: VenomQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860774346674176
+    m_Key: VenomQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860790280835072
+    m_Key: VenomQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860836221046784
+    m_Key: VenomQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860872690520064
+    m_Key: VenomQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860941611323392
+    m_Key: VenomQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7860973089574912
+    m_Key: VenomQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861047672688640
+    m_Key: VenomQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861066475753472
+    m_Key: VenomQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861179147341824
+    m_Key: VenomQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861205655343104
+    m_Key: VenomQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861633335939072
+    m_Key: VenomQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861660884127744
+    m_Key: VenomQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861747588780032
+    m_Key: VenomQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861763124482048
+    m_Key: VenomQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861824852054016
+    m_Key: VenomQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861864089767936
+    m_Key: VenomQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861929713848320
+    m_Key: VenomQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7861947267010560
+    m_Key: VenomQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7863924126371840
+    m_Key: NoQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865917968470016
+    m_Key: NoQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865968434335744
+    m_Key: NoQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7865985748422656
+    m_Key: NoQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866010087968768
+    m_Key: NoQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866051146010624
+    m_Key: NoQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866168653631488
+    m_Key: NoQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866198819065856
+    m_Key: NoQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866266968117248
+    m_Key: NoQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866283271376896
+    m_Key: NoQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866378725347328
+    m_Key: NoQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866390913994752
+    m_Key: NoQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866431296753664
+    m_Key: NoQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866448292073472
+    m_Key: NoQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866497013108736
+    m_Key: NoQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866510707511296
+    m_Key: NoQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866579494096896
+    m_Key: NoQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866605867880448
+    m_Key: NoQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866646112227328
+    m_Key: NoQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866652181385216
+    m_Key: NoQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866702672416768
+    m_Key: NoQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866735685783552
+    m_Key: NoQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866833769582592
+    m_Key: NoQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866846822256640
+    m_Key: NoQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7866997188055040
+    m_Key: DDDQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7867638803320832
+    m_Key: DDDQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7872990974300160
+    m_Key: DDDQuestion1AnwserB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873009001418752
+    m_Key: DDDQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873034091745280
+    m_Key: DDDQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873050432753664
+    m_Key: DDDQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873244733886464
+    m_Key: DDDQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873255983009792
+    m_Key: DDDQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873308566999040
+    m_Key: DDDQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873327726579712
+    m_Key: DDDQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873350476484608
+    m_Key: DDDQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873363596267520
+    m_Key: DDDQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873379433959424
+    m_Key: DDDQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873417866366976
+    m_Key: DDDQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873445947232256
+    m_Key: DDDQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873456776925184
+    m_Key: DDDQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873466876809216
+    m_Key: DDDQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873484962648064
+    m_Key: DDDQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873503996399616
+    m_Key: DDDQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873514033369088
+    m_Key: DDDQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873523516690432
+    m_Key: DDDQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873558111309824
+    m_Key: DDDQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873580659888128
+    m_Key: DDDQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873591342780416
+    m_Key: DDDQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7873630588882944
+    m_Key: 3PVQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874141794848768
+    m_Key: 3PVQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874180051095552
+    m_Key: 3PVQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874189974818816
+    m_Key: 3PVQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874200246669312
+    m_Key: 3PVQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874215811731456
+    m_Key: 3PVQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874244811149312
+    m_Key: 3PVQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874255007502336
+    m_Key: 3PVQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874265942052864
+    m_Key: 3PVQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874281725218816
+    m_Key: 3PVQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874304126996480
+    m_Key: 3PVQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874314642116608
+    m_Key: 3PVQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874323378851840
+    m_Key: 3PVQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874344564281344
+    m_Key: 3PVQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874365531607040
+    m_Key: 3PVQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874378391343104
+    m_Key: 3PVQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874388851937280
+    m_Key: 3PVQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874405260054528
+    m_Key: 3PVQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874432082628608
+    m_Key: 3PVQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874440760643584
+    m_Key: 3PVQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874455323267072
+    m_Key: 3PVQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874477846679552
+    m_Key: 3PVQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874512466464768
+    m_Key: 3PVQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7874527859560448
+    m_Key: 3PVQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7969655102099456
+    m_Key: TestTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7972778101166080
+    m_Key: DetailsOfText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7973795270217728
+    m_Key: WeakVoiceTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974104897933312
+    m_Key: WeakVoiceTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974115048148992
+    m_Key: WeakVoiceTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974371122991104
+    m_Key: ConversationalVoiceTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974441885093888
+    m_Key: ConversationalVoiceTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7974454367342592
+    m_Key: ConversationalVoiceTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975691867377664
+    m_Key: VoiceToneProjectedTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975735815294976
+    m_Key: VoiceToneProjectedTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975788562862080
+    m_Key: VoiceToneProjectedTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975803557498880
+    m_Key: VoiceToneShoutingTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975942137303040
+    m_Key: VoiceToneShoutingTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7975968410423296
+    m_Key: VoiceToneShoutingTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7977147005652992
+    m_Key: TrueAnswerText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7977335220850688
+    m_Key: WrongAnswerText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7978239982555136
+    m_Key: FailedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7978240179687424
+    m_Key: PassedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7979367151423488
+    m_Key: PointsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31825811025154048
+    m_Key: LoginText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31826642956963840
+    m_Key: EnterText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31827409650569216
+    m_Key: 'LoginButtonText
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31833256338378752
+    m_Key: LoadingText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31850424161521664
+    m_Key: IncorrectUserText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31850530797506560
+    m_Key: CorrectUserText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31903988460277760
+    m_Key: TankHelpText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33225850326863872
+    m_Key: EmailText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33225993952415744
+    m_Key: PasswordText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33233239457386496
+    m_Key: WelcomeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33291799449030656
+    m_Key: "Dulicate\rText"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69864949375856640
+    m_Key: DosAndDontsResultsModuleDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76730808057450496
+    m_Key: PositiveResponseDosAndDontsDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 88735079833522176
+    m_Key: DiagnosisButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99599122987208704
+    m_Key: StadisticsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636161514295296
+    m_Key: HandsMovementSaveZoneTittleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636543883825152
+    m_Key: HandsMovementUnsafeZoneTittleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636584316915712
+    m_Key: HandsMovementTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99636849065578496
+    m_Key: VisionTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637720604200960
+    m_Key: GestureTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637814690828288
+    m_Key: NoChangeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99637958941331456
+    m_Key: IncreasedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638031016251392
+    m_Key: NegativePointsTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638113459490816
+    m_Key: PositivePointsTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638170619465728
+    m_Key: ComparativeWithOutTrainingTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638242342064128
+    m_Key: ComparativeWithTrainingTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638641211985920
+    m_Key: HeatMapDetailsTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638738746331136
+    m_Key: TipTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638830924550144
+    m_Key: ToneVoiceText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638891150561280
+    m_Key: UnsafeHandGesturesTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99638957017911296
+    m_Key: SafeHandGesturesTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639221431029760
+    m_Key: BodyGestureTrackingTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639478894186496
+    m_Key: EyeContactNegativeZonesTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639537476030464
+    m_Key: EyeContactPositiveZonesTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639549320744960
+    m_Key: HeatmapTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639775276290048
+    m_Key: VisionTrackingTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639838627057664
+    m_Key: VoiceTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99639895233384448
+    m_Key: KinesthesiaTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640191821008896
+    m_Key: previousButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640258594328576
+    m_Key: GraphComparativeTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640337547907072
+    m_Key: GraphAttemptTitleText02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640681044627456
+    m_Key: GraphAttemptTitleText01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640782513229824
+    m_Key: HeatMapTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640849118777344
+    m_Key: HeatMapTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99640873143750656
+    m_Key: HeatMapTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641186810580992
+    m_Key: HandsTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641245660860416
+    m_Key: HandsTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641258520596480
+    m_Key: HandsTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641439441899520
+    m_Key: GestureTip#1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641448572899328
+    m_Key: GestureTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641450347089920
+    m_Key: GestureTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641882964381696
+    m_Key: 'VisionTip#1 '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641961418838016
+    m_Key: VisionTip#2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99641974534426624
+    m_Key: VisionTip#3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643109085270016
+    m_Key: DurationTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643240580894720
+    m_Key: ThemeTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643306179809280
+    m_Key: SceneryTitleText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99643435465035776
+    m_Key: InstructionsCard1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645645875826688
+    m_Key: 'InstructionsCard2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645670513168384
+    m_Key: InstructionsCard3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645684819939328
+    m_Key: 'InstructionsCard4
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645701781704704
+    m_Key: InstructionsCard5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645722929385472
+    m_Key: CardTitle1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645801014743040
+    m_Key: CardTitle2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645826331561984
+    m_Key: CardTitle3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645844497092608
+    m_Key: CardTitle4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645856530550784
+    m_Key: CardTitle5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 116993805887459328
+    m_Key: MethodologyResultsModuleDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122126979276189696
+    m_Key: Card6Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122175995976331264
+    m_Key: Card7Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122442840253386752
+    m_Key: FinalPositiveTestResultsDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125317475588362240
+    m_Key: FinalNegativeTestResultsDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132179567578697728
+    m_Key: 'CommunicationEffectivenessEvaluationCriteria
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132180916022267904
+    m_Key: TrustEvaluationCriteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181073090564096
+    m_Key: PersuasionEvaluationCriteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181649291464704
+    m_Key: ObjectionHandlingEvaluationCriteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 132181998496632832
+    m_Key: ConversationControlEvaluationCriteria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 155038654996131840
+    m_Key: AntQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164826677820502016
+    m_Key: GolfCartPitchButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164829352142286848
+    m_Key: ElevatorPitchButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831044623642624
+    m_Key: CredentialsPresentationQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831454021267456
+    m_Key: CredentialsPresentationQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831685706231808
+    m_Key: CredentialsPresentationQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831751376449536
+    m_Key: CredentialsPresentationQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164831910923579392
+    m_Key: CredentialsPresentationQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832241640255488
+    m_Key: CredentialsPresentationQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832441251377152
+    m_Key: CredentialsPresentationQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832478433882112
+    m_Key: CredentialsPresentationQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832580439355392
+    m_Key: CredentialsPresentationQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832699205267456
+    m_Key: CredentialsPresentationQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832744486973440
+    m_Key: CredentialsPresentationQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164832803865735168
+    m_Key: CredentialsPresentationQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833005469151232
+    m_Key: CredentialsPresentationQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833038797090816
+    m_Key: CredentialsPresentationQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833864965926912
+    m_Key: CredentialsPresentationQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164833870905061376
+    m_Key: CredentialsPresentationQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834091567394816
+    m_Key: CredentialsPresentationQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834093807153152
+    m_Key: CredentialsPresentationQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834096424398848
+    m_Key: CredentialsPresentationQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834100123774976
+    m_Key: CredentialsPresentationQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834554698248192
+    m_Key: CredentialsPresentationQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834560515747840
+    m_Key: CredentialsPresentationQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834564445810688
+    m_Key: CredentialsPresentationQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834685304680448
+    m_Key: CredentialsPresentationQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164834997172154368
+    m_Key: GolfCartPitchQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835125178118144
+    m_Key: GolfCartPitchQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835127422070784
+    m_Key: GolfCartPitchQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835129103986688
+    m_Key: GolfCartPitchQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835160376717312
+    m_Key: GolfCartPitchQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835494004240384
+    m_Key: GolfCartPitchQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835496118169600
+    m_Key: GolfCartPitchQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164835497556815872
+    m_Key: GolfCartPitchQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836522174951424
+    m_Key: GolfCartPitchQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836524058193920
+    m_Key: GolfCartPitchQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836525698166784
+    m_Key: GolfCartPitchQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836527287808000
+    m_Key: GolfCartPitchQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836816719949824
+    m_Key: GolfCartPitchQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836818007601152
+    m_Key: GolfCartPitchQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836819446247424
+    m_Key: GolfCartPitchQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164836820696150016
+    m_Key: GolfCartPitchQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837054750896128
+    m_Key: GolfCartPitchQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837057301032960
+    m_Key: GolfCartPitchQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837058450272256
+    m_Key: GolfCartPitchQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837066297815040
+    m_Key: GolfCartPitchQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837324599832576
+    m_Key: GolfCartPitchQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837326277554176
+    m_Key: GolfCartPitchQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837327422599168
+    m_Key: GolfCartPitchQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164837328597004288
+    m_Key: GolfCartPitchQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165528537210015744
+    m_Key: TitlePathText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485141240860672
+    m_Key: VideoButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485487824588800
+    m_Key: CinematicButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168485842352328704
+    m_Key: ExcerciseButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606620902928384
+    m_Key: ElevatorPitchQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606700523401216
+    m_Key: ElevatorPitchQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606735956881408
+    m_Key: WalkaroundQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606859370082304
+    m_Key: ElevatorPitchQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606882589749248
+    m_Key: ElevatorPitchQuestion4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606898893008896
+    m_Key: ElevatorPitchQuestion5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170606915133353984
+    m_Key: ElevatorPitchQuestion6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607092745351168
+    m_Key: ElevatorPitchQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607154753941504
+    m_Key: ElevatorPitchQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607174379089920
+    m_Key: ElevatorPitchQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607224341639168
+    m_Key: ElevatorPitchQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607325776687104
+    m_Key: ElevatorPitchQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607378222264320
+    m_Key: ElevatorPitchQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607399999090688
+    m_Key: ElevatorPitchQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607443053621248
+    m_Key: ElevatorPitchQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607462510997504
+    m_Key: ElevatorPitchQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607481481834496
+    m_Key: ElevatorPitchQuestion4AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607522812506112
+    m_Key: ElevatorPitchQuestion4AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607537316409344
+    m_Key: ElevatorPitchQuestion4AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607550356500480
+    m_Key: ElevatorPitchQuestion5AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607597840216064
+    m_Key: ElevatorPitchQuestion5AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607611295543296
+    m_Key: ElevatorPitchQuestion5AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607629314273280
+    m_Key: ElevatorPitchQuestion6AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607666924597248
+    m_Key: ElevatorPitchQuestion6AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170607706724347904
+    m_Key: ElevatorPitchQuestion6AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175401988345802752
+    m_Key: Los3PorQueButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175402235188981760
+    m_Key: FABButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 175406632803479552
+    m_Key: "Se\xF1alesDeCompraButtonText"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552189475401728
+    m_Key: WalkaroundButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552465859063808
+    m_Key: Tool1ButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552696818413568
+    m_Key: Tool2ButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552718494576640
+    m_Key: Tool3ButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552742150451200
+    m_Key: Tool4ButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176552770369728512
+    m_Key: Tool5ButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176553890852876288
+    m_Key: WalkaroundQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554143115096064
+    m_Key: WalkaroundQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554607277748224
+    m_Key: WalkaroundQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554632737173504
+    m_Key: WalkaroundQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554764106969088
+    m_Key: WalkaroundQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176554916003688448
+    m_Key: WalkaroundQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555385937702912
+    m_Key: WalkaroundQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555466904547328
+    m_Key: WalkaroundQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555585448161280
+    m_Key: FABQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555684639256576
+    m_Key: FABQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555729069518848
+    m_Key: FABQuestion1Answer2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555753564254208
+    m_Key: FABQuestion1Answer3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555808954232832
+    m_Key: FABQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555845360791552
+    m_Key: FABQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555901505744896
+    m_Key: FABQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555942337294336
+    m_Key: FABQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176555948582612992
+    m_Key: FABQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556043839451136
+    m_Key: FABQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556110956703744
+    m_Key: FABQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556128128184320
+    m_Key: FABQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556465278922752
+    m_Key: Los3PorQueQuestion1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556607113506816
+    m_Key: Los3PorQueQuestion1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556675249975296
+    m_Key: Los3PorQueQuestion1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556692513730560
+    m_Key: Los3PorQueQuestion1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556721974521856
+    m_Key: Los3PorQueQuestion2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556770460676096
+    m_Key: Los3PorQueQuestion2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556819265597440
+    m_Key: Los3PorQueQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556856297107456
+    m_Key: Los3PorQueQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556900542820352
+    m_Key: Los3PorQueQuestion3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176556932708937728
+    m_Key: Los3PorQueQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557001784930304
+    m_Key: Los3PorQueQuestion3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557018247573504
+    m_Key: Los3PorQueQuestion3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557273680687104
+    m_Key: "Se\xF1alesDeCompraQuestion1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557513687150592
+    m_Key: "Se\xF1alesDeCompraQuestion1AnswerA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557545836490752
+    m_Key: "Se\xF1alesDeCompraQuestion1AnswerB"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557569060352000
+    m_Key: "Se\xF1alesDeCompraQuestion1AnswerC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557628380393472
+    m_Key: "Se\xF1alesDeCompraQuestion2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557661435703296
+    m_Key: "Se\xF1alesDeCompraQuestion2AnswerA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557711566024704
+    m_Key: "Se\xF1alesDeCompraQuestion2AnswerB"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557731593826304
+    m_Key: "Se\xF1alesDeCompraQuestion2AnswerC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557810379632640
+    m_Key: "Se\xF1alesDeCompraQuestion3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557843640463360
+    m_Key: "Se\xF1alesDeCompraQuestion3AnswerA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557877580771328
+    m_Key: "Se\xF1alesDeCompraQuestion3AnswerB"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176557904701140992
+    m_Key: "Se\xF1alesDeCompraQuestion3AnswerC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558326211915776
+    m_Key: Tool1Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558411494699008
+    m_Key: Tool1Question1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558446500360192
+    m_Key: Tool1Question1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558464464564224
+    m_Key: Tool1Question1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558570756616192
+    m_Key: Tool1Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558630915518464
+    m_Key: Tool1Question2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558691753897984
+    m_Key: Tool1Question2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558709307060224
+    m_Key: Tool1Question2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558751141048320
+    m_Key: Tool1Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558781377785856
+    m_Key: Tool1Question3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558842912419840
+    m_Key: Tool1Question3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558861044396032
+    m_Key: Tool1Question3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176558984382099456
+    m_Key: Tool2Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559060789735424
+    m_Key: Tool2Question1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559321939685376
+    m_Key: Tool2Question1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559357582880768
+    m_Key: Tool2Question1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559379087077376
+    m_Key: Tool2Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559416500269056
+    m_Key: Tool2Question2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559451396878336
+    m_Key: Tool2Question2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559472070602752
+    m_Key: Tool2Question2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559513032175616
+    m_Key: Tool2Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559570074710016
+    m_Key: Tool2Question3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559607286575104
+    m_Key: Tool2Question3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559678757515264
+    m_Key: Tool2Question3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559906629857280
+    m_Key: Tool3Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176559967195607040
+    m_Key: Tool3Question1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560034937810944
+    m_Key: Tool3Question1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560058388164608
+    m_Key: Tool3Question1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560076989902848
+    m_Key: Tool3Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560079024140288
+    m_Key: Tool3Question2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560164755714048
+    m_Key: Tool3Question2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560242471972864
+    m_Key: Tool3Question2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560305520750592
+    m_Key: Tool3Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560366841475072
+    m_Key: Tool3Question3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560384755347456
+    m_Key: Tool3Question3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560402681802752
+    m_Key: Tool3Question3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560450954047488
+    m_Key: Tool4Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560511142309888
+    m_Key: Tool4Question1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560535100174336
+    m_Key: Tool4Question1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560555639681024
+    m_Key: Tool4Question1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560575197720576
+    m_Key: Tool4Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560616234790912
+    m_Key: Tool4Question2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560652607795200
+    m_Key: Tool4Question2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560684790689792
+    m_Key: Tool4Question2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560711802007552
+    m_Key: Tool4Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560759281528832
+    m_Key: Tool4Question3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560783126147072
+    m_Key: Tool4Question3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560799492321280
+    m_Key: Tool4Question3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176560953029013504
+    m_Key: Tool5Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561011216592896
+    m_Key: Tool5Question1AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561058582867968
+    m_Key: Tool5Question1AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561079625691136
+    m_Key: Tool5Question1AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561098789466112
+    m_Key: Tool5Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561124014010368
+    m_Key: Tool5Question2AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561178682568704
+    m_Key: Tool5Question2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561204699836416
+    m_Key: Tool5Question2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561302221598720
+    m_Key: Tool5Question3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561333527883776
+    m_Key: Tool5Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561353245306880
+    m_Key: Tool5Question3AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176561371880599552
+    m_Key: Tool5Question3AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176562519408619520
+    m_Key: WalkaroundQuestion2AnswerB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176562567584395264
+    m_Key: WalkaroundQuestion2AnswerC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176563685257359360
+    m_Key: WalkaroundQuestion3AnswerA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177850894142394368
+    m_Key: MethodologyModuleResultsDetailsPanel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179032643940102144
+    m_Key: PitchingButtonText
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 846567139024306200
+  references:
+    version: 2
+    RefIds:
+    - rid: 846567139024306200
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713217970450

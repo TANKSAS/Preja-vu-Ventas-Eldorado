@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4b4f3607e7ec040a6b9041fab44a6e, type: 3}
+  m_Name: 15.EldoradorTool_1Questionnaire
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 3d752fa1f0109ce48838a726389c6e0d, type: 2}
+  - {fileID: 11400000, guid: 4de5f29cdd109db42ab5f33f4efa81dc, type: 2}
+  - {fileID: 11400000, guid: 778e8595051b6f34db3c0c1f85be085b, type: 2}

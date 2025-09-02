@@ -1,0 +1,349 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f9445b3432b24fc4ab9a62f07486a5c7
+  m_SerializeEntries:
+  - m_GUID: bb91e6e67d47c0a4dac1a413bd1c7d81
+    m_Address: Assets/Localization/Tables/TextLenguage Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be2843fb83503264f9fd1bb6e5e6a944
+    m_Address: Assets/Localization/Tables/Menu/FlagIcons Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfce793cb9cb8e94c80545253df786b9
+    m_Address: LenguageIcons
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be0ba6952a0e3294bb17beb730b0afbb
+    m_Address: Prospeccion Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9eda765d534732a4395f27eb6fc76709
+    m_Address: Prospeccion Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43d9df6fecb1f5d40a8c28a21817d6be
+    m_Address: Prospeccion Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d81964c686650f54cb765905e1c14946
+    m_Address: Prospeccion Questions_Esp_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46c86198d2a6cbe4e86f0f48a0f4b6b7
+    m_Address: Prospeccion Questions_Esp_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3797c8aa409f2804b9c2a88e9a40755c
+    m_Address: Prospeccion Questions_Esp_6
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 785077400d2b4a943a786c9fefbfcf2c
+    m_Address: Walkaround_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a6cc23decaaa894c85ee34aa8b20b54
+    m_Address: Walkaround_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: abeb16e959416c34bb4f6fe762febf4a
+    m_Address: Walkaround_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9a285126c8ae4746a2a9923e5302264
+    m_Address: Los3Porque_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a11fa22dd1f2fa40ac86d3f17ae311f
+    m_Address: Los3Porque_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9ddeedc69348b346be88191c1d09eda
+    m_Address: Los3Porque_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8bf53ecc80ff824b8c9035d0de7e49d
+    m_Address: FAB_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc2f6009a3607cf4dbd9f9b8207f989f
+    m_Address: FAB_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e6e62ee08254e74eb8ea8e1d8ebfd77
+    m_Address: FAB_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b57da23d9bd282548a564e41b7aa5aeb
+    m_Address: "Se\xF1alesDeCompra_Questions_Esp_1"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84783fac917da2e4bb5996aee5c5f145
+    m_Address: "Se\xF1alesDeCompra_Questions_Esp_2"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 561917a500f4e2a4eba0b94a50db205f
+    m_Address: "Se\xF1alesDeCompra_Questions_Esp_3"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d58024c15fac48f4989e2cc13fe5be4f
+    m_Address: Tool1_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae72ad56bcac7ca4e94f09f134e8713d
+    m_Address: Tool1_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 394a80716cc29b448a2927c19900fde1
+    m_Address: Tool1_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9c49c96856bffa4eaa6d18b11581d20
+    m_Address: Tool2_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41181dbb002110a4fa248a3d87e17e99
+    m_Address: Tool2_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b877b0579239dcd488985e57eb55a0a4
+    m_Address: Tool2_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2dbf7269353e91041b6c3da0c180a865
+    m_Address: Tool3_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a01ce5367b485dc4cac5cd6d2d03c0d0
+    m_Address: Tool3_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fa40cec60046f44c9bff0f6d3d035d1
+    m_Address: Tool3_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc0eec51dae5439419b3403607c8b214
+    m_Address: Tool4_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9b3ca013c13a764b8bb10eba6ec49e7
+    m_Address: Tool4_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7937c247bd4315a4083c569a2d0d0314
+    m_Address: Tool4_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83a63bc704aec284ab6d909444380e50
+    m_Address: Tool5_Questions_Esp_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d6ff985d2219394f80a18457ac7df31
+    m_Address: Tool5_Questions_Esp_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7240fe3d19149864b92a33ab6a0b5477
+    m_Address: Tool5_Questions_Esp_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56c65382e1d2edf4a9cbb12f69235c07
+    m_Address: ToolWalkaroundEsp
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bcbb7ae91340f146b76b33c5d7fb7ed
+    m_Address: Tool_1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31090312af7c21e43996001a0315dab5
+    m_Address: Tool_2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-CO
+    - Locale-en-US
+    - Locale-pt-BR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 465c8732d9aa91548bab9271f2a9a7a0
+    m_Address: Tool_3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Locale-en-US
+    - Locale-es-CO
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41ae4a38f80f5784eb0b6f889b966302
+    m_Address: Tool_4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Locale-en-US
+    - Locale-es-CO
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5ab7198c27e46c48b9a1088f3a53b90
+    m_Address: Tool_5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Locale-en-US
+    - Locale-es-CO
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: a2ce748a4d82d2747ba14fefc0a46369, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: dac37205d6bdcf04996e662c47fff84a, type: 2}
+    - {fileID: 11400000, guid: 4ab5ed25479a9fe4db7cda947ea9be27, type: 2}
