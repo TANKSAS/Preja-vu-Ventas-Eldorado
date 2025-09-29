@@ -14,6 +14,9 @@ public class PlayerStats : ScriptableObject
     public string playerId;
     public bool isLoged = false; 
     public bool isNewPlayer = true;
+    public bool toolsModuleResultsShown = false;
+    public bool methodologyModuleResultsShown = false;
+    public bool doAndDontModuleResultsShown = false;
 
     public Unit[] toolsModule;
     public Unit[] methodologyModule;
@@ -30,6 +33,10 @@ public class PlayerStats : ScriptableObject
         isNewPlayer = true;
         isLoged = false;
 
+        toolsModuleResultsShown = false;
+        methodologyModuleResultsShown = false;
+        doAndDontModuleResultsShown = false;
+        
         ResetModule(toolsModule);
         ResetModule(methodologyModule);
         ResetModule(doandDontModule);

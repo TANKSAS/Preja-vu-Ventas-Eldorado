@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Tank.Prejavu.Sales
+    Android: com.Tank.Prejavu.Sales.ElDorado
     Standalone: com.Unity-Technologies.VR-Template
   buildNumber:
     Standalone: 0

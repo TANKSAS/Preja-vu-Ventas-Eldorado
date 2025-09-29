@@ -424,8 +424,9 @@ public class LevelProgressManager : Singleton<LevelProgressManager>
 
     public IEnumerator ValidateModuleProgress()
     {
-        if (currentUnit == GameManager.Instance.playerStats.toolsModule && isAllToolsCompleted && !isAllMethodologyCompleted)
+        if (currentUnit == GameManager.Instance.playerStats.toolsModule && isAllToolsCompleted && !GameManager.Instance.playerStats.toolsModuleResultsShown)
         {
+            GameManager.Instance.playerStats.toolsModuleResultsShown = true;
             UIManager.Instance.DisableAllTheoreticalContent();
             
             UIManager.Instance.theoreticalModuleMenu.SetActive(false);
@@ -449,8 +450,9 @@ public class LevelProgressManager : Singleton<LevelProgressManager>
             UIManager.Instance.LoadMenuSettings(0);
         }
 
-        if (currentUnit == GameManager.Instance.playerStats.methodologyModule && isAllMethodologyCompleted && isAllToolsCompleted)
+        if (currentUnit == GameManager.Instance.playerStats.methodologyModule && isAllMethodologyCompleted && !GameManager.Instance.playerStats.methodologyModuleResultsShown)
         {
+            GameManager.Instance.playerStats.methodologyModuleResultsShown = true;
             Debug.Log("Mostrando mensaje de finalizacion de Metodologia");
             UIManager.Instance.DisableAllTheoreticalContent();
 

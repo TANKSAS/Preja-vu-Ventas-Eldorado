@@ -375,8 +375,10 @@ public class GameManager : Singleton<GameManager>
     private IEnumerator ValidateLevelFlow(bool hasSubLevel)
     {
         Debug.Log("Entro a validar SubNivel");
+
         var lpm = LevelProgressManager.Instance;
-        var unit = lpm.currentUnit[lpm.currentLevel];
+        var currentLevel = lpm.currentLevel;
+        var unit = lpm.currentUnit[currentLevel];
         var sub = unit.levels[lpm.currentSubLevel];
 
         int lastScore = sub.score;
@@ -395,29 +397,41 @@ public class GameManager : Singleton<GameManager>
             sub.isDone = true;
         }
 
+        int completedSubLevels = lpm.CountCompletedSubLevels(unit);
+        int totalSubLevels = LevelProgressManager.Instance.currentUnit[currentLevel].levels.Count;
+        bool allCompleted = completedSubLevels == unit.levels.Count;
+        Debug.Log("Niveles completados: " + completedSubLevels + " de / " + totalSubLevels + " finalizado:  " + allCompleted);
+
         if (hasSubLevel)
         {
             if ((!wasDoneBefore && nowCompleted) || (wasDoneBefore && newScore > lastScore))
             {
                 yield return StartCoroutine(LevelResultsDetails(lastScore, newScore, wasDoneBefore));
-                UIManager.Instance.EndShowSubLevelUI();
-                Debug.Log("aqui estoy ");
+
+                if (wasDoneBefore)
+                {
+                    UIManager.Instance.EndShowSubLevelUI();
+                    Debug.Log("Mejoro");
+                }
+                else
+                {
+                    if (!allCompleted)
+                    {
+                        UIManager.Instance.EndShowSubLevelUI();
+                        Debug.Log("Aun no ha finalizado todo");
+                    }
+                    else
+                    {
+                        Debug.Log("Ha finalizado todo");
+                    }
+                }
             }
         }
 
-        yield return StartCoroutine(ValidateUnitFlow(hasSubLevel));
-
-        //SaveAndRefresh();
-        //// Validar unidad si todos los subniveles están completos
-        //if (lpm.CountCompletedSubLevels(unit) == unit.levels.Count)
-        //{
-        //    Debug.Log("Entro a finalizar la unidad");
-        //    yield return new WaitForSeconds(.5f);
-            
-        //}
+        yield return StartCoroutine(ValidateUnitFlow());
     }
 
-    private IEnumerator ValidateUnitFlow(bool hasSubLevel)
+    private IEnumerator ValidateUnitFlow()
     {
         var lpm = LevelProgressManager.Instance;
         var unit = lpm.currentUnit[lpm.currentLevel];
