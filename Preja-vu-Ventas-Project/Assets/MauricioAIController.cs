@@ -26,13 +26,13 @@ public class MauricioAIController : ConvaiParametersEvaluator
         yield return new WaitUntil(() => isTalking);
         Debug.Log("Resultados Obtenidos");
         AnalyzeAIResponse();
-        GameManager.Instance.chatAIBoxUI.ClearUI();
+        GameManager.Instance.chatController.chatAIBoxUI.ClearUI();
         //GameManager.Instance.chatAIBoxUI.gameObject.SetActive(true);
     }
 
     public override void AnalyzeAIResponse()
     {
-        if (iaResponseLines.Count != 0) 
+        if (GameManager.Instance.chatController.iaResponseLines.Count != 0) 
         {
             ProcessEvaluation();
         } 
@@ -47,7 +47,7 @@ public class MauricioAIController : ConvaiParametersEvaluator
     void ProcessEvaluation()
     {
         // Recorremos cada entrada recibida
-        foreach (string input in iaResponseLines)
+        foreach (string input in GameManager.Instance.chatController.iaResponseLines)
         {
             // Dividimos por saltos de línea en caso de que un solo string tenga varias frases
             string[] lines = input.Split(new[] { '\n', '\r' }, System.StringSplitOptions.RemoveEmptyEntries);

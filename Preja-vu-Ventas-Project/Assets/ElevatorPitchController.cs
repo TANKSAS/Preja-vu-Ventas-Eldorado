@@ -27,35 +27,42 @@ public class ElevatorPitchController : AssessmentModule
         answerReceived = state;
     }
 
-    public void StartPitch()
-    {
-        currentCoroutine = DoElevetorPitch();
-        StartCoroutine(currentCoroutine);
-    }
-
-    private IEnumerator DoElevetorPitch()
+    public IEnumerator DoElevetorPitch()
     {
         Debug.Log("Start ElevatorPitch");
+        
+        //  Marca que la prueba está en curso
         startAssessmentModule = true;
+        
+        //  Configura la escena inicial (UI, entorno, etc.)
         SceneSettup();
 
+        //  Carga el video y timeline específicos para prueba final
         GameManager.Instance.timeLineController.SetPlayableDirector(11);
         GameManager.Instance.backGroundController.CallChangeVideo(3);
+
+        // Espera a que el fondo termine de cargar
         yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
 
+        //  Muestra cuenta regresiva visual antes de iniciar
         yield return StartCoroutine(CountDown());
         
         audioRecordingController.audioSource = GameManager.Instance.spectrumVisualizer.audioSource;
         GameManager.Instance.spectrumVisualizer.audioSource.Play();
-        
+
+        //  Inicia Muestra de Tips
         helperController.IniciarTemporizador();
+
+        //  Reproduce el video y el timeline
         GameManager.Instance.backGroundController.currentVideoPlayer.Play();
         GameManager.Instance.timeLineController.Play();
+        
+        //  Inicia grabación de audio y tracking
         GameManager.Instance.outputAudioRecorderController.StartRecording();
         GameManager.Instance.outputAudioRecorderController.StartSegmentRecording();
 
+        //Mauricio Esta para analizar control de respuesta
         mauricio.gameObject.SetActive(true);
-        //establecer a mauricio como un
         Debug.Log("Esperando");
 
         yield return new WaitUntil(() => answerReceived);
@@ -63,7 +70,9 @@ public class ElevatorPitchController : AssessmentModule
         ConvaiNPCManager.Instance.isEnabledToGetNewNPC = true;
         string segmentPath = GameManager.Instance.outputAudioRecorderController.StopSegmentRecordingAndSave();
         filePath = segmentPath;
+        
         Debug.Log("Enviando Fragmento de respuesta");
+        
         yield return StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
         
         if (GameManager.Instance.elevatorPitchController.finalAnswer != string.Empty)
@@ -84,11 +93,15 @@ public class ElevatorPitchController : AssessmentModule
 
         //determinar que video sigue segun el promedio
         DetermineVideoResponse(average);
+
         yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
         GameManager.Instance.backGroundController.currentVideoPlayer.Play();
         GameManager.Instance.timeLineController.Play();
 
+        //  Espera a que termine la entrevista
         yield return new WaitUntil(() => !startAssessmentModule);
+        
+        //  Finaliza la prueba y limpia estados
         End();
 
         mauricio.isTalking = false;
@@ -96,16 +109,12 @@ public class ElevatorPitchController : AssessmentModule
 
         GameManager.Instance.backGroundController.CallChangeImagen(0);
         yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
-
-        GameManager.Instance.backGroundController.RestartVideoPlayer(GameManager.Instance.backGroundController.currentVideoPlayer);
-        SetAnswerStatus(false);
-        hasVideoEnded = false;
-
-        GameManager.Instance.outputAudioRecorderController.StopRecording();
+        
         string newFilePath = GameManager.Instance.outputAudioRecorderController.currentFullPath;
         filePath = newFilePath;
-        StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
-        GameManager.Instance.CallFinalTestFeedBackQualifier(this);
+
+        yield return StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
+        SaveSessionData();
     }
 
     public void DetermineVideoResponse(float mediaValue)
@@ -140,11 +149,14 @@ public class ElevatorPitchController : AssessmentModule
 
     public override void End()
     {
+        SetAnswerStatus(false);
+        SetVideoStatus(false);
+
         GameManager.Instance.spectrumVisualizer.isShowing = false;
-        robertaPrefab.SetActive(true);
+        GameManager.Instance.outputAudioRecorderController.StopRecording();
+
         UIManager.Instance.modulePracticalMenu.SetActive(false);
         UIManager.Instance.helperPanel.SetActive(false);
-        //helperController.ResetearTemporizador();
         UIManager.Instance.modulePracticalMenu.SetActive(false);
     }
 }

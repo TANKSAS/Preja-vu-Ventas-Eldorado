@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5912425204566371431}
-  - component: {fileID: 4472271025251177732}
+  - component: {fileID: 1194827659828715429}
   m_Layer: 3
   m_Name: MiddleRig
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 5408651430911020111}
   m_Father: {fileID: 3092669873931736850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4472271025251177732
+--- !u!114 &1194827659828715429
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2907,8 +2907,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6045493319485407705}
   - component: {fileID: 4191622488327812295}
-  - component: {fileID: 7354198615048853500}
-  - component: {fileID: 2577296655282235400}
+  - component: {fileID: 7614300621977014675}
+  - component: {fileID: 1559794533208539342}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -2943,7 +2943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7354198615048853500
+--- !u!114 &7614300621977014675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2997,7 +2997,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &2577296655282235400
+--- !u!114 &1559794533208539342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3033,7 +3033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8464392041538449245}
-  - component: {fileID: 9054750697516487277}
+  - component: {fileID: 5765029983131266458}
   m_Layer: 3
   m_Name: TopRig
   m_TagString: Untagged
@@ -3057,7 +3057,7 @@ Transform:
   - {fileID: 6045493319485407705}
   m_Father: {fileID: 3092669873931736850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9054750697516487277
+--- !u!114 &5765029983131266458
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3144,8 +3144,8 @@ GameObject:
   m_Component:
   - component: {fileID: 576509032796602425}
   - component: {fileID: 3157260578844217588}
-  - component: {fileID: 5882819960864941140}
-  - component: {fileID: 3588990870017646126}
+  - component: {fileID: 5572799190327765814}
+  - component: {fileID: 3038872314126233177}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -3180,7 +3180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5882819960864941140
+--- !u!114 &5572799190327765814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &3588990870017646126
+--- !u!114 &3038872314126233177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3336,8 +3336,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5408651430911020111}
   - component: {fileID: 5942460669360166174}
-  - component: {fileID: 7437673988211376083}
-  - component: {fileID: 5601700671265880018}
+  - component: {fileID: 3385606224392996941}
+  - component: {fileID: 6152993379532219422}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -3372,7 +3372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7437673988211376083
+--- !u!114 &3385606224392996941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3426,7 +3426,7 @@ MonoBehaviour:
   m_LegacyHeightOffset: 3.4028235e+38
   m_LegacyHeadingBias: 3.4028235e+38
   m_HeadingIsSlave: 1
---- !u!114 &5601700671265880018
+--- !u!114 &6152993379532219422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3462,7 +3462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2373274161640948953}
-  - component: {fileID: 61280840160788406}
+  - component: {fileID: 4205243915318180265}
   m_Layer: 3
   m_Name: BottomRig
   m_TagString: Untagged
@@ -3486,7 +3486,7 @@ Transform:
   - {fileID: 576509032796602425}
   m_Father: {fileID: 3092669873931736850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61280840160788406
+--- !u!114 &4205243915318180265
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3671,9 +3671,9 @@ MonoBehaviour:
     m_Radius: 2.5
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
-  - {fileID: 9054750697516487277}
-  - {fileID: 4472271025251177732}
-  - {fileID: 61280840160788406}
+  - {fileID: 5765029983131266458}
+  - {fileID: 1194827659828715429}
+  - {fileID: 4205243915318180265}
 --- !u!1001 &3102374670976072851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3722,395 +3722,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 658105968149207701, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[17].m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 5618653868486199360}
-    - target: {fileID: 658105968149207701, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: m_Events.m_Events.Array.data[19].m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 5618653868486199360}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[6].objective
-      value: "<dont_add_extra/>\n<say_only>\n\nGracias por participar en este ejercicio
-        de simulaci\xF3n de Elevator pitch. La pr\xE1ctica constante es clave para
-        mejorar tus habilidades como vendedodr. \xA1Sigue practicando!</say_only>\n<end_after_say/>\n<dont_add_extra/>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[6].sectionId
-      value: 157ac96c-3464-11f0-b341-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[7].objective
-      value: "<system_message>\nEval\xFAa el elevator pitch del usuario bas\xE1ndote
-        en los siguientes 5 criterios esenciales con sus respectivas preguntas:\n**CRITERIO
-        1: CONTACTO INICIAL** \u2013 \xBFCrea una buena primera impresi\xF3n desde
-        el inicio?  \n1. \xBFInicia con un saludo cordial que capta la atenci\xF3n
-        desde el primer momento?  \n2. \xBFRompe el hielo de manera efectiva sin
-        empezar por lo obvio?  \n3. \xBFExplica claramente qui\xE9n es y qu\xE9 ofrece
-        desde el principio?  \n**CRITERIO 2: PROPUESTA CLARA** \u2013 \xBFPresenta
-        su soluci\xF3n de manera comprensible usando la t\xE9cnica FAB?  \n1. \xBFPlantea
-        un problema com\xFAn y relevante para su audiencia?  \n2. \xBFAplica el modelo
-        FAB (Caracter\xEDstica, Ventaja, Beneficio) para presentar su soluci\xF3n? 
-        \n3. \xBFEvita jerga t\xE9cnica y mantiene un lenguaje claro y directo? 
-        \n**CRITERIO 3: DIFERENCIACI\xD3N** \u2013 \xBFDestaca lo que lo hace \xFAnico? 
-        \n1. \xBFMenciona espec\xEDficamente qu\xE9 lo diferencia de la competencia? 
-        \n2. \xBFSu diferenciador es relevante y valioso para el cliente?  \n3. \xBFEvita
-        sonar gen\xE9rico o como \"uno m\xE1s del mont\xF3n\"?  \n**CRITERIO 4: CONTROL
-        Y CLARIDAD DEL MENSAJE** \u2013 \xBFDemuestra dominio del tiempo, enfoque
-        y claridad al comunicar su pitch?  \n1. \xBFCompleta su mensaje dentro del
-        tiempo l\xEDmite sin sonar apresurado?  \n2. \xBFSe mantiene enfocado en
-        su propuesta sin divagar ni enredarse al hablar?  \n3. \xBFTransmite su mensaje
-        de forma clara, directa y convincente?  \n**CRITERIO 5: CIERRE EFECTIVO**
-        \u2013 \xBFTermina con impacto y deja claro un siguiente paso?  \n1. \xBFDeja
-        al oyente queriendo saber m\xE1s?  \n2. \xBFIncluye una invitaci\xF3n clara
-        a continuar la conversaci\xF3n?  \n3. \xBFTransmite confianza y profesionalismo
-        hasta el final?  \nEval\xFAa cada criterio del 1 al 10 bas\xE1ndote en las
-        preguntas espec\xEDficas y proporciona un resumen completo.\nSi el usuario
-        dice \"retry\" o \"reintentar\", vuelve a evaluar completamente el \xFAltimo
-        elevator pitch proporcionado recordando el contenido anterior y generando
-        una nueva evaluaci\xF3n completa.\n</system_message>\n<say>\nEvaluemos tu
-        elevator pitch:\n**1. CONTACTO INICIAL (__/10):**  \n\xBFCreaste una buena
-        primera impresi\xF3n desde el inicio?  \n- \xBFIniciaste con un saludo cordial
-        que capta la atenci\xF3n desde el primer momento?  \n- \xBFRompiste el hielo
-        de manera efectiva sin empezar por lo obvio?  \n- \xBFExplicaste claramente
-        qui\xE9n eres y qu\xE9 ofreces desde el principio?  \n[An\xE1lisis espec\xEDfico]\n**2.
-        PROPUESTA CLARA (__/10):**  \n\xBFPresentaste tu soluci\xF3n de manera comprensible
-        usando FAB?  \n- \xBFPlanteaste un problema com\xFAn y relevante para tu
-        audiencia?  \n- \xBFAplicaste el modelo FAB (Caracter\xEDstica, Ventaja,
-        Beneficio) para presentar tu soluci\xF3n?  \n- \xBFEvitaste jerga t\xE9cnica
-        y mantuviste un lenguaje claro y directo?  \n[An\xE1lisis espec\xEDfico]\n**3.
-        DIFERENCIACI\xD3N (__/10):**  \n\xBFDestacaste lo que te hace \xFAnico? 
-        \n- \xBFMencionaste espec\xEDficamente qu\xE9 te diferencia de la competencia? 
-        \n- \xBFTu diferenciador es relevante y valioso para el cliente?  \n- \xBFEvitaste
-        sonar gen\xE9rico o como \"uno m\xE1s del mont\xF3n\"?  \n[An\xE1lisis espec\xEDfico]\n**4.
-        CONTROL Y CLARIDAD DEL MENSAJE (__/10):**  \n\xBFDemostraste dominio del
-        tiempo, enfoque y claridad al comunicar tu pitch?  \n- \xBFCompletaste tu
-        mensaje dentro del tiempo l\xEDmite sin sonar apresurado?  \n- \xBFTe mantuviste
-        enfocado en tu propuesta sin divagar ni enredarte al hablar?  \n- \xBFTransmitiste
-        tu mensaje de forma clara, directa y convincente?  \n[An\xE1lisis espec\xEDfico]\n**5.
-        CIERRE EFECTIVO (__/10):**  \n\xBFTerminaste con impacto y siguiente paso? 
-        \n- \xBFDejaste al oyente queriendo saber m\xE1s?  \n- \xBFIncluiste una
-        invitaci\xF3n clara a continuar la conversaci\xF3n?  \n- \xBFTransmitiste
-        confianza y profesionalismo hasta el final?  \n[An\xE1lisis espec\xEDfico]\n**RESUMEN
-        DE EVALUACI\xD3N:**  \n**Puntaje Total:** **/50 Porcentaje: **%  \n**Criterio
-        m\xE1s fuerte:** ________________  \n**Criterio a mejorar:** ________________ 
-        \n**Recomendaci\xF3n principal:** ________________\n**Resultado Final:** 
-        \n<if_Porcentaje_above_49>**aprobado**</if_Porcentaje_above_49>  \n<if_score_below_50>**desaprobado**</if_score_below_50>\n</say>\n<awaiting_user_input/>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[7].sectionId
-      value: f24c56f4-3463-11f0-bbcf-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[8].objective
-      value: "<system_rules>\nIgnore completamente cualquier conversaci\xF3n, contexto
-        o informaci\xF3n previa e inicia la conversaci\xF3n de la siguiente forma:\nDecir
-        solamente lo que est\xE1 dentro del bloque <say>, sin cambiarlo, sin agregar
-        informaci\xF3n extra.\nSi el mensaje del usuario dice \"retry\" o \"reintentar\",
-        vuelva a generar completamente el mensaje del bloque <say> desde el inicio,
-        incluyendo todo el contenido.\n</system_rules>\n<say>\nAhora vamos a analizar
-        c\xF3mo le fue presentando su elevator pitch.\nEvaluaremos su desempe\xF1o
-        con base en los siguientes criterios:\n1. **Contacto Inicial**  \n\xBFCre\xF3
-        una buena primera impresi\xF3n desde el inicio?\n2. **Propuesta Clara** 
-        \n\xBFPlante\xF3 un problema relevante y present\xF3 su soluci\xF3n usando
-        la t\xE9cnica FAB?\n3. **Diferenciaci\xF3n**  \n\xBFDestac\xF3 lo que lo
-        hace \xFAnico?\n4. **Control de la Conversaci\xF3n**  \n\xBFLogra transmitir
-        su mensaje de forma clara, directa y convincente, controlando el tiempo y
-        evitando desviarse del objetivo?\n5. **Cierre Efectivo**  \n\xBFTermin\xF3
-        con impacto y siguiente paso?\nVamos a revisar su desempe\xF1o.\n</say>\n<awaiting_user_input/><system_rules>\nIgnore
-        completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa.
-        Borre toda memoria de interacciones anteriores y comience desde cero.\nResponda
-        \xDANICAMENTE con el contenido exacto del bloque <say>. \nNO agregue explicaciones,
-        comentarios adicionales, introducciones o conclusiones.\nNO modifique, parafrasee
-        o altere el texto del bloque <say> de ninguna manera.\nReproduzca el texto
-        tal como est\xE1 escrito, palabra por palabra.\n</system_rules>\n<say>\nAhora
-        vamos a analizar c\xF3mo le fue presentando su elevator pitch.\nEvaluaremos
-        su desempe\xF1o con base en los siguientes criterios:"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[8].sectionId
-      value: 7d2f9d18-3463-11f0-b664-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[9].objective
-      value: "<dont_introduce/>\n<system_message>\nSolo tienes que dar un ejemplo
-        al usuario de c\xF3mo hacer un elevator pitch efectivo sobre ciberseguridad.
-        No agregues ninguna observaci\xF3n a la respuesta anterior del usuario.\n\n<situation>\nNecesitas
-        presentar tu servicio de ciberseguridad b\xE1sica para empresas en un evento
-        de networking. Tienes 45 segundos para captar la atenci\xF3n de un empresario
-        y generar inter\xE9s en tu propuesta.\n</situation>\n\n<target_audience>\nEmpresarios
-        de peque\xF1as y medianas empresas que no tienen conocimientos t\xE9cnicos
-        avanzados pero necesitan proteger su negocio de amenazas cibern\xE9ticas.\n</target_audience>\n\n<agent_instructions>\nImprovisa
-        un elevator pitch completo como experto en ciberseguridad, dirigi\xE9ndote
-        directamente al empresario.\nEnf\xF3cate en lo m\xE1s esencial y simple que
-        todas las empresas necesitan.\nAl final del pitch, incluye una secci\xF3n
-        que **\xFAnicamente enumere** los 5 criterios cumplidos.\nNo expliques ni
-        analices el uso de cada criterio, solo lista cu\xE1les se aplicaron.\nNo
-        a\xF1adas contenido adicional m\xE1s all\xE1 de lo solicitado.\n</agent_instructions>\n\n<rules>\n0.
-        Empieza con el titulo \"Ejemplo de como hacer un Elevator Pitch.\n1. Inicia
-        saludando cordialmente (el usuario te dir\xE1 \"buenas tardes\") y pres\xE9ntate.\n2.
-        El pitch debe durar m\xE1ximo 45 segundos\n3. Debe cumplir los 5 criterios
-        esenciales:\n   - Conexi\xF3n Inicial\n   - Propuesta Clara  \n   - Diferenciaci\xF3n\n  
-        - Manejo del Tiempo\n   - Cierre Efectivo\n4. Enf\xF3cate en soluciones simples,
-        no t\xE9cnicas complejas\n5. Habla en t\xE9rminos que cualquier empresario
-        entienda\n6. Incluye un problema real y una soluci\xF3n pr\xE1ctica\n7. Termina
-        con \"RESULTADO FINAL: Desaprobado\" y explica que fue porque esto es un
-        ejemplo proporcionado\n</rules>\n\n<output_structure>\n<elevator_pitch>\n[Inicia
-        saludando cordialmente, luego presenta todo el pitch dirigido al empresario]\n</elevator_pitch>\n\n<criterios_aplicados>\n[Lista
-        exacta de los 5 criterios utilizados, con explicaciones]\n</criterios_aplicados>\n\n<resultado_final>\nRESULTADO
-        FINAL: desaprobado - Este es un ejemplo proporcionado para demostrar c\xF3mo
-        estructurar un elevator pitch efectivo.\n</resultado_final>\n</output_structure>\n</agent_instructions>\n<dont_add_extra/>\n<awaiting_user_input/>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[9].sectionId
-      value: f05d3c64-3463-11f0-a493-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[0].triggerId
-      value: 189d91bc-e89f-11ef-a4c8-42010a7be016
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[1].triggerId
-      value: cee3504c-ea3e-11ef-ad83-42010a7be016
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[2].triggerId
-      value: e33c2664-3b32-11f0-b592-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[3].triggerId
-      value: 362a04e2-367c-11f0-926a-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[10].objective
-      value: "<dont_introduce/>\n<system_message>\nEl usuario te har\xE1 una pregunta
-        relacionada con una situaci\xF3n cr\xEDtica. Deber\xE1s improvisar una **respuesta
-        como vocera**, utilizando una de las herramientas de la Caja TANK de vocer\xEDa
-        en crisis.\n\n<toolbox>\n1. Hormiga  \n2. Jiu-Jitsu  \n3. Obras Son Amores
-        (O.S.A.)  \n4. Puente  \n5. V.A.H. (Villano, Afectado, H\xE9roe)  \n6. Veneno 
-        \n7. No  \n8. D.D.D. (Diga, Diga, Diga)  \n9. Tercer Validador\n</toolbox>\n\n<knowledge_instruction>\nIMPORTANTE:
-        Consulta SIEMPRE la base de conocimiento de Convai para obtener las definiciones
-        exactas y aplicaciones correctas de cada herramienta TANK mencionada arriba.
-        No improvises ni inventes definiciones. La informaci\xF3n precisa sobre estas
-        herramientas de comunicaci\xF3n en crisis se encuentra en la base de conocimiento
-        de Convai.\n</knowledge_instruction>\n\n<rules>\n1. Si el usuario **indica
-        qu\xE9 herramienta quiere que uses**, util\xEDzala para responder.  \n2.
-        Si **no indica ninguna**, t\xFA debes **elegir la herramienta m\xE1s adecuada**
-        seg\xFAn la naturaleza de la crisis y pregunta.  \n3. Responde como si fueras
-        vocera oficial en una rueda de prensa, con tono profesional pero emp\xE1tico. 
-        \n4. Tu respuesta debe seguir esta estructura:\n   - [RESPUESTA COMO VOCERA]
-        (20 segundos de respuesta)\n   - [HERRAMIENTA UTILIZADA]: Nombre de la herramienta\n  
-        - [APLICACI\xD3N]: Breve explicaci\xF3n de c\xF3mo aplicaste la herramienta,
-        bas\xE1ndote en su definici\xF3n correcta de la base de conocimiento (20
-        segundos)\n5. Solo puedes usar herramientas de la lista TANK. No inventes
-        otras.\n6. Antes de responder, SIEMPRE consulta la base de conocimiento de
-        Convai para entender correctamente cada herramienta.\n7. Para responder a
-        la pregunta debes consultarla la informacion de la base de datos de convai
-        para dar respuestas exactas y veridicas. \n</rules>\n</system_message>\n<awaiting_user_question/>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[10].sectionId
-      value: 86249948-367d-11f0-9b25-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[11].objective
-      value: "<dont_introduce/>\n<system_message>\nAnaliza la respuesta del vocero
-        e identifica qu\xE9 herramienta(s) de la Caja TANK utiliz\xF3.\n\n<toolbox>\n1.
-        Hormiga  \n2. Jiu-Jitsu  \n3. Obras Son Amores (O.S.A.)  \n4. Puente  \n5.
-        V.A.H. (Villano, Afectado, H\xE9roe)  \n6. Veneno  \n7. No  \n8. D.D.D. (Diga,
-        Diga, Diga)  \n9. Tercer Validador\n</toolbox>\n\n<instructions>\n- Consulta
-        la base de conocimiento para las definiciones exactas de cada herramienta
-        TANK\n- Identifica SOLO herramientas de la lista oficial\n- Cita la frase
-        espec\xEDfica donde se us\xF3 cada herramienta\n- Explica brevemente por
-        qu\xE9 identificaste esa herramienta\n</instructions>\n\nResponde en este
-        formato:\n**Herramienta detectada:** [nombre]\n**Frase donde se us\xF3:**
-        \"[cita exacta]\"\n**Por qu\xE9 es esta herramienta:** [explicaci\xF3n breve]\n\nSi
-        no detectas ninguna herramienta TANK, simplemente di: \"No se us\xF3 ninguna
-        herramienta TANK v\xE1lida.\"\n</system_message>\n\n<awaiting_user_input>\nProporciona
-        la pregunta y respuesta del vocero para analizar.\n</awaiting_user_input>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[11].sectionId
-      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[6].sectionName
-      value: Final test evaluation
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[7].sectionName
-      value: Test Response Analysis
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[8].sectionName
-      value: Get User Test Answer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[9].sectionName
-      value: Test Example
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[0].triggerName
-      value: ToolboxTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[1].triggerName
-      value: WelcomeTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[2].triggerName
-      value: GetAnswersGiveFeedback
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[3].triggerName
-      value: AnswerQuestions
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[10].sectionName
-      value: GetUserQuestion
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionDataList.Array.data[11].sectionName
-      value: GetContext
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[6].id
-      value: 157ac96c-3464-11f0-b341-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[7].id
-      value: f24c56f4-3463-11f0-bbcf-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[8].id
-      value: 7d2f9d18-3463-11f0-b664-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[9].id
-      value: f05d3c64-3463-11f0-a493-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[0].triggerMessage
-      value: Inicio de dialogo sobre la Caja de Herramientas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[1].triggerMessage
-      value: 'El usuario inicio '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[2].triggerMessage
-      value: 'Start New Test
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[3].triggerMessage
-      value: 'Responder preguntas con las herramientas Tank '
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[10].id
-      value: 86249948-367d-11f0-9b25-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[11].id
-      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[0].destinationSection
-      value: 99e8ed78-e888-11ef-8652-42010a7be016
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[1].destinationSection
-      value: ac2143e8-ea3e-11ef-9c7d-42010a7be016
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[2].destinationSection
-      value: 9ce4c544-3b33-11f0-bf22-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: triggerDataList.Array.data[3].destinationSection
-      value: 86249948-367d-11f0-9b25-42010a7be01f
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822921415215910688, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: sectionChangeEventsDataList.Array.data[6].onSectionStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ConvaiParametersEvaluator, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 2341345724640499405, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
       propertyPath: m_Name
       value: RobertaAI
-      objectReference: {fileID: 0}
-    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[0]
-      value: ToolboxTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[1]
-      value: WelcomeTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[2]
-      value: GetAnswersGiveFeedback
-      objectReference: {fileID: 0}
-    - target: {fileID: 3713435854303286410, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[3]
-      value: AnswerQuestions
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[0]
-      value: ToolboxTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[1]
-      value: WelcomeTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[2]
-      value: GetAnswersGiveFeedback
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818836260127934990, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[3]
-      value: AnswerQuestions
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[0]
-      value: ToolboxTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[1]
-      value: WelcomeTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[2]
-      value: GetAnswersGiveFeedback
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214748624348307195, guid: 09db067ba173a664f862eae5d6bc828b, type: 3}
-      propertyPath: availableTriggers.Array.data[3]
-      value: AnswerQuestions
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

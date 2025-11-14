@@ -133,10 +133,11 @@ public class SessionData
     public int visualSafeZone = 0;
     public int visualDangerZone = 0;
     public string imagePath;
+    public string finalAnswer = " ";
     public List<float> readingResultsvoices = new List<float>();
     public ToneOfVoice kindOfVoice;
 
-    public SessionData(int moveCounter, int safeMovZone, int dangerMovZone, int gestureCounter, int positiveGesture, int negativeGesture, int visualCounter, int visualSafeZone, int visualDangerZone, string imagePath)
+    public SessionData(int moveCounter, int safeMovZone, int dangerMovZone, int gestureCounter, int positiveGesture, int negativeGesture, int visualCounter, int visualSafeZone, int visualDangerZone, string imagePath, string finalAnswer)
     {
         this.moveCounter = moveCounter;
         this.safeMovZone = safeMovZone;
@@ -148,6 +149,7 @@ public class SessionData
         this.visualSafeZone = visualSafeZone;
         this.visualDangerZone = visualDangerZone;
         this.imagePath = imagePath;
+        this.finalAnswer = finalAnswer;
     }
 }
 

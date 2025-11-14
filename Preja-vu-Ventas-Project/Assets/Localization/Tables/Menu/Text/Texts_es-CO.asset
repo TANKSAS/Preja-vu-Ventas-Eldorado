@@ -2798,6 +2798,22 @@ MonoBehaviour:
     m_Localized: Pitching
     m_Metadata:
       m_Items: []
+  - m_Id: 209452019370938368
+    m_Localized: Coaching
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452188007124992
+    m_Localized: "Retroalimentaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452244579897344
+    m_Localized: Preguntame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452301689540608
+    m_Localized: Hablar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

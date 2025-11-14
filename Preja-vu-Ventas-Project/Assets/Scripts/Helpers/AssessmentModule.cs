@@ -14,7 +14,6 @@ public abstract class AssessmentModule : MonoBehaviour
 
     protected bool startAssessmentModule;
     protected string filePath;
-    protected IEnumerator currentCoroutine;
 
     string apiUrl = "https://api.elevenlabs.io/v1/speech-to-text";
     string apiKey = "sk_79b548fd886efd0ba67a0320f0d9de678172a98f7bf7cc41";
@@ -76,6 +75,15 @@ public abstract class AssessmentModule : MonoBehaviour
                 yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(assessment, filePath, apiUrl, apiKey, "por"));
                 break;
         }
+    }
+    public void SaveSessionData()
+    {
+        GameManager.Instance.trackingController.UpdateSessionData();
+        GameManager.Instance.playerStats.lastSessionIndex = GameManager.Instance.playerStats.sessions.Count - 1;
+        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].readingResultsvoices = new List<float>(audioRecordingController.dbData);
+        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].kindOfVoice = GraphManager.Instance.currentToneOfVoice;
+        BaseDataManager.Instance.Save("/PlayerSalesData.json", GameManager.Instance.playerStats);
+        Debug.Log("Sesion Guardada");
     }
 
     protected abstract void SetupUI();

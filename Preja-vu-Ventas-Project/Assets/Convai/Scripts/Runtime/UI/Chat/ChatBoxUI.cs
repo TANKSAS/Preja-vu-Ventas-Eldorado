@@ -15,9 +15,9 @@ namespace Convai.Scripts.Runtime.UI
     {
         private const int MAX_MESSAGES = 25;
         [SerializeField] private GameObject _playerMessageObject, _characterMessageObject;
-        
+
         //Control del Chat XR
-        public GameObject _playerCommandPromptPanelObject, _answerButtonsObject, _loadingObject;
+        public GameObject _playerCommandPromptPanelObject, _answerButtonsHolerObject, _answerButtonsObject, _answerButtonsRecordingObject, _loadingObject;
 
         private readonly List<Message> _messageList = new();
 
@@ -43,16 +43,16 @@ namespace Convai.Scripts.Runtime.UI
         public void SendPlayerCommandPrompt(string command)
         {
             ConvaiParametersEvaluator currentNPC = ConvaiNPCManager.Instance.activeConvaiNPC.GetComponent<ConvaiParametersEvaluator>();
-            currentNPC.isSendingMessage = true;
+            GameManager.Instance.chatController.isSendingMessage = true;
 
             // Detectar tipo de botón (asumiendo texto exacto "retry" o "ok")
             if (command.ToLower() == "retry")
             {
                 currentNPC.SendPlayerMessage(command);
-                currentNPC.isRetryingSendMessage = true;
-                currentNPC.isPlayerConfirmed = false;
-                
-                if (currentNPC.retryCount >= currentNPC.maxRetries)
+                GameManager.Instance.chatController.isRetryingSendMessage = true;
+                GameManager.Instance.chatController.isPlayerConfirmed = false;
+
+                if (GameManager.Instance.chatController.retryCount >= GameManager.Instance.chatController.maxRetries)
                 {
                     Debug.Log("Demasiados reintentos. Lanzando error.");
                     currentNPC.currentState = NarrativeState.Error;
@@ -62,12 +62,22 @@ namespace Convai.Scripts.Runtime.UI
             }
             else if (command.ToLower() == "ok")
             {
-                currentNPC.isRetryingSendMessage = false;
-                currentNPC.isPlayerConfirmed = true;
-                currentNPC.retryCount = 0;  
+                GameManager.Instance.chatController.isRetryingSendMessage = false;
+                GameManager.Instance.chatController.isPlayerConfirmed = true;
+                GameManager.Instance.chatController.retryCount = 0;
+            }
+            else if (command.ToLower() == "no tengo mas preguntas")
+            {
+                GameManager.Instance.chatController.isRetryingSendMessage = false;
+                GameManager.Instance.chatController.isPlayerConfirmed = true;
+                GameManager.Instance.chatController.retryCount = 0;
+                GameManager.Instance.chatController.userFinished = true;
+                currentNPC.SendPlayerMessage(command);
             }
 
-            GameManager.Instance.chatAIBoxUI._answerButtonsObject.SetActive(false);
+            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsObject.SetActive(false);
+            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsRecordingObject.SetActive(false);
         }
 
         /// <summary>

@@ -14,7 +14,7 @@ public class convaiEventsTrigger : ConvaiParametersEvaluator
 
     void Start()
     {
-        GameManager.Instance.chatAIBoxUI.gameObject.SetActive(true);
+        GameManager.Instance.chatController.chatAIBoxUI.gameObject.SetActive(true);
         if (button1 != null && button2 != null && button3 != null && messageList != null && messageList.Count >= 3)
         {
             button1.onClick.AddListener(() => SendMessageButton(messageList[0], 0));

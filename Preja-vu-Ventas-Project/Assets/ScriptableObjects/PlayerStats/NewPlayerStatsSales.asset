@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f21deab63110f94b816d9b009650bb4, type: 3}
   m_Name: NewPlayerStatsSales
   m_EditorClassIdentifier: 
-  playerName: El Dorado
-  playerId: 27
-  isLoged: 1
-  isNewPlayer: 0
+  playerName: 
+  playerId: 
+  isLoged: 0
+  isNewPlayer: 1
   toolsModuleResultsShown: 0
   methodologyModuleResultsShown: 0
   doAndDontModuleResultsShown: 0

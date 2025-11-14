@@ -33,14 +33,14 @@ public class TrackingController: MonoBehaviour
     {
         if (gestureHandsCounter < 1)
         {
-            handsNegativeGestureCounter = 1;
+            handsNegativeGestureCounter = 0;
             handsPositiveGestureCounter = 1;
             gestureHandsCounter = handsNegativeGestureCounter + handsPositiveGestureCounter;
         }
 
         newSession = new SessionData(moveHandsCounter, handsSafeZonaMovCounter, handsDangerMovCounter,
         gestureHandsCounter, handsPositiveGestureCounter, handsNegativeGestureCounter, eyesContactCounter,
-        eyesSafeZoneCounter, eyesDangerZoneCounter, GameManager.Instance.screenshotController.filePath);
+        eyesSafeZoneCounter, eyesDangerZoneCounter, GameManager.Instance.screenshotController.filePath, GameManager.Instance.elevatorPitchController.finalAnswer);
         GameManager.Instance.playerStats.sessions.Add(newSession);
         Debug.Log("Guardo");
     }

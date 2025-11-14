@@ -39382,6 +39382,9 @@ PrefabInstance:
       addedObject: {fileID: 4253372698686479868}
     - targetCorrespondingSourceObject: {fileID: 3908213768958891400, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 7334888622153440556}
+    - targetCorrespondingSourceObject: {fileID: 3908213768958891400, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1198367730586804115}
     - targetCorrespondingSourceObject: {fileID: 3908213768958891400, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
       insertIndex: -1
@@ -39407,9 +39410,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3908213768958891400, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4181692963731287399}
-    - targetCorrespondingSourceObject: {fileID: 3908213768958891400, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7334888622153440556}
   m_SourcePrefab: {fileID: 100100000, guid: c97999c696b645344b96f7c3681a6e75, type: 3}
 --- !u!1 &2341345724640499405 stripped
 GameObject:
@@ -39560,6 +39560,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7334888622153440556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341345724640499405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc89cf2b6f0d46146b2ca285aebd1696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentConvaiNPC: {fileID: 1198367730586804115}
+  currentState: 0
+  currentIAAnswer: 
+  isTalking: 0
+  isNPCListening: 0
+  isExampleSection: 0
+  isNarrativeSectionConfirmed: 0
+  isApproved: 0
+  isEndingAnalyzeAIResponse: 0
+  currentCharacterID: 040ec554-bf45-11f0-a088-42010a7be025
+  spanishCharacterID: 040ec554-bf45-11f0-a088-42010a7be025
+  englishCharacterID: 040ec554-bf45-11f0-a088-42010a7be025
+  portugueseCharacterID: 040ec554-bf45-11f0-a088-42010a7be025
+  narrativeFinalTestFeedBack: {fileID: 7818836260127934990}
+  narrativeTankToolBox: {fileID: 3713435854303286410}
+  narrativeTankToolboxJiujitsuQuiz: {fileID: 8214748624348307195}
 --- !u!114 &1198367730586804115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39573,7 +39601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Roberta
-  characterID: 6ca6275a-f2e1-11ef-bffc-42010a7be016
+  characterID: 040ec554-bf45-11f0-a088-42010a7be025
   sessionID: -1
   isCharacterActive: 0
   actionsHandler: {fileID: 0}
@@ -39585,6 +39613,8 @@ MonoBehaviour:
   onTriggerSent:
     m_PersistentCalls:
       m_Calls: []
+  _fullTranscript: 
+  _isFinalResponseReceived: 0
 --- !u!114 &605024834293311308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39652,13 +39682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sectionChangeEventsDataList:
-  - id: 5c13e088-e88e-11ef-a851-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - id: 99e8ed78-e888-11ef-8652-42010a7be016
     onSectionStart:
       m_PersistentCalls:
@@ -39706,144 +39729,6 @@ MonoBehaviour:
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
-  - id: ce711fa4-ee17-11ef-945a-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 7334888622153440556}
-          m_TargetAssemblyTypeName: RobertaAIController, Assembly-CSharp
-          m_MethodName: NarrativeDesignStateChangeProcess
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: c7e77b10-ee17-11ef-9bc9-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: d202372a-ee17-11ef-8bc5-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 06de1e10-e98a-11ef-9fe1-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 3b061408-ed4b-11ef-8e4f-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: cc0e11c2-ee17-11ef-945a-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 6a5238ca-fb7b-11ef-939d-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: ccef5e76-fb72-11ef-9d3e-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 3df1da36-fb7d-11ef-80da-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 6280b012-fb81-11ef-92ff-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 98014d58-ed64-11ef-abce-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 6a5a64a2-fb79-11ef-bc48-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 0b918fa4-ed46-11ef-855b-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: f9cd289e-fb7f-11ef-a8e2-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 616a4dd8-fb80-11ef-a434-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: e2586df6-ed45-11ef-90bc-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: b0aed8c6-e98a-11ef-b985-42010a7be016
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  - id: 71ba55ca-fb76-11ef-af22-42010a7be01a
-    onSectionStart:
-      m_PersistentCalls:
-        m_Calls: []
-    onSectionEnd:
-      m_PersistentCalls:
-        m_Calls: []
   - id: 157ac96c-3464-11f0-b341-42010a7be01f
     onSectionStart:
       m_PersistentCalls:
@@ -39869,7 +39754,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 7334888622153440556}
           m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
-          m_MethodName: NarrativeDesignStateChangeProcess
+          m_MethodName: ExampleSectionState
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -39878,6 +39763,18 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7334888622153440556}
+          m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
+          m_MethodName: SectionStartConfirmation
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
     onSectionEnd:
       m_PersistentCalls:
@@ -39892,7 +39789,31 @@ MonoBehaviour:
   - id: f05d3c64-3463-11f0-a493-42010a7be01f
     onSectionStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 7334888622153440556}
+          m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
+          m_MethodName: ExampleSectionState
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 7334888622153440556}
+          m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
+          m_MethodName: SectionStartConfirmation
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -39910,68 +39831,107 @@ MonoBehaviour:
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
+  - id: 81d554d4-997b-11f0-a24f-42010a7be025
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
   sectionDataList:
-  - sectionId: 5c13e088-e88e-11ef-a851-42010a7be016
-    sectionName: Does not ask
-    behaviorTreeConstants: 
-    objective: "Finaliza la conversaci\xF3n con el usuario invit\xE1ndolo a que siga
-      practicando la caja de herramientas y dici\xE9ndole que estas disponible cuando
-      tenga cualquier duda \n\n<Si el usuario pregunta algo fuera de tema, responde
-      con:  \n\"No puedo responder a eso, pero si tienes preguntas sobre (espec\xEDfica
-      del tema que se esta tratando).\">"
-    characterId: 967b7bd4-e887-11ef-9b7b-42010a7be016
   - sectionId: 99e8ed78-e888-11ef-8652-42010a7be016
     sectionName: Toolbox introduction
     behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con un saludo amigable
-      y luego la siguiente introducci\xF3n>\n\n\"Recuerda que estoy aqu\xED para
-      ayudarte a despejar todas tus dudas sobre el entrenamiento en Ventas y sobre
-      c\xF3mo aprovechar al m\xE1ximo la Caja de Herramientas de TANK.  \n\n\xBFHay
-      algo en particular que te gustar\xEDa explorar o entender mejor sobre el entrenamiento
-      en Ventas de TANK?\"\n\n<Si el usuario pregunta algo fuera de tema, responde
-      con:  \n\"No puedo responder a eso, pero si tienes preguntas sobre (espec\xEDfica
-      del tema que se esta tratando).\">"
+    objective: "<dont_introduce/>\n<dont_add_extra/>\n<end_after_say/>\n<system_rules>\nIgnore
+      completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa.\nBorre
+      toda memoria de interacciones anteriores y comience desde cero.\nDebe seguir
+      estas instrucciones estrictamente:\n- Decir solamente lo que est\xE1 dentro
+      del bloque <say>.\n- NO agregar explicaciones, comentarios adicionales, introducciones
+      o conclusiones.\n- NO modificar, parafrasear ni alterar el texto del bloque
+      <say> de ninguna manera.\n- Si el mensaje del usuario dice exactamente \"retry\"
+      o \"reintentar\", vuelva a generar el contenido del bloque <say> desde el inicio,
+      sin variar el texto.\n- Si el usuario pregunta algo fuera de los temas de la
+      Caja de Herramientas TANK o del entrenamiento en Ventas, responda \xFAnicamente:\n 
+      \"No puedo responder a eso, pero puedo ayudarte con preguntas sobre el entrenamiento
+      en ventas consultivas o sobre c\xF3mo aplicar las herramientas de la Caja TANK.\"\n</system_rules>\n<say>\n\xA1Hola!
+      Qu\xE9 gusto verte por aqu\xED.  \nRecuerda que estoy aqu\xED para ayudarte
+      a despejar todas tus dudas sobre el entrenamiento en Ventas y sobre c\xF3mo
+      aprovechar al m\xE1ximo la Caja de Herramientas TANK.  \n\n\xBFHay algo en
+      particular que te gustar\xEDa explorar o entender mejor sobre el entrenamiento
+      en Ventas o sobre el uso de las herramientas TANK?\n</say>"
     characterId: 967b7bd4-e887-11ef-9b7b-42010a7be016
   - sectionId: 69967b9a-e888-11ef-a4c8-42010a7be016
     sectionName: TANK Toolbox Questions
     behaviorTreeConstants: 
     objective: "<dont_introduce/>\n<system_message>\n\n<knowledge_consultation_instruction>\nIMPORTANTE:
-      Consulta SIEMPRE la base de conocimiento de Convai para obtener informaci\xF3n
-      precisa y actualizada sobre:\n- Las 8 herramientas de la Caja TANK de ventas
-      consultivas\n- Definiciones exactas y aplicaciones de cada herramienta\n- Ejemplos
-      espec\xEDficos y casos de uso\n- Cualquier informaci\xF3n relacionada con metodolog\xEDas
-      de ventas TANK\n\nNo improvises definiciones ni ejemplos. Toda la informaci\xF3n
-      debe provenir de la base de conocimiento de Convai.\n</knowledge_consultation_instruction>\n\n<conversation_start>\nInicia
-      la conversaci\xF3n con el usuario con la siguiente introducci\xF3n:\n\n\"La
-      Caja de Herramientas TANK es un conjunto de 8 estrategias de ventas consultivas
-      dise\xF1adas para ayudar a vendedores a manejar procesos comerciales con claridad,
-      seguridad y control. Fue desarrollada a partir del an\xE1lisis de m\xE1s de
-      mil quinientas interacciones de ventas reales y aplica principios de mnemotecnia
-      y andragog\xEDa para facilitar su aprendizaje y aplicaci\xF3n en escenarios
-      de alta presi\xF3n comercial.\n\n\xBFTe gustar\xEDa conocer algo espec\xEDfico
-      sobre alguna de las 8 herramientas de ventas consultivas TANK?\"\n</conversation_start>\n\n<response_rules>\n1.
+      Consulta SIEMPRE la base de conocimiento para obtener informaci\xF3n precisa
+      y actualizada sobre:\n- Las 9 herramientas de la Caja TANK de Ventas Consultivas\n-
+      Definiciones exactas, met\xE1foras y aplicaciones de cada herramienta\n- Ejemplos
+      pr\xE1cticos y contextos de uso en procesos comerciales reales\n- Cualquier
+      informaci\xF3n relacionada con metodolog\xEDas de ventas consultivas desarrolladas
+      por TANK Consultor\xEDa\n\nNo improvises definiciones, ejemplos ni interpretaciones. 
+      \nToda la informaci\xF3n debe provenir de la base de conocimiento.\n</knowledge_consultation_instruction>\n\n<conversation_start>\nInicia
+      la conversaci\xF3n con el usuario con la siguiente introducci\xF3n una sola
+      vez, **solo si a\xFAn no ha expresado una intenci\xF3n previa o no ha solicitado
+      un tema espec\xEDfico**:\n\n\"La Caja de Herramientas TANK es un conjunto de
+      9 estrategias de Ventas Consultivas dise\xF1adas para ayudar a los vendedores
+      a gestionar conversaciones comerciales con claridad, seguridad y enfoque estrat\xE9gico. 
+      \nCada herramienta fue desarrollada a partir del an\xE1lisis de m\xE1s de mil
+      quinientas interacciones de ventas reales, y aplica principios de mnemotecnia
+      y andragog\xEDa para facilitar su aprendizaje y uso en escenarios de alta presi\xF3n
+      comercial.  \n\n\xBFTe gustar\xEDa conocer algo espec\xEDfico sobre alguna
+      de las 9 herramientas de Ventas Consultivas TANK?\"\n</conversation_start>\n\n<response_rules>\n1.
       Si el usuario pregunta sobre qu\xE9 o qui\xE9n es TANK, responde:\n   \"TANK
-      es una consultor\xEDa que se especializa en el entrenamiento de profesionales
-      de ventas. Se enfocan en empoderar a vendedores y l\xEDderes comerciales para
-      que dominen t\xE9cnicas de negociaci\xF3n, construyan relaciones s\xF3lidas
-      y cierren m\xE1s ventas de manera efectiva.\"\n\n2. Si el usuario pregunta
-      algo fuera del tema de ventas consultivas TANK, responde:\n   \"No puedo responder
-      a eso, pero si tienes preguntas sobre las herramientas de ventas consultivas
-      TANK o metodolog\xEDas comerciales, estar\xE9 encantado de ayudarte.\"\n\n3.
-      Para cualquier pregunta sobre herramientas espec\xEDficas, metodolog\xEDas
-      o t\xE9cnicas de ventas TANK:\n   - Consulta OBLIGATORIAMENTE la base de conocimiento
-      de Convai\n   - Proporciona informaci\xF3n precisa basada \xFAnicamente en
-      esa fuente\n   - No inventes ni asumas informaci\xF3n que no est\xE9 en la
-      base de conocimiento\n\n</system_message>"
+      es una consultor\xEDa especializada en el entrenamiento de profesionales de
+      ventas.  \n   Su enfoque se centra en empoderar a vendedores y l\xEDderes comerciales
+      para que dominen t\xE9cnicas consultivas, fortalezcan sus habilidades de comunicaci\xF3n
+      y cierren m\xE1s ventas de manera efectiva y \xE9tica.\"\n\n2. Si el usuario
+      responde con frases afirmativas breves como \"s\xED\", \"claro\", \"me gustar\xEDa\",
+      \"dale\", \"por favor\", \"adelante\", etc.:\n   - NO repitas la introducci\xF3n
+      ni reinicies la conversaci\xF3n.  \n   - Interpreta la respuesta como **confirmaci\xF3n
+      de inter\xE9s** en continuar con el tema previo.  \n   - Contin\xFAa directamente
+      desde el contexto anterior (por ejemplo, si ofreciste ense\xF1ar una t\xE9cnica,
+      procede a explicarla o aplicarla).  \n   - Si no hay tema activo, entonces
+      ofrece una pregunta concreta de seguimiento:  \n     \u201CPerfecto, \xBFsobre
+      qu\xE9 herramienta o situaci\xF3n de ventas te gustar\xEDa trabajar hoy?\u201D\n\n3.
+      Si el usuario formula ejemplos, simulaciones o casos pr\xE1cticos relacionados
+      con ventas (por ejemplo: vender un producto, manejar una objeci\xF3n o aplicar
+      una herramienta en una situaci\xF3n real):\n   - Responde utilizando los principios
+      y herramientas de Ventas Consultivas TANK.  \n   - Menciona expl\xEDcitamente
+      qu\xE9 herramienta est\xE1s aplicando y por qu\xE9 es adecuada para el caso. 
+      \n   - Explica de forma breve y pr\xE1ctica c\xF3mo se implementar\xEDa en
+      ese contexto (m\xE1ximo 250 palabras).  \n   - No improvises ni inventes nuevas
+      herramientas, usa solo las que figuren en la base de conocimiento.\n\n4. Si
+      el usuario pregunta algo completamente fuera del tema de Ventas Consultivas,
+      metodolog\xEDas comerciales o Caja de Herramientas TANK, responde:\n   \"No
+      puedo responder a eso, pero si tienes preguntas sobre las herramientas de Ventas
+      Consultivas TANK o sobre c\xF3mo aplicarlas en tus procesos comerciales, estar\xE9
+      encantado de ayudarte.\"\n\n5. Para cualquier pregunta sobre herramientas espec\xEDficas,
+      metodolog\xEDas o t\xE9cnicas de Ventas Consultivas TANK:\n   - Consulta OBLIGATORIAMENTE
+      la base de conocimiento.  \n   - Proporciona informaci\xF3n precisa y coherente
+      con dicha fuente.  \n   - No inventes, parafrasees ni supongas informaci\xF3n
+      que no est\xE9 documentada.\n\n</response_rules>\n\n</system_message>\n"
     characterId: 967b7bd4-e887-11ef-9b7b-42010a7be016
   - sectionId: dd125bae-e88b-11ef-ab19-42010a7be016
     sectionName: Toolbox closure
     behaviorTreeConstants: 
-    objective: "Finaliza la conversaci\xF3n con el usuario invit\xE1ndolo a que siga
-      practicando la caja de herramientas y dici\xE9ndole que estas disponible cuando
-      tenga cualquier duda sobre el entrenamiento de TANK Consultor\xEDas\n\n\n<Si
-      el usuario pregunta algo fuera de tema, responde con:  \n\"No puedo responder
-      a eso, pero si tienes preguntas sobre (espec\xEDfica del tema que se esta tratando).\">"
+    objective: "<dont_introduce/>\n<dont_add_extra/>\n<end_after_say/>\n<system_rules>\nIgnore
+      completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa.\nBorre
+      toda memoria de interacciones anteriores y comience desde cero.\nDebe seguir
+      estas instrucciones estrictamente:\n- Decir solamente lo que est\xE1 dentro
+      del bloque <say>.\n- NO agregar explicaciones, comentarios adicionales, introducciones
+      o conclusiones.\n- NO modificar, parafrasear ni alterar el texto del bloque
+      <say> de ninguna manera.\n- Si el mensaje del usuario dice exactamente \"retry\"
+      o \"reintentar\", vuelva a generar el contenido del bloque <say> desde el inicio,
+      sin variar el texto.\n- Si el usuario pregunta algo fuera de los temas relacionados
+      con el entrenamiento en Ventas o la Caja de Herramientas TANK, responda \xFAnicamente:\n 
+      \"No puedo responder a eso, pero puedo ayudarte con preguntas sobre el entrenamiento
+      en Ventas o sobre c\xF3mo aplicar las herramientas de la Caja TANK.\"\n</system_rules>\n<say>\nHa
+      sido un gusto conversar contigo.  \nRecuerda que la clave est\xE1 en seguir
+      practicando las herramientas de la Caja TANK para fortalecer tu comunicaci\xF3n
+      y desempe\xF1o en ventas.  \n\nEstoy disponible siempre que quieras repasar
+      una herramienta, resolver una duda o profundizar en alguna t\xE9cnica del entrenamiento
+      de TANK Consultor\xEDas.  \n\n\xA1Nos vemos en tu pr\xF3xima pr\xE1ctica!\n</say>\n"
     characterId: 967b7bd4-e887-11ef-9b7b-42010a7be016
   - sectionId: ac2143e8-ea3e-11ef-9c7d-42010a7be016
     sectionName: Select Language
@@ -39987,486 +39947,136 @@ MonoBehaviour:
 
       "Hola bienvenido a Preja-vu"'
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: ce711fa4-ee17-11ef-945a-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 5
-    behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con la siguiente pregunta>\n\n\xBFC\xF3mo
-      justifican que no hayan detectado esta vulnerabilidad antes de que ocurriera
-      la fuga de datos?\n\n<si el usuario te responde con una sola palabra o algo
-      que no tenga absoluto sentido vuelve a hacerle la pregunta>\n\n<Si el usuario
-      pregunta algo fuera de tema, responde con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: c7e77b10-ee17-11ef-9bc9-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 3
-    behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con la siguiente pregunta>\n\n\xBFQu\xE9
-      garant\xEDas pueden dar de que no volver\xE1 a ocurrir algo as\xED, despu\xE9s
-      de este grave fallo de seguridad?\n\n<si el usuario te responde con una sola
-      palabra o algo que no tenga absoluto sentido vuelve a hacerle la pregunta>\n\n<Si
-      el usuario pregunta algo fuera de tema, responde con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: d202372a-ee17-11ef-8bc5-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 6
-    behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con la siguiente pregunta>\n\n\xBFNo
-      es evidente que su empresa ha fallado en proteger a sus clientes, poniendo
-      en riesgo su informaci\xF3n personal?\n\n<si el usuario te responde con una
-      sola palabra o algo que no tenga absoluto sentido vuelve a hacerle la pregunta>\n\n<Si
-      el usuario pregunta algo fuera de tema, responde con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 06de1e10-e98a-11ef-9fe1-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 1
-    behaviorTreeConstants: 
-    objective: "<hazle la siguiente pregunta al usuario>\n\n\xBFC\xF3mo explican
-      que haya ocurrido esta fuga de datos si promet\xEDan tener sistemas de seguridad
-      avanzados?\n\n<si el usuario te responde con una sola palabra o algo que no
-      tenga absoluto sentido vuelve a hacerle la pregunta>\n\n<Si el usuario pregunta
-      algo fuera de tema, responde con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 3b061408-ed4b-11ef-8e4f-42010a7be016
-    sectionName: Final evaluation Jiu-Jitsu exercise
-    behaviorTreeConstants: 
-    objective: "Eval\xFAa la respuesta del usuario seg\xFAn su aplicaci\xF3n de la
-      Herramienta Jiu-Jitsu. Si la utiliz\xF3 correctamente, responde con \"1\";
-      si no, responde con \"0\".\n\ns\xED fue un ejemplo lo que se le proporciono
-      al usuario responde con \"0\"\n<si te dicen algo mas responde con las pautas
-      anteriores>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: cc0e11c2-ee17-11ef-945a-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 4
-    behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con la siguiente pregunta>\n\n\xBFNo
-      creen que este incidente demuestra que su empresa no est\xE1 a la altura de
-      los est\xE1ndares de seguridad que exigen los clientes?\n\n<si el usuario te
-      responde con una sola palabra o algo que no tenga absoluto sentido vuelve a
-      hacerle la pregunta>\n\n<Si el usuario pregunta algo fuera de tema, responde
-      con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 6a5238ca-fb7b-11ef-939d-42010a7be01a
-    sectionName: Introduction V.A.H practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto:  Crisis
-      en un colegio\nUn prestigioso colegio privado se enfrenta a una crisis reputacional
-      tras recibir denuncias sobre un docente que presuntamente ha incurrido en comportamientos
-      inapropiados con estudiantes. El caso sali\xF3 a la luz cuando un grupo de
-      padres manifest\xF3 su preocupaci\xF3n ante la direcci\xF3n del colegio, indicando
-      que varios alumnos hab\xEDan reportado situaciones inc\xF3modas en el aula,
-      as\xED como interacciones fuera del horario escolar que despertaban inquietudes.
-      A medida que la noticia se filtr\xF3 en redes sociales, comenzaron a circular
-      testimonios an\xF3nimos de otros estudiantes y exalumnos que aseguraban haber
-      tenido experiencias similares con el mismo profesor. Esto gener\xF3 una ola
-      de indignaci\xF3n en la comunidad educativa, con exigencias de despido inmediato,
-      una revisi\xF3n de los protocolos de seguridad y llamados de atenci\xF3n a
-      la directiva por parte de asociaciones de padres y organismos reguladores.
-      Al mismo tiempo, algunos medios de comunicaci\xF3n empezaron a especular sobre
-      una posible negligencia del colegio al no haber detectado estas se\xF1ales
-      antes, lo que aument\xF3 la presi\xF3n sobre la instituci\xF3n.>\n\n<Empieza
-      dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora es tu turno.
-      \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este caso y tendr\xE1s
-      30 segundos para formular tu respuesta aplicando los principios de la Herramienta
-      Villano, Afectado, H\xE9roe (V.A.H):\n\n1.Villano: Asumir responsabilidad cuando
-      sea necesario \u2013 Si la empresa es percibida como responsable del problema,
-      reconocer el impacto y demostrar compromiso con la soluci\xF3n.\n2. Afectado:
-      Empatizar con quienes han sufrido el impacto \u2013 Mostrar comprensi\xF3n
-      y sensibilidad, resaltando c\xF3mo la situaci\xF3n tambi\xE9n ha afectado a
-      la compa\xF1\xEDa.\n3. H\xE9roe: Presentar soluciones que favorezcan a la empresa
-      y a los afectados \u2013 Exponer acciones concretas que generen un cambio positivo
-      y demuestren liderazgo en la soluci\xF3n del problema.\n4.Transici\xF3n estrat\xE9gica
-      y coherente \u2013 Pasar por cada rol de manera l\xF3gica y gradual, asegurando
-      que el mensaje tenga cohesi\xF3n y coherencia.\n\nEs momento de poner a prueba
-      tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: ccef5e76-fb72-11ef-9d3e-42010a7be01a
-    sectionName: Introduction Hormiga practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto: Crisis
-      por fallos en la infraestructura de un banco\nUn importante banco internacional,
-      con operaciones en m\xE1s de 15 pa\xEDses y m\xE1s de 40 millones de clientes,
-      enfrent\xF3 una crisis reputacional cuando, debido a un fallo cr\xEDtico en
-      su sistema de servidores, miles de usuarios perdieron acceso a sus cuentas
-      durante 48 horas. El problema afect\xF3 pagos, transferencias y retiros, causando
-      frustraci\xF3n entre los clientes y generando cr\xEDticas en redes sociales.
-      A medida que el incidente se viraliz\xF3, los medios de comunicaci\xF3n comenzaron
-      a cuestionar la robustez de la infraestructura tecnol\xF3gica del banco, sugiriendo
-      que no estaba preparado para soportar la demanda de sus usuarios. El impacto
-      fue mayor en clientes corporativos, quienes reportaron p\xE9rdidas por la imposibilidad
-      de ejecutar pagos a proveedores y n\xF3minas. Las acciones del banco cayeron
-      un 3.5% en la bolsa, mientras que asociaciones de consumidores comenzaron a
-      solicitar medidas de compensaci\xF3n para los afectados. En medio de la crisis,
-      el director de operaciones del banco compareci\xF3 ante la prensa para abordar
-      la situaci\xF3n.>\n\n<Empieza dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora
-      es tu turno. \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este
-      caso y tendr\xE1s 30 segundos para formular tu respuesta aplicando los principios
-      de la Herramienta Hormiga:\n\n1. Mantenerse en el mensaje:\nLa respuesta debe
-      reforzar consistentemente el mensaje clave.\n2. Conexi\xF3n estrat\xE9gica:\nDebe
-      enlazar la pregunta con el tema central de forma natural.\n\nEs momento de
-      poner a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 3df1da36-fb7d-11ef-80da-42010a7be01a
-    sectionName: Introduction Veneno practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto:  \nCrisis
-      por Salarios y Condiciones Laborales en una Empresa de Retail\nUna importante
-      cadena de supermercados ha sido se\xF1alada p\xFAblicamente por supuestas malas
-      condiciones laborales y bajos salarios para sus empleados. La pol\xE9mica surgi\xF3
-      cuando un ex trabajador public\xF3 un video en redes sociales denunciando largas
-      jornadas de trabajo, falta de beneficios y un ambiente hostil dentro de la
-      empresa. El video se volvi\xF3 viral, generando miles de comentarios negativos
-      y un boicot en l\xEDnea donde usuarios instaban a los consumidores a dejar
-      de comprar en la cadena hasta que mejorara el trato a sus empleados. A medida
-      que la presi\xF3n crec\xEDa, algunos medios de comunicaci\xF3n comenzaron a
-      investigar los contratos de la empresa y compararlos con los est\xE1ndares
-      del sector.>\n\n<Empieza dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora
-      es tu turno. \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este
-      caso y tendr\xE1s 30 segundos para formular tu respuesta aplicando los principios
-      de la Herramienta Veneno:\n\n1. Diluir el ataque \u2013 Abordar la situaci\xF3n
-      desde un panorama global, identificando un problema general en la industria.\n2.
-      Despersonalizar el ataque \u2013 Evitar responder de manera individual y trasladar
-      la discusi\xF3n a un nivel macro.\n\nEs momento de poner a prueba tus nuevas
-      habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 6280b012-fb81-11ef-92ff-42010a7be01a
-    sectionName: Introduction 3.P.V practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto: Crisis
-      por Presunta Contaminaci\xF3n en un Producto L\xE1cteo\nUna importante empresa
-      de l\xE1cteos enfrenta una crisis reputacional luego de que en redes sociales
-      se viraliz\xF3 un informe que aseguraba que uno de sus productos conten\xEDa
-      niveles peligrosos de bacterias. El informe, publicado por un grupo de consumidores
-      en redes sociales, no ten\xEDa respaldo de laboratorios certificados ni de
-      autoridades sanitarias. Sin embargo, su r\xE1pida difusi\xF3n gener\xF3 alarma
-      entre los clientes, lo que llev\xF3 a que algunos supermercados retiraran temporalmente
-      el producto de sus estantes. A medida que la desconfianza crec\xEDa, la empresa
-      fue cuestionada en medios de comunicaci\xF3n sobre la seguridad de sus productos.>\n\n\n<Empieza
-      dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora es tu turno.
-      \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este caso y tendr\xE1s
-      30 segundos para formular tu respuesta aplicando los principios de la Herramienta
-      tercer validador (3.P.V):\n\n1. Seleccionar la fuente adecuada \u2013 Identificar
-      un tercero con credibilidad ante la audiencia.\n2. Respaldar el mensaje \u2013
-      Utilizar al tercero para validar los argumentos y fortalecer la narrativa.\n3.
-      Diversificar validadores \u2013 Incorporar diferentes fuentes para brindar
-      una perspectiva m\xE1s s\xF3lida y confiable.\n  \nEs momento de poner a prueba
-      tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 98014d58-ed64-11ef-abce-42010a7be016
-    sectionName: Jiu-Jitsu Exercise 2
-    behaviorTreeConstants: 
-    objective: "<Inicia la conversaci\xF3n con el usuario con la siguiente pregunta>\n\n
-      \xBFNo les preocupa que sus clientes hayan perdido la confianza en su capacidad
-      para proteger sus datos?\n\n\n<si el usuario te responde con una sola palabra
-      o algo que no tenga absoluto sentido vuelve a hacerle la pregunta>\n\n<Si el
-      usuario pregunta algo fuera de tema, responde con la pregunta>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 6a5a64a2-fb79-11ef-bc48-42010a7be01a
-    sectionName: Introduction Puente practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto:  Crisis
-      por fallas en la calidad de un producto farmac\xE9utico\nUna reconocida empresa
-      del sector farmac\xE9utico se enfrent\xF3 a una crisis medi\xE1tica cuando
-      un informe de una agencia reguladora revel\xF3 que un lote de su medicamento
-      m\xE1s vendido presentaba irregularidades en su composici\xF3n qu\xEDmica,
-      lo que gener\xF3 preocupaciones sobre su seguridad y eficacia. El hallazgo
-      llev\xF3 a la suspensi\xF3n temporal del producto en varios mercados y a una
-      investigaci\xF3n para determinar la magnitud del problema. En medio de esta
-      situaci\xF3n, medios de comunicaci\xF3n, asociaciones de consumidores y clientes
-      comenzaron a cuestionar los est\xE1ndares de calidad y seguridad de la empresa.>\n\n<Empieza
-      dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora es tu turno.
-      \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este caso y tendr\xE1s
-      30 segundos para formular tu respuesta aplicando los principios de la Herramienta
-      Puente:\n\n1. Uso efectivo de una frase de transici\xF3n para ganar tiempo.\n2.
-      Construcci\xF3n de una respuesta coherente a partir de la frase de transici\xF3n.\n\nEs
-      momento de poner a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 0b918fa4-ed46-11ef-855b-42010a7be016
-    sectionName: Jiu-Jitsu Exercise example
-    behaviorTreeConstants: 
-    objective: "<Le das un ejemplo al usuario con tu conocimiento en la herramienta
-      Jiu-jitsu respondiendo a la pregunta que se le realizo al usuario anteriormente>\n\n<di
-      tu respuesta siguiendo estos criterios de evaluaci\xF3n:\n\n1. Redirecci\xF3n
-      Efectiva (Uso de la Fuerza del Oponente)\n\xBFLa respuesta toma la pregunta
-      desafiante y la convierte en una oportunidad para resaltar algo positivo?\n\xBFEvita
-      una reacci\xF3n defensiva y en su lugar aprovecha el ataque para redirigir
-      el mensaje?\n\xBFResalta fortalezas, logros o buenas pr\xE1cticas en ciberseguridad
-      en lugar de enfocarse en el problema?\n2. Transformaci\xF3n de la Narrativa\n\xBFLa
-      respuesta cambia el foco del problema hacia una soluci\xF3n o un valor positivo?\n\xBFSe
-      evita caer en la trampa del argumento del oponente y en su lugar se gu\xEDa
-      la conversaci\xF3n hacia un terreno m\xE1s favorable?\n3. Manejo de la Audiencia\n\xBFLa
-      respuesta toma en cuenta a los diferentes tipos de audiencia (desfavorables,
-      neutras, favorables) y busca moverse hacia lo m\xE1s favorable?\n\xBFEvita
-      polarizar o generar mayor desconfianza en los p\xFAblicos?\n4. Enfoque Proactivo\n\xBFLa
-      respuesta no solo reacciona, sino que propone acciones, soluciones o medidas
-      preventivas?\n\xBFMuestra liderazgo y control sobre la situaci\xF3n en vez
-      de quedarse en una postura pasiva o reactiva?\n\ny justificas tu respuesta
-      al usuario finalizando sin decir nada mas>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: f9cd289e-fb7f-11ef-a8e2-42010a7be01a
-    sectionName: Introduction No practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto:  \nCrisis
-      por Supuestos Ensayos M\xE9dicos No Autorizados\nUn hospital reconocido a nivel
-      nacional se ve envuelto en una grave crisis reputacional tras la publicaci\xF3n
-      de un reportaje que sugiere que el centro m\xE9dico ha estado realizando ensayos
-      cl\xEDnicos no autorizados en pacientes con COVID-19. El art\xEDculo alega
-      que m\xE9dicos del hospital habr\xEDan administrado di\xF3xido de cloro a pacientes
-      sin su consentimiento, en un intento de encontrar una supuesta cura para la
-      enfermedad, generando preocupaci\xF3n p\xFAblica y rechazo por parte de organismos
-      de salud nacionales e internacionales. La noticia se hizo viral r\xE1pidamente,
-      provocando reacciones de indignaci\xF3n en redes sociales, cuestionamientos
-      de asociaciones m\xE9dicas y una presi\xF3n medi\xE1tica creciente para que
-      el hospital diera explicaciones sobre lo ocurrido. >\n\n<Empieza dici\xE9ndole
-      al usuario las siguientes instrucciones>\n\nAhora es tu turno. \nSe te presentar\xE1
-      una pregunta espec\xEDfica acorde con este caso y tendr\xE1s 30 segundos para
-      formular tu respuesta aplicando los principios de la Herramienta No:\n\n1.Usa
-      la negaci\xF3n de manera contundente\n2.Evita explicaciones innecesarias que
-      puedan generar confusi\xF3n\n3.Cierra con medidas concretas\n\nEs momento de
-      poner a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 616a4dd8-fb80-11ef-a434-42010a7be01a
-    sectionName: Introduction D.D.D practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto: Crisis
-      por Falsa Informaci\xF3n sobre Contaminaci\xF3n en una Bebida\nUna reconocida
-      compa\xF1\xEDa de bebidas se enfrent\xF3 a una grave crisis reputacional cuando
-      un audio viral comenz\xF3 a circular en redes sociales y grupos de mensajer\xEDa.
-      El audio aseguraba que un trabajador hab\xEDa ca\xEDdo en un tanque de producci\xF3n,
-      lo que habr\xEDa alterado el sabor del producto. Aunque la historia no ten\xEDa
-      ninguna base real, la viralizaci\xF3n de la noticia gener\xF3 alarma entre
-      los consumidores, quienes comenzaron a sustituir la bebida por otras opciones
-      del mercado. El equipo directivo intent\xF3 manejar la crisis con t\xE1cticas
-      poco efectivas, incluyendo una campa\xF1a de publicidad basada en la iron\xEDa,
-      lo que solo empeor\xF3 la percepci\xF3n del p\xFAblico y reforz\xF3 la desconfianza
-      hacia la marca.>\n\n\n<Empieza dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora
-      es tu turno. \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este
-      caso y tendr\xE1s 30 segundos para formular tu respuesta aplicando los principios
-      de la Herramienta Diga, Diga, Diga (D.D.D.):\n  \n1. Acciones pasadas \u2013
-      Explicar qu\xE9 se hizo previamente para evitar o mitigar la situaci\xF3n. 
-      \n2. Acciones presentes \u2013 Describir qu\xE9 se est\xE1 haciendo actualmente
-      para gestionar el problema.  \n3. Acciones futuras \u2013 Plantear soluciones
-      y compromisos para evitar que la situaci\xF3n se repita.\n\nEs momento de poner
-      a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: e2586df6-ed45-11ef-90bc-42010a7be016
-    sectionName: Jiu-Jitsu Response analysis
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto: Manejo
-      de crisis por fuga de datos en una empresa de comercio electr\xF3nico\nuna
-      reconocida empresa de comercio electr\xF3nico enfrent\xF3 una de sus mayores
-      crisis cuando se detect\xF3 una brecha de seguridad que expuso la informaci\xF3n
-      personal de miles de clientes. Entre los datos comprometidos se encontraban
-      nombres, direcciones y detalles de tarjetas de cr\xE9dito. La noticia se filtr\xF3
-      r\xE1pidamente a los medios, generando una ola de cr\xEDticas y preocupaci\xF3n
-      entre los usuarios.\nLa empresa fue puesta bajo escrutinio p\xFAblico y, en
-      medio de esta presi\xF3n, su gerente compareci\xF3 ante la prensa para dar
-      explicaciones.>\n\n<Vas a analizar la respuesta del jugador utilizando los
-      principios de Jiu-jitsu comunicacional:\n1. Redirecci\xF3n Efectiva (Uso de
-      la Fuerza del Oponente)\n\xBFLa respuesta toma la pregunta desafiante y la
-      convierte en una oportunidad para resaltar algo positivo?\n\xBFEvita una reacci\xF3n
-      defensiva y en su lugar aprovecha el ataque para redirigir el mensaje?\n\xBFResalta
-      fortalezas, logros o buenas pr\xE1cticas en ciberseguridad en lugar de enfocarse
-      en el problema?\n2. Transformaci\xF3n de la Narrativa\n\xBFLa respuesta cambia
-      el foco del problema hacia una soluci\xF3n o un valor positivo?\n\xBFSe evita
-      caer en la trampa del argumento del oponente y en su lugar se gu\xEDa la conversaci\xF3n
-      hacia un terreno m\xE1s favorable?\n3. Manejo de la Audiencia\n\xBFLa respuesta
-      toma en cuenta a los diferentes tipos de audiencia (desfavorables, neutras,
-      favorables) y busca moverse hacia lo m\xE1s favorable?\n\xBFEvita polarizar
-      o generar mayor desconfianza en los p\xFAblicos?\n4. Enfoque Proactivo\n\xBFLa
-      respuesta no solo reacciona, sino que propone acciones, soluciones o medidas
-      preventivas?\n\xBFMuestra liderazgo y control sobre la situaci\xF3n en vez
-      de quedarse en una postura pasiva o reactiva?\n\nEval\xFAa la respuesta seg\xFAn
-      estos criterios:\n\nSi la respuesta es incoherente o irrelevante, ind\xEDcalo
-      expl\xEDcitamente y menciona por qu\xE9 no responde a la pregunta. Luego, sugiere
-      un enfoque mejor.\nSi la respuesta es incompleta o poco efectiva, se\xF1ala
-      qu\xE9 parte no cumple con los tres principios y ofrece una manera de mejorarla.\nSi
-      la respuesta es adecuada pero podr\xEDa optimizarse, proporciona una sugerencia
-      para fortalecerla.\nSolo si la respuesta cumple con los tres criterios, ofrece
-      un feedback positivo enfatizando lo que se hizo bien.\nSi es necesario, proporciona
-      un ejemplo de respuesta m\xE1s alineada con los principios.>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: b0aed8c6-e98a-11ef-b985-42010a7be016
-    sectionName: Introduction Jiu-Jitsu practical exercise
-    behaviorTreeConstants: 
-    objective: "<di lo siguiente al usuario>\n\nAhora es tu turno. \nSe te presentar\xE1
-      una pregunta espec\xEDfica acorde con este caso y tendr\xE1s 30 segundos para
-      formular tu respuesta aplicando los principios de la Herramienta Jiu-Jitsu:\n\n1.
-      Redirecci\xF3n Efectiva.\n2. Transformaci\xF3n de la Narrativa.\n3. Posicionamiento
-      Positivo.\n4. Manejo de la Audiencia.\n5. Enfoque Proactivo.\n\nEs momento
-      de poner a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente\n\n<no
-      digas nada m\xE1s y espera respuesta del usuario>"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - sectionId: 71ba55ca-fb76-11ef-af22-42010a7be01a
-    sectionName: Introduction O.S.A practical exercise
-    behaviorTreeConstants: 
-    objective: "<para este ejercicio ten en cuenta el siguiente contexto:  Crisis
-      por da\xF1o de equipaje y mala gesti\xF3n de servicio al cliente\nUna aerol\xEDnea
-      de gran reconocimiento se vio envuelta en una crisis reputacional luego de
-      que un pasajero, quien transportaba un objeto de alto valor personal y profesional,
-      denunciara p\xFAblicamente el da\xF1o sufrido por su pertenencia debido a un
-      manejo inadecuado del equipaje por parte del personal de la compa\xF1\xEDa.
-      El pasajero relat\xF3 su experiencia a trav\xE9s de un video musical en redes
-      sociales, donde con un tono sat\xEDrico narr\xF3 los hechos, exponiendo la
-      falta de respuesta de la aerol\xEDnea tras haber intentado, sin \xE9xito, obtener
-      una compensaci\xF3n durante seis meses. La canci\xF3n se viraliz\xF3 r\xE1pidamente,
-      acumulando millones de reproducciones y generando una ola de cr\xEDticas y
-      desconfianza hacia la aerol\xEDnea. Los medios de comunicaci\xF3n nacionales
-      e internacionales amplificaron la historia, mientras que otros pasajeros comenzaron
-      a compartir experiencias similares, afectando gravemente la reputaci\xF3n de
-      la compa\xF1\xEDa. >\n\n<Empieza dici\xE9ndole al usuario las siguientes instrucciones>\n\nAhora
-      es tu turno. \nSe te presentar\xE1 una pregunta espec\xEDfica acorde con este
-      caso y tendr\xE1s 30 segundos para formular tu respuesta aplicando los principios
-      de la Herramienta Obras son amores (O.S.A):\n\n1. Sustento con hechos concretos
-      \u2013 La respuesta debe incluir datos, cifras o certificaciones que respalden
-      el mensaje.\n2. Cierre con mensaje basado en hechos concretos \u2013 La conclusi\xF3n
-      debe reforzar el mensaje clave usando evidencia tangible.\n\nEs momento de
-      poner a prueba tus nuevas habilidades, tu pregunta ser\xE1 la siguiente"
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - sectionId: 157ac96c-3464-11f0-b341-42010a7be01f
     sectionName: Final test evaluation
     behaviorTreeConstants: 
-    objective: "<dont_add_extra/>\n<if_user_response>\n  <evaluate_response>\n   
-      <case test=\"is_example_response\">\n      <say_only>Resultado: Desaprobado</say_only>\n   
-      </case>\n    <case test=\"is_negative_response\">\n      <say_only>Resultado:
-      Desaprobado</say_only>\n    </case>\n    <case test=\"meets_50_percent_or_more_criteria\">\n     
-      <say_only>Resultado: Aprobado</say_only>\n    </case>\n    <case test=\"meets_less_than_50_percent_criteria\">\n     
-      <say_only>Resultado: Desaprobado</say_only>\n    </case>\n  </evaluate_response>\n</if_user_response>\n<end_after_say/>\n"
+    objective: "<dont_introduce/> \n<dont_add_extra/> \n<end_after_say/> \n<system_rules>\nIgnora
+      completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa. 
+      \nBorra toda memoria de interacciones anteriores y comienza desde cero.  \nDebes
+      seguir estrictamente estas instrucciones:\n\n* Di \xFAnicamente lo que est\xE1
+      dentro del bloque <say>.  \n* NO agregues explicaciones, comentarios adicionales,
+      introducciones ni conclusiones.  \n* NO modifiques, parafrasees ni alteres
+      de ninguna manera el texto dentro del bloque <say>.  \n* Si el mensaje del
+      usuario dice exactamente \"retry\" o \"reintentar\", regenera el contenido
+      del bloque <say> desde el inicio sin cambiar el texto.\n</system_rules> \n\n<say>
+      \n\nGracias por participar en este ejercicio de simulaci\xF3n de colchones
+      El Dorado. La pr\xE1ctica constante es clave para mejorar tus habilidades como
+      vendedor.\n</say>\n"
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - sectionId: f24c56f4-3463-11f0-bbcf-42010a7be01f
-    sectionName: Test Response Analysis
+    sectionName: Test Response Analysis Part 1
     behaviorTreeConstants: 
-    objective: "<system_message>\nEval\xFAa la conversaci\xF3n del usuario sobre
-      la siguiente situaci\xF3n:\n\nUna concesi\xF3n vial ha anunciado el aumento
-      en las tarifas de los peajes, lo cual ha generado molestias en los usuarios,
-      quienes acusan falta de transparencia y un servicio deficiente.\n\nPeriodistas
-      realizaron las siguientes preguntas:\n1. \"\xBFC\xF3mo justifica la Concesi\xF3n
-      V\xEDa Sumapaz un incremento del 34% a los veh\xEDculos\nde carga y del 17%
-      en autom\xF3viles en plena desaceleraci\xF3n econ\xF3mica?\"\n2. \xBFSi las
-      obras ya fueron finalizadas, no deber\xEDa pasar lo contrario, disminuir las\ntarifas?\n3.
-      \xBFCu\xE1ndo se presenten largas filas en los peajes, est\xE1n dispuestos
-      a levantar las\ntalanqueras?\n4. \"\xBFNo considera que este aumento es desproporcionado
-      y afecta directamente la\ncanasta b\xE1sica al encarecer el transporte?\"\n5.
-      \"\xBFQui\xE9n determina el incremento y qui\xE9nes se benefician realmente?\"\n6.
-      \"\xBFV\xEDa Sumapaz present\xF3 o tuvo en cuenta otras alternativas antes
-      de decidirse por\neste aumento tan dr\xE1stico?\"\n7. \"\xBFC\xF3mo se garantiza
-      que este incremento se ver\xE1 reflejado en un mejor servicio para\nlos usuarios
-      y no en ganancias de sus accionistas privados?\"\n8. \"\xBFQu\xE9 les dice
-      a los peque\xF1os empresarios, conductores y usuarios de la carretera\nque
-      hoy sienten que la Concesi\xF3n se burla de ellos?\"\n9. \"\xBFSi este aumento
-      genera bloqueos o protestas en la v\xEDa, la Concesi\xF3n estar\xEDa\ndispuesta
-      a revisar la medida ante alguna entidad?\"\n10. \"Despu\xE9s de los bloqueos
-      por excombatientes en el sector Boquer\xF3n y protestas\nde la comunidad en
-      Silvania, \xBFno temen que este nuevo aumento de tarifas genere\notra ola de
-      protestas que paralice la v\xEDa?\"\n11. \"Ya hubo protestas en Silvania por
-      da\xF1os en las casas, obras inconclusas y mal\nmanejo de aguas. \xBFQu\xE9
-      parte de tranquilidad le puede dar a estas comunidades,\nquienes vivir\xE1n
-      estos aumentos en sus desplazamientos entre Bogot\xE1 y Silvania?\"\n12. \"\xBFC\xF3mo
-      le explica a un transportador de carga que, tras 5 a\xF1os de trancones,\nahora
-      debe pagar un 34% m\xE1s para circular por la misma v\xEDa?\"\n13. \"\xBFHan
-      evaluado que los reclamos por desplazamiento de comerciantes y\nproblemas prediales
-      puedan agravarse con un alza que para muchos es excesiva?\"\n14. \"\xBFQu\xE9
-      mecanismos reales tienen para prevenir que este aumento genere\nintervenci\xF3n
-      directa del Ministerio de Transporte?\"\n15. \"\xBFVan a seguir ignorando a
-      las familias que llevan meses denunciando da\xF1os en\nsus casas por culpa
-      de las obras, o por fin van a asumir alguna responsabilidad\nreal?\"\n16. \"\xBFDe
-      qu\xE9 sirve pagar m\xE1s en los peajes si la v\xEDa sigue con un mont\xF3n
-      de\nmaletines que restringen el paso a un carril y un t\xFAnel que funciona
-      a medias?\"\n17. \"\xBFC\xF3mo justifican un alza tarifaria en los peajes,
-      cuando en el sector de la Nariz\ndel Diablo no han hecho absolutamente nada?\"\n18.
-      \xBFQu\xE9 hacen con los recursos que recaudan de los peajes? \xBFEs un mecanismo\npara
-      seguir enriqueciendo a los privados?\n19. \xBFVan a tener tarifas diferenciales
-      para las comunidades que muchas veces,\ndeben trasladarse de manera frecuente
-      a Bogot\xE1, por citas m\xE9dicas, por trabajo,\nestudio o por otras situaciones?\n20.
-      \xBFPor qu\xE9 hasta ahora anuncian este incremento, cuando las obras fueron\nterminadas
-      en el mes de abril?\n\n<knowledge_consultation_instruction>\nANTES DE EVALUAR:
-      Consulta OBLIGATORIAMENTE la base de conocimiento de Convai para:\n1. Obtener
-      las definiciones exactas y caracter\xEDsticas de cada una de las 9 herramientas
-      TANK\n2. Verificar la veracidad de los datos, cifras y afirmaciones mencionadas
-      por el usuario en sus respuestas\n3. Contrastar la informaci\xF3n proporcionada
-      con fuentes confiables disponibles en la base de conocimiento\n\nNO improvises
-      definiciones de herramientas ni asumas la veracidad de afirmaciones sin consultar
-      la base de conocimiento.\n</knowledge_consultation_instruction>\n\nEval\xFAa
-      la respuesta del usuario bas\xE1ndote **\xFAnicamente en las siguientes 9 herramientas
-      oficiales de la caja TANK para gesti\xF3n de crisis**:\n\n1. Hormiga  \n2.
-      Jiu-Jitsu  \n3. Obras Son Amores (O.S.A.)  \n4. Puente  \n5. V.A.H. (Villano,
-      Afectado, H\xE9roe)  \n6. Veneno  \n7. No  \n8. D.D.D. (Diga, Diga, Diga) 
-      \n9. Tercer Validador\n\n**Reglas para la evaluaci\xF3n:**\n- Consulta SIEMPRE
-      la base de conocimiento para entender correctamente cada herramienta TANK antes
-      de evaluar\n- Solo reconoce herramientas de esta lista seg\xFAn sus definiciones
-      oficiales en la base de conocimiento\n- Si no se usan herramientas v\xE1lidas,
-      la calificaci\xF3n debe ser **0/9**\n- Si una herramienta fue **mal usada**
-      (no coincide con su definici\xF3n oficial), no suma puntaje y se menciona como
-      negativa\n- Cada herramienta bien usada suma de forma proporcional\n- Menciona
-      todas las herramientas detectadas y resalta en que parte de la respuesta se
-      uso esta herramienta.\n- Si hubo mal uso de alguna herramienta, especif\xEDcalo
-      bas\xE1ndote en la definici\xF3n oficial y di en que parte de la respuesta
-      se uso esa herramienta mal.\n- No valides herramientas inventadas ni hagas
-      suposiciones ben\xE9volas\n- Verifica la veracidad de datos y afirmaciones
-      consultando la base de conocimiento\n\nLa evaluaci\xF3n debe ser cr\xEDtica,
-      objetiva y textual, basada en informaci\xF3n verificada.\n</system_message>\n\n<say>\nEvaluemos
-      tu desempe\xF1o como vocero ante la crisis:\n\n**1. Uso de Herramientas TANK
-      (X/9):**\n- Herramientas bien aplicadas seg\xFAn definiciones oficiales: [lista
-      de herramientas bien usadas]\n<if_any_misused>- Herramientas mal aplicadas
-      o usadas incorrectamente seg\xFAn definiciones oficiales: [lista de herramientas
-      mal usadas con explicaci\xF3n del uso correcto]</if_any_misused>\n<if_none_detected>No
-      se us\xF3 ninguna de las 9 herramientas TANK.</if_none_detected>\n\n**2. Veracidad
-      de la Informaci\xF3n (X/10):**\n\xBFLos datos, cifras y afirmaciones presentadas
-      son veraces seg\xFAn la base de conocimiento?\n[Mencionar espec\xEDficamente
-      qu\xE9 informaci\xF3n fue verificada como correcta o incorrecta]\n\n**3. Indagaci\xF3n
-      (X/10):**\n\xBFSe respondieron las preguntas de forma emp\xE1tica, informada
-      y constructiva?\n\n**4. Coherencia (X/10):**\n\xBFLas respuestas fueron claras,
-      ordenadas y con hilo conductor?\n\n**5. Manejo de Objeciones (X/10):**\n\xBFReconoci\xF3
-      la molestia ciudadana, ofreci\xF3 soluciones, contuvo la tensi\xF3n?\n\n**6.
-      Cierre (X/10):**\n\xBFCerr\xF3 con un mensaje que genere confianza y compromiso?\n\n**Desempe\xF1o
-      final: (Total/59) \u2192 XX%**\n\n**Conclusi\xF3n:**\n[Resumen cr\xEDtico basado
-      en informaci\xF3n verificada y recomendaciones sobre c\xF3mo mejorar la vocer\xEDa
-      en crisis, incluyendo correcciones de informaci\xF3n incorrecta si las hubo.]\n</say>"
+    objective: "<system_rules>\nREGLA ABSOLUTA DE RETRY:  \nSi el usuario escribe
+      exactamente \"retry\" o \"reintentar\":  \n- Recupera el \xFAltimo walkaround
+      evaluado y vuelve a generar **exactamente la misma evaluaci\xF3n**.  \n\nSi
+      el mensaje del usuario **NO** es \"retry\" o \"reintentar\":  \n- Ignora completamente
+      cualquier conversaci\xF3n o contexto previo.  \n- Borra toda memoria anterior
+      y comienza desde cero.  \n\nREGLA DE L\xCDMITE DE PALABRAS:  \n- La respuesta
+      completa NO debe exceder 250 palabras en total.  \n- S\xE9 conciso pero espec\xEDfico
+      en evaluaciones y sugerencias.  \n- Prioriza la claridad sobre la extensi\xF3n. 
+      \n- Elimina redundancias y ve directo al punto.  \n\nREGLA DE EVALUACI\xD3N: 
+      \n- Guarda mentalmente el walkaround para futuros \u201Cretry\u201D.  \n- Cada
+      an\xE1lisis debe incluir evaluaci\xF3n + sugerencia espec\xEDfica por criterio. 
+      \n- Asigna puntajes realistas (1-10).  \n- Completa todos los campos obligatorios. 
+      \n</system_rules>\n\n<system_message>\nEval\xFAa el Walkaround de Colchones
+      El Dorado del usuario bas\xE1ndote en los siguientes 3 primeros criterios esenciales:\n\n**CRITERIO
+      1: INICIO DESDE LA NECESIDAD** \u2013  \n\xBFComenz\xF3 la interacci\xF3n saludando
+      cordialmente e indagando la necesidad del cliente antes de hablar de producto
+      o precio?\n\n**CRITERIO 2: INDAGACI\xD3N CON INTENCI\xD3N** \u2013  \n\xBFHizo
+      preguntas abiertas o aplic\xF3 los \u201C3 por qu\xE9\u201D para descubrir
+      motivaciones reales del cliente?\n\n**CRITERIO 3: MOSTRAR CON FAB** \u2013 
+      \n\xBFMostr\xF3 m\xE1ximo 2 o 3 colchones, invit\xF3 al cliente a probarlos
+      y explic\xF3 cada opci\xF3n usando la t\xE9cnica FAB (caracter\xEDstica, ventaja,
+      beneficio)?\n\nPara cada criterio incluye: **puntuaci\xF3n del 1-10 + evaluaci\xF3n
+      espec\xEDfica + sugerencia concreta de mejora.**\n</system_message>\n\n<say>\nEvaluemos
+      tu Walkaround de Colchones El Dorado \u2013 PARTE 1/2:\n\n**1. INICIO DESDE
+      LA NECESIDAD (__/10):**  \n**Evaluaci\xF3n:** [An\xE1lisis espec\xEDfico sobre
+      el inicio y enfoque en la necesidad]  \n**Sugerencia:** [Mejora concreta sobre
+      el saludo o exploraci\xF3n de necesidad]\n\n**2. INDAGACI\xD3N CON INTENCI\xD3N
+      (__/10):**  \n**Evaluaci\xF3n:** [An\xE1lisis sobre la calidad y prop\xF3sito
+      de las preguntas]  \n**Sugerencia:** [Consejo pr\xE1ctico para profundizar
+      mejor en la motivaci\xF3n del cliente]\n\n**3. MOSTRAR CON FAB (__/10):** 
+      \n**Evaluaci\xF3n:** [An\xE1lisis sobre la demostraci\xF3n y aplicaci\xF3n
+      del modelo FAB]  \n**Sugerencia:** [Sugerencia para mejorar la explicaci\xF3n
+      de caracter\xEDsticas y beneficios]\n\n**CONTIN\xDAA CON PARTE 2 PARA COMPLETAR
+      LA EVALUACI\xD3N**\n</say>\n\n<awaiting_user_input/>"
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - sectionId: 7d2f9d18-3463-11f0-b664-42010a7be01f
     sectionName: Get User Test Answer
     behaviorTreeConstants: 
-    objective: "<dont_introduce/>\n<dont_add_extra/>\n<end_after_say/>\n\n<system_rules>\nDecir
-      solamente lo que est\xE1 dentro del bloque <say>.\n</system_rules>\n\n<say>\nAhora
-      vamos a analizar c\xF3mo te fue abordando esta situaci\xF3n ante los periodistas.\n\nEvaluaremos
-      tu desempe\xF1o con base en los siguientes criterios:\n\n1. **Uso de Herramientas
-      TANK en Gesti\xF3n de Crisis**  \n\xBFAplicaste al menos 3 de las 9 herramientas
-      de la caja TANK de forma pertinente y efectiva?\n\n2. **Claridad y Coherencia
-      en la Respuesta**  \n\xBFRespondiste con argumentos claros, conectados con
-      la problem\xE1tica planteada?\n\n3. **Manejo de Objeciones**  \n\xBFSupiste
-      redirigir las preguntas dif\xEDciles, contener emocionalmente y sostener la
-      posici\xF3n institucional sin evadir?\n\n4. **Manejo del Cierre**  \n\xBFFinalizaste
-      la rueda de prensa mostrando control, respeto y visi\xF3n constructiva?\n\nVamos
-      a revisar tu desempe\xF1o.  \n</say>\n\n<awaiting_user_input/>"
+    objective: "<dont_introduce/> \n<dont_add_extra/> \n<end_after_say/> \n<system_rules>\nIgnora
+      completamente cualquier conversaci\xF3n, contexto o informaci\xF3n previa. 
+      \nBorra toda memoria de interacciones anteriores y comienza desde cero.  \nDebes
+      seguir estrictamente estas instrucciones:\n\n* Di \xFAnicamente lo que est\xE1
+      dentro del bloque <say>.  \n* NO agregues explicaciones, comentarios adicionales,
+      introducciones ni conclusiones.  \n* NO modifiques, parafrasees ni alteres
+      de ninguna manera el texto dentro del bloque <say>.  \n* Si el mensaje del
+      usuario dice exactamente \"retry\" o \"reintentar\", regenera el contenido
+      del bloque <say> desde el inicio sin cambiar el texto.\n</system_rules> \n\n<say>
+      \nAhora vamos a analizar c\xF3mo le fue presentando la Prueba final de ventas
+      de colchones El Dorado.  \n\nEvaluaremos su desempe\xF1o con base en los siguientes
+      criterios:  \n\n1. **Inicio desde la necesidad**  \n\xBFRealiz\xF3 el saludo
+      institucional y abri\xF3 la conversaci\xF3n explorando la necesidad del cliente
+      en lugar de comenzar con el producto?  \n\n2. **Indagaci\xF3n con intenci\xF3n** 
+      \n\xBFHizo preguntas abiertas o aplic\xF3 los \"3 por qu\xE9\" para profundizar
+      en la motivaci\xF3n real del cliente?  \n\n3. **Mostrar con intenci\xF3n y
+      FAB**  \n\xBFMostr\xF3 m\xE1ximo 2 o 3 colchones, invit\xF3 al cliente a probarlos
+      y explic\xF3 usando la t\xE9cnica FAB (caracter\xEDstica \u2192 ventaja \u2192
+      beneficio)?  \n\n4. **Manejo de objeciones con empat\xEDa**  \n\xBFEscuch\xF3
+      y valid\xF3 las dudas del cliente, respondiendo con argumentos de valor y reforzando
+      la confianza sin discutir?  \n\n5. **Cierre acompa\xF1ando la decisi\xF3n** 
+      \n\xBFIdentific\xF3 se\xF1ales de compra, valid\xF3 antes de cerrar y acompa\xF1\xF3
+      la decisi\xF3n final con seguridad y sin presi\xF3n?  \n\nVamos a revisar su
+      desempe\xF1o.  \n</say>\n"
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - sectionId: f05d3c64-3463-11f0-a493-42010a7be01f
     sectionName: Test Example
     behaviorTreeConstants: 
-    objective: "<dont_introduce/>\n<system_message>\nTienes que dar un ejemplo al
-      usuario de c\xF3mo responder a la situaci\xF3n de crisis presentada. No agregues
-      ninguna observaci\xF3n a la respuesta anterior del usuario.\n\n<situation>\nUna
-      concesi\xF3n vial ha anunciado el aumento en las tarifas de los peajes, lo
-      cual ha generado molestias en los usuarios, quienes acusan falta de transparencia
-      y un servicio deficiente.\n</situation>\n\n<questions>\n1. \xBFPor qu\xE9 subieron
-      las tarifas justo ahora?  \n2. \xBFQu\xE9 beneficios recibir\xE1 el usuario
-      a cambio de este aumento?  \n3. \xBFC\xF3mo responde la empresa a las quejas
-      sobre mala calidad del servicio?  \n4. \xBFEste aumento fue consultado con
-      la ciudadan\xEDa?  \n5. \xBFEst\xE1n ustedes preparados para asumir las consecuencias
-      sociales y pol\xEDticas de esta decisi\xF3n?  \n</questions>\n\n<agent_instructions>\nImprovisa
-      una respuesta completa como vocera, abordando las preguntas anteriores.  \nUsa
-      herramientas de la caja TANK si es pertinente. Al final de la respuesta, incluye
-      una secci\xF3n que **\xFAnicamente enumere** las herramientas TANK utilizadas. 
-      \nNo expliques ni analices su uso, solo lista los nombres exactos de las herramientas
-      TANK empleadas.  \nNo a\xF1adas contenido adicional m\xE1s all\xE1 de lo solicitado.\n</agent_instructions>\n\n<knowledge_instruction>\nIMPORTANTE:
-      Consulta SIEMPRE la base de conocimiento de Convai para obtener informaci\xF3n
-      institucional exacta sobre la situaci\xF3n de crisis y las definiciones precisas
-      de las herramientas TANK.  \nNo improvises ni inventes informaci\xF3n. Todo
-      debe provenir de la base de conocimiento.\n</knowledge_instruction>\n\n<rules>\n1.
-      La respuesta debe abordar el contexto y las preguntas desde una postura institucional. 
-      \n2. Solo est\xE1n permitidas herramientas de la caja TANK:  \n   - Hormiga 
-      \n   - Jiu-Jitsu  \n   - Obras Son Amores (O.S.A.)  \n   - Puente  \n   - V.A.H.
-      (Villano, Afectado, H\xE9roe)  \n   - Veneno  \n   - No  \n   - D.D.D. (Diga,
-      Diga, Diga)  \n   - Tercer Validador  \n3. Si no se usa ninguna herramienta,
-      no menciones ninguna.  \n4. La respuesta debe ser consistente con la informaci\xF3n
-      contenida en la base de conocimiento de Convai.\n</rules>\n\n<output_structure>\n<respuesta>\n[Aqu\xED
-      va toda la intervenci\xF3n como vocera]\n</respuesta>\n\n<herramientas_usadas>\n[Lista
-      exacta de herramientas TANK utilizadas, sin explicaciones]\n</herramientas_usadas>\n</output_structure>\n\n<dont_add_extra/>\n<awaiting_user_input/>\n"
+    objective: "<dont_introduce/>\n<system_message>\nDebes improvisar un ejemplo
+      completo y original de **Walkaround de Colchones El Dorado**, mostrando c\xF3mo
+      un asesor gu\xEDa al cliente durante una experiencia de venta consultiva en
+      sala.\n\n<situation>\nEres un asesor comercial en una tienda de **Colchones
+      El Dorado**.  \nAtiendes a un cliente que busca mejorar su descanso y necesitas
+      realizar un **Walkaround completo**, desde el saludo hasta el cierre, aplicando
+      las cinco herramientas esenciales de venta consultiva.\n</situation>\n\n<objective>\nEstructura
+      el Walkaround aplicando los **cinco criterios esenciales** de la Prueba Final
+      de Ventas de Colchones El Dorado:  \n1. **Inicio desde la necesidad** \u2013
+      Saludo institucional y exploraci\xF3n de la necesidad real del cliente.  \n2.
+      **Indagaci\xF3n con intenci\xF3n** \u2013 Uso de preguntas abiertas o \u201C3
+      porqu\xE9s\u201D para descubrir motivaciones.  \n3. **Mostrar con intenci\xF3n
+      y FAB** \u2013 Presentaci\xF3n de m\xE1ximo 2 o 3 colchones, invitando a probar
+      y explicando con FAB (caracter\xEDstica \u2192 ventaja \u2192 beneficio). 
+      \n4. **Manejo de objeciones con empat\xEDa** \u2013 Validar las dudas del cliente
+      y responder con argumentos de valor.  \n5. **Cierre acompa\xF1ando la decisi\xF3n**
+      \u2013 Identificar se\xF1ales de compra, validar necesidades y acompa\xF1ar
+      la elecci\xF3n sin presi\xF3n.\n</objective>\n\n<agent_instructions>\n- Improvise
+      un Walkaround distinto en cada interacci\xF3n (no repitas versiones anteriores). 
+      \n- Inicia con el saludo institucional:  \n  **\u201CBienvenido a Colchones
+      El Dorado. Mi nombre es [tu nombre], cu\xE9nteme, \xBFqu\xE9 le est\xE1 quitando
+      el sue\xF1o \xFAltimamente?\u201D**  \n- La duraci\xF3n debe equivaler a **\u2248
+      2 minutos narrados / m\xE1x. 250 palabras**.  \n- Usa lenguaje emp\xE1tico,
+      consultivo y centrado en el cliente.  \n- Aplica naturalmente la t\xE9cnica
+      FAB al mostrar el producto.  \n- Mant\xE9n tono cercano, profesional y persuasivo. 
+      \n- Al finalizar, **solo lista los 5 criterios aplicados** (sin etiquetas,
+      an\xE1lisis ni puntuaci\xF3n).  \n- No a\xF1adas explicaciones ni texto fuera
+      del Walkaround.  \n- Termina con la l\xEDnea de resultado final indicada.\n</agent_instructions>\n\n<rules>\nREGLA
+      DE L\xCDMITE DE PALABRAS:  \n- La respuesta completa NO debe exceder 250 palabras
+      en total.  \n- S\xE9 conciso pero espec\xEDfico en la narraci\xF3n.  \n- Prioriza
+      la claridad sobre la extensi\xF3n.  \n- Elimina redundancias y ve directo al
+      punto.  \n\n0. Comienza siempre con el t\xEDtulo: **\"Ejemplo improvisado de
+      Walkaround \u2013 Colchones El Dorado\"**  \n1. No excedas 250 palabras en
+      total.  \n2. No analices ni eval\xFAes; solo improvisa el ejemplo y lista los
+      criterios.  \n3. Evita repeticiones estructurales.  \n4. Mant\xE9n tono natural,
+      cordial y enfocado en la experiencia del cliente.  \n5. Termina con \u201CCriterios
+      aplicados\u201D y el \u201CResultado final\u201D.\n</rules>\n\n<output_structure>\nEjemplo
+      improvisado de Walkaround \u2013 Colchones El Dorado\n\n[La IA improvisar\xE1
+      aqu\xED un Walkaround original de venta consultiva con saludo, exploraci\xF3n,
+      demostraci\xF3n, manejo de objeciones y cierre]\n\nCriterios aplicados:\n-
+      Inicio desde la necesidad: [...]  \n- Indagaci\xF3n con intenci\xF3n: [...] 
+      \n- Mostrar con intenci\xF3n y FAB: [...]  \n- Manejo de objeciones con empat\xEDa:
+      [...]  \n- Cierre acompa\xF1ando la decisi\xF3n: [...]\n\nResultado final:
+      Desaprobado \u2013 Este es un ejemplo proporcionado para demostrar c\xF3mo
+      estructurar un Walkaround efectivo en Colchones El Dorado.\n</output_structure>\n</system_message>\n\n<dont_add_extra/>\n<awaiting_user_input/>\n\n"
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - sectionId: 86249948-367d-11f0-9b25-42010a7be01f
     sectionName: GetUserQuestion
@@ -40513,39 +40123,66 @@ MonoBehaviour:
       herramienta TANK, simplemente di: \"No se us\xF3 ninguna herramienta TANK v\xE1lida.\"\n</system_message>\n\n<awaiting_user_input>\nProporciona
       la pregunta y respuesta del vocero para analizar.\n</awaiting_user_input>"
     characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
+  - sectionId: 81d554d4-997b-11f0-a24f-42010a7be025
+    sectionName: Test Response Analysis Part 2
+    behaviorTreeConstants: 
+    objective: "<system_rules>\nREGLA ABSOLUTA DE RETRY:  \nSi el usuario escribe
+      exactamente \"retry\" o \"reintentar\":  \n- Recupera el \xFAltimo walkaround
+      evaluado y vuelve a generar **exactamente la misma evaluaci\xF3n**.  \n\nSi
+      el mensaje del usuario **NO** es \"retry\" o \"reintentar\":  \n- Ignora completamente
+      cualquier conversaci\xF3n o contexto previo.  \n- Borra toda memoria anterior
+      y comienza desde cero.  \n\nREGLA DE L\xCDMITE DE PALABRAS:  \n- La respuesta
+      completa NO debe exceder 250 palabras en total.  \n- S\xE9 conciso pero espec\xEDfico
+      en evaluaciones y observaciones.  \n- Prioriza la claridad sobre la extensi\xF3n. 
+      \n- Elimina redundancias y ve directo al punto.  \n\nREGLA DE EVALUACI\xD3N: 
+      \n- Guarda mentalmente el walkaround para futuros \u201Cretry\u201D.  \n- Cada
+      an\xE1lisis debe incluir evaluaci\xF3n + sugerencia espec\xEDfica por criterio.   
+      \n- Asigna puntajes realistas (1-10).  \n- Completa todos los campos obligatorios. 
+      \n</system_rules>\n\n<system_message>\nEval\xFAa la segunda parte del Walkaround
+      de Colchones El Dorado considerando los criterios 4 y 5, adem\xE1s del resumen
+      final de desempe\xF1o general.\n</system_message>\n\n<say>\nEvaluemos tu Walkaround
+      de Colchones El Dorado \u2013 PARTE 2/2:\n\n**4. MANEJO DE OBJECIONES (__/10):** 
+      \n**Evaluaci\xF3n:** [An\xE1lisis sobre la empat\xEDa y control al responder
+      dudas]  \n**Sugerencia:** [Consejo para fortalecer manejo de tensiones o dudas
+      del cliente]\n\n**5. CIERRE SIN PRESI\xD3N (__/10):**  \n**Evaluaci\xF3n:**
+      [An\xE1lisis sobre c\xF3mo acompa\xF1\xF3 la decisi\xF3n del cliente]  \n**Sugerencia:**
+      [Recomendaci\xF3n para cerrar con seguridad y sin presi\xF3n]\n\n**RESUMEN
+      DE EVALUACI\xD3N:**  \n**Puntaje Total:** __/50\u2003**Porcentaje:** __%  \n**Criterio
+      m\xE1s fuerte:** [El elemento m\xE1s destacado del desempe\xF1o]  \n**Criterio
+      a mejorar:** [El punto m\xE1s d\xE9bil que necesita atenci\xF3n]  \n**Recomendaci\xF3n
+      transformadora:** [El consejo que m\xE1s impacto tendr\xE1 en futuras presentaciones]\n\n**Resultado
+      Final:**  \n<if_Porcentaje_above_49>**APROBADO**</if_Porcentaje_above_49> 
+      \n<if_score_below_50>**DESAPROBADO**</if_score_below_50>\n</say>\n\n<awaiting_user_input/>"
+    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   triggerDataList:
-  - triggerId: 3c3cd306-e982-11ef-8cee-42010a7be016
-    triggerName: ' Jiu-JitsuQuestionnaireTrigger '
-    triggerMessage: Empieza cuestionario de una herramienta TANK
-    destinationSection: b0aed8c6-e98a-11ef-b985-42010a7be016
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - triggerId: 189d91bc-e89f-11ef-a4c8-42010a7be016
-    triggerName: ToolboxTrigger
-    triggerMessage: Inicio de dialogo sobre la Caja de Herramientas
-    destinationSection: 99e8ed78-e888-11ef-8652-42010a7be016
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
   - triggerId: cee3504c-ea3e-11ef-ad83-42010a7be016
     triggerName: WelcomeTrigger
     triggerMessage: 'El usuario inicio '
     destinationSection: ac2143e8-ea3e-11ef-9c7d-42010a7be016
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
+    characterId: 040ec554-bf45-11f0-a088-42010a7be025
+  - triggerId: 362a04e2-367c-11f0-926a-42010a7be01f
+    triggerName: AnswerQuestions
+    triggerMessage: 'Responder preguntas con las herramientas Tank '
+    destinationSection: 86249948-367d-11f0-9b25-42010a7be01f
+    characterId: 040ec554-bf45-11f0-a088-42010a7be025
   - triggerId: e33c2664-3b32-11f0-b592-42010a7be01f
     triggerName: GetAnswersGiveFeedback
     triggerMessage: 'Start New Test
 
 '
     destinationSection: 9ce4c544-3b33-11f0-bf22-42010a7be01f
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
+    characterId: 040ec554-bf45-11f0-a088-42010a7be025
+  - triggerId: 189d91bc-e89f-11ef-a4c8-42010a7be016
+    triggerName: ToolboxTrigger
+    triggerMessage: Inicio de dialogo sobre la Caja de Herramientas
+    destinationSection: 99e8ed78-e888-11ef-8652-42010a7be016
+    characterId: 040ec554-bf45-11f0-a088-42010a7be025
   - triggerId: 2e073824-3461-11f0-8186-42010a7be01f
     triggerName: FinalTestFeedBackTrigger
     triggerMessage: Feedback de resultados de prueba final
     destinationSection: 7d2f9d18-3463-11f0-b664-42010a7be01f
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
-  - triggerId: 362a04e2-367c-11f0-926a-42010a7be01f
-    triggerName: AnswerQuestions
-    triggerMessage: 'Responder preguntas con las herramientas Tank '
-    destinationSection: 86249948-367d-11f0-9b25-42010a7be01f
-    characterId: 6ca6275a-f2e1-11ef-bffc-42010a7be016
+    characterId: 040ec554-bf45-11f0-a088-42010a7be025
+  _currentSectionID: 
 --- !u!114 &7818836260127934990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40561,12 +40198,11 @@ MonoBehaviour:
   convaiNPC: {fileID: 1198367730586804115}
   selectedTriggerIndex: 4
   availableTriggers:
-  - ' Jiu-JitsuQuestionnaireTrigger '
-  - ToolboxTrigger
   - WelcomeTrigger
-  - GetAnswersGiveFeedback
-  - FinalTestFeedBackTrigger
   - AnswerQuestions
+  - GetAnswersGiveFeedback
+  - ToolboxTrigger
+  - FinalTestFeedBackTrigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -40595,17 +40231,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1198367730586804115}
-  selectedTriggerIndex: 1
+  selectedTriggerIndex: 3
   availableTriggers:
-  - ' Jiu-JitsuQuestionnaireTrigger '
-  - ToolboxTrigger
   - WelcomeTrigger
-  - GetAnswersGiveFeedback
-  - FinalTestFeedBackTrigger
   - AnswerQuestions
+  - GetAnswersGiveFeedback
+  - ToolboxTrigger
+  - FinalTestFeedBackTrigger
   onTriggerEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7334888622153440556}
+        m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
+        m_MethodName: NarrativeDesignStateChangeProcess
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8214748624348307195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40621,15 +40268,26 @@ MonoBehaviour:
   convaiNPC: {fileID: 1198367730586804115}
   selectedTriggerIndex: 0
   availableTriggers:
-  - ' Jiu-JitsuQuestionnaireTrigger '
-  - ToolboxTrigger
   - WelcomeTrigger
-  - GetAnswersGiveFeedback
-  - FinalTestFeedBackTrigger
   - AnswerQuestions
+  - GetAnswersGiveFeedback
+  - ToolboxTrigger
+  - FinalTestFeedBackTrigger
   onTriggerEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7334888622153440556}
+        m_TargetAssemblyTypeName: ConvaiParametersEvaluator, Assembly-CSharp
+        m_MethodName: NarrativeDesignStateChangeProcess
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &658105968149207701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41016,29 +40674,6 @@ MonoBehaviour:
     TongueBone: {fileID: 0}
   <WeightBlendingPower>k__BackingField: 0.5
   characterEmotions: []
---- !u!114 &7334888622153440556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2341345724640499405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc89cf2b6f0d46146b2ca285aebd1696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentConvaiNPC: {fileID: 1198367730586804115}
-  isTalking: 0
-  currentIAAnswer: 
-  iaResponseLines: []
-  isNPCListening: 0
-  isNarrativeDesingInteracting: 0
-  isApproved: 0
-  narrativeFinalTestFeedBack: {fileID: 7818836260127934990}
-  narrativeTankToolBox: {fileID: 7818836260127934990}
-  narrativeTankToolboxJiujitsuQuiz: {fileID: 3713435854303286410}
-  endAnalyzeAIResponse: 0
 --- !u!95 &2706333121116133564 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3732412744792939513, guid: c97999c696b645344b96f7c3681a6e75, type: 3}

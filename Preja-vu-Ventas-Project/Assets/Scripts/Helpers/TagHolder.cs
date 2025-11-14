@@ -50,13 +50,45 @@ public enum ToneOfVoice
     Screams
 }
 
+public enum ToneOfVoiceRating
+{
+    Default,
+    WeakVoice,
+    ConversationalVoice,
+    ProjectedVoice,
+    Screams
+}
+
+public enum HeatMapRating
+{
+    Default,
+    Low,
+    Good,
+    Excellent
+}
+public enum KinesthesiaRating
+{
+    Default,
+    Low,
+    Good,
+    Excellent
+}
+
 public enum KindOfPieGraph
 {
     HandsMovePie,
-    VisionPie, 
+    VisionPie,
     GestureHandsPie,
     Default
 }
+
+public enum KindOfAssessment
+{
+    Default,
+    Diagnosis,
+    Interview
+}
+
 
 public enum NarrativeState
 {

@@ -57,10 +57,10 @@ public class RobertaController : Singleton<RobertaController>
             RobertaStart();
         }
     }
-
-    public IEnumerator RobertaGoToCinematic(int cinematicIndex)
+    public IEnumerator RobertaGoToCinematic()
     {
-        UIManager.Instance.ChanceMusicBackGround(1); 
+        int cinematicIndex = LevelProgressManager.Instance.currentUnit[LevelProgressManager.Instance.currentLevel].levels[LevelProgressManager.Instance.currentSubLevel].lessons[LevelProgressManager.Instance.currentLesson].lessonIndex;
+        UIManager.Instance.ChanceMusicBackGround(1);
         UIManager.Instance.ChanceMusicBackGround(4);
 
         SlowVelocity();
@@ -77,7 +77,7 @@ public class RobertaController : Singleton<RobertaController>
         UIManager.Instance.ChanceMusicBackGround(0);
     }
 
-    public IEnumerator RobertaGoToFeedBack(AssessmentModule assessment ,int cinematicIndex)
+    public IEnumerator RobertaGoToFeedBack(int cinematicIndex)
     {
         UIManager.Instance.ChanceMusicBackGround(4);
 
@@ -89,8 +89,25 @@ public class RobertaController : Singleton<RobertaController>
         //Debug.Log($"Reproduciendo cinemática en el índice: {cinematicIndex}");
         //yield return new WaitUntil(() => !GameManager.Instance.timeLineController.StatePlayable(cinematicIndex));
 
-        yield return StartCoroutine(robertaAI.StartFinalTestFeedBack(assessment));
+        yield return StartCoroutine(robertaAI.StartFinalTestFeedBack());
+        yield return StartCoroutine(EndCinematicPosition());
+        UIManager.Instance.ChanceMusicBackGround(5);
+        UIManager.Instance.ChanceMusicBackGround(0);
+    }
 
+    public IEnumerator RobertaGoToAnswersQuestions()
+    {
+        UIManager.Instance.ChanceMusicBackGround(4);
+
+        SlowVelocity();
+        yield return StartCoroutine(GoToCentralPoint());
+
+        // esto funcionara cuando implementemos una cinematica final de feedback 
+        //GameManager.Instance.timeLineController.Play(cinematicIndex);
+        //Debug.Log($"Reproduciendo cinemática en el índice: {cinematicIndex}");
+        //yield return new WaitUntil(() => !GameManager.Instance.timeLineController.StatePlayable(cinematicIndex));
+
+        yield return StartCoroutine(robertaAI.StartTankToolBox());
         yield return StartCoroutine(EndCinematicPosition());
         UIManager.Instance.ChanceMusicBackGround(5);
         UIManager.Instance.ChanceMusicBackGround(0);
@@ -108,8 +125,8 @@ public class RobertaController : Singleton<RobertaController>
         //Debug.Log($"Reproduciendo cinemática en el índice: {cinematicIndex}");
         //yield return new WaitUntil(() => !GameManager.Instance.timeLineController.StatePlayable(cinematicIndex));
 
-        yield return StartCoroutine(robertaAI.StartFinalTestFeedBack(GameManager.Instance.finalTestController));
-       // yield return StartCoroutine(robertaAI.StartQuestion(caseMethodologyIndex));
+        yield return StartCoroutine(robertaAI.StartFinalTestFeedBack());
+        // yield return StartCoroutine(robertaAI.StartQuestion(caseMethodologyIndex));
 
         yield return StartCoroutine(EndCinematicPosition());
         UIManager.Instance.ChanceMusicBackGround(5);
@@ -270,11 +287,6 @@ public class RobertaController : Singleton<RobertaController>
         }
     }
 
-    //Variable en roberta que llamada a la cinematica terminada
-    public void EndDo(int index)
-    {
-        UIManager.Instance.CallQuestPresentation(index);
-    }
     #endregion
 
     #region POWER ON/OFF

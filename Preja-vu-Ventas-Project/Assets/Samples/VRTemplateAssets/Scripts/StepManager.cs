@@ -62,7 +62,7 @@ public class StepManager : MonoBehaviour
             stepPanel.SetActive(false);
             UIManager.Instance.SetCurrentUIMenu(stepPanel);
             UIManager.Instance.ReplaceUIRotation();
-            GameManager.Instance.elevatorPitchController.StartPitch();
+            GameManager.Instance.CallAssessmentModuleFlowController();
         }
         
         m_StepList[m_CurrentStepIndex].stepObject.SetActive(false);

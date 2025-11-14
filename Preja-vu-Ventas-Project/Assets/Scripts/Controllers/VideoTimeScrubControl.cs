@@ -84,7 +84,7 @@ namespace Unity.VRTemplate
         void OnVideoFinished(VideoPlayer vp)
         {
             m_PaneRepeat.SetActive(true);
-            GameManager.Instance.CallTheoreticalVideoQualifier();
+            GameManager.Instance.ProcessQualificationByTypeLesson(LevelProgressManager.Instance.currentLesson);
         }
 
         public void First()

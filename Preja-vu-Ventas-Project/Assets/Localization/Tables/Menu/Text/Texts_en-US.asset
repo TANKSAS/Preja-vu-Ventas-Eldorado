@@ -2661,6 +2661,22 @@ MonoBehaviour:
     m_Localized: Pitching
     m_Metadata:
       m_Items: []
+  - m_Id: 209452019370938368
+    m_Localized: Coaching
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452188007124992
+    m_Localized: 'Final Feedback '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452244579897344
+    m_Localized: Ask me
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209452301689540608
+    m_Localized: Speak
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

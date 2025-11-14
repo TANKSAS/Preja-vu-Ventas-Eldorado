@@ -19,7 +19,7 @@ namespace Convai.Scripts.Runtime.Features
         public List<SectionData> sectionDataList = new();
         public List<TriggerData> triggerDataList = new();
         private ConvaiNPC _convaiNpc;
-        private string _currentSectionID;
+        public string _currentSectionID;
         private NarrativeDesignAPI _narrativeDesignAPI;
 
         private NarrativeDesignAPI NarrativeDesignAPI => _narrativeDesignAPI ??= new NarrativeDesignAPI();

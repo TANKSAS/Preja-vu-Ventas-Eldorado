@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using TMPro; // Namespace para TextMeshPro
 using Convai.Scripts.Runtime.Core; // Namespace de Convai
+using System.Collections;
+using TMPro; // Namespace para TextMeshPro
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ChatButton : MonoBehaviour
 {
@@ -21,6 +20,20 @@ public class ChatButton : MonoBehaviour
     
     private bool isRecording = false;
     private bool isProcessing = false;
+    
+    // Métodos para eventos de Convai (opcionales - para debugging)
+    void OnEnable()
+    {
+        if (convaiNPC == null)
+        {
+            FindNPC();
+        }
+    }
+
+    void OnDisable()
+    {
+        convaiNPC = null;
+    }
 
     void Start()
     {
@@ -45,17 +58,17 @@ public class ChatButton : MonoBehaviour
             Debug.LogError("No se encontró el componente Button en este GameObject");
         }
 
-        // Verificar que tenemos la referencia al ConvaiNPC
+        UpdateStatusText("Hablar");
+    }
+
+    public void FindNPC()
+    {
+        convaiNPC = ConvaiNPCManager.Instance.activeConvaiNPC;
+
         if (convaiNPC == null)
         {
-            convaiNPC = FindObjectOfType<ConvaiNPC>();
-            if (convaiNPC == null)
-            {
-                Debug.LogError("No se encontró ningún ConvaiNPC en la escena. Asegúrate de tener un personaje Convai configurado.");
-            }
+            Debug.LogError("No se encontró ningún ConvaiNPC en la escena. Asegúrate de tener un personaje Convai configurado.");
         }
-
-        UpdateStatusText("Listo para hablar");
     }
 
     void SetupPushToTalkMode()
@@ -125,7 +138,7 @@ public class ChatButton : MonoBehaviour
         
         // Detener la grabación y enviar al chat
         convaiNPC.StopListening();
-        
+
         isRecording = false;
         isProcessing = true;
         LoaderImage.gameObject.SetActive(true);
@@ -157,7 +170,8 @@ public class ChatButton : MonoBehaviour
         
         isProcessing = false;
         LoaderImage.gameObject.SetActive(false);
-        UpdateStatusText("Listo para hablar");
+        GameManager.Instance.chatController.isSendingMessage = true;
+        UpdateStatusText("Hablar");
     }
 
     void ChangeButtonColor(Color color)
@@ -197,27 +211,7 @@ public class ChatButton : MonoBehaviour
         }
     }
 
-    // Métodos para eventos de Convai (opcionales - para debugging)
-    void OnEnable()
-    {
-        if (convaiNPC != null)
-        {
-            // Suscribirse a eventos de Convai si están disponibles
-            // Nota: Los nombres exactos de eventos pueden variar según la versión
-            // convaiNPC.OnResponseReceived += OnConvaiResponse;
-            // convaiNPC.OnTranscriptReceived += OnTranscriptReceived;
-        }
-    }
-
-    void OnDisable()
-    {
-        if (convaiNPC != null)
-        {
-            // Desuscribirse de eventos
-            // convaiNPC.OnResponseReceived -= OnConvaiResponse;
-            // convaiNPC.OnTranscriptReceived -= OnTranscriptReceived;
-        }
-    }
+    
 
     // Métodos de callback para eventos de Convai (opcionales)
     /*

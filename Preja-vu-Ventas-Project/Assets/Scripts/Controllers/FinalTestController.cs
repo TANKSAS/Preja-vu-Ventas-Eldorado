@@ -30,24 +30,6 @@ public class FinalTestController : AssessmentModule
         }
     }
 
-    public void StartFinalTest(bool isDiagnosisTest)
-    {
-        isDiagnosis = isDiagnosisTest;
-
-        if (isDiagnosis)
-        {
-            currentCoroutine = DoTestFirstTime();
-            Debug.Log("Diagnosis");
-        }
-        else
-        {
-            currentCoroutine = DoTest();
-            Debug.Log("Final Test");
-        }
-    
-        StartCoroutine(currentCoroutine);
-    }
-
     IEnumerator DoTestFirstTime()
     {
         Debug.Log("Start Final Practice");
@@ -94,7 +76,6 @@ public class FinalTestController : AssessmentModule
         //yield return new WaitUntil(() => !UIManager.Instance.practicalResultsGraphicMenu.activeInHierarchy);
 
         GameManager.Instance.backGroundController.RestartVideoPlayer(GameManager.Instance.backGroundController.currentVideoPlayer);
-        GameManager.Instance.CallFinalTestFeedBackQualifier(this);
     }
 
     IEnumerator DoTest()
@@ -146,17 +127,6 @@ public class FinalTestController : AssessmentModule
         
         GameManager.Instance.backGroundController.RestartVideoPlayer(GameManager.Instance.backGroundController.currentVideoPlayer);
         UIManager.Instance.SetCurrentUIMenu(UIManager.Instance.practicalResultsGraphicMenu);
-        GameManager.Instance.CallFinalTestFeedBackQualifier(this);
-    }
-
-    void SaveSessionData()
-    {
-        GameManager.Instance.trackingController.UpdateSessionData();
-        GameManager.Instance.playerStats.lastSessionIndex = GameManager.Instance.playerStats.sessions.Count - 1;
-        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].readingResultsvoices = new List<float>(audioRecordingController.dbData);
-        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].kindOfVoice = GraphManager.Instance.currentToneOfVoice;
-        BaseDataManager.Instance.Save("/PlayerSalesData.json", GameManager.Instance.playerStats);
-        Debug.Log("Sesion Guardada");
     }
 
     protected override void SetupUI()

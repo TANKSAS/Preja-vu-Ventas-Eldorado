@@ -50,6 +50,8 @@ public class UIManager : Singleton<UIManager>
     public GameObject timer360Panel;
     public GameObject timer2DPanel;
 
+    public GameObject RobertaMenu;
+
     public GameObject moduleResultsMenu;
     public GameObject moduleResultsDetailsPanel;
 
@@ -333,6 +335,16 @@ public class UIManager : Singleton<UIManager>
         settingsMenu.transform.GetChild(1).transform.GetChild(3).transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponentInChildren<TMP_Dropdown>().value = language;
     }
 
+    public void CallRobertaElevatorPitchFinalFeedback()
+    {
+        StartCoroutine(GameManager.Instance.CallShowElevatorPitchFeedBackQualifier());
+    }
+
+    public void CallRobertaAnswersQuestions()
+    {
+        StartCoroutine(GameManager.Instance.CallShowRobertaAnsersQuestions());
+    }
+
     public void CallSetPathButtonsEvent()
     {
         LevelProgressManager.Instance.SetPathButtons();
@@ -399,27 +411,10 @@ public class UIManager : Singleton<UIManager>
         GameManager.Instance.CallMethodologyQualifier(caseMethodologyIndex);
     }
 
-    // signal probablemente por ahora para calificar el nivel do and dont
-    public void CallQuestPresentation(int buttonIndex)
-    {
-        GameManager.Instance.CallDosAndDotsQualifier(buttonIndex);
-    }
-
-    public void CallRobertaCinematic(int cinematicIndex)
-    {
-        GameManager.Instance.finalTestController.robertaObjects.SetActive(true);
-        StartCoroutine(RobertaController.Instance.RobertaGoToCinematic(cinematicIndex));
-    }
-
     IEnumerator StartVideoPlayer(GameObject videoPlayer)
     {
         yield return new WaitUntil(() => videoPlayer.activeInHierarchy);
         videoPlayer.GetComponent<VideoTimeScrubControl>().First();
-    }
-
-    public void CallStartElevatorPitch()
-    {
-        GameManager.Instance.elevatorPitchController.StartPitch();
     }
 
     public void CallShowGraph()

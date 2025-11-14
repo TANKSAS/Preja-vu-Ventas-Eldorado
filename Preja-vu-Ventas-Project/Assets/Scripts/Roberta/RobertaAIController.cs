@@ -10,176 +10,157 @@ public class RobertaAIController : ConvaiParametersEvaluator
     public NarrativeDesignTrigger narrativeFinalTestFeedBack;
     public NarrativeDesignTrigger narrativeTankToolBox;
     public NarrativeDesignTrigger narrativeTankToolboxJiujitsuQuiz;
-    
 
-    IEnumerator StartTankToolBox()
+    public IEnumerator StartTankToolBox()
     {
-        ConvaiNPCManager.Instance.isEnabledToGetNewNPC = true;
-        yield return new WaitForSeconds(5f);
-        ConvaiNPCManager.Instance.isEnabledToShowText = false;
+        Debug.Log("🔹 Iniciando flujo de asistencia de Roberta (Toolbox).");
+        currentState = NarrativeState.Introduction;
+
+        // --- UI Setup ---
+        GameManager.Instance.chatController.chatAIBoxUI.gameObject.SetActive(true);
+        GameManager.Instance.chatController.chatAIBoxUI._playerCommandPromptPanelObject.SetActive(true);
+        GameManager.Instance.chatController.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._answerButtonsObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(true);
+
         CallTrigger(narrativeTankToolBox);
+        yield return new WaitUntil(() => GameManager.Instance.chatController.isNarrativeDesingActive);
+        ConvaiNPCManager.Instance.isEnabledToSendText = true;
+        ConvaiNPCManager.Instance.isEnabledToGetNewNPC = true;
+        ConvaiNPCManager.Instance.isEnabledToShowText = true;
+
 
         yield return new WaitUntil(() => isTalking);
-        Debug.Log("Inicio aqui la Introduccion de caja de herramientas");
+        GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(false);
         yield return new WaitUntil(() => !isTalking);
-        yield return new WaitForSeconds(0.5f);
 
-        ConvaiNPCManager.Instance.isEnabledToGetNewNPC = false;
-        ConvaiNPCManager.Instance.isEnabledToShowText = false;
+        while (!GameManager.Instance.chatController.userFinished)
+        {
+            currentState = NarrativeState.WaitingForConfirmation;
+            yield return GameManager.Instance.chatController.WaitForUserAudio();
+
+            GameManager.Instance.chatController.isSendingMessage = false;
+            GameManager.Instance.chatController.isRecordingMessage = false;
+
+            yield return new WaitUntil(() => isTalking);
+            GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(false);
+            yield return new WaitUntil(() => !isTalking);
+
+        }
+
+        yield return StartCoroutine(EndChat());
     }
 
-    public IEnumerator StartFinalTestFeedBack(AssessmentModule assessmentModule)
+    public IEnumerator StartFinalTestFeedBack()
     {
         currentState = NarrativeState.Introduction;
-        retryCount = 0;
+        GameManager.Instance.chatController.retryCount = 0;
 
-        GameManager.Instance.chatAIBoxUI.gameObject.SetActive(true);
-        GameManager.Instance.chatAIBoxUI._playerCommandPromptPanelObject.SetActive(true);
-        GameManager.Instance.chatAIBoxUI._answerButtonsObject.SetActive(false);
-        GameManager.Instance.chatAIBoxUI._loadingObject.SetActive(true);
+        // --- UI Setup ---
+        GameManager.Instance.chatController.chatAIBoxUI.gameObject.SetActive(true);
+        GameManager.Instance.chatController.chatAIBoxUI._playerCommandPromptPanelObject.SetActive(true);
+        GameManager.Instance.chatController.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._answerButtonsObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(true);
 
+        // --- 1. INTRODUCCIÓN ---
         CallTrigger(narrativeFinalTestFeedBack);
-        yield return new WaitUntil(() => isNarrativeDesingActive);
+        yield return new WaitUntil(() => GameManager.Instance.chatController.isNarrativeDesingActive);
 
         ConvaiNPCManager.Instance.isEnabledToSendText = true;
         ConvaiNPCManager.Instance.isEnabledToGetNewNPC = true;
         ConvaiNPCManager.Instance.isEnabledToShowText = true;
 
-        // 🟡 [1] INTRODUCCIÓN DE LA IA
         yield return new WaitUntil(() => isTalking);
-        GameManager.Instance.chatAIBoxUI._loadingObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(false);
         yield return new WaitUntil(() => !isTalking);
-        Debug.Log("Finalizó introducción de la IA.");
 
-        // 🟠 [2] CONFIRMACIÓN DEL USUARIO (OK)
+        // Esperar OK del usuario para continuar
         currentState = NarrativeState.WaitingForConfirmation;
-        yield return WaitForUserConfirmation();
+        yield return GameManager.Instance.chatController.WaitForUserConfirmation();
         if (currentState == NarrativeState.Error) yield break;
 
-        // 🟣 [3] USUARIO ENVÍA SU RESPUESTA (pitch)
+        // --- 2. ENVÍO DE RESPUESTA DEL USUARIO ---
         currentState = NarrativeState.AwaitingUserResponse;
-        Debug.Log("Inicio de respuesta del usuario");
-        yield return new WaitUntil(() => !WebRequestController.Instance.InProgress);
+        string userAnswer = GameManager.Instance.playerStats.sessions[
+            GameManager.Instance.playerStats.lastSessionIndex
+        ].finalAnswer;
 
-        SendPlayerMessage(!string.IsNullOrEmpty(assessmentModule.finalAnswer)
-            ? assessmentModule.finalAnswer
-            : "El usuario no responde");
-        //"¿Sabía que los bancos tradicionales rechazan el 40 % de solicitudes de crédito de pequeñas empresas que en realidad SÍ pueden pagar ? Soy Patricia Morales de SmartCredit Solutions.Hemos desarrollado una plataforma de inteligencia artificial que analiza más de 200 variables financieras alternativas desde flujo de caja digital hasta patrones de ventas - para evaluar el verdadero riesgo crediticio de PyMEs en menos de 24 horas.Mientras otros sistemas bancarios solo revisan historial crediticio tradicional, nosotros vemos el panorama completo: transacciones digitales, ventas estacionales, proveedores, incluso reviews online.Los bancos que usan nuestra tecnología han aumentado sus aprobaciones crediticias un 60 % manteniendo la misma tasa de morosidad. ¿Le gustaría ver cómo podríamos analizar 100 solicitudes reales de su cartera la próxima semana ? ");
+        if (string.IsNullOrEmpty(userAnswer))
+            userAnswer = "El usuario no responde.";
 
+        SendPlayerMessage(userAnswer);
+
+        // Esperar que IA hable (análisis o ejemplo)
         yield return new WaitUntil(() => isTalking);
-        GameManager.Instance.chatAIBoxUI._loadingObject.SetActive(false);
+        GameManager.Instance.chatController.chatAIBoxUI._loadingObject.SetActive(false);
         yield return new WaitUntil(() => !isTalking);
         yield return new WaitForSeconds(0.5f);
 
-        // 🔵 [4] FEEDBACK O EJEMPLO DE LA IA
-        currentState = NarrativeState.ProcessingResponse;
+        // --- 3. DETECTAR TIPO DE RESPUESTA ---
 
-        // IA responde (ya ocurrió arriba con la transcripción)
-        // Aquí esperamos que el usuario confirme si entendió el feedback o ejemplo
+        yield return new WaitUntil(() => isNarrativeSectionConfirmed);
+        SectionStartConfirmation(false);
 
-        // 🟤 [5] CONFIRMACIÓN FINAL DEL USUARIO (OK)
-        currentState = NarrativeState.AwaitingFinalOk;
-        yield return WaitForUserConfirmation();
-        if (currentState == NarrativeState.Error) yield break;
-
-        // 🟣 Enviamos OK para que IA dé su mensaje de cierre
-        SendPlayerMessage("ok");
-        currentState = NarrativeState.Closing;
-
-        yield return new WaitUntil(() => isTalking);
-        GameManager.Instance.chatAIBoxUI._loadingObject.SetActive(false);
-        yield return new WaitUntil(() => !isTalking);
-        yield return new WaitForSeconds(0.5f);
-
-        // ⚫ [6] CIERRE DE LA IA
-
-        // 🧹 LIMPIEZA FINAL
-        ConvaiNPCManager.Instance.isEnabledToGetNewNPC = false;
-        ConvaiNPCManager.Instance.isEnabledToShowText = false;
-        ConvaiNPCManager.Instance.isEnabledToSendText= false;
-        isApproved = false;
-        GameManager.Instance.chatAIBoxUI.gameObject.SetActive(false);
-        GameManager.Instance.chatAIBoxUI.ClearUI();
-        ConvaiNPCManager.Instance.SetActiveConvaiNPC(null); // ✅ Limpia el NPC
-        Debug.Log("Fin del feedback final.");
-    }
-
-    public IEnumerator StartQuestion(int methodologyIndex)
-    {
-        GameManager.Instance.chatAIBoxUI.gameObject.SetActive(true);
-        ConvaiNPCManager.Instance.isEnabledToGetNewNPC = true;
-        ConvaiNPCManager.Instance.isEnabledToShowText = true;
-        
-        switch (methodologyIndex)
+        if (!isExampleSection)
         {
-            case 0:
-                CallTrigger(narrativeTankToolboxJiujitsuQuiz);
-                break;
+            // === RUTA A: Feedback en dos partes ===
+            // 🟣 Parte 1 completada → esperar OK
+            currentState = NarrativeState.AwaitingUserResponse;
+            yield return GameManager.Instance.chatController.WaitForUserConfirmation();
 
-            case 1:
-                CallTrigger(narrativeTankToolboxJiujitsuQuiz);
-                break;
+            if (currentState == NarrativeState.Error) yield break;
 
-            case 2:
-                CallTrigger(narrativeTankToolboxJiujitsuQuiz);
-                break;
-                
-            case 3:
-                CallTrigger(narrativeTankToolboxJiujitsuQuiz);
-                break;
+            // 🟣 Enviar OK → Parte 2
+            SendPlayerMessage("ok");
+            ExampleSectionState(false);
 
-            case 4:
-                CallTrigger(narrativeTankToolboxJiujitsuQuiz);
-                break;
+            yield return new WaitUntil(() => isTalking);
+            yield return new WaitUntil(() => !isTalking);
+            yield return new WaitForSeconds(0.5f);
         }
 
-        yield return new WaitUntil(() => isNarrativeDesingActive);
-        yield return new WaitUntil(() => isTalking);
-        Debug.Log("Inicio aqui la Introduccion");
-        yield return new WaitUntil(() => !isTalking);
-
-        yield return new WaitForSeconds(0.5f);
-
-        int questionIndex = 0; // problemas
-        Debug.Log(questionIndex);
-
-        SendPlayerMessage(questionIndex.ToString());
-        yield return new WaitUntil(() => isTalking);
-        Debug.Log("Inicio aqui la Pregunta");
-        yield return new WaitUntil(() => !isTalking);
-        yield return new WaitForSeconds(0.5f);
-
-        Debug.Log("Inicio Respuesta del usuario");
-       // ConvaiNPCManager.Instance.isEnabledToShowText = true;
-
-        yield return new WaitUntil(() => !isNarrativeDesingActive);
-        yield return new WaitUntil(() => isTalking);
-        Debug.Log("Inicio aqui el Feedback");
-       // ConvaiNPCManager.Instance.isEnabledToShowText = false;
-        yield return new WaitUntil(() => !isTalking);
-        yield return new WaitForSeconds(0.5f);
+        // --- 4. ESPERAR OK FINAL PARA CIERRE ---
+        currentState = NarrativeState.AwaitingFinalOk;
+        yield return GameManager.Instance.chatController.WaitForUserConfirmation();
+        if (currentState == NarrativeState.Error) yield break;
 
         SendPlayerMessage("ok");
-        yield return new WaitUntil(() => isTalking);
-        Debug.Log("Inicio aqui la Calificacion");
-        yield return new WaitUntil(() => !isTalking);
-        yield return new WaitForSeconds(0.5f);
 
+        // --- 5. MENSAJE DE CIERRE ---
+        currentState = NarrativeState.Closing;
+        yield return new WaitUntil(() => isTalking);
+        yield return new WaitUntil(() => !isTalking);
+
+        // --- 6. LIMPIEZA FINAL ---
+        yield return StartCoroutine(EndChat());
+
+        Debug.Log("✅ Feedback final completado correctamente.");
+    }
+
+    IEnumerator EndChat()
+    {
+        GameManager.Instance.chatController.chatAIBoxUI.ClearUI();
         ConvaiNPCManager.Instance.isEnabledToGetNewNPC = false;
         ConvaiNPCManager.Instance.isEnabledToShowText = false;
-        GameManager.Instance.chatAIBoxUI.ClearUI();
+        ConvaiNPCManager.Instance.isEnabledToSendText = false;
+        GameManager.Instance.chatController.userFinished = false;
+
+        yield return new WaitForSeconds(10f);
+        ConvaiNPCManager.Instance.SetActiveConvaiNPC(null);
+        GameManager.Instance.chatController.chatAIBoxUI.gameObject.SetActive(false);
     }
 
     public override void AnalyzeAIResponse()
     {
-        if (iaResponseLines == null || iaResponseLines.Count == 0)
+        if (GameManager.Instance.chatController.iaResponseLines == null || GameManager.Instance.chatController.iaResponseLines.Count == 0)
             return;
 
         isApproved = false; // Valor por defecto
 
         List<string> lineasExpandida = new List<string>();
 
-        foreach (string linea in iaResponseLines)
+        foreach (string linea in GameManager.Instance.chatController.iaResponseLines)
         {
             string[] subLineas = linea.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
             lineasExpandida.AddRange(subLineas);

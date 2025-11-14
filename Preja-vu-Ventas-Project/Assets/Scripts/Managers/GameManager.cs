@@ -15,8 +15,7 @@ public class GameManager : Singleton<GameManager>
     public OutputAudioRecorder outputAudioRecorderController;
 
     [Header("UI Components")] 
-    public ChatBoxUI chatAIBoxUI;
-    public ConvaiChatUIHandler _chatUIHandler;
+    public AIChatController chatController;
     public Spectrum spectrumVisualizer;
     public GameObject handBANTUI;
 
@@ -32,13 +31,20 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] Sound congratulationsEffect;
     [SerializeField] Sound condolencesEffect;
 
+    public bool isDiagnosis;
+    public KindOfAssessment currentAssessment;
+    public KinesthesiaRating currentKinesthesiaRating = KinesthesiaRating.Default;
+    public ToneOfVoiceRating currentToneOfVoiceRating = ToneOfVoiceRating.Default;
+    public HeatMapRating currentHeatMapRating = HeatMapRating.Default;
+
+
     #region Unity Lifecycle
     /// <summary>
     /// Inicializa el componente desactivando la interfaz de chat de IA al inicio.
     /// </summary>
     void Start()
     {
-        InitializeChatUI();
+        chatController.InitializeChatUI();
     }
 
     void OnDestroy()
@@ -49,12 +55,12 @@ public class GameManager : Singleton<GameManager>
     #endregion
 
     #region Initialization
-    private void InitializeChatUI()
+    
+    public void SetDiagnosis(bool value)
     {
-        chatAIBoxUI = GameObject.FindGameObjectWithTag("ChatAIBoxUI").GetComponent<ChatBoxUI>();
-        chatAIBoxUI.gameObject.SetActive(false);
-        _chatUIHandler = FindObjectOfType<ConvaiChatUIHandler>();
+        isDiagnosis = value;
     }
+
     #endregion
 
     #region Game Start Sequences
@@ -67,14 +73,22 @@ public class GameManager : Singleton<GameManager>
         yield return StartCoroutine(PlayInitialVideo());
         yield return StartCoroutine(HandleNewPlayerIntroduction());
         yield return StartCoroutine(SetupGameEnvironment());
-        yield return StartCoroutine(HandleNewPlayerDiagnostics());
-        yield return StartCoroutine(FinalizeGameSetup());
+        
+        //if (playerStats.isNewPlayer)
+        //{
+        //    yield return StartCoroutine(HandleNewPlayerDiagnostics());
+        //}
+        //else
+        //{
+           yield return StartCoroutine(FinalizeGameSetup());
+        //}
     }
 
     private IEnumerator PlayInitialVideo()
     {
         backGroundController.currentVideoPlayer.Play();
         yield return new WaitForSeconds(1f);
+        yield return new WaitUntil(() => backGroundController.currentVideoPlayer.isPlaying);
         yield return new WaitUntil(() => !backGroundController.currentVideoPlayer.isPlaying);
         backGroundController.RestartVideoPlayer(backGroundController.currentVideoPlayer);
     }
@@ -104,23 +118,20 @@ public class GameManager : Singleton<GameManager>
 
     private IEnumerator HandleNewPlayerDiagnostics()
     {
-        if (!playerStats.isNewPlayer) yield break;
-
+        SetDiagnosis(true);
+        //UIManager.Instance.canBackMainMenu = false;
         SetupInstructionsPanels();
         UIManager.Instance.CallVideoPlayer(UIManager.Instance.videoInstructionsPanel.transform.GetChild(0).gameObject.transform.GetChild(1).transform.gameObject);
+
         yield return new WaitUntil(() => !UIManager.Instance.videoInstructionsPanel.activeInHierarchy);
         UIManager.Instance.videoIntroduction360Button.SetActive(true);
-        //yield return StartCoroutine(StartDaignosis());
-
-        playerStats.isNewPlayer = false;
-        BaseDataManager.Instance.Save("/PlayerSalesData.json", playerStats);
-        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(ShowDiagnosisInstructions());
     }
 
-    private void SetupInstructionsPanels()
+    private IEnumerator ShowDiagnosisInstructions()
     {
-        UIManager.Instance.videoIntroduction360Button.SetActive(false);
-        UIManager.Instance.videoInstructionsPanel.SetActive(true);
+        UIManager.Instance.diagnosisInstructionsDetailPanel.SetActive(true);
+        yield return new WaitUntil(() => !UIManager.Instance.diagnosisInstructionsDetailPanel.activeInHierarchy);
     }
 
     private IEnumerator FinalizeGameSetup()
@@ -129,7 +140,21 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(3f);
         yield return StartCoroutine(RobertaController.Instance.Spawning());
         yield return new WaitForSeconds(1f);
-        UIManager.Instance.mainMenu.SetActive(true);
+        
+        if (!playerStats.isNewPlayer)
+        {
+            UIManager.Instance.mainMenu.SetActive(true);
+        }
+    }
+
+    #endregion
+
+    #region Instructions
+    
+    private void SetupInstructionsPanels()
+    {
+        UIManager.Instance.videoIntroduction360Button.SetActive(false);
+        UIManager.Instance.videoInstructionsPanel.SetActive(true);
     }
 
     /// <summary>
@@ -163,44 +188,116 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitUntil(() => !backGroundController.isLoading);
         UIManager.Instance.mainMenu.SetActive(true);
     }
+
     #endregion
 
-    #region Diagnostics
-    public IEnumerator StartFirstDaignosis()
+    #region AssessmentModuleFlows
+
+    public void CallAssessmentModuleFlowController()
     {
-        yield return StartCoroutine(ShowDiagnosisInstructions());
-        yield return StartCoroutine(WaitForDiagnosisCompletion());
+        if (isDiagnosis)
+        {
+            currentAssessment = KindOfAssessment.Diagnosis;
+
+            if (playerStats.isNewPlayer)
+            {
+                StartCoroutine(StartFirstDiagnosisAssessmentModule());
+                Debug.Log("Realiza diagnostico nuevo jugador");
+            }
+            else
+            {
+                StartCoroutine(StartDiagnosisAssessmentModule());
+                Debug.Log("Realiza diagnostico");
+            }
+        }
+        else
+        {
+            currentAssessment = KindOfAssessment.Interview;
+
+            StartCoroutine(StartFinalTestAssessmentModule());
+            Debug.Log("Realiza Prueba final");
+        }
     }
 
-    private IEnumerator ShowDiagnosisInstructions()
+    //Inicia el diagnostico Jugador nuevo
+    public IEnumerator StartFirstDiagnosisAssessmentModule()
     {
-        UIManager.Instance.diagnosisInstructionsDetailBackButton.SetActive(false);
-        UIManager.Instance.diagnosisInstructionsDetailPanel.SetActive(true);
-        yield return new WaitUntil(() => !UIManager.Instance.diagnosisInstructionsDetailPanel.activeInHierarchy);
-        UIManager.Instance.diagnosisInstructionsDetailBackButton.SetActive(true);
-        Debug.Log("Empezó Diagnóstico");
+        Debug.Log("Entro a StartFirstDiagnosis");
+        yield return StartCoroutine(DiagnosisAssessmentModuleFlow());
+        yield return StartCoroutine(FinalizeTestFlowAssessmentModule());
     }
 
-    private IEnumerator WaitForDiagnosisCompletion()
+    //Inicia el diagnostico
+    public IEnumerator StartDiagnosisAssessmentModule()
     {
-        yield return new WaitUntil(() => UIManager.Instance.practicalResultsGraphicMenu.activeInHierarchy);
-        Debug.Log("Inicia Ver Detalles");
+        yield return StartCoroutine(DiagnosisAssessmentModuleFlow());
+        yield return StartCoroutine(FinalizeTestFlowAssessmentModule());
+    }
 
+    //Inicia la prueba final
+    public IEnumerator StartFinalTestAssessmentModule()
+    {
+        yield return StartCoroutine(FinalTestsAssessmentModuleFlow());
+        yield return StartCoroutine(FinalizeTestFlowAssessmentModule());
+    }
+
+    private IEnumerator FinalizeTestFlowAssessmentModule()
+    {
+        Debug.Log("Finalizo Final Test Flow");
+        backGroundController.RestartVideoPlayer(backGroundController.currentVideoPlayer);
+        //UIManager.Instance.canBackMainMenu = false;
+
+        //yield return StartCoroutine(CallGraph());
+        yield return StartCoroutine(CallEnableRobertaToFeedBack());
+
+        yield return StartCoroutine(StartFinalTestFeedBack());
+        yield return StartCoroutine(ShowAssesmentModuleResults());
+        Debug.Log("Finalizo");
+    }
+
+    private IEnumerator DiagnosisAssessmentModuleFlow()
+    {
+        Debug.Log("Empezó Diagnóstico Flow");
+        finalTestController.StartAssessmentModule = true;
+        yield return StartCoroutine(elevatorPitchController.DoElevetorPitch());
+        finalTestController.StartAssessmentModule = false;
+    }
+    private IEnumerator FinalTestsAssessmentModuleFlow()
+    {
+        Debug.Log("Empezó Prueba final Flow");
+        finalTestController.StartAssessmentModule = true;
+        yield return StartCoroutine(elevatorPitchController.DoElevetorPitch());
+        finalTestController.StartAssessmentModule = false;
+    }
+
+    public IEnumerator CallEnableRobertaToFeedBack()
+    {
+        // mostrar Roberta
+        if (playerStats.isNewPlayer)
+        {
+            yield return StartCoroutine(FinalizeGameSetup());
+            playerStats.isNewPlayer = false;
+            BaseDataManager.Instance.Save("/PlayerData.json", playerStats);
+        }
+        else
+        {
+            finalTestController.robertaPrefab.SetActive(true);
+            //  Lanzar feedback final
+        }
+
+    }
+
+    public IEnumerator CallGraph()
+    {
+        UIManager.Instance.CallShowGraph();
         yield return new WaitUntil(() => !UIManager.Instance.practicalResultsGraphicMenu.activeInHierarchy);
-        Debug.Log("Terminó Diagnóstico");
     }
+
     #endregion
 
-    #region Assessment Qualifiers
-    public void CallTheoreticalVideoQualifier()
-    {
-        //int currentLessonListPosition = ModuleUIHelper.GetLessonTypeIndex(
-        //    LevelProgressManager.Instance.currentUnit[LevelProgressManager.Instance.currentLevel].levels[LevelProgressManager.Instance.currentSubLevel].lessons,
-        //    LessonType.Video);
-        ProcessVideoQualificationByUnit(LevelProgressManager.Instance.currentLesson);
-    }
+    #region Lessons Qualifiers
 
-    private void ProcessVideoQualificationByUnit(int lessonPosition)
+    public void ProcessQualificationByTypeLesson(int lessonPosition)
     {
         switch (LevelProgressManager.Instance.currentUnitIndex)
         {
@@ -284,9 +381,16 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(RunDosAndDontsQuizFlow(tipIndex));
     }
 
-    public void CallFinalTestFeedBackQualifier(AssessmentModule assessment)
+    public IEnumerator CallShowElevatorPitchFeedBackQualifier()
     {
-        StartCoroutine(StartFinalTestFeedBack(assessment));
+        yield return StartCoroutine(StartFinalTestFeedBack());
+        UIManager.Instance.RobertaMenu.SetActive(true);
+    }
+
+    public IEnumerator CallShowRobertaAnsersQuestions()
+    {
+        yield return StartCoroutine(RobertaController.Instance.RobertaGoToAnswersQuestions());
+        UIManager.Instance.RobertaMenu.SetActive(true);
     }
 
     #endregion
@@ -346,18 +450,16 @@ public class GameManager : Singleton<GameManager>
         finalTestController.robertaObjects.SetActive(false);
     }
 
-    private IEnumerator StartFinalTestFeedBack(AssessmentModule assessment)
+    private IEnumerator StartFinalTestFeedBack()
     {
-        yield return StartCoroutine(RobertaController.Instance.RobertaGoToFeedBack(assessment, 0));
+        yield return StartCoroutine(RobertaController.Instance.RobertaGoToFeedBack(0));
         yield return new WaitUntil(() => !WebRequestController.Instance.InProgress); 
-        
         var robertaAI = RobertaController.Instance.robertaAI;
         robertaAI.isEndingAnalyzeAIResponse = true;
         robertaAI.AnalyzeAIResponse();
-
         yield return new WaitUntil(() => !robertaAI.isEndingAnalyzeAIResponse);
-        yield return StartCoroutine(ShowFeedBackFinalTestResults(robertaAI.isApproved));
     }
+
     #endregion
 
     #region Level Validation & Scoring
@@ -578,7 +680,6 @@ public class GameManager : Singleton<GameManager>
 
     #region Results Display
     
-    
     void ShowUnitQualification(bool firstTime, bool improved)
     {
         var lpm = LevelProgressManager.Instance;
@@ -652,6 +753,18 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitUntil(() => !UIManager.Instance.moduleResultsMenu.activeInHierarchy);
         UIManager.Instance.SetCurrentUIMenu(UIManager.Instance.moduleResultsMenu);
         UIManager.Instance.SetNewUIMenu(UIManager.Instance.mainMenu);
+    }
+
+    IEnumerator ShowAssesmentModuleResults()
+    {
+        if (!isDiagnosis)
+        {
+            yield return StartCoroutine(ShowFeedBackFinalTestResults(RobertaController.Instance.robertaAI.isApproved));
+        }
+        else
+        {
+            UIManager.Instance.mainMenu.SetActive(true);
+        }
     }
 
     #endregion
