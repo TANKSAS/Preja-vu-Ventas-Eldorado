@@ -896,7 +896,7 @@ MonoBehaviour:
   npcTimeoutOccurred: 0
   userChoseRetry: 0
   userChoseCancel: 0
-  npcResponseTimeout: 5
+  npcResponseTimeout: 60
   retryCount: 0
   maxRetries: 3
   isRecordingMessage: 0
