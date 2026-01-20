@@ -2399,107 +2399,105 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 176558326211915776
-    m_Localized: "Seg\xFAn la t\xE9cnica, \xBFc\xF3mo debe comenzar una interacci\xF3n
-      con un cliente?"
+    m_Localized: "\xBFC\xF3mo debe comenzar la interacci\xF3n con el cliente?"
     m_Metadata:
       m_Items: []
   - m_Id: 176558411494699008
-    m_Localized: Preguntando si quiere pagar en efectivo o tarjeta
+    m_Localized: Mostrando los modelos disponibles en Colchones Eldorado
     m_Metadata:
       m_Items: []
   - m_Id: 176558446500360192
-    m_Localized: "Mostrando el cat\xE1logo de productos"
+    m_Localized: Creando un espacio de confianza para escucharlo
     m_Metadata:
       m_Items: []
   - m_Id: 176558464464564224
-    m_Localized: Con un saludo institucional y una pregunta que invite a conversar
+    m_Localized: "Explicando las caracter\xEDsticas del producto que se est\xE1 impulsando"
     m_Metadata:
       m_Items: []
   - m_Id: 176558570756616192
-    m_Localized: "\xBFCu\xE1l es la frase institucional que se propone en el ejemplo?"
+    m_Localized: "\xBFCu\xE1l de las siguientes frases refleja el saludo de Colchones
+      Eldorado?"
     m_Metadata:
       m_Items: []
   - m_Id: 176558630915518464
-    m_Localized: "\"Bienvenido, \xBFqu\xE9 tipo de colch\xF3n busca hoy?\""
+    m_Localized: "\u201CPase por aqu\xED, le muestro nuestros colchones\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 176558691753897984
-    m_Localized: "\"Hola, mi nombre es [su nombre], \xBFya conoce nuestras ofertas?\""
+    m_Localized: "\u201CBuenos d\xEDas, \xBFc\xF3mo puedo ayudarle a mejorar su descanso?\u201D\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176558709307060224
-    m_Localized: "\"Bienvenido a Colchones El Dorado. Mi nombre es [su nombre], cu\xE9nteme,
-      \xBFqu\xE9 le est\xE1 quitando el sue\xF1o \xFAltimamente?\""
+    m_Localized: "\u201CBienvenido, tenemos varias opciones en promoci\xF3n hoy\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 176558751141048320
-    m_Localized: "\xBFPara qu\xE9 se utiliza la t\xE9cnica de \u201CLos 3 por qu\xE9?\u201D
-      en este contexto?"
+    m_Localized: "\xBFQu\xE9 busca el vendedor al hacer preguntas iniciales sobre
+      el descanso del cliente?"
     m_Metadata:
       m_Items: []
   - m_Id: 176558781377785856
-    m_Localized: "Convencer r\xE1pidamente al cliente de comprar"
+    m_Localized: "Identificar r\xE1pidamente qu\xE9 producto mostrar\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176558842912419840
-    m_Localized: Profundizar para encontrar la causa real del problema o necesidad
+    m_Localized: Entender su experiencia de descanso y detectar el problema
     m_Metadata:
       m_Items: []
   - m_Id: 176558861044396032
-    m_Localized: ' Presentar tres opciones de producto distintas'
+    m_Localized: "Determinar qu\xE9 modelo es el m\xE1s vendido"
     m_Metadata:
       m_Items: []
   - m_Id: 176558984382099456
-    m_Localized: "\xBFCu\xE1l es la diferencia entre preguntar con intenci\xF3n y
-      hablar de forma casual?\r\n"
+    m_Localized: "\xBFEn Colchones Eldorado por qu\xE9 es importante preguntar con
+      intenci\xF3n?\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176559060789735424
-    m_Localized: No hay ninguna diferencia, las dos son iguales.
+    m_Localized: "Para acelerar la decisi\xF3n de compra\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176559321939685376
-    m_Localized: "En una conversaci\xF3n com\xFAn, se habla sin un prop\xF3sito claro;
-      al indagar con intenci\xF3n, cada pregunta busca informaci\xF3n \xFAtil."
+    m_Localized: "Para entender qu\xE9 motiva la visita del cliente"
     m_Metadata:
       m_Items: []
   - m_Id: 176559357582880768
-    m_Localized: "Indagar con intenci\xF3n es solo una t\xE9cnica para que la conversaci\xF3n
-      sea m\xE1s larga."
+    m_Localized: "Para poder  mostrar m\xE1s opciones de colchones"
     m_Metadata:
       m_Items: []
   - m_Id: 176559379087077376
-    m_Localized: "\xBFCu\xE1l de estas es una pregunta inteligente que ayuda a abrir
-      la conversaci\xF3n?"
+    m_Localized: "\xBFPor qu\xE9 es clave identificar para qui\xE9n es el colch\xF3n
+      durante la indagaci\xF3n?"
     m_Metadata:
       m_Items: []
   - m_Id: 176559416500269056
-    m_Localized: "\u201C\xBFQuiere pagar de contado o en cuotas?\u201D"
+    m_Localized: " Para reducir el tiempo de atenci\xF3n\r al cliente\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176559451396878336
-    m_Localized: "\u201C\xBFQu\xE9 tipo de cambio espera lograr con este producto?\u201D\r\n"
+    m_Localized: " Para adaptar las alternativas a mostrar ante la necesidad real\t"
     m_Metadata:
       m_Items: []
   - m_Id: 176559472070602752
-    m_Localized: "\u201C\xBFQuiere que se lo empaque para regalo?\u201D\r\n"
+    m_Localized: "Para ofrecer el colch\xF3n m\xE1s econ\xF3mico al cliente"
     m_Metadata:
       m_Items: []
   - m_Id: 176559513032175616
-    m_Localized: "\xBFQu\xE9 se logra al adaptar la propuesta a partir de lo que
-      dice el cliente?"
+    m_Localized: "\xBFPara qu\xE9 se utilizan las preguntas de indagaci\xF3n?\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 176559570074710016
-    m_Localized: "Ahorrar tiempo en la atenci\xF3n"
+    m_Localized: Para acelerar el cierre de la venta desde el primer contacto.
     m_Metadata:
       m_Items: []
   - m_Id: 176559607286575104
-    m_Localized: Incrementar el inventario de la tienda
+    m_Localized: ' Para construir tres alternativas que le permitan al cliente elegir
+      con confianza.'
     m_Metadata:
       m_Items: []
   - m_Id: 176559678757515264
-    m_Localized: " Generar confianza y ofrecer una soluci\xF3n m\xE1s acertada"
+    m_Localized: Para presentar todas las opciones disponibles del portafolio de
+      productos.
     m_Metadata:
       m_Items: []
   - m_Id: 176559906629857280
@@ -2727,6 +2725,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 228289090034323456
     m_Localized: "O usu\xE1rio n\xE3o est\xE1 respondendo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233729888217808896
+    m_Localized: Reintentar
     m_Metadata:
       m_Items: []
   references:

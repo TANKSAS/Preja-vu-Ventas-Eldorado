@@ -17,5 +17,5 @@ MonoBehaviour:
   - Tool1Question2AnswerA
   - Tool1Question2AnswerB
   - Tool1Question2AnswerC
-  trueAnswer: 2
+  trueAnswer: 1
   isAnswerCorrect: 0
