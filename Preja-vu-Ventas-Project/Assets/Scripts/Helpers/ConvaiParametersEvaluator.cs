@@ -8,10 +8,12 @@ using System.Linq;
 
 public abstract class ConvaiParametersEvaluator : MonoBehaviour
 {
+    [Header("Convai References")] 
     public ConvaiNPC currentConvaiNPC;
     public NarrativeState currentState = NarrativeState.Introduction; 
     public string currentIAAnswer;
-    
+    protected string cachedUserAnswer = "";
+
     public bool isTalking;
     public bool isNPCListening;
 
@@ -130,6 +132,38 @@ public abstract class ConvaiParametersEvaluator : MonoBehaviour
         GameManager.Instance.chatController.iaResponseLines.Add(currentIAAnswer);
     }
 
+    // --- Helper: Maneja el timeout mostrando panel y esperando decisión del usuario ---
+    // retryAction: acción a ejecutar si el usuario decide reintentar
+    protected IEnumerator HandleTimeoutForNarrative(System.Action retryAction)
+    {
+        Debug.LogWarning("Timeout detectado — mostrando panel de reintento/cancelación.");
+        // Mostrar panel y esperar la decisión del usuario (esta coroutine la maneja AIChatController)
+        yield return StartCoroutine(GameManager.Instance.chatController.WaitForUserErrorDecision());
+
+        if (GameManager.Instance.chatController.userChoseRetry)
+        {
+            // Reiniciar la bandera de timeout y ejecutar reintento
+            GameManager.Instance.chatController.userChoseRetry = false;
+            GameManager.Instance.chatController.userChoseCancel = false;
+            GameManager.Instance.chatController.npcTimeoutOccurred = false;
+            retryAction?.Invoke();
+
+            Debug.Log("Usuario decidió reintentar, ejecutando acción de retry...");
+
+            // Esperar nuevamente a que inicie la voz o timeout
+            yield return StartCoroutine(GameManager.Instance.chatController.WaitForNPCTalkingOrTimeout());
+        }
+        else if (GameManager.Instance.chatController.userChoseCancel)
+        {
+            Debug.Log("Usuario decidió cancelar el ejercicio.");
+
+            GameManager.Instance.chatController.userChoseRetry = false;
+            GameManager.Instance.chatController.userChoseCancel = false;
+            GameManager.Instance.chatController.npcTimeoutOccurred = false;
+            GameManager.Instance.chatController.ForceCloseChatAfterCancel();
+            yield break;
+        }
+    }
 
     public abstract void AnalyzeAIResponse();
 }

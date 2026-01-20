@@ -30,6 +30,12 @@ public class StepManager : MonoBehaviour
     List<Step> m_StepList = new List<Step>();
 
     public int m_CurrentStepIndex = 0;
+
+    public void OnEnable()
+    {
+        m_StepButtonTextField.text = LanguageManager.Instance.GetStringValue(m_StepList[m_CurrentStepIndex].buttonText);
+    }
+
     public void Restart()
     {
         m_CurrentStepIndex = 0;

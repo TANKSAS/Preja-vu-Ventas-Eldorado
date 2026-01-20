@@ -24,6 +24,7 @@ public class UIHelperController : MonoBehaviour
 
     public void IniciarTemporizador()
     {
+        Debug.Log("Entro");
         if (temporizadorCoroutine != null)
         {
             StopCoroutine(temporizadorCoroutine);

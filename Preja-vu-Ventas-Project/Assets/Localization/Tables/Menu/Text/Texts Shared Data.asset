@@ -2399,6 +2399,26 @@ MonoBehaviour:
     m_Key: RecordingEnableButtonText
     m_Metadata:
       m_Items: []
+  - m_Id: 228280734703931392
+    m_Key: ListeningButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228280812587962368
+    m_Key: ProcessingButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288914288791552
+    m_Key: TalkButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288988901265408
+    m_Key: NoMoreQuestionsCommandText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228289090034323456
+    m_Key: DontAnswerCommandText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

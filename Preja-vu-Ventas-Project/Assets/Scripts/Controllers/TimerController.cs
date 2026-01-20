@@ -40,6 +40,7 @@ public class TimerController : MonoBehaviour
         else
         {
             eventTimerText.text = string.Empty;
+            UIManager.Instance.timer2DPanel.SetActive(false);
         }
 
         isCounting = false;
@@ -57,7 +58,11 @@ public class TimerController : MonoBehaviour
             eventTimerSlider.value = newTime;
             UIManager.Instance.timer360Panel.SetActive(true);
         }
-        
+        else
+        {
+            UIManager.Instance.timer2DPanel.SetActive(true);
+        }
+
         StartCoroutine(CountDown());
     }
 

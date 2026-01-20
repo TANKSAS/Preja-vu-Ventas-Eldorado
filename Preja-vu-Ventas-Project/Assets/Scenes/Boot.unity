@@ -139,6 +139,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3840816064462962877, guid: a4446a2a61cd302478d9ad5df6509109, type: 3}
   m_PrefabInstance: {fileID: 393435333378369181}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &118979353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118979354}
+  - component: {fileID: 118979355}
+  m_Layer: 0
+  m_Name: FeedbackSessionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118979354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118979353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1664479755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118979355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118979353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754d59430c0e6f64facc27f4f0eff427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &210959648 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7319269630475116770, guid: 49d280a80143ffd42bb554f08246289e, type: 3}
@@ -849,6 +893,10 @@ MonoBehaviour:
   isPlayerConfirmed: 0
   hasJustRetried: 0
   userFinished: 0
+  npcTimeoutOccurred: 0
+  userChoseRetry: 0
+  userChoseCancel: 0
+  npcResponseTimeout: 5
   retryCount: 0
   maxRetries: 3
   isRecordingMessage: 0
@@ -2475,6 +2523,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7771630561380910841, guid: 8532521d86952644483a01658a1d226d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1314468010}
+    - targetCorrespondingSourceObject: {fileID: 7771630561380910841, guid: 8532521d86952644483a01658a1d226d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 118979354}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8532521d86952644483a01658a1d226d, type: 3}
 --- !u!1001 &7386706177609450645

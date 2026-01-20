@@ -17,7 +17,8 @@ namespace Convai.Scripts.Runtime.UI
         [SerializeField] private GameObject _playerMessageObject, _characterMessageObject;
 
         //Control del Chat XR
-        public GameObject _playerCommandPromptPanelObject, _answerButtonsHolerObject, _answerButtonsObject, _answerButtonsRecordingObject, _loadingObject;
+        public GameObject _playerCommandPromptPanelObject, _answerButtonsHolerObject, _answerButtonsObject, _answerButtonsRecordingObject, _errorPanel, _loadingObject;
+        public GameObject _buttonTalkingHolderObject, _buttonEndConversationHolderObject;
 
         private readonly List<Message> _messageList = new();
 
@@ -42,42 +43,130 @@ namespace Convai.Scripts.Runtime.UI
 
         public void SendPlayerCommandPrompt(string command)
         {
-            ConvaiParametersEvaluator currentNPC = ConvaiNPCManager.Instance.activeConvaiNPC.GetComponent<ConvaiParametersEvaluator>();
-            GameManager.Instance.chatController.isSendingMessage = true;
+            //ConvaiParametersEvaluator currentNPC = ConvaiNPCManager.Instance.activeConvaiNPC.GetComponent<ConvaiParametersEvaluator>();
+            //GameManager.Instance.chatController.isSendingMessage = true;
+            //string commandTranslatedText = "";
 
-            // Detectar tipo de botón (asumiendo texto exacto "retry" o "ok")
-            if (command.ToLower() == "retry")
+            //// Detectar tipo de botón (asumiendo texto exacto "retry" o "ok")
+            //if (command.ToLower() == "retry")
+            //{
+            //    commandTranslatedText = LanguageManager.Instance.GetStringValue("RetryButtonText");
+            //    currentNPC.SendPlayerMessage(commandTranslatedText);
+            //    GameManager.Instance.chatController.isRetryingSendMessage = true;
+            //    GameManager.Instance.chatController.isPlayerConfirmed = false;
+
+            //    if (GameManager.Instance.chatController.retryCount >= GameManager.Instance.chatController.maxRetries)
+            //    {
+            //        Debug.Log("Demasiados reintentos. Lanzando error.");
+            //        currentNPC.currentState = NarrativeState.Error;
+            //        ScenesManager.Instance.LoadErrorScene();
+            //    }
+
+            //}
+            //else if (command.ToLower() == "ok")
+            //{
+            //    GameManager.Instance.chatController.isRetryingSendMessage = false;
+            //    GameManager.Instance.chatController.isPlayerConfirmed = true;
+            //    GameManager.Instance.chatController.retryCount = 0;
+            //}
+            //else if (command.ToLower() == "no tengo mas preguntas")
+            //{
+            //    GameManager.Instance.chatController.isRetryingSendMessage = false;
+            //    GameManager.Instance.chatController.isPlayerConfirmed = true;
+            //    GameManager.Instance.chatController.retryCount = 0;
+            //    GameManager.Instance.chatController.userFinished = true;
+            //    commandTranslatedText = LanguageManager.Instance.GetStringValue("NoMoreQuestionsCommandText");
+            //    currentNPC.SendPlayerMessage(commandTranslatedText);
+            //}
+
+            //GameManager.Instance.chatController.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+            //GameManager.Instance.chatController.chatAIBoxUI._answerButtonsObject.SetActive(false);
+            //GameManager.Instance.chatController.chatAIBoxUI._answerButtonsRecordingObject.SetActive(false);
+
+            ConvaiParametersEvaluator currentNPC =
+        ConvaiNPCManager.Instance.activeConvaiNPC.GetComponent<ConvaiParametersEvaluator>();
+
+            var chat = GameManager.Instance.chatController;
+
+            chat.isSendingMessage = true;
+            string commandTranslatedText = "";
+            string cmd = command.ToLower().Trim();
+
+            // =========================================================
+            // === TIMEOUT FLOW: RETRY / CANCEL (NO ENVÍA A CONVAI) ===
+            // =========================================================
+            if (cmd == "error")
             {
-                currentNPC.SendPlayerMessage(command);
-                GameManager.Instance.chatController.isRetryingSendMessage = true;
-                GameManager.Instance.chatController.isPlayerConfirmed = false;
+                Debug.Log("⏱ UI: Retry por TIMEOUT");
 
-                if (GameManager.Instance.chatController.retryCount >= GameManager.Instance.chatController.maxRetries)
+                chat.userChoseRetry = true;
+                chat.userChoseCancel = false;
+
+                // No se envía texto a Convai
+                chat.isSendingMessage = false;
+                return;
+            }
+            else if (cmd == "cancel")
+            {
+                Debug.Log("⏱ UI: Cancelar por TIMEOUT");
+
+                chat.userChoseRetry = false;
+                chat.userChoseCancel = true;
+
+                chat.isSendingMessage = false;
+                return;
+            }
+
+            // =========================================================
+            // === FLUJO NORMAL DE CHAT (SÍ ENVÍA A CONVAI) ============
+            // =========================================================
+
+            if (cmd == "retry")
+            {
+                commandTranslatedText = LanguageManager.Instance.GetStringValue("RetryButtonText");
+                currentNPC.SendPlayerMessage(commandTranslatedText);
+
+                chat.isRetryingSendMessage = true;
+                chat.isPlayerConfirmed = false;
+
+                if (chat.retryCount >= chat.maxRetries)
                 {
-                    Debug.Log("Demasiados reintentos. Lanzando error.");
+                    Debug.Log("❌ Demasiados reintentos. Lanzando escena de error.");
                     currentNPC.currentState = NarrativeState.Error;
                     ScenesManager.Instance.LoadErrorScene();
                 }
-
             }
-            else if (command.ToLower() == "ok")
+            else if (cmd == "ok")
             {
-                GameManager.Instance.chatController.isRetryingSendMessage = false;
-                GameManager.Instance.chatController.isPlayerConfirmed = true;
-                GameManager.Instance.chatController.retryCount = 0;
+                chat.isRetryingSendMessage = false;
+                chat.isPlayerConfirmed = true;
+                chat.retryCount = 0;
             }
-            else if (command.ToLower() == "no tengo mas preguntas")
+            else if (cmd == "no tengo mas preguntas")
             {
-                GameManager.Instance.chatController.isRetryingSendMessage = false;
-                GameManager.Instance.chatController.isPlayerConfirmed = true;
-                GameManager.Instance.chatController.retryCount = 0;
-                GameManager.Instance.chatController.userFinished = true;
-                currentNPC.SendPlayerMessage(command);
+                chat.isRetryingSendMessage = false;
+                chat.isPlayerConfirmed = true;
+                chat.retryCount = 0;
+                chat.userFinished = true;
+
+                commandTranslatedText =
+                    LanguageManager.Instance.GetStringValue("NoMoreQuestionsCommandText");
+
+                currentNPC.SendPlayerMessage(commandTranslatedText);
             }
 
-            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
-            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsObject.SetActive(false);
-            GameManager.Instance.chatController.chatAIBoxUI._answerButtonsRecordingObject.SetActive(false);
+            // =========================================================
+            // === LIMPIEZA DE UI (COMPORTAMIENTO ACTUAL) ==============
+            // =========================================================
+            chat.chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+            chat.chatAIBoxUI._answerButtonsObject.SetActive(false);
+            chat.chatAIBoxUI._answerButtonsRecordingObject.SetActive(false);
+
+        }
+
+        public void ButtonsListeningEvent()
+        {
+            _buttonEndConversationHolderObject.SetActive(!_buttonEndConversationHolderObject.activeInHierarchy);
         }
 
         /// <summary>

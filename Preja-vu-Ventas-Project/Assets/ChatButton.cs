@@ -20,7 +20,7 @@ public class ChatButton : MonoBehaviour
     
     private bool isRecording = false;
     private bool isProcessing = false;
-    
+
     // Métodos para eventos de Convai (opcionales - para debugging)
     void OnEnable()
     {
@@ -40,7 +40,7 @@ public class ChatButton : MonoBehaviour
         // Obtener el componente Button
         LoaderImage.gameObject.SetActive(false);
         button = GetComponent<Button>();
-        
+
         if (button != null)
         {
             // Configurar eventos del botón según el modo
@@ -58,7 +58,7 @@ public class ChatButton : MonoBehaviour
             Debug.LogError("No se encontró el componente Button en este GameObject");
         }
 
-        UpdateStatusText("Hablar");
+        UpdateStatusText(LanguageManager.Instance.GetStringValue("RecordingEnableButtonText"));
     }
 
     public void FindNPC()
@@ -98,8 +98,8 @@ public class ChatButton : MonoBehaviour
         // También manejar cuando el cursor sale del botón mientras está presionado
         EventTrigger.Entry pointerExitEntry = new EventTrigger.Entry();
         pointerExitEntry.eventID = EventTriggerType.PointerExit;
-        pointerExitEntry.callback.AddListener((data) => { 
-            if (isRecording) StopRecording(); 
+        pointerExitEntry.callback.AddListener((data) => {
+            if (isRecording) StopRecording();
         });
         eventTrigger.triggers.Add(pointerExitEntry);
     }
@@ -115,13 +115,13 @@ public class ChatButton : MonoBehaviour
         if (!isRecording)
         {
             Debug.Log("Iniciando grabación de voz...");
-            
+
             // Comenzar la grabación usando Convai
             convaiNPC.StartListening();
-            
+
             isRecording = true;
-            UpdateStatusText("Escuchando...");
-            
+            UpdateStatusText(LanguageManager.Instance.GetStringValue("ListeningButtonText"));
+
             // Cambiar el color del botón para indicar que está grabando
             ChangeButtonColor(Color.red);
         }
@@ -135,18 +135,18 @@ public class ChatButton : MonoBehaviour
         }
 
         Debug.Log("Deteniendo grabación de voz...");
-        
+
         // Detener la grabación y enviar al chat
         convaiNPC.StopListening();
 
         isRecording = false;
         isProcessing = true;
         LoaderImage.gameObject.SetActive(true);
-        UpdateStatusText("Procesando...");
-        
+        UpdateStatusText(LanguageManager.Instance.GetStringValue("ProcessingButtonText"));
+
         // Restaurar el color original del botón
         ChangeButtonColor(Color.white);
-        
+
         // Opcional: Agregar un delay antes de permitir otra grabación
         StartCoroutine(ProcessingCooldown());
     }
@@ -167,11 +167,11 @@ public class ChatButton : MonoBehaviour
     {
         // Esperar un poco para evitar spam de grabaciones
         yield return new WaitForSeconds(1f);
-        
+
         isProcessing = false;
         LoaderImage.gameObject.SetActive(false);
         GameManager.Instance.chatController.isSendingMessage = true;
-        UpdateStatusText("Hablar");
+        UpdateStatusText(LanguageManager.Instance.GetStringValue("TalkButtonText"));
     }
 
     void ChangeButtonColor(Color color)
@@ -196,10 +196,10 @@ public class ChatButton : MonoBehaviour
     public void SetPushToTalkMode(bool pushToTalk)
     {
         isPushToTalk = pushToTalk;
-        
+
         // Limpiar eventos existentes
         button.onClick.RemoveAllListeners();
-        
+
         // Reconfigurar según el nuevo modo
         if (isPushToTalk)
         {
@@ -211,7 +211,7 @@ public class ChatButton : MonoBehaviour
         }
     }
 
-    
+
 
     // Métodos de callback para eventos de Convai (opcionales)
     /*

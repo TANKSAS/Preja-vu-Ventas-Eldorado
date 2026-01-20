@@ -2709,6 +2709,26 @@ MonoBehaviour:
     m_Localized: Parlar
     m_Metadata:
       m_Items: []
+  - m_Id: 228280734703931392
+    m_Localized: "Audi\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228280812587962368
+    m_Localized: Processamento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288914288791552
+    m_Localized: Falar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288988901265408
+    m_Localized: "N\xE3o tenho mais perguntas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228289090034323456
+    m_Localized: "O usu\xE1rio n\xE3o est\xE1 respondendo."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

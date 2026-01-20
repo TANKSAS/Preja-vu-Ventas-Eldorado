@@ -11730,11 +11730,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &435567097 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 882614763783886953, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
-  m_PrefabInstance: {fileID: 4870616676558656542}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &437026240
 GameObject:
   m_ObjectHideFlags: 0
@@ -70828,10 +70823,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 61527866}
-    - target: {fileID: 717528773159525793, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
-      propertyPath: RobertaMenu
-      value: 
-      objectReference: {fileID: 435567097}
     - target: {fileID: 778331412788552672, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -70963,10 +70954,6 @@ PrefabInstance:
     - target: {fileID: 5979862605445131454, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6242241820022508476, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6481771321516538326, guid: 8313f7077b7ff1847be2a9c450d47d48, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target

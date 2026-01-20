@@ -2814,6 +2814,26 @@ MonoBehaviour:
     m_Localized: Hablar
     m_Metadata:
       m_Items: []
+  - m_Id: 228280734703931392
+    m_Localized: Escuchando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228280812587962368
+    m_Localized: Procesando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288914288791552
+    m_Localized: Hablar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228288988901265408
+    m_Localized: NoMoreQuestionsCommandText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228289090034323456
+    m_Localized: El usuario no responde
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
