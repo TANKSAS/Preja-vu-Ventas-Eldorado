@@ -198,42 +198,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1001200578711552
-    m_Localized: "Reto\n\nPrep\xE1rate para un desaf\xEDo de alto impacto en ventas.\r\nSe
+    m_Localized: "Prep\xE1rate para un desaf\xEDo de alto impacto en ventas.\r\nSe
       recrear\xE1 un escenario realista en el que deber\xE1s interactuar con un cliente
       que busca mejorar su descanso.\r\n\r\nTu misi\xF3n es realizar un Walkaround
       completo y efectivo, aplicando las herramientas del entrenamiento de Colchones
-      El Dorado.\r\nDebes:\r\n\r\nEste reto pondr\xE1 a prueba tu capacidad de escucha
-      activa, dominio de producto y habilidades de asesor\xEDa personalizada, demostrando
-      que eres capaz de brindar una experiencia de compra memorable en Colchones
-      El Dorado."
+      El Dorado.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 2485419653976064
-    m_Localized: "Contexto \n\nEres asesor comercial de Colchones El Dorado y tienes
-      la oportunidad de atender a un cliente que entra a la tienda buscando mejorar
-      su descanso.\n\nEste escenario es una ocasi\xF3n \xFAnica para entender sus
-      necesidades reales, ofrecerle una experiencia personalizada y destacar el valor
-      de nuestros colchones como la mejor soluci\xF3n para su bienestar y calidad
-      de sue\xF1o."
+    m_Localized: "Este reto pondr\xE1 a prueba tu capacidad de escucha activa, dominio
+      de producto y habilidades de asesor\xEDa personalizada, demostrando que eres
+      capaz de brindar una experiencia de compra memorable en Colchones El Dorado."
     m_Metadata:
       m_Items: []
   - m_Id: 2488224984846336
-    m_Localized: "Objetivo\n\nIdentificar su necesidad real antes de hablar de productos.\r\n\r\nGuiarlo
+    m_Localized: "Eres asesor comercial de Colchones El Dorado y tienes la oportunidad
+      de atender a un cliente que entra a la tienda buscando mejorar su descanso.\n\nEste
+      escenario es una ocasi\xF3n \xFAnica para entender sus necesidades reales,
+      ofrecerle una experiencia personalizada y destacar el valor de nuestros colchones
+      como la mejor soluci\xF3n para su bienestar y calidad de sue\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2489268485738496
+    m_Localized: "Identificar su necesidad real antes de hablar de productos.\r\n\r\nGuiarlo
       en una experiencia personalizada de prueba de colchones usando la t\xE9cnica
       FAB.\r\n\r\nResponder a sus dudas con empat\xEDa y argumentos de valor.\r\n\r\nAcompa\xF1arlo
       en el cierre de manera natural, generando confianza y credibilidad.\r\n\r\nTu
       meta es dejar una impresi\xF3n profesional, convincente y memorable, demostrando
       que eres un asesor experto de Colchones El Dorado capaz de ofrecer soluciones
       que mejoren su descanso."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2489268485738496
-    m_Localized: "Ficha T\xE9cnica:\r\nNombre: Silk Sabor a Coco.\r\nMarca: Silk.\r\nPresentaci\xF3n:
-      Envase de 946 ml.\r\nIngredientes: Agua filtrada, crema de coco, az\xFAcar
-      de ca\xF1a, fosfato tric\xE1lcico, sal marina, gellan, lecitina de girasol,
-      vitamina D2, vitamina B12.\r\nAl\xE9rgenos: Contiene soya. Puede contener almendras,
-      leche y nuez de la india.\r\nBeneficios: Contiene vitaminas, calcio, sodio
-      y grasas saturadas. No contiene az\xFAcar a\xF1adida.\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 2501721617584128
@@ -2834,6 +2827,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 233729888217808896
     m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99645801014743040
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:
