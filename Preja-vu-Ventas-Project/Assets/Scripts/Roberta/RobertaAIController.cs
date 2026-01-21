@@ -247,10 +247,21 @@ public class RobertaAIController : ConvaiParametersEvaluator
 
         // 3) ENVIAR RESPUESTA DEL USUARIO (obtenida de sesiones)
         currentState = NarrativeState.AwaitingUserResponse;
-
-        string newAnswer = (!string.IsNullOrEmpty(GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].finalAnswer)
+        
+        string newAnswer = "El usuario no responde";
+        
+         if(GameManager.Instance.playerStats.sessions.Count > 0)
+        {
+            Debug.Log("Si hay datos de sesiones anteriores");
+            newAnswer = (!string.IsNullOrEmpty(GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].finalAnswer)
             ? GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].finalAnswer
             : "El usuario no responde");
+        }
+        else
+        {
+            Debug.Log("No hay datos de sesiones anteriores");
+        }
+
 
         cachedUserAnswer = newAnswer;
         SendPlayerMessage(newAnswer);

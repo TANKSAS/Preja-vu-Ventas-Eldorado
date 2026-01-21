@@ -116,7 +116,7 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitUntil(() => !backGroundController.isLoading);
     }
 
-    private IEnumerator HandleNewPlayerDiagnostics()
+    private IEnumerator HandleNewPlayerDiagnosis()
     {
         SetDiagnosis(true);
         //UIManager.Instance.canBackMainMenu = false;
@@ -140,17 +140,17 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(3f);
         yield return StartCoroutine(RobertaController.Instance.Spawning());
         yield return new WaitForSeconds(1f);
-        
-        if (!playerStats.isNewPlayer)
-        {
+
+        //if (!playerStats.isNewPlayer)
+        //{
             UIManager.Instance.mainMenu.SetActive(true);
-        }
+        //}
     }
 
     #endregion
 
     #region Instructions
-    
+
     private void SetupInstructionsPanels()
     {
         UIManager.Instance.videoIntroduction360Button.SetActive(false);
@@ -273,18 +273,19 @@ public class GameManager : Singleton<GameManager>
     public IEnumerator CallEnableRobertaToFeedBack()
     {
         // mostrar Roberta
-        if (playerStats.isNewPlayer)
-        {
-            yield return StartCoroutine(FinalizeGameSetup());
-            playerStats.isNewPlayer = false;
-            BaseDataManager.Instance.Save("/PlayerData.json", playerStats);
-        }
-        else
-        {
-            finalTestController.robertaPrefab.SetActive(true);
-            //  Lanzar feedback final
-        }
-
+        //if (playerStats.isNewPlayer)
+        //{
+        //    yield return StartCoroutine(FinalizeGameSetup());
+        //    playerStats.isNewPlayer = false;
+        //    BaseDataManager.Instance.Save("/PlayerData.json", playerStats);
+        //}
+        //else
+        //{
+        //    finalTestController.robertaPrefab.SetActive(true);
+        //    //  Lanzar feedback final
+        //}
+        finalTestController.robertaPrefab.SetActive(true);
+        yield return null;
     }
 
     public IEnumerator CallGraph()
