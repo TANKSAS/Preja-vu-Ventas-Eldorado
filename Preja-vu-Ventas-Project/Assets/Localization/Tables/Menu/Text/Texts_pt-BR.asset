@@ -79,7 +79,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 368517116841984
-    m_Localized: 3.P.V
+    m_Localized: "Pitching\t"
     m_Metadata:
       m_Items: []
   - m_Id: 369160560824320
@@ -2471,7 +2471,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 176559416500269056
-    m_Localized: " Para reducir el tiempo de atenci\xF3n\r al cliente\n"
+    m_Localized: " Para reducir el tiempo de atenci\xF3n\r al cliente"
     m_Metadata:
       m_Items: []
   - m_Id: 176559451396878336

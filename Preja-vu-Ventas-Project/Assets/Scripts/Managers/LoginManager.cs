@@ -107,7 +107,7 @@ public class LoginManager : Singleton<LoginManager>
         if (!BaseDataManager.Instance.Load("/PlayerSalesData.json", GameManager.Instance.playerStats))
         {
             Debug.Log("New Player");
-            GameManager.Instance.playerStats.isNewPlayer = true;
+            //GameManager.Instance.playerStats.isNewPlayer = true;
             BaseDataManager.Instance.Save("/PlayerSalesData.json", GameManager.Instance.playerStats);
         }
         else
