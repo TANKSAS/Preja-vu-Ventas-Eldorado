@@ -23,7 +23,6 @@ public class GameManager : Singleton<GameManager>
     public BackGroundController backGroundController;
     public QuestGameManager questGameManager;
     public TimeLineController timeLineController;
-    public VideoTimeScrubControl videoPlayer;
     public ElevatorPitchController elevatorPitchController;
     public FinalTestController finalTestController;
 

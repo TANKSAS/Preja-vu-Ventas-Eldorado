@@ -69872,7 +69872,7 @@ PrefabInstance:
     - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
       propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 95518729}
+      objectReference: {fileID: 0}
     - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
       propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -69954,6 +69954,10 @@ PrefabInstance:
       value: CallChangeImagen
       objectReference: {fileID: 0}
     - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
+      propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
       propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -69985,6 +69989,10 @@ PrefabInstance:
       propertyPath: cinematicButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
       objectReference: {fileID: 61527866}
+    - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
+      propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6766061339134604365, guid: e3d19cfa212575a4fb622bd940c7f043, type: 3}
       propertyPath: videoButtonEvents.defaultOnClickEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
       value: SetVideo

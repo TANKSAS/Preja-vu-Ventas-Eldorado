@@ -1,6 +1,7 @@
 using SimpleJSON;
 using System;
 using System.Collections;
+using System.Globalization;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -41,6 +42,14 @@ public class LoginManager : Singleton<LoginManager>
     /// </summary>
     [SerializeField] private List<IEnumerator> _loadOperations = new List<IEnumerator>();
 
+    private void Awake()
+    {
+        base.Awake();
+
+        CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
+        CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
+    }
+    
     void Start()
     {
         webRequestController = WebRequestController.Instance;
@@ -59,14 +68,25 @@ public class LoginManager : Singleton<LoginManager>
         startCheckIdentity = true;
     }
 
-    public void RegisterPlayerDateCredentials(string checkId)
+    void RegisterPlayerDateCredentials(string checkId)
     {
-        DateTime startDate = DateTime.Parse(timeZone.GetDeviceTimeZone());
-        DateTime endDate = startDate.AddHours(24);
-
         url = "https://api.tank.com.co/setPrejavu/";
-        StartCoroutine(webRequestController.StartUpdateAllPlayerData(url, checkId, startDate.ToString(), endDate.ToString()));
+
+        DateTime startDate = DateTime.ParseExact(
+            timeZone.GetDeviceTimeZone(),
+            "yyyy-MM-dd HH:mm:ss",
+            CultureInfo.InvariantCulture);
+
+        DateTime endDate = startDate.AddHours(48);
+
+        StartCoroutine(WebRequestController.Instance.StartUpdateAllPlayerData(
+            url,
+            checkId,
+            startDate.ToString("yyyy-MM-dd HH:mm:ss"),
+            endDate.ToString("yyyy-MM-dd HH:mm:ss")
+        ));
     }
+
 
     public void LoadPlayerProgressData(string checkId)
     {
@@ -391,23 +411,29 @@ public class LoginManager : Singleton<LoginManager>
         string start = infoJson["download_date"];
         string end = infoJson["end_date"];
 
-        DateTime startDateTime = DateTime.Parse(start);
-        DateTime endDateTime = DateTime.Parse(end);
-        DateTime currentDateTime = DateTime.Parse(timeZone.GetDeviceTimeZone());
+        DateTime startDateTime = DateTime.ParseExact(
+            start,
+            "yyyy-MM-dd HH:mm:ss",
+            CultureInfo.InvariantCulture);
+
+        DateTime endDateTime = DateTime.ParseExact(
+            end,
+            "yyyy-MM-dd HH:mm:ss",
+            CultureInfo.InvariantCulture);
+
+        DateTime currentDateTime = DateTime.ParseExact(
+            timeZone.GetDeviceTimeZone(),
+            "yyyy-MM-dd HH:mm:ss",
+            CultureInfo.InvariantCulture);
 
         Debug.Log(startDateTime);
         Debug.Log(endDateTime);
         Debug.Log(currentDateTime);
 
-        if (currentDateTime >= startDateTime && currentDateTime <= endDateTime)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return currentDateTime >= startDateTime &&
+               currentDateTime <= endDateTime;
     }
+
 
     void LoadPlayerIdentityJsonData()
     {

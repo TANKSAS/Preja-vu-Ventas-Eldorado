@@ -64,6 +64,7 @@ namespace Unity.VRTemplate
         public VideoPlayer m_VideoPlayer;
         public List<VideoClip> videoClips = new List<VideoClip>();
         public List<Sound> videoTracks = new List<Sound>();
+        public bool isInstructionsVideoPlayer; 
 
         void OnEnable()
         {
@@ -76,19 +77,33 @@ namespace Unity.VRTemplate
             m_VideoPlayer.loopPointReached -= OnVideoFinished;
         }
 
-        public void SetVideoPlayer()
-        {
-            GameManager.Instance.videoPlayer = this;
-        }
-
         void OnVideoFinished(VideoPlayer vp)
         {
             m_PaneRepeat.SetActive(true);
-            GameManager.Instance.ProcessQualificationByTypeLesson(LevelProgressManager.Instance.currentLesson);
+            GameManager.Instance.backGroundController.RestartVideoPlayer(vp);
+
+            if (!isInstructionsVideoPlayer)
+                GameManager.Instance.ProcessQualificationByTypeLesson(LevelProgressManager.Instance.currentLesson);
         }
 
         public void First()
         {
+            if (isInstructionsVideoPlayer)
+            {
+                switch (LanguageManager.Instance.currentLenguaje)
+                {
+                    case Language.Español:
+                        SetVideo(0);
+                        break;
+                    case Language.Ingles:
+                        SetVideo(1);
+                        break;
+                    case Language.Portugues:
+                        SetVideo(0);
+                        break;
+                }
+            }
+            
             ResetPanel();
             VideoPlay();
             UIManager.Instance.ChanceMusicBackGround(1);
@@ -187,6 +202,12 @@ namespace Unity.VRTemplate
             {
                 m_SoundTrack.source.time = (float)timeInSeconds;
             }
+        }
+
+        void SetVideo(int index)
+        {
+            m_CurrentIndex = index;
+            m_VideoPlayer.clip = videoClips[m_CurrentIndex];
         }
 
         public void SetVideo()
