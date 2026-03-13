@@ -2423,6 +2423,10 @@ MonoBehaviour:
     m_Key: RetryButtonText
     m_Metadata:
       m_Items: []
+  - m_Id: 252536118223822848
+    m_Key: CancelButtonText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

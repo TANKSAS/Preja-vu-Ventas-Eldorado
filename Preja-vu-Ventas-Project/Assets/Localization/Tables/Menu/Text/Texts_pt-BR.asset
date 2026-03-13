@@ -2731,6 +2731,10 @@ MonoBehaviour:
     m_Localized: Reintentar
     m_Metadata:
       m_Items: []
+  - m_Id: 252536118223822848
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

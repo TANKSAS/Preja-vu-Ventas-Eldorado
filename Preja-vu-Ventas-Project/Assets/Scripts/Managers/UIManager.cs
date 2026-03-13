@@ -426,24 +426,6 @@ public class UIManager : Singleton<UIManager>
         StartCoroutine(currentCoroutine);
     }
 
-    public void CallShowPieDetailsGraph(int buttonIndex)
-    {
-        currentCoroutine = GraphManager.Instance.StartShowPieDetails(buttonIndex);
-        StartCoroutine(currentCoroutine);
-    }
-
-    public void CallVoiceDetailsGraph(int buttonIndex)
-    {
-        currentCoroutine = GraphManager.Instance.StartShowVoiceDetails(buttonIndex);
-        StartCoroutine(currentCoroutine);
-    }
-
-    public void CallHeatMapDetailsGraph(int buttonIndex)
-    {
-        currentCoroutine = GraphManager.Instance.StartShowHeatMapDetails(buttonIndex);
-        StartCoroutine(currentCoroutine);
-    }
-
     public void GraphMenuNavigation(bool isNext)
     {
         int totalPanels = 3;

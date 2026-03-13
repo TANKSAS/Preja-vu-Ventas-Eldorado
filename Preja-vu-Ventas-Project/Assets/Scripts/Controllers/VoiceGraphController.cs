@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,14 +6,16 @@ using TMPro;
 using Unity.VisualScripting;
 
 
-public class VoiceGraphController: Graph
+public class VoiceGraphController : Graph
 {
     public VoiceGraphicHolder voiceGraphHolder;
     [SerializeField] string[] yAxisPostionsList;
-    [SerializeField] List<float> provitionalReadingResultsVoice = new List<float>();
     [SerializeField] Color32[] kindOfVoiceColor;
     Color graphColor = new Color(0f, 229f / 255f, 1f);
 
+    public AnimacionUIManager animacionUIManager;
+
+    [Header ("Temporal Values")]
     float graphicHeight;
     float graphicWidth;
     float yMaximum;
@@ -24,17 +26,20 @@ public class VoiceGraphController: Graph
     float dotYDistance;
     int separatorXCount;
     int separatorYCount;
-    int maxAverage;
-    float average;
+
+    List<float> readingResultsvoices = new List<float>();
+    ToneOfVoiceRating kindOfVoice;
 
     public override void SetGraphSettings(GraphHolder graphHolder)
     {
         voiceGraphHolder = ChooseGraph<VoiceGraphicHolder>(graphHolder);
     }
 
-    public void SetListResults(List<float> resultsValuesList)
+    public override void SetGraphParameters(int index)
     {
-        provitionalReadingResultsVoice = new List<float>(resultsValuesList);
+        kindOfVoice = GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].toneOfVoiceRating;
+        readingResultsvoices = new List<float>(GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].readingResultsvoices);
+        videoDurationInSeconds = GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].videoDuration;
     }
 
     public override IEnumerator ResetGraphHolderValues(GraphHolder graphHolder)
@@ -91,15 +96,13 @@ public class VoiceGraphController: Graph
         }
 
         voiceGraphHolder = null;
-        yield return null;
         Debug.Log("End Reset VoiceGraph");
+
+        yield return null;
     }
 
     public override IEnumerator GraphMaker()
     {
-        //voiceGraphHolder.titleGraphic.text = LanguageManager.Instance.GetStringValue("FinalTestQuestionEnumText") + " #"; 
-        videoDurationInSeconds = (float) GameManager.Instance.backGroundController.currentVideoPlayer.length;
-        
         if (videoDurationInSeconds <= 0)
         {
             Debug.LogError("Video dura 0 segundos revisar referencia del video");
@@ -110,7 +113,7 @@ public class VoiceGraphController: Graph
         graphicWidth = voiceGraphHolder.graphContainer.sizeDelta.x;
         yMaximum = 12;
         separatorYCount = 6;
-        xSize = graphicWidth / provitionalReadingResultsVoice.Count;
+        xSize = graphicWidth / readingResultsvoices.Count;
         separatorXCount = Mathf.CeilToInt(videoDurationInSeconds / 60f);
         separatorDotsCount = 8f;
 
@@ -122,12 +125,12 @@ public class VoiceGraphController: Graph
 
         Vector2 lastPointPosition = Vector2.zero;
 
-        for (int i = 0; i < provitionalReadingResultsVoice.Count; i++)
+        for (int i = 0; i < readingResultsvoices.Count; i++)
         {
             float xPosition = xSize + i * xSize;
-            float yPosition = (provitionalReadingResultsVoice[i] / yMaximum) * graphicHeight;
+            float yPosition = (readingResultsvoices[i] / yMaximum) * graphicHeight;
             Vector2 startPointPosition = new Vector2(xPosition, yPosition);
-            //// Usa el m�todo de object pooling para obtener o crear un objeto
+            //// Usa el método de object pooling para obtener o crear un objeto
 
             GameObject lastPool = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphHolder.objectPoolList, voiceGraphHolder.linesHolder, voiceGraphHolder.lineTemplate.gameObject);
 
@@ -140,46 +143,51 @@ public class VoiceGraphController: Graph
 
             lastPointPosition = startPointPosition;
         }
-        
-        CalculateAverage();
+
+        ShowQualificationTag();
         Debug.Log("EndGraph");
     }
 
-    void CalculateAverage()
+    public override void ShowQualificationTag()
     {
-        float sum = 0;
+        string detailKey = "";
+       // int colorIndex = 0;
 
-        foreach (float number in provitionalReadingResultsVoice)
+        switch (kindOfVoice)
         {
-            sum += number;
+            case ToneOfVoiceRating.WeakVoice:
+               // colorIndex = 0;
+                detailKey = "VoiceDetailWeak";
+                Debug.Log(" susurro");
+                break;
+            case ToneOfVoiceRating.ConversationalVoice:
+               // colorIndex = 1;
+                detailKey = "VoiceDetailConversational";
+                Debug.Log(" conversacional");
+                break;
+            case ToneOfVoiceRating.ProjectedVoice:
+               // colorIndex = 2; 
+                detailKey = "VoiceDetailProjected";
+                Debug.Log(" proyectado");
+                break;
+            case ToneOfVoiceRating.Screams:
+               // colorIndex = 3;
+                detailKey = "VoiceDetailScreams";
+                Debug.Log(" gritos");
+                break;
         }
 
-        average = sum / provitionalReadingResultsVoice.Count;
-        Debug.Log("The average of the numbers is: " + average);
+        string detailText = LanguageManager.Instance.GetStringValue(detailKey);
+      //  voiceGraphHolder.ratingBoxColor.GetComponent<RawImage>().color = kindOfVoiceColor[colorIndex];
 
-        if (average > 0 && average < maxAverage / 4)
+        if (voiceGraphHolder.resultClassificationText != null)
         {
-            GraphManager.Instance.currentToneOfVoice = ToneOfVoice.WeakVoice;
-            voiceGraphHolder.ratingBoxColor.GetComponent<RawImage>().color = kindOfVoiceColor[0];
-            voiceGraphHolder.ratingQualificationText.text = LanguageManager.Instance.GetStringValue("FrequencyRatingLowText");
+            voiceGraphHolder.resultClassificationText.text = detailText;
+            Debug.Log($"[VoiceGraph] Mostrando detalle: {detailText}");
         }
-        else if (average > maxAverage / 4 && average < maxAverage / 3)
+        else
         {
-            GraphManager.Instance.currentToneOfVoice = ToneOfVoice.ConversationalVoice;
-            voiceGraphHolder.ratingBoxColor.GetComponent<RawImage>().color = kindOfVoiceColor[1];
-            voiceGraphHolder.ratingQualificationText.text = LanguageManager.Instance.GetStringValue("FrequencyRatingMediumText");
-        }
-        else if (average > maxAverage / 3 && average < maxAverage / 2)
-        {
-            GraphManager.Instance.currentToneOfVoice = ToneOfVoice.ProjectedVoice;
-            voiceGraphHolder.ratingBoxColor.GetComponent<RawImage>().color = kindOfVoiceColor[2];
-            voiceGraphHolder.ratingQualificationText.text = LanguageManager.Instance.GetStringValue("FrequencyRatingPerfectText");
-        }
-        else if (average > maxAverage)
-        {
-            GraphManager.Instance.currentToneOfVoice = ToneOfVoice.Screams;
-            voiceGraphHolder.ratingBoxColor.GetComponent<RawImage>().color = kindOfVoiceColor[3];
-            voiceGraphHolder.ratingQualificationText.text = LanguageManager.Instance.GetStringValue("FrequencyRatingHightText");
+            Debug.LogWarning("[VoiceGraph] resultClassificationText no asignado en el inspector.");
         }
     }
 
@@ -324,8 +332,7 @@ public class VoiceGraphController: Graph
         dotYDistance = 0;
         separatorXCount = 0;
         separatorYCount = 0;
-        maxAverage = 0;
-        average = 0;
-        provitionalReadingResultsVoice.Clear();
+        readingResultsvoices.Clear();
+        kindOfVoice = ToneOfVoiceRating.Default;
     }
 }

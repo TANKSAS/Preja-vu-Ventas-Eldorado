@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,41 +8,53 @@ using UnityEngine.UI;
 
 public class GraphManager : Singleton<GraphManager>
 {
-    public ToneOfVoice currentToneOfVoice;
     public VoiceGraphController voiceGraphController;
     public PieGraphController pieGraphController;
     public HeatMapGraphController heatMapGraphController;
     public ComparativeGraphController comparativeGraphController;
-    public DetailsGraphController detailsGraphController;
+    public List<DetailsGraphController> detailsControllers = new List<DetailsGraphController>();
+
+    public AnimacionUIManager animacionUIManager;
     public ObjectPool pool;
+
     public TryGraphHolder firstTryGraphHolder;
     public TryGraphHolder secondTryGraphHolder;
-    public List <PieGraphHolder> pieGraphHolders;
-    public List <VoiceGraphicHolder> voiceGraphHolders;
-    public List <HeatMapGraphHolder> heatMapGraphHolders;
+    public List<PieGraphHolder> pieGraphHolders;
+    public List<VoiceGraphicHolder> voiceGraphHolders;
+    public List<HeatMapGraphHolder> heatMapGraphHolders;
     public List<ComparativeGraphicHolder> comparativeGraphicHolders;
+
+    public int currentSessionIndex;
 
     public void ShowPieGraph(int graphIndex, float value1, float value2)
     {
-        pieGraphController.SetGraphSettings(pieGraphHolders[graphIndex]); 
-        pieGraphController.SetValues(value1,value2);
+        pieGraphController.SetGraphSettings(pieGraphHolders[graphIndex]);
+        pieGraphController.SetGraphParameters(currentSessionIndex);
+        pieGraphController.SetValues(value1, value2);
     }
 
-    void ShowVoiceGraph(int graphIndex, int sessionIndex)
+    void ShowVoiceGraph(int graphIndex)
     {
         voiceGraphController.SetGraphSettings(voiceGraphHolders[graphIndex]);
-        voiceGraphController.SetListResults(GameManager.Instance.playerStats.sessions[sessionIndex].readingResultsvoices);
+        voiceGraphController.SetGraphParameters(currentSessionIndex);
     }
 
-    void ShowHeatMapGraph(int graphIndex, int sessionIndex)
+    void ShowHeatMapGraph(int graphIndex)
     {
         heatMapGraphController.SetGraphSettings(heatMapGraphHolders[graphIndex]);
-        heatMapGraphController.SetGraphImage(sessionIndex);
+        heatMapGraphController.SetGraphParameters(currentSessionIndex);
     }
 
     public IEnumerator ResetGraph()
     {
         Debug.Log("Reset Graphs");
+
+        for (int i = 0; i < detailsControllers.Count; i++)
+        {
+            detailsControllers[i].GraphCarouselButtonsEnable(false);
+            detailsControllers[i].tipsAreReady = false;
+            detailsControllers[i].guideLinesAreReady = false;
+        }
 
         for (int i = 0; i < pieGraphHolders.Count; i++)
         {
@@ -72,17 +84,13 @@ public class GraphManager : Singleton<GraphManager>
         voiceGraphController.EndGraph();
         heatMapGraphController.EndGraph();
         comparativeGraphController.EndGraph();
-        
+
         GameObject[] graphicPanels =
         {
             firstTryGraphHolder.pieHandsMoveAnswersGraphicPanel,
-            firstTryGraphHolder.pieVisionAnswersGraphicPanel,
-            firstTryGraphHolder.pieGestureAnswersGraphicPanel,
             firstTryGraphHolder.voiceAnswersGraphicPanel,
             firstTryGraphHolder.heatMapAnswersGraphicPanel,
             secondTryGraphHolder.pieHandsMoveAnswersGraphicPanel,
-            secondTryGraphHolder.pieVisionAnswersGraphicPanel,
-            secondTryGraphHolder.pieGestureAnswersGraphicPanel,
             secondTryGraphHolder.voiceAnswersGraphicPanel,
             secondTryGraphHolder.heatMapAnswersGraphicPanel
         };
@@ -104,169 +112,269 @@ public class GraphManager : Singleton<GraphManager>
         UIManager.Instance.practicalResultsGraphicMenu.SetActive(true);
         UIManager.Instance.practicalResultsFristTryPanel.SetActive(true);
         UIManager.Instance.practicalResultsGraphicHeaderNavegationText.GetComponent<TMP_Text>().text = LanguageManager.Instance.GetStringValue("GraphAttemptTitleText01");
-        yield return StartCoroutine(ShowFirstTryGraph(GameManager.Instance.playerStats.lastSessionIndex));
-        
+
+        currentSessionIndex = GameManager.Instance.playerStats.GetLastSessionIndex(KindOfAssessment.Diagnosis);
+        yield return StartCoroutine(ShowFirstTryGraph());
+
         UIManager.Instance.practicalResultsGraphicMenuExitButton.SetActive(true);
     }
 
     public IEnumerator StartSessionResults()
     {
-        Debug.Log("XD");
-
         if (GameManager.Instance.playerStats.sessions.Count == 0)
         {
             UIManager.Instance.practicalResultsGraphicMenuExitButton.SetActive(true);
             yield break;
         }
 
-        int sessionIndex = GameManager.Instance.playerStats.lastSessionIndex - 1;
-        sessionIndex = sessionIndex < 0 ? 0 : sessionIndex;
-
-        yield return StartCoroutine(ShowFirstTryGraph(sessionIndex));
-        
-        Debug.Log("xxxxxx");
-
+        currentSessionIndex = GameManager.Instance.playerStats.GetLastSessionIndex(KindOfAssessment.Diagnosis);
+        yield return StartCoroutine(ShowFirstTryGraph());
 
         if (GameManager.Instance.playerStats.sessions.Count > 1)
         {
             UIManager.Instance.practicalResultsGraphicHeaderNavegation.SetActive(true);
             yield return new WaitUntil(() => UIManager.Instance.practicalResultsSecondTryPanel.activeInHierarchy);
-            
+
             UIManager.Instance.practicalResultsGraphicHeaderNavegation.SetActive(false);
-            yield return StartCoroutine(ShowSecondTryGraph(GameManager.Instance.playerStats.lastSessionIndex));
+
+            currentSessionIndex = GameManager.Instance.playerStats.GetLastSessionIndex(KindOfAssessment.Interview);
+            yield return StartCoroutine(ShowSecondTryGraph());
 
             UIManager.Instance.practicalResultsGraphicHeaderNavegation.SetActive(true);
             yield return new WaitUntil(() => UIManager.Instance.practicalResultsComparative.activeInHierarchy);
-            
+
             UIManager.Instance.practicalResultsGraphicHeaderNavegation.SetActive(false);
+
+
             yield return StartCoroutine(ShowComparativeGraph());
-            
+
             UIManager.Instance.practicalResultsGraphicHeaderNavegation.SetActive(true);
         }
 
         UIManager.Instance.practicalResultsGraphicMenuExitButton.SetActive(true);
-
-        Debug.Log("End");
     }
 
-    public IEnumerator StartShowPieDetails(int pieGraphIndex)
+
+    public IEnumerator CallShowPieGraph(TryGraphHolder currentTryGraph, float value1, float value2, int pieGraphIndex)
     {
-        detailsGraphController.SetGraphSettings(pieGraphHolders[pieGraphIndex]);
-        yield return StartCoroutine(detailsGraphController.GraphMaker());
-        
-        yield return new WaitUntil(() => !UIManager.Instance.practicalResultsPieDetail.activeInHierarchy);
-        yield return StartCoroutine(detailsGraphController.ResetGraphHolderValues(pieGraphHolders[pieGraphIndex]));
-    }
-
-    public IEnumerator StartShowVoiceDetails(int voiceGraphIndex)
-    {
-        detailsGraphController.SetGraphSettings(voiceGraphHolders[voiceGraphIndex]);
-        yield return StartCoroutine(detailsGraphController.GraphMaker());
-
-        yield return new WaitUntil(() => !UIManager.Instance.practicalResultsVoiceDetail.activeInHierarchy);
-        yield return StartCoroutine(detailsGraphController.ResetGraphHolderValues(voiceGraphHolders[voiceGraphIndex]));
-    }  
-    
-    public IEnumerator StartShowHeatMapDetails(int heatMapGraphIndex)
-    {
-        detailsGraphController.SetGraphSettings(heatMapGraphHolders[heatMapGraphIndex]);
-
-        if (heatMapGraphIndex == 0)
-        {
-            detailsGraphController.SetGraphSettings(pieGraphHolders[3]);
-        }
-        else
-        {
-            detailsGraphController.SetGraphSettings(pieGraphHolders[7]);
-        }
-
-        yield return StartCoroutine(detailsGraphController.GraphMaker());
-        yield return new WaitUntil(() => !UIManager.Instance.practicalResultsHeatMapDetail.activeInHierarchy);
-        yield return StartCoroutine(detailsGraphController.ResetGraphHolderValues(heatMapGraphHolders[heatMapGraphIndex]));
-    }
-
-    IEnumerator ShowFirstTryGraph(int sessionIndex)
-    {
-        Debug.Log("session #" + sessionIndex);
         //PieGraph
+        // Paso 1: fade general del menú
+        yield return StartCoroutine(animacionUIManager.FadeInElemento(UIManager.Instance.practicalResultsGraphicMenu));
+
         yield return new WaitForSeconds(0.6f);
-        firstTryGraphHolder.pieHandsMoveAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(0, GameManager.Instance.playerStats.sessions[sessionIndex].safeMovZone, GameManager.Instance.playerStats.sessions[sessionIndex].dangerMovZone);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        firstTryGraphHolder.pieHandsMoveAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        firstTryGraphHolder.pieVisionAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(1, GameManager.Instance.playerStats.sessions[sessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[sessionIndex].visualDangerZone);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        firstTryGraphHolder.pieVisionAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        firstTryGraphHolder.pieGestureAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(2, GameManager.Instance.playerStats.sessions[sessionIndex].positiveGesture, GameManager.Instance.playerStats.sessions[sessionIndex].negativeGesture);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        firstTryGraphHolder.pieGestureAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        //Voice 
-        firstTryGraphHolder.voiceAnswersGraphicPanel.SetActive(true);
-        ShowVoiceGraph(0, sessionIndex);
-        yield return StartCoroutine(voiceGraphController.GraphMaker());
-        firstTryGraphHolder.voiceAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        //Vision
-        firstTryGraphHolder.heatMapAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(3, GameManager.Instance.playerStats.sessions[sessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[sessionIndex].visualDangerZone);
+        currentTryGraph.pieHandsMoveAnswersGraphicPanel.SetActive(true);
+        ShowPieGraph(pieGraphIndex, value1, value2);
         yield return StartCoroutine(pieGraphController.GraphMaker());
 
-        ShowHeatMapGraph(0, sessionIndex);
-        yield return StartCoroutine(heatMapGraphController.GraphMaker());
-        firstTryGraphHolder.heatMapAnswersGraphicPanel.GetComponent<Button>().interactable = true;
+        //aqui se activa la animacion del panel 
 
+        Debug.Log("Inicia Movimiento");
+        yield return StartCoroutine(animacionUIManager.AnimarElemento(currentTryGraph.pieHandsMoveAnswersGraphicPanel, "izquierda", 700f, -45f, -264f));
+
+        Debug.Log("[GraphManager] Animación UI lanzada desde panel final");
     }
 
-    IEnumerator ShowSecondTryGraph(int sessionIndex)
+    IEnumerator ShowFirstTryGraph()
     {
-        Debug.Log("session #" + sessionIndex);
-        //HandsMove
-        secondTryGraphHolder.pieHandsMoveAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(4, GameManager.Instance.playerStats.sessions[sessionIndex].safeMovZone, GameManager.Instance.playerStats.sessions[sessionIndex].dangerMovZone);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        secondTryGraphHolder.pieHandsMoveAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        //HandsMove
-        secondTryGraphHolder.pieVisionAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(5, GameManager.Instance.playerStats.sessions[sessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[sessionIndex].visualDangerZone);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        secondTryGraphHolder.pieVisionAnswersGraphicPanel.GetComponent<Button>().interactable = true;
-
-        secondTryGraphHolder.pieGestureAnswersGraphicPanel.SetActive(true);
-        ShowPieGraph(6, GameManager.Instance.playerStats.sessions[sessionIndex].positiveGesture, GameManager.Instance.playerStats.sessions[sessionIndex].negativeGesture);
-        yield return StartCoroutine(pieGraphController.GraphMaker());
-        secondTryGraphHolder.pieGestureAnswersGraphicPanel.GetComponent<Button>().interactable = true;
+        animacionUIManager.ResetearAnimaciones();
+        //PieGraph
+        yield return StartCoroutine(CallShowPieGraph(firstTryGraphHolder, GameManager.Instance.playerStats.sessions[currentSessionIndex].safeMovZone, GameManager.Instance.playerStats.sessions[currentSessionIndex].dangerMovZone, 0));
+        detailsControllers[0].GraphCarouselButtonsEnable(true);
 
         //Voice 
-        secondTryGraphHolder.voiceAnswersGraphicPanel.SetActive(true);
-        ShowVoiceGraph(1, sessionIndex);
+        yield return StartCoroutine(animacionUIManager.FadeInElemento(firstTryGraphHolder.voiceAnswersGraphicPanel));
+
+        firstTryGraphHolder.voiceAnswersGraphicPanel.SetActive(true);
+        ShowVoiceGraph(0);
         yield return StartCoroutine(voiceGraphController.GraphMaker());
-        secondTryGraphHolder.voiceAnswersGraphicPanel.GetComponent<Button>().interactable = true;
+        detailsControllers[1].GraphCarouselButtonsEnable(true);
+
+        //aqui se activa la animacion del panel 
+        Debug.Log("Inicia Movimiento");
+        yield return StartCoroutine(animacionUIManager.AnimarElemento(firstTryGraphHolder.voiceAnswersGraphicPanel, "derecha", 700f, 45f, -264f));
+
 
         //Vision
-        secondTryGraphHolder.heatMapAnswersGraphicPanel.SetActive(true);
-        ShowHeatMapGraph(1, sessionIndex);
-        yield return StartCoroutine(heatMapGraphController.GraphMaker());
-        secondTryGraphHolder.heatMapAnswersGraphicPanel.GetComponent<Button>().interactable = true;
+        yield return StartCoroutine(animacionUIManager.FadeInElemento(firstTryGraphHolder.heatMapAnswersGraphicPanel));
 
-        ShowPieGraph(7, GameManager.Instance.playerStats.sessions[sessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[sessionIndex].visualDangerZone);
+        firstTryGraphHolder.heatMapAnswersGraphicPanel.SetActive(true);
+        ShowPieGraph(1, GameManager.Instance.playerStats.sessions[currentSessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[currentSessionIndex].visualDangerZone);
         yield return StartCoroutine(pieGraphController.GraphMaker());
+
+        ShowHeatMapGraph(0);
+        yield return StartCoroutine(heatMapGraphController.GraphMaker());
+        detailsControllers[2].GraphCarouselButtonsEnable(true);
+
+        //aqui se activa la animacion del panel 
+        Debug.Log("Inicia Movimiento");
+        yield return StartCoroutine(animacionUIManager.AnimarElemento(firstTryGraphHolder.heatMapAnswersGraphicPanel, "quieto", 0f, 0f, 0f));
     }
+
+    IEnumerator ShowSecondTryGraph()
+    {
+        //animacionUIManager.ResetearAnimaciones();
+
+        Debug.Log("session #" + currentSessionIndex);
+        yield return StartCoroutine(CallShowPieGraph(secondTryGraphHolder, GameManager.Instance.playerStats.sessions[currentSessionIndex].safeMovZone, GameManager.Instance.playerStats.sessions[currentSessionIndex].dangerMovZone, 2));
+        detailsControllers[3].GraphCarouselButtonsEnable(true);
+
+        //Voice 
+        yield return StartCoroutine(animacionUIManager.FadeInElemento(secondTryGraphHolder.voiceAnswersGraphicPanel));
+
+        secondTryGraphHolder.voiceAnswersGraphicPanel.SetActive(true);
+        ShowVoiceGraph(1);
+        yield return StartCoroutine(voiceGraphController.GraphMaker());
+        detailsControllers[4].GraphCarouselButtonsEnable(true);
+
+        //aqui se activa la animacion del panel 
+        Debug.Log("Inicia Movimiento");
+        yield return StartCoroutine(animacionUIManager.AnimarElemento(secondTryGraphHolder.voiceAnswersGraphicPanel, "derecha", 700f, 45f, -264f));
+
+
+        //Vision
+        yield return StartCoroutine(animacionUIManager.FadeInElemento(secondTryGraphHolder.heatMapAnswersGraphicPanel));
+
+        secondTryGraphHolder.heatMapAnswersGraphicPanel.SetActive(true);
+        ShowHeatMapGraph(1);
+        yield return StartCoroutine(heatMapGraphController.GraphMaker());
+
+        //aqui se activa la animacion del panel 
+        Debug.Log("Inicia Movimiento");
+        yield return StartCoroutine(animacionUIManager.AnimarElemento(secondTryGraphHolder.heatMapAnswersGraphicPanel, "quieto", 0f, 0f, 0f));
+
+
+        ShowPieGraph(3, GameManager.Instance.playerStats.sessions[currentSessionIndex].visualSafeZone, GameManager.Instance.playerStats.sessions[currentSessionIndex].visualDangerZone);
+        yield return StartCoroutine(pieGraphController.GraphMaker());
+        detailsControllers[5].GraphCarouselButtonsEnable(true);
+    }
+
 
     IEnumerator ShowComparativeGraph()
     {
-        comparativeGraphController.SetValues();
-        yield return StartCoroutine(comparativeGraphController.GraphMaker());
-        
-        ShowPieGraph(8, comparativeGraphController.overallPositiveFirstScore, comparativeGraphController.overallNegativeFirstScore);
+        comparativeGraphController.SetGraphSettings(comparativeGraphicHolders[0]);
+
+        comparativeGraphController.SetGraphParameters();
+        StartCoroutine(comparativeGraphController.GraphMaker());
+
+        ShowPieGraph(4, comparativeGraphController.overallPositiveFirstScore, comparativeGraphController.overallNegativeFirstScore);
         yield return StartCoroutine(pieGraphController.GraphMaker());
-        
-        ShowPieGraph(9, comparativeGraphController.overallPositiveSecondScore, comparativeGraphController.overallNegativeSecondScore);
+
+        ShowPieGraph(5, comparativeGraphController.overallPositiveSecondScore, comparativeGraphController.overallNegativeSecondScore);
         yield return StartCoroutine(pieGraphController.GraphMaker());
+        //yield break;
+
+    }
+
+    public ToneOfVoiceRating CalculateVoiceQualification(List<float> readingResultsvoices)
+    {
+        if (readingResultsvoices == null || readingResultsvoices.Count == 0)
+        {
+            Debug.LogWarning("[VoiceGraph] No hay datos para calcular el promedio.");
+            return ToneOfVoiceRating.Default;
+        }
+
+        float average;
+        float maxAverage;
+        float yGraphSize = 12;
+        // 1️⃣ Calcular promedio
+        average = 0;
+        foreach (float value in readingResultsvoices)
+            average += value;
+
+        average /= readingResultsvoices.Count;
+        Debug.Log($"[VoiceGraph] Promedio de tono: {average:F2}");
+
+        // 2️⃣ Normalizar valores
+        maxAverage = Mathf.RoundToInt(yGraphSize);
+        float ratio = average / maxAverage;
+
+        // 3️⃣ Determinar categoría según el ratio
+        int toneIndex = 0;
+        if (ratio < 0.25f) toneIndex = 0;          // Voz débil
+        else if (ratio < 0.33f) toneIndex = 1;     // Conversacional
+        else if (ratio < 0.5f) toneIndex = 2;      // Proyectada
+        else toneIndex = 3;                        // Gritos
+
+        // 4️⃣ Asignar valores dinámicamente
+        ToneOfVoiceRating[] toneTypes = {
+        ToneOfVoiceRating.WeakVoice,
+        ToneOfVoiceRating.ConversationalVoice,
+        ToneOfVoiceRating.ProjectedVoice,
+        ToneOfVoiceRating.Screams
+        };
+
+        return toneTypes[toneIndex];
+    }
+
+    //Kinestessia 
+    // 🔄 Versión restaurada (solo porcentajes)
+
+    //Kinestesia
+    public KinesthesiaRating CalculateKiesthesiaRating(float value1, float value2)
+    {
+        // 1️⃣ Validar datos
+        if (value1 < 0f && value2 < 0f)
+        {
+            Debug.LogWarning("[Kinesthesia] Valores no válidos para la evaluación.");
+            return KinesthesiaRating.Default;
+        }
+
+        // 2️⃣ Calcular la proporción de gestos dentro del área recomendada
+        float total = value1 + value2;
+        if (total <= 0f) total = 1f;
+
+        float ratio = value1 / total;
+
+        Debug.Log($"[Kinesthesia] Ratio de gestos dentro del área: {ratio:F2}");
+
+        // 3️⃣ Determinar categoría según los rangos
+        int kineIndex = 0;
+
+        if (ratio < 0.40f)
+            kineIndex = 0; // Bajo
+        else if (ratio < 0.70f)
+            kineIndex = 1; // Bueno
+        else
+            kineIndex = 2; // Excelente
+
+        // 🔹 4️⃣ Devolver el tipo correspondiente
+        KinesthesiaRating[] kinesthesiasTypes =
+        {
+        KinesthesiaRating.Low,
+        KinesthesiaRating.Good,
+        KinesthesiaRating.Excellent
+    };
+
+        return kinesthesiasTypes[kineIndex];
+    }
+
+
+    //HeatMap
+    public HeatMapRating CalculateHeatMapRating(float visualSafeZone, float visualDangerZone)
+    {
+        if (visualSafeZone < 0f && visualDangerZone < 0f)
+            return HeatMapRating.Default;
+
+        float total = visualSafeZone + visualDangerZone;
+        if (total <= 0f) total = 1f;
+
+        float ratio = visualSafeZone / total;
+
+        int heatIndex = 0;
+        if (ratio < 0.5f)
+            heatIndex = 0; // Bajo
+        else if (ratio < 0.8f)
+            heatIndex = 1; // Bueno
+        else
+            heatIndex = 2; // Excelente
+
+        HeatMapRating[] heatMapTypes =
+        {
+        HeatMapRating.Low,
+        HeatMapRating.Good,
+        HeatMapRating.Excellent
+    };
+
+        return heatMapTypes[heatIndex];
     }
 }

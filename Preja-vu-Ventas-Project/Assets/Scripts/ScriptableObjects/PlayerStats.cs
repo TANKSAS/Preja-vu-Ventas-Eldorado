@@ -1,11 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using UnityEngine.XR.ARSubsystems;
 
 [CreateAssetMenu(fileName = "NewPlayerStat", menuName = "ScriptableObjects/PlayerStats", order = 0)]
 public class PlayerStats : ScriptableObject
@@ -26,7 +21,21 @@ public class PlayerStats : ScriptableObject
 
     public float volumen;
     public int language;
-    public int lastSessionIndex;
+
+    public int GetLastSessionIndex(KindOfAssessment kindOfAssessment)
+    {
+        int lastIndex = 0;
+
+        for (int i = 0; i < sessions.Count; i++)
+        {
+            if (sessions[i].currentAssessment == kindOfAssessment)
+            {
+                lastIndex = i;
+            }
+        }
+
+        return lastIndex;
+    }
 
     public void Restart()
     {
@@ -44,7 +53,6 @@ public class PlayerStats : ScriptableObject
         sessions.Clear();
         volumen = 0;
         language = 0;
-        lastSessionIndex = 0;
 
         playerName = string.Empty;
         playerId = string.Empty;
@@ -132,24 +140,36 @@ public class SessionData
     public int visualCounter = 0;
     public int visualSafeZone = 0;
     public int visualDangerZone = 0;
-    public string imagePath;
-    public string finalAnswer = " ";
-    public List<float> readingResultsvoices = new List<float>();
-    public ToneOfVoice kindOfVoice;
 
-    public SessionData(int moveCounter, int safeMovZone, int dangerMovZone, int gestureCounter, int positiveGesture, int negativeGesture, int visualCounter, int visualSafeZone, int visualDangerZone, string imagePath, string finalAnswer)
+    public float videoDuration = 0;
+    public string imagePath;
+    public string finalAnswer = "";
+
+    public ToneOfVoiceRating toneOfVoiceRating;
+    public KinesthesiaRating kinesthesiaRating;
+    public HeatMapRating heatMapRating;
+    public KindOfAssessment currentAssessment;
+    
+    public List<float> readingResultsvoices = new List<float>();
+
+    public SessionData(int moveCounter, int safeMovZone, int dangerMovZone, int visualCounter,
+     int visualSafeZone, int visualDangerZone, float videoDuration, string imagePath, string finalAnswer, ToneOfVoiceRating kindOfVoice, KinesthesiaRating kinesthesiaRating,
+     HeatMapRating heatMapRating, KindOfAssessment currentAssessment, List<float> readingResultsvoices)
     {
         this.moveCounter = moveCounter;
         this.safeMovZone = safeMovZone;
         this.dangerMovZone = dangerMovZone;
-        this.gestureCounter = gestureCounter;
-        this.positiveGesture = positiveGesture;
-        this.negativeGesture = negativeGesture;
         this.visualCounter = visualCounter;
         this.visualSafeZone = visualSafeZone;
         this.visualDangerZone = visualDangerZone;
+        this.videoDuration = videoDuration;
         this.imagePath = imagePath;
         this.finalAnswer = finalAnswer;
+        this.toneOfVoiceRating = kindOfVoice;
+        this.kinesthesiaRating = kinesthesiaRating;
+        this.heatMapRating = heatMapRating;
+        this.currentAssessment = currentAssessment;
+        this.readingResultsvoices = readingResultsvoices;
     }
 }
 

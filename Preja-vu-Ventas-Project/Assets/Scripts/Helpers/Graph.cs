@@ -22,6 +22,10 @@ public abstract class Graph : MonoBehaviour
 
     public abstract IEnumerator GraphMaker();
 
+    public abstract void ShowQualificationTag();
+
+    public abstract void SetGraphParameters(int index);
+
     public abstract void EndGraph();
 }
 
@@ -32,11 +36,9 @@ public abstract class GraphHolder
 }
 
 [Serializable]
-public class TryGraphHolder: GraphHolder
+public class TryGraphHolder : GraphHolder
 {
     public GameObject pieHandsMoveAnswersGraphicPanel;
-    public GameObject pieVisionAnswersGraphicPanel;
-    public GameObject pieGestureAnswersGraphicPanel;
     public GameObject voiceAnswersGraphicPanel;
     public GameObject heatMapAnswersGraphicPanel;
 }
@@ -45,27 +47,9 @@ public class TryGraphHolder: GraphHolder
 public class ComparativeGraphicHolder : GraphHolder
 {
     public TMP_Text finalGradeText;
-    public TMP_Text finalVerdictText;
-    public GameObject finalGradePositiveIndicator;
-    public GameObject finalGradeNegativeIndicator;
-    public GameObject finalGradeIqualIndicator;
-
-    public GameObject handsGesturesHolder;
-    public GameObject handsGesturesPositiveIndicator;
-    public GameObject handsGesturesNegativeIndicator;
-    public GameObject handsGesturesIqualIndicator;
-    public TMP_Text handsGesturesValueText;
-
     public GameObject handsMovementHolder;
-    public GameObject handsMovementPositiveIndicator;
-    public GameObject handsMovementNegativeIndicator;
-    public GameObject handsMovementIqualIndicator;
     public TMP_Text handsMovementValueText;
-
     public GameObject eyesVisualMovHolder;
-    public GameObject eyesVisualMovPositiveIndicator;
-    public GameObject eyesVisualMovNegativeIndicator;
-    public GameObject eyesVisualMovIqualIndicator;
     public TMP_Text eyesVisualMovValueText;
 }
 
@@ -86,12 +70,12 @@ public class VoiceGraphicHolder : GraphHolder
     public GameObject linesHolder;
     public GameObject ratingBoxColor;
     public TMP_Text titleGraphic;
-    public TMP_Text ratingQualificationText;
+    public TMP_Text resultClassificationText;
     public List<GameObject> objectPoolList = new List<GameObject>();
     public List<GameObject> xLabelsObjects = new List<GameObject>();
     public List<GameObject> yLabelsObjects = new List<GameObject>();
     public List<GameObject> xDotSeparationObjects = new List<GameObject>();
-    public List<GameObject> yDotSeparationObjects = new List<GameObject>();    
+    public List<GameObject> yDotSeparationObjects = new List<GameObject>();
     public List<GameObject> xAxisObjects = new List<GameObject>();
     public List<GameObject> yAxisObjects = new List<GameObject>();
 
@@ -105,7 +89,8 @@ public class VoiceGraphicHolder : GraphHolder
         ratingBoxColor = graphContainer.transform.GetChild(4).transform.GetChild(0).transform.GetChild(0).gameObject;
 
         titleGraphic = graphHolder.transform.GetChild(0).transform.GetChild(0).GetComponent<TMP_Text>();
-        ratingQualificationText = graphContainer.transform.GetChild(5).transform.GetComponent<TMP_Text>();
+        resultClassificationText = graphContainer.transform.GetChild(5).transform.GetComponent<TMP_Text>();
+
 
         labelTemplateX = labelsHolder.transform.GetChild(0).GetComponent<RectTransform>();
         labelTemplateY = labelsHolder.transform.GetChild(1).GetComponent<RectTransform>();
@@ -121,8 +106,9 @@ public class VoiceGraphicHolder : GraphHolder
 [Serializable]
 public class PieGraphHolder : GraphHolder
 {
-    public TMP_Text graphName;
     public GameObject graphHolder;
+    public TMP_Text graphName;
+    public TMP_Text interpretationText;
     public Image[] widge;
     public TMP_Text value1NameText;
     public TMP_Text value1Text;
@@ -131,7 +117,6 @@ public class PieGraphHolder : GraphHolder
     public TMP_Text value2Text;
     public Image value2Bar;
     public Color[] colorsPie;
-    public KindOfPieGraph kindOfPieGraph;
 }
 
 [Serializable]
@@ -141,6 +126,7 @@ public class HeatMapGraphHolder : GraphHolder
     public GameObject heatMapImage;
     public Material heatMapMaterial;
     public Sprite heatMapSprite;
+    public TMP_Text interpretationText;
 }
 
 [Serializable]

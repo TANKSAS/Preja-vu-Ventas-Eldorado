@@ -14,11 +14,19 @@ public class LoadVideoStreaming : MonoBehaviour
         videoPlayer = this.GetComponent<VideoPlayer>();
         SetUpVideoData();
     }
+    private void OnVideoPrepared(VideoPlayer vp)
+    {
+        // Ahora sí, length devuelve la duración en segundos
+        float duration = (float)vp.length;
+        Debug.Log("Duración del video: " + duration + " segundos");
+
+        GameManager.Instance.backGroundController.currentVideoDuration = duration;
+        Debug.Log(GameManager.Instance.backGroundController.currentVideoDuration);
+    }
 
 
     public void SetUpVideoData()
     {
-
         if (Application.isEditor)
         {
             string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, VideoName);
@@ -35,6 +43,11 @@ public class LoadVideoStreaming : MonoBehaviour
             videoPlayer.url = videoPath;
         }
 
+        // Suscribirse al evento cuando termine de prepararse
+        videoPlayer.prepareCompleted += OnVideoPrepared;
+
+        // Inicia la preparación (no reproduce todavía)
+        videoPlayer.Prepare();
     }
 
 

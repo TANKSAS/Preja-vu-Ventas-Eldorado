@@ -11,7 +11,6 @@ public class TrackingController: MonoBehaviour
     public ZoneDetector zoneDetectorL;
     public QuadScript quadController;
     public GameObject[] detectores;
-    public SessionData newSession;
     public MeshRenderer[] handsDetecterMeshRenderers; 
     public int moveHandsCounter = 0;
     public int handsSafeZonaMovCounter = 0;
@@ -37,12 +36,6 @@ public class TrackingController: MonoBehaviour
             handsPositiveGestureCounter = 1;
             gestureHandsCounter = handsNegativeGestureCounter + handsPositiveGestureCounter;
         }
-
-        newSession = new SessionData(moveHandsCounter, handsSafeZonaMovCounter, handsDangerMovCounter,
-        gestureHandsCounter, handsPositiveGestureCounter, handsNegativeGestureCounter, eyesContactCounter,
-        eyesSafeZoneCounter, eyesDangerZoneCounter, GameManager.Instance.screenshotController.filePath, GameManager.Instance.elevatorPitchController.finalAnswer);
-        GameManager.Instance.playerStats.sessions.Add(newSession);
-        Debug.Log("Guardo");
     }
 
     public void EnableHandsDetecterMeshRenderers()

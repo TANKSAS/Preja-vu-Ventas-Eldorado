@@ -1,7 +1,5 @@
-using System;
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -9,158 +7,242 @@ using UnityEngine.UI;
 
 public class PieGraphController : Graph
 {
+    //======================================================================
+    //  CONFIGURACI√ìN DEL GR√ÅFICO (Barras, colores, texto)
+    //======================================================================
+
+    [Header(" Ajustes visuales del gr√°fico")]
     [SerializeField] float barLength = 1f;
     [SerializeField] float percentMultiplier = 100f;
     [SerializeField] PieGraphHolder pieGraphHolder;
-    public List<float> provitionalValuesPie = new List<float>();
 
-    float value1;
-    float value2;
-    float totalValue;
-    float value1Percent;
-    float value2Percent;
+    //======================================================================
+    //  VARIABLES TEMPORALES (Lo que se calcula antes de dibujar)
+    //======================================================================
+
+    [Header("Valores temporales")]
+    List<float> provitionalValuesPie = new List<float>();
+
+    float valueSafeMovement;        // handsSafeZonaMovCounter
+    float valueDangerMovement;      // handsDangerMovCounter
+
+    float totalMovement;            // safe + danger
+    float safePercent;              // %
+    float dangerPercent;            // %
+
+    KinesthesiaRating kinesthesiaRating;
+
+    //======================================================================
+    //  CONFIGURAR DESDE OUTSIDE (GraphManager llama esto)
+    //======================================================================
 
     public override void SetGraphSettings(GraphHolder graphHolder)
     {
         pieGraphHolder = ChooseGraph<PieGraphHolder>(graphHolder);
     }
 
-    public override IEnumerator ResetGraphHolderValues(GraphHolder graphHolder)
+    public void SetValues(float safeMov, float dangerMov)
     {
-        PieGraphHolder newPieGraphHolder = ChooseGraph<PieGraphHolder>(graphHolder);
-        //pieGraphHolder.graphName.text = string.Empty; 
-        newPieGraphHolder.value1Bar.fillAmount = newPieGraphHolder.value2Bar.fillAmount = 0;
-        newPieGraphHolder.value1Bar.color = newPieGraphHolder.value2Bar.color = UnityEngine.Color.white;
-        newPieGraphHolder.value1Text.text = newPieGraphHolder.value2Text.text = string.Empty;
-
-        if (newPieGraphHolder.graphHolder == null)
-            yield break;
-
-        newPieGraphHolder.widge[0].fillAmount = newPieGraphHolder.widge[1].fillAmount = 1;
-        newPieGraphHolder.widge[0].color = newPieGraphHolder.widge[1].color = UnityEngine.Color.white;
-        newPieGraphHolder.widge[0].GetComponent<RectTransform>().rotation = newPieGraphHolder.widge[1].GetComponent<RectTransform>().rotation = Quaternion.Euler(Vector3.zero);
-
-        yield return null;
-        Debug.Log("End Reset PieGraph");
+        valueSafeMovement = safeMov;
+        valueDangerMovement = dangerMov;
+        PercentPieGraph();
     }
 
-    public void SetValues(float newValue1, float newValue2)
+    public override void SetGraphParameters(int index)
+    {
+        kinesthesiaRating = GameManager.Instance.playerStats.sessions[index].kinesthesiaRating;
+    }
+
+    //======================================================================
+    //   C√ÅLCULO DE LOS PORCENTAJES DEL PIEGRAPH (solo movimiento)
+    //======================================================================
+
+    void PercentPieGraph()
     {
         provitionalValuesPie.Clear();
-        value1 = value2 = 0;
 
-        value1 = newValue1;
-        value2 = newValue2;
-        PercentPaiGraph();
+        totalMovement = valueSafeMovement + valueDangerMovement;
+
+        if (totalMovement <= 0)
+            totalMovement = 1;
+
+        safePercent = valueSafeMovement / totalMovement;
+        dangerPercent = valueDangerMovement / totalMovement;
+
+        provitionalValuesPie.Add(safePercent);
+        provitionalValuesPie.Add(dangerPercent);
     }
+
+    //======================================================================
+    //  RESET VISUAL (cuando se cambia de panel)
+    //======================================================================
+
+    public override IEnumerator ResetGraphHolderValues(GraphHolder graphHolder)
+    {
+        PieGraphHolder newHolder = ChooseGraph<PieGraphHolder>(graphHolder);
+
+        newHolder.value1Bar.fillAmount = newHolder.value2Bar.fillAmount = 0;
+        newHolder.value1Bar.color = newHolder.value2Bar.color = Color.white;
+        newHolder.value1Text.text = newHolder.value2Text.text = "";
+
+        if (newHolder.graphHolder != null)
+        {
+            newHolder.widge[0].fillAmount = 1;
+            newHolder.widge[1].fillAmount = 1;
+            newHolder.widge[0].color = newHolder.widge[1].color = Color.white;
+
+            newHolder.widge[0].transform.rotation = Quaternion.identity;
+            newHolder.widge[1].transform.rotation = Quaternion.identity;
+        }
+
+        kinesthesiaRating = KinesthesiaRating.Default;
+
+        provitionalValuesPie.Clear();
+
+        yield return null;
+    }
+
+    //======================================================================
+    //  RENDER: DIBUJA EL PIEGRAPH + BARRAS
+    //======================================================================
 
     public override IEnumerator GraphMaker()
     {
-        float total = 0f;
-        float zRotation = 0f;
-
-        // Calcular el total de los valores del gr·fico
-        for (int i = 0; i < provitionalValuesPie.Count; i++)
-        {
-            total += provitionalValuesPie[i];
-        }
+        float total = provitionalValuesPie.Sum();
 
         if (total == 0)
-        {
-            total = 1f;  // Evitar divisiÛn por cero
-        }
+            total = 1;
 
+        float zRotation = 0f;
+
+        // --- DIBUJAR PIE ---
         if (pieGraphHolder.graphHolder != null)
         {
-            // Crear cada wedge (secciÛn) del gr·fico
             for (int i = 0; i < provitionalValuesPie.Count; i++)
             {
-                Image newWedge = pieGraphHolder.widge[i];
-                newWedge.gameObject.SetActive(true);
-                newWedge.color = pieGraphHolder.colorsPie[i];
+                Image wedge = pieGraphHolder.widge[i];
+                wedge.gameObject.SetActive(true);
+                wedge.color = pieGraphHolder.colorsPie[i];
 
-                // Rotar el wedge
-                newWedge.transform.localRotation = Quaternion.Euler(new Vector3(0f, 0f, zRotation));
+                wedge.transform.localRotation = Quaternion.Euler(0, 0, zRotation);
 
-                // Calcular el nuevo valor de rotaciÛn para el siguiente wedge
                 float targetFill = provitionalValuesPie[i] / total;
 
-                // Llamar a la corutina para animar el relleno
-                yield return StartCoroutine(AnimateWedgeFill(newWedge, targetFill, 0.8f)); // 1 segundo de animaciÛn (puedes ajustar)
+                yield return StartCoroutine(AnimateWedgeFill(wedge, targetFill, 0.8f));
 
-                // Acumular la rotaciÛn para el siguiente wedge
                 zRotation -= targetFill * 360f;
             }
         }
 
-        yield return StartCoroutine(AnimateBarFill(pieGraphHolder.colorsPie[0], pieGraphHolder.value1Bar, value1Percent * barLength, pieGraphHolder.value1Text, value1Percent, 0.8f));
+        // --- DIBUJAR BARRAS ---
+        yield return StartCoroutine(
+            AnimateBarFill(pieGraphHolder.colorsPie[0], pieGraphHolder.value1Bar,
+                safePercent * barLength, pieGraphHolder.value1Text, safePercent, 0.8f)
+        );
 
-        yield return StartCoroutine(AnimateBarFill(pieGraphHolder.colorsPie[1], pieGraphHolder.value2Bar, value2Percent * barLength, pieGraphHolder.value2Text, value2Percent, 0.8f));
+        yield return StartCoroutine(
+            AnimateBarFill(pieGraphHolder.colorsPie[1], pieGraphHolder.value2Bar,
+                dangerPercent * barLength, pieGraphHolder.value2Text, dangerPercent, 0.8f)
+        );
+
+        // --- MOSTRAR INTERPRETACI√ìN ---
+        ShowQualificationTag();
     }
 
-    void PercentPaiGraph()
+    //======================================================================
+    //  CALIFICACI√ìN 
+    //======================================================================
+
+    public override void ShowQualificationTag()
     {
-        totalValue = value1 + value2;
-        value1Percent = (value1 / totalValue);
-        value2Percent = (value2 / totalValue);
-        provitionalValuesPie.Add(value1Percent);
-        provitionalValuesPie.Add(value2Percent);
+
+        string detailKey = "";
+
+        switch(kinesthesiaRating) 
+        {
+            case KinesthesiaRating.Excellent:
+                detailKey = "GesturesExcellent";
+                Debug.Log(" Execelente movimiento de manos");
+                break;
+            case KinesthesiaRating.Good:
+                detailKey = "GesturesGood";
+                Debug.Log(" Buen movimiento de manos");
+                break;
+            case KinesthesiaRating.Low:
+                detailKey = "GesturesAttention";
+                Debug.Log(" Bajo movimiento de manos");
+                break;
+            default: detailKey = "GesturesDefault"; 
+                break;
+        } // 3Ô∏è‚É£ Obtener el texto traducido
+            string feedbackText = LanguageManager.Instance.GetStringValue(detailKey);
+        // 4Ô∏è‚É£ Mostrar el texto en pantalla
+        if (pieGraphHolder != null && pieGraphHolder.interpretationText != null) 
+        { 
+            pieGraphHolder.interpretationText.gameObject.SetActive(true); 
+            pieGraphHolder.interpretationText.text = feedbackText; Debug.Log($"[GesturesGraph] Mostrando feedback: {feedbackText}");
+         } 
+            else 
+        { 
+            Debug.LogWarning("[GesturesGraph] interpretationText no est√° asignado en el Inspector."); 
+        } 
+       
     }
 
-    IEnumerator AnimateBarFill(UnityEngine.Color color, Image bar, float targetFill, TMP_Text barText, double percentValue, float duration = 1f)
+    
+
+    //======================================================================
+    //  ANIMACIONES
+    //======================================================================
+
+    IEnumerator AnimateBarFill(Color color, Image bar, float targetFill, TMP_Text text, float percent, float duration)
     {
         bar.color = color;
-        float elapsedTime = 0f;
-        float initialFill = bar.fillAmount;
-        float targetPercent = (float)(percentValue * percentMultiplier);
 
-        while (elapsedTime < duration)
+        float elapsed = 0f;
+        float initial = bar.fillAmount;
+        float targetPercent = percent * percentMultiplier;
+
+        while (elapsed < duration)
         {
-            elapsedTime += Time.deltaTime;
-            // Animar el relleno
-            bar.fillAmount = Mathf.Lerp(initialFill, targetFill, elapsedTime / duration);
-            // Actualizar el texto mientras se anima
-            barText.text = $"{Mathf.Round(Mathf.Lerp(initialFill * percentMultiplier, targetPercent, elapsedTime / duration))}% ";
+            elapsed += Time.deltaTime;
+
+            bar.fillAmount = Mathf.Lerp(initial, targetFill, elapsed / duration);
+            text.text = $"{Mathf.Round(Mathf.Lerp(initial * percentMultiplier, targetPercent, elapsed / duration))}%";
+
             yield return null;
         }
 
-        // Asegurarse de que los valores finales sean correctos
         bar.fillAmount = targetFill;
-        barText.text = $"{Mathf.Round(targetPercent)}%";
+        text.text = $"{Mathf.Round(targetPercent)}%";
     }
 
     IEnumerator AnimateWedgeFill(Image wedge, float targetFill, float duration)
     {
-        if (targetFill != 0)
+        float elapsed = 0f;
+
+        while (elapsed < duration)
         {
-            float elapsedTime = 0f;
-            float initialFill = 0f;  // Comenzamos con el wedge vacÌo
-
-            while (elapsedTime < duration)
-            {
-                // Incrementar el tiempo transcurrido
-                elapsedTime += Time.deltaTime;
-
-                // Interpolar (lerp) entre el fillAmount inicial y el objetivo
-                wedge.fillAmount = Mathf.Lerp(initialFill, targetFill, elapsedTime / duration);
-
-                // Esperar hasta el prÛximo frame
-                yield return null;
-            }
+            elapsed += Time.deltaTime;
+            wedge.fillAmount = Mathf.Lerp(0, targetFill, elapsed / duration);
+            yield return null;
         }
 
-        // Asegurarse de que el fillAmount sea exactamente el valor objetivo
         wedge.fillAmount = targetFill;
     }
 
+    //======================================================================
+    //  ‚ñë‚ñë‚ñë 9. FINALIZACI√ìN
+    //======================================================================
+
     public override void EndGraph()
     {
-        value1 = 0;
-        value2 = 0;
-        totalValue = 0;
-        value1Percent = 0;
-        value2Percent = 0;
         provitionalValuesPie.Clear();
-        pieGraphHolder = null;
+
+        valueSafeMovement = 0;
+        valueDangerMovement = 0;
+
+        safePercent = 0;
+        dangerPercent = 0;
     }
 }

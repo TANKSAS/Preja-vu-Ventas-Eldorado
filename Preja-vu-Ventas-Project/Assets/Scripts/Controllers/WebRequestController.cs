@@ -1,4 +1,4 @@
-using SimpleJSON;
+ï»¿using SimpleJSON;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -8,19 +8,22 @@ using UnityEngine.Networking;
 
 public class WebRequestController : Singleton<WebRequestController>
 {
-    bool inProgress;
-    bool isConnected;
+    [SerializeField] bool inProgress;
+    [SerializeField] bool isConnected;
 
     public bool InProgress { get => inProgress; set => inProgress = value; }
     public bool IsConnected { get => isConnected; set => isConnected = value; }
-    
+
     public IEnumerator WaitForConnection(int timeOut)
     {
         while (!isConnected)
         {
             yield return StartCoroutine(CheckInternetConnection(OnInternetCheckComplete));
+
+            if (isConnected)
+                break;
+
             yield return new WaitForSeconds(1f);
-            yield return new WaitUntil(() => !inProgress);
 
             if (timeOut <= 0)
             {
@@ -29,12 +32,13 @@ public class WebRequestController : Singleton<WebRequestController>
                 StopAllCoroutines();
                 yield break;
             }
+
             timeOut--;
         }
 
         isConnected = false;
     }
-    
+
     public IEnumerator StartLogin(string url, string email, string password)
     {
         inProgress = true;
@@ -42,17 +46,17 @@ public class WebRequestController : Singleton<WebRequestController>
         PlayerVerificationData myData = new PlayerVerificationData(email, password);
         string jsonData = JsonUtility.ToJson(myData);
 
-        // Crea un UnityWebRequest con método POST
+        // Crea un UnityWebRequest con mÃ©todo POST
         UnityWebRequest www = new UnityWebRequest(url, "POST");
 
-        // Configura la carga útil del JSON
+        // Configura la carga Ãºtil del JSON
         www.uploadHandler = new UploadHandlerRaw(ConvertJsonToBytes(jsonData));
         www.downloadHandler = new DownloadHandlerBuffer();
 
         // Configura los encabezados, indicando que el cuerpo de la solicitud es JSON
         www.SetRequestHeader("Content-Type", "application/json");
 
-        // Envía la solicitud y espera la respuesta
+        // EnvÃ­a la solicitud y espera la respuesta
         yield return www.SendWebRequest();
 
         // Verifica si hubo errores en la solicitud
@@ -105,17 +109,17 @@ public class WebRequestController : Singleton<WebRequestController>
         InfoPlayerID myData = new InfoPlayerID(id);
         string jsonData = JsonUtility.ToJson(myData);
 
-        // Crea un UnityWebRequest con método POST
+        // Crea un UnityWebRequest con mÃ©todo POST
         UnityWebRequest www = new UnityWebRequest(url, "POST");
 
-        // Configura la carga útil del JSON
+        // Configura la carga Ãºtil del JSON
         www.uploadHandler = new UploadHandlerRaw(ConvertJsonToBytes(jsonData));
         www.downloadHandler = new DownloadHandlerBuffer();
 
         // Configura los encabezados, indicando que el cuerpo de la solicitud es JSON
         www.SetRequestHeader("Content-Type", "application/json");
 
-        // Envía la solicitud y espera la respuesta
+        // EnvÃ­a la solicitud y espera la respuesta
         yield return www.SendWebRequest();
 
         // Verifica si hubo errores en la solicitud
@@ -171,17 +175,17 @@ public class WebRequestController : Singleton<WebRequestController>
         // Convierte los datos a formato JSON
         string jsonData = JsonUtility.ToJson(myData);
 
-        // Crea un UnityWebRequest con método POST
+        // Crea un UnityWebRequest con mÃ©todo POST
         UnityWebRequest www = new UnityWebRequest(url, "POST");
 
-        // Convierte el string JSON a bytes & Configura la carga útil del JSON 
+        // Convierte el string JSON a bytes & Configura la carga Ãºtil del JSON 
         www.uploadHandler = new UploadHandlerRaw(ConvertJsonToBytes(jsonData));
         www.downloadHandler = new DownloadHandlerBuffer();
 
         // Configura los encabezados, indicando que el cuerpo de la solicitud es JSON
         www.SetRequestHeader("Content-Type", "application/json");
 
-        // Envía la solicitud y espera la respuesta
+        // EnvÃ­a la solicitud y espera la respuesta
         yield return www.SendWebRequest();
 
         // Verifica si hubo errores en la solicitud
@@ -209,17 +213,17 @@ public class WebRequestController : Singleton<WebRequestController>
         // Convierte los datos a formato JSON
         string jsonData = JsonUtility.ToJson(myData);
 
-        // Crea un UnityWebRequest con método POST
+        // Crea un UnityWebRequest con mÃ©todo POST
         UnityWebRequest www = new UnityWebRequest(url, "POST");
 
-        // Configura la carga útil del JSON
+        // Configura la carga Ãºtil del JSON
         www.uploadHandler = new UploadHandlerRaw(ConvertJsonToBytes(jsonData));
         www.downloadHandler = new DownloadHandlerBuffer();
 
         // Configura los encabezados, indicando que el cuerpo de la solicitud es JSON
         www.SetRequestHeader("Content-Type", "application/json");
 
-        // Envía la solicitud y espera la respuesta
+        // EnvÃ­a la solicitud y espera la respuesta
         yield return www.SendWebRequest();
 
         // Verifica si hubo errores en la solicitud
@@ -244,10 +248,10 @@ public class WebRequestController : Singleton<WebRequestController>
 
     public IEnumerator CheckInternetConnection(System.Action<bool> callback)
     {
-        inProgress = true;
         using (UnityWebRequest request = UnityWebRequest.Get("https://www.google.com"))
         {
-            request.timeout = 5; // Establecer un tiempo de espera de 5 segundos
+            request.timeout = 5;
+
             yield return request.SendWebRequest();
 
             if (request.result == UnityWebRequest.Result.ConnectionError ||
@@ -261,76 +265,65 @@ public class WebRequestController : Singleton<WebRequestController>
                 callback(true);
             }
         }
-
-        inProgress = false;
     }
 
     public IEnumerator SendAudioToElevenLabs(AssessmentModule assessmentModule, string path, string apiUrl, string apiKey, string language)
     {
         inProgress = true;
-
         yield return StartCoroutine(WaitForConnection(10));
 
         if (!File.Exists(path))
         {
-            Debug.LogError("El archivo de audio no se encontró: " + path);
+            Debug.LogError("El archivo de audio no se encontrÃ³: " + path);
+            inProgress = false; // <-- tambiÃ©n aquÃ­ para no dejar colgado el bool
             yield break;
         }
 
         byte[] fileBytes = File.ReadAllBytes(path);
-
-        // Crea el formulario con los campos requeridos
         WWWForm form = new WWWForm();
-        // El ejemplo de Python envía el model_id como JSON,
-        // pero la API acepta el valor "scribe_v1" directamente.
         form.AddField("model_id", "scribe_v1");
-        // Agrega otros parámetros si los necesitas:
-        form.AddField("language_code", language);       // Idioma
-        form.AddField("tag_audio_events", "false");    // Etiquetar eventos de audio
-
-        // Agrega el archivo de audio al formulario
+        form.AddField("language_code", language);
+        form.AddField("tag_audio_events", "false");
         form.AddBinaryData("file", fileBytes, "audio.wav", "audio/wav");
 
-        // Crea la solicitud POST
         UnityWebRequest request = UnityWebRequest.Post(apiUrl, form);
-        // Agrega el header con la API Key
         request.SetRequestHeader("xi-api-key", apiKey);
 
-        // Envía la solicitud y espera la respuesta
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log("Transcripción recibida");
-
             string jsonArrayString = request.downloadHandler.text;
             Debug.Log(jsonArrayString);
-
             JSONNode jsonResponse = JSON.Parse(jsonArrayString);
 
             if (jsonResponse != null)
             {
-                // Accede directamente a la clave "text"
                 string transcriptionText = jsonResponse["text"];
 
                 if (!string.IsNullOrEmpty(transcriptionText))
                 {
                     Debug.Log("Texto transcrito: " + transcriptionText);
                     assessmentModule.finalAnswer = transcriptionText;
+                    inProgress = false; // âœ… Solo aquÃ­: cuando realmente tienes el texto
                 }
                 else
                 {
-                    Debug.LogWarning("Error: La clave 'text' está vacía o no existe.");
+                    Debug.LogWarning("Error: La clave 'text' estÃ¡ vacÃ­a o no existe.");
+                    inProgress = false; // o maneja el reintento si lo necesitas
                 }
             }
             else
             {
                 Debug.LogError("Error: No se pudo parsear el JSON.");
+                inProgress = false;
             }
-
         }
-
-        inProgress = false;
+        else
+        {
+            Debug.LogError("Error en la request: " + request.error);
+            inProgress = false; // <-- importante para no dejar el sistema bloqueado
+        }
     }
 
     public IEnumerator GetRatingsData(string url, string id)
@@ -384,7 +377,7 @@ public class WebRequestController : Singleton<WebRequestController>
 
     byte[] ConvertJsonToBytes(string jsonData)
     {
-        // Convierte el string en un array de bytes usando la codificación UTF-8
+        // Convierte el string en un array de bytes usando la codificaciÃ³n UTF-8
         return new System.Text.UTF8Encoding().GetBytes(jsonData);
     }
 }

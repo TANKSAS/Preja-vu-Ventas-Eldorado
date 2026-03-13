@@ -2438,6 +2438,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1417575067}
     - target: {fileID: 4196985535141544469, guid: 8532521d86952644483a01658a1d226d, type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 406607f9ad613ca48bfa492ced91f6c6, type: 2}
+    - target: {fileID: 4196985535141544469, guid: 8532521d86952644483a01658a1d226d, type: 3}
       propertyPath: chatController
       value: 
       objectReference: {fileID: 1314468011}

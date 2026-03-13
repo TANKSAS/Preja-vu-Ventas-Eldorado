@@ -30,108 +30,97 @@ public class FinalTestController : AssessmentModule
         }
     }
 
-    IEnumerator DoTestFirstTime()
+    public IEnumerator DoTestFirstTime()
     {
-        Debug.Log("Start Final Practice");
+        Debug.Log("Start Interview Diagnosis");
         startAssessmentModule = true;
         SceneSettup();
 
-        GameManager.Instance.timeLineController.SetPlayableDirector(0);
-        GameManager.Instance.backGroundController.CallChangeVideo(6);
+        GameManager.Instance.backGroundController.CallChangeVideo(3);
+        GameManager.Instance.timeLineController.SetPlayableDirector(1);
         yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
 
         yield return StartCoroutine(CountDown());
 
         float newTime = (float)GameManager.Instance.timeLineController.currentPlayableDirector.duration;
         audioRecordingController.StartRecordingData(newTime);
-        UIManager.Instance.helperPanel.SetActive(true);
-
         audioRecordingController.audioSource = GameManager.Instance.spectrumVisualizer.audioSource;
         GameManager.Instance.spectrumVisualizer.audioSource.Play();
-        GameManager.Instance.backGroundController.currentVideoPlayer.Play();
-        GameManager.Instance.timeLineController.Play();
-        helperController.IniciarTemporizador();
         GameManager.Instance.outputAudioRecorderController.StartRecording();
+        GameManager.Instance.trackingController.StartTrainingSession(newTime);
 
-        //GameManager.Instance.trackingController.StartTrainingSession(newTime);
-        //GameManager.Instance.trackingController.EnableHandsDetecterMeshRenderers();
+        GameManager.Instance.backGroundController.currentVideoPlayer.Play();
+        yield return new WaitUntil(() => GameManager.Instance.backGroundController.currentVideoPlayer.isPlaying);
+        GameManager.Instance.timeLineController.Play();
 
         yield return new WaitUntil(() => !startAssessmentModule);
-
         End();
-        Debug.Log("End final Practice");
+
+        Debug.Log("End Entrevista");
+        GameManager.Instance.backGroundController.CallChangeImagen(0);
+        yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
 
         string newFilePath = GameManager.Instance.outputAudioRecorderController.currentFullPath;
         filePath = newFilePath;
 
-        yield return StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
-
-        //yield return new WaitUntil(() => !GameManager.Instance.trackingController.isGettingData);
-        //SaveSessionData();
-
-        GameManager.Instance.backGroundController.CallChangeImagen(0);
-        yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
-
-        //UIManager.Instance.CallShowGraph();
-        //yield return new WaitUntil(() => !UIManager.Instance.practicalResultsGraphicMenu.activeInHierarchy);
-
-        GameManager.Instance.backGroundController.RestartVideoPlayer(GameManager.Instance.backGroundController.currentVideoPlayer);
+        StartCoroutine(SendSpeechToText());
+        StartCoroutine(SaveSessionData());
     }
 
-    IEnumerator DoTest()
+    public IEnumerator DoTest()
     {
-        Debug.Log("Start Final Practice");
+        Debug.Log("Start Interview FinalTest");
+
+        //  Marca que la prueba está en curso
         startAssessmentModule = true;
+
+        //  Configura la escena inicial (UI, entorno, etc.)
         SceneSettup();
 
+        //  Carga el video y timeline específicos para prueba final
+        GameManager.Instance.backGroundController.CallChangeVideo(2);
         GameManager.Instance.timeLineController.SetPlayableDirector(0);
-        GameManager.Instance.backGroundController.CallChangeVideo(6);
-        yield return new WaitUntil(()=> !GameManager.Instance.backGroundController.isLoading);
 
+        // Espera a que el fondo termine de cargar
+        yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
+
+        //  Muestra cuenta regresiva visual antes de iniciar
         yield return StartCoroutine(CountDown());
-        
+
+        //  Inicia grabación de audio y tracking
         float newTime = (float)GameManager.Instance.timeLineController.currentPlayableDirector.duration;
         audioRecordingController.StartRecordingData(newTime);
-        UIManager.Instance.helperPanel.SetActive(true);
-        
         audioRecordingController.audioSource = GameManager.Instance.spectrumVisualizer.audioSource;
         GameManager.Instance.spectrumVisualizer.audioSource.Play();
-        GameManager.Instance.backGroundController.currentVideoPlayer.Play();
-        GameManager.Instance.timeLineController.Play();
-        
-        yield return new WaitUntil(() => GameManager.Instance.backGroundController.currentVideoPlayer.isPlaying);
-        yield return new WaitUntil(() => !GameManager.Instance.backGroundController.currentVideoPlayer.isPlaying);
-
-        helperController.IniciarTemporizador();
+        GameManager.Instance.trackingController.StartTrainingSession(newTime);
+        GameManager.Instance.trackingController.EnableHandsDetecterMeshRenderers();
         GameManager.Instance.outputAudioRecorderController.StartRecording();
 
-        //GameManager.Instance.trackingController.StartTrainingSession(newTime);
-        //GameManager.Instance.trackingController.EnableHandsDetecterMeshRenderers();
+        //  Reproduce el video y el timeline
+        GameManager.Instance.backGroundController.currentVideoPlayer.Play();
+        yield return new WaitUntil(() => GameManager.Instance.backGroundController.currentVideoPlayer.isPlaying);
+        GameManager.Instance.timeLineController.Play();
 
+        //  Espera a que termine la entrevista
         yield return new WaitUntil(() => !startAssessmentModule);
-        
-        End();
-        Debug.Log("End final Practice");
-        
-        StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
-        
 
-        //yield return new WaitUntil(() => !GameManager.Instance.trackingController.isGettingData);
-        //SaveSessionData();
+        //  Finaliza la prueba y limpia estados
+        End();
+        Debug.Log("End Entrevista");
 
         GameManager.Instance.backGroundController.CallChangeImagen(0);
         yield return new WaitUntil(() => !GameManager.Instance.backGroundController.isLoading);
 
-        //UIManager.Instance.CallShowGraph();
-        //yield return new WaitUntil(() => !UIManager.Instance.practicalResultsGraphicMenu.activeInHierarchy);
-        
-        GameManager.Instance.backGroundController.RestartVideoPlayer(GameManager.Instance.backGroundController.currentVideoPlayer);
-        UIManager.Instance.SetCurrentUIMenu(UIManager.Instance.practicalResultsGraphicMenu);
+        string newFilePath = GameManager.Instance.outputAudioRecorderController.currentFullPath;
+        filePath = newFilePath;
+
+        StartCoroutine(SendSpeechToText());
+        StartCoroutine(SaveSessionData());
     }
 
     protected override void SetupUI()
     {
-        if (isDiagnosis)
+        if (GameManager.Instance.isDiagnosis)
         {
             UIManager.Instance.practicalModuleCaseDetailPanel.SetActive(false);
             UIManager.Instance.SetCurrentUIMenu(UIManager.Instance.practicalModuleCaseDetailPanel);
@@ -147,14 +136,11 @@ public class FinalTestController : AssessmentModule
 
         UIManager.Instance.modulePracticalMenu.SetActive(true);
     }
-    
+
     public override void End()
     {
         GameManager.Instance.spectrumVisualizer.isShowing = false;
         GameManager.Instance.outputAudioRecorderController.StopRecording();
-        robertaPrefab.SetActive(true);
         UIManager.Instance.modulePracticalMenu.SetActive(false);
-        UIManager.Instance.helperPanel.SetActive(false);
-        helperController.ResetearTemporizador();
     }
 }

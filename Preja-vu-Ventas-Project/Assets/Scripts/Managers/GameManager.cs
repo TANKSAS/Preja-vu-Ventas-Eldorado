@@ -48,7 +48,16 @@ public class GameManager : Singleton<GameManager>
 
     void OnDestroy()
     {
-        playerStats.Restart();
+        if (playerStats.name != "Test")
+        {
+            Debug.Log("Restart Stadistics ScriptableObject");
+            playerStats.Restart();
+        }
+        else
+        {
+            Debug.Log("Test ScriptableObject");
+        }
+
         base.OnDestroy();
     }
     #endregion
@@ -247,7 +256,9 @@ public class GameManager : Singleton<GameManager>
         //UIManager.Instance.canBackMainMenu = false;
 
         //yield return StartCoroutine(CallGraph());
+
         yield return StartCoroutine(CallEnableRobertaToFeedBack());
+        //UIManager.Instance.canBackMainMenu = true;
 
         yield return StartCoroutine(StartFinalTestFeedBack());
         yield return StartCoroutine(ShowAssesmentModuleResults());

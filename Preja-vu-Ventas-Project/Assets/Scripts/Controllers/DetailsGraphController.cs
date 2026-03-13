@@ -1,486 +1,360 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements.Experimental;
 
-public class DetailsGraphController : Graph
+public class DetailsGraphController : MonoBehaviour
 {
-    public PieGraphHolder pieGraphHolder;
-    public VoiceGraphicHolder voiceGraphicHolder;
-    public HeatMapGraphHolder heatMapGraphHolder;
-    public PieGraphHolder heatMapPieGraphHolder;
+    // =============================
+    //  ESTADOS INTERNOS
+    // =============================
 
-    [SerializeField] PieGraphHolder newPieGraphHolder;
-    [SerializeField] VoiceGraphicHolder newVoiceGraphicHolder;
-    [SerializeField] HeatMapGraphHolder newHeatMapGraphHolder;
-    
-    public List<Tip> handsMoveTipsHolder;
-    public List<Tip> visionTipsHolder;
-    public List<Tip> gestureTipsHolder;
-    public List<Tip> voiceTipsHolder;
-    public List<Tip> heatMapTipsHolder;
+    // 🔒 Evita que el carrusel se mueva mientras la gráfica se construye
+    //public bool graphIsReady = false;
 
-    [SerializeField] bool isPieGraphDetails;
-    [SerializeField] bool isVoiceGraphDetails;
-    [SerializeField] bool isHeatMapGraphDetails;
-  
-    public override void SetGraphSettings(GraphHolder graph)
+    // Controla si los tips y detalles ya fueron generados
+    public bool tipsAreReady;
+    public bool guideLinesAreReady;
+    public bool isTransitioning;
+
+    // =============================
+    //   REFERENCIAS
+    // =============================
+
+    public AnimacionUIManager animacionUIManager;
+
+    [Header("Texto - TIPS")]
+    public TMP_Text tip1;
+    public TMP_Text tip2;
+    public TMP_Text tip3;
+
+    [Header("Texto - DETALLES")]
+    public TMP_Text qualificationDetails;
+
+    [Header("Todos los TIPS agrupados")]
+    public List<Tip> tipsHolder;
+
+    [Header("Paneles del carrusel")]
+    public List<GameObject> subPanelsList = new List<GameObject>();
+    public GameObject NavigationBackButton;
+    public GameObject NavigationContinueButton;
+
+    [Header("Tipo de gráfica activa")]
+    public bool isPieGraphDetails;
+    public bool isVoiceGraphDetails;
+    public bool isHeatMapGraphDetails;
+
+    [Header("Título superior dinámico")]
+    public TMP_Text titleText;
+
+    // Índice del carrusel
+    public int currentCarouselIndex = 0;
+
+
+    // ============================================================
+    //   INICIALIZACIÓN : SE EJECUTA AL ACTIVAR EL PANEL COMPLETO
+    // ============================================================
+    void OnEnable()
     {
-        if (graph is PieGraphHolder)
-        {
-            if (isHeatMapGraphDetails)
-            {
-                Debug.Log("si es pieGraph de HeatMap");
-                newPieGraphHolder = (PieGraphHolder)graph;
-            }
-            else
-            {
-                Debug.Log("si es pieGraph");
-                newPieGraphHolder = (PieGraphHolder)graph;
-                isPieGraphDetails = true;
-            }
-        }
+        // Reset panels
+        InitializePanels(subPanelsList);
 
-        if (graph is VoiceGraphicHolder)
-        {
-            Debug.Log("si es VoiceGraph");
-            newVoiceGraphicHolder = (VoiceGraphicHolder)graph;
-            isVoiceGraphDetails = true;
-        }
+        // Asegurar que el panel inicial tenga su título cargado
+        currentCarouselIndex = 0;
+        UpdateInitialTitle();
+    }
 
-        if (graph is HeatMapGraphHolder)
+
+    // =============================
+    //  INICIALIZAR PANELES
+    // =============================
+    private void InitializePanels(List<GameObject> panels)
+    {
+        for (int i = 0; i < panels.Count; i++)
         {
-            newHeatMapGraphHolder = (HeatMapGraphHolder)graph;
-            isHeatMapGraphDetails = true;
+            if (panels[i] != null)
+                panels[i].SetActive(i == 0); // Solo activar el primer panel
         }
     }
 
-    public void ScrollToTop(ScrollRect scrollRect)
+    private void UpdateInitialTitle()
     {
-        if (scrollRect != null)
-        {
-            scrollRect.verticalNormalizedPosition = 1f;
-        }
+        if (titleText != null)
+            titleText.text = GetCurrentTitle(0);
     }
 
-    public override IEnumerator ResetGraphHolderValues(GraphHolder graphHolder)
+    // ============================================================
+    //      GENERACIÓN DE DETALLES — PRIMER PANEL DEL CARRUSEL
+    // ============================================================
+    public void GraphGuidelinesMaker()
+    {
+        GraphCarouselButtonsEnable(false);
+
+        if (isPieGraphDetails)
+            ShowPieQualificationDetails();
+        else if (isVoiceGraphDetails)
+            ShowVoiceQualificationDetails();
+        else if (isHeatMapGraphDetails)
+            ShowHeatMapQualificationDetails();
+        GraphCarouselButtonsEnable(true);
+        guideLinesAreReady = true;
+    }
+
+
+    // ---------- PIE GRAPH DETALLES ----------
+    void ShowPieQualificationDetails()
+    {
+        string detailKey = "";
+        KinesthesiaRating kinesthesiaRating =
+            GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].kinesthesiaRating;
+
+        switch (kinesthesiaRating)
+        {
+            case KinesthesiaRating.Excellent: detailKey = "GesturesDetailExcellent"; break;
+            case KinesthesiaRating.Good: detailKey = "GesturesDetailGood"; break;
+            case KinesthesiaRating.Low: detailKey = "GesturesDetailAttention"; break;
+        }
+
+        qualificationDetails.text = LanguageManager.Instance.GetStringValue(detailKey);
+    }
+
+
+    // ---------- VOICE GRAPH DETALLES ----------
+    public void ShowVoiceQualificationDetails()
+    {
+        string detailKey = "";
+        ToneOfVoiceRating voiceRating =
+            GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].toneOfVoiceRating;
+
+        switch (voiceRating)
+        {
+            case ToneOfVoiceRating.WeakVoice: detailKey = "FrequencyRatingLowText"; break;
+            case ToneOfVoiceRating.ConversationalVoice: detailKey = "FrequencyRatingMediumText"; break;
+            case ToneOfVoiceRating.ProjectedVoice: detailKey = "FrequencyRatingPerfectText"; break;
+            case ToneOfVoiceRating.Screams: detailKey = "FrequencyRatingHightText"; break;
+        }
+
+        qualificationDetails.text = LanguageManager.Instance.GetStringValue(detailKey);
+        //yield return null;
+    }
+
+
+    // ---------- HEATMAP GRAPH DETALLES ----------
+   public void ShowHeatMapQualificationDetails()
+    {
+        string detailKey = "";
+        HeatMapRating heatRating =
+            GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].heatMapRating;
+
+        switch (heatRating)
+        {
+            case HeatMapRating.Excellent: detailKey = "HeatMapDetailExcellent"; break;
+            case HeatMapRating.Good: detailKey = "HeatMapDetailGood"; break;
+            case HeatMapRating.Low: detailKey = "HeatMapDetailLow"; break;
+        }
+
+        qualificationDetails.text = LanguageManager.Instance.GetStringValue(detailKey);
+       
+    }
+
+
+    // ============================================================
+    //      GENERACIÓN DE TIPS — TERCER PANEL DEL CARRUSEL
+    // ============================================================
+    public void GraphTipsMaker()
+    {
+        GraphCarouselButtonsEnable(false);
+        
+        if (isPieGraphDetails)
+          ShowPieHandsMoveTips(GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].kinesthesiaRating);
+        else if (isVoiceGraphDetails)
+          ShowVoiceTips(
+                GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].toneOfVoiceRating);
+        else if (isHeatMapGraphDetails)
+           ShowHeatMapTips(GameManager.Instance.playerStats.sessions[GraphManager.Instance.currentSessionIndex].heatMapRating);
+
+        GraphCarouselButtonsEnable(true);
+        tipsAreReady = true;
+    }
+
+
+    // ---------- TIPS MANOS ----------
+    void ShowPieHandsMoveTips(KinesthesiaRating rating)
     {
         ResetTipsDetails();
 
-        if (graphHolder is PieGraphHolder)
+         int index = rating switch
         {
-            pieGraphHolder.graphName.text = string.Empty;
-            yield return StartCoroutine(GraphManager.Instance.pieGraphController.ResetGraphHolderValues(pieGraphHolder));
-            newPieGraphHolder = null;
-            isPieGraphDetails = false;
-        }
-        
-        if (graphHolder is VoiceGraphicHolder)
-        {
-            yield return StartCoroutine(GraphManager.Instance.voiceGraphController.ResetGraphHolderValues(voiceGraphicHolder));
-            newVoiceGraphicHolder = null;
-            isVoiceGraphDetails = false;
-        }
-        
-        if (graphHolder is HeatMapGraphHolder)
-        {
-            yield return StartCoroutine(GraphManager.Instance.heatMapGraphController.ResetGraphHolderValues(heatMapGraphHolder));
-            yield return StartCoroutine(GraphManager.Instance.pieGraphController.ResetGraphHolderValues(heatMapPieGraphHolder));
-            newHeatMapGraphHolder = null;
-            newPieGraphHolder = null;
-            isHeatMapGraphDetails = false;
-        }
+            KinesthesiaRating.Low => 0,
+            KinesthesiaRating.Good => 1,
+            KinesthesiaRating.Excellent => 2,
+            KinesthesiaRating.Exaggerated => 3, 
+            _ => 0
+        };
 
-        yield return null;
+        tip1.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[0]);
+        tip1.gameObject.SetActive(true);
+        tip2.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[1]);
+        tip3.gameObject.SetActive(true);
+        tip3.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[2]);
+        tip2.gameObject.SetActive(true);
     }
-    
-    public override IEnumerator GraphMaker()
+
+
+    // ---------- TIPS VOZ ----------
+    void  ShowVoiceTips(ToneOfVoiceRating rating)
+    {
+        ResetTipsDetails();
+       // yield return new WaitForSeconds(.3f);
+
+        int index = rating switch
+        {
+            ToneOfVoiceRating.WeakVoice => 0,
+            ToneOfVoiceRating.ConversationalVoice => 1,
+            ToneOfVoiceRating.ProjectedVoice => 2,
+            ToneOfVoiceRating.Screams => 3,
+            _ => 0
+        };
+
+        tip1.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[0]);
+        tip2.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[1]);
+        tip3.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[2]);
+
+        tip1.gameObject.SetActive(true);
+       // yield return new WaitForSeconds(.3f);
+        tip2.gameObject.SetActive(true);
+       // yield return new WaitForSeconds(.3f);
+        tip3.gameObject.SetActive(true);
+    }
+
+
+    // ---------- TIPS HEATMAP ----------
+   void ShowHeatMapTips(HeatMapRating rating)
+    {
+        ResetTipsDetails();
+       // yield return new WaitForSeconds(.3f);
+
+        int index = rating switch
+        {
+            HeatMapRating.Low => 0,
+            HeatMapRating.Good => 1,
+            HeatMapRating.Excellent => 2,
+            _ => 0
+        };
+
+        tip1.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[0]);
+        tip2.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[1]);
+        tip3.text = LanguageManager.Instance.GetStringValue(tipsHolder[index].tips[2]);
+
+        tip1.gameObject.SetActive(true);
+       // yield return new WaitForSeconds(.3f);
+        tip2.gameObject.SetActive(true);
+       // yield return new WaitForSeconds(.3f);
+        tip3.gameObject.SetActive(true);
+    }
+
+
+    public void ResetTipsDetails()
+    {
+        tip1.text = "";
+        tip2.text = "";
+        tip3.text = "";
+
+        tip1.gameObject.SetActive(false);
+        tip2.gameObject.SetActive(false);
+        tip3.gameObject.SetActive(false);
+
+        tipsAreReady = false;
+    }
+
+
+    // ============================================================
+    //           CARRUSEL (NAVEGACIÓN ENTRE PANELES)
+    // ============================================================
+    public void CarouselNavigation(bool isNext)
+    {
+        //if (!graphIsReady) return;          // 🔒 No permitir mover si la gráfica no terminó
+        if (!isTransitioning) ChangeSubPanel(isNext);
+    }
+
+
+    private void ChangeSubPanel(bool isNext)
+    {
+        int total = subPanelsList.Count;
+        int newIndex = (currentCarouselIndex + (isNext ? 1 : total - 1)) % total;
+
+        GameObject current = subPanelsList[currentCarouselIndex];
+        GameObject next = subPanelsList[newIndex];
+
+        current.SetActive(false);
+        next.SetActive(true);
+
+        currentCarouselIndex = newIndex;
+
+        if (newIndex == 1 && !guideLinesAreReady)
+            // StartCoroutine(GraphGuidelinesMaker());
+            GraphGuidelinesMaker();
+
+            if (newIndex == 2 && !tipsAreReady)
+            // StartCoroutine(GraphTipsMaker());
+            GraphTipsMaker();
+            if (titleText != null)
+            titleText.text = GetCurrentTitle(newIndex);
+    }
+
+    //Activacion de los botones del carrusel
+
+    public void GraphCarouselButtonsEnable(bool isEnable)
+    {
+        if (NavigationBackButton != null)
+            NavigationBackButton.SetActive(isEnable);
+
+        if (NavigationContinueButton != null)
+            NavigationContinueButton.SetActive(isEnable);
+
+        Debug.Log("Botones del carrusel ." + isEnable);
+    }
+
+    // =============================
+    //  TITULOS DINÁMICOS
+    // =============================
+    private string GetCurrentTitle(int index)
     {
         if (isPieGraphDetails)
         {
-            yield return StartCoroutine(ShowPieDetails());
-        }
-        else if (isVoiceGraphDetails)
-        {
-            yield return StartCoroutine(ShowVoiceDetails());
-        }
-        else if (isHeatMapGraphDetails)
-        {
-            yield return StartCoroutine(ShowHeatMapDetails());
-        }
-        else
-        {
-           yield return null;
-        }
-    }
-
-    IEnumerator ShowPieDetails()
-    {
-        RectTransform pieRectTransform;
-        pieGraphHolder.graphName.text = newPieGraphHolder.graphName.text;
-        pieGraphHolder.kindOfPieGraph = newPieGraphHolder.kindOfPieGraph;
-        pieGraphHolder.value1NameText.text = newPieGraphHolder.value1NameText.text;
-        pieGraphHolder.value2NameText.text = newPieGraphHolder.value2NameText.text;
-
-        pieGraphHolder.widge[0].color = newPieGraphHolder.widge[0].color;
-        pieGraphHolder.widge[0].fillAmount = newPieGraphHolder.widge[0].fillAmount;
-        pieRectTransform = pieGraphHolder.widge[0].GetComponent<RectTransform>();
-        pieRectTransform.localRotation = newPieGraphHolder.widge[0].GetComponent<RectTransform>().localRotation;
-
-        pieGraphHolder.widge[1].color = newPieGraphHolder.widge[1].color;
-        pieGraphHolder.widge[1].fillAmount = newPieGraphHolder.widge[1].fillAmount;
-        pieRectTransform = pieGraphHolder.widge[1].GetComponent<RectTransform>();
-        pieRectTransform.localRotation = newPieGraphHolder.widge[1].GetComponent<RectTransform>().localRotation;
-
-        pieGraphHolder.value1Bar.color = newPieGraphHolder.colorsPie[0];
-        pieGraphHolder.value1Bar.fillAmount = newPieGraphHolder.value1Bar.fillAmount;
-        pieGraphHolder.value1Text.text = newPieGraphHolder.value1Text.text;
-
-        pieGraphHolder.value2Bar.color = newPieGraphHolder.colorsPie[1];
-        pieGraphHolder.value2Bar.fillAmount = newPieGraphHolder.value2Bar.fillAmount;
-        pieGraphHolder.value2Text.text = newPieGraphHolder.value2Text.text;
-
-        yield return new WaitForSeconds(0.1f);
-
-
-        switch (pieGraphHolder.kindOfPieGraph)
-        {
-            case KindOfPieGraph.HandsMovePie:
-                yield return StartCoroutine(ShowPieHandsMoveTips());
-                break;
-
-            case KindOfPieGraph.GestureHandsPie:
-                yield return StartCoroutine(ShowPieGestureTips());
-                break;
-            
-            case KindOfPieGraph.VisionPie:
-                yield return StartCoroutine(ShowPieVisionMoveTips());
-                break;
-        }
-    }
-
-    IEnumerator ShowVoiceDetails()
-    {
-        for (int i = 0; i < newVoiceGraphicHolder.xLabelsObjects.Count; i++)
-        {
-            RectTransform poolXLabelObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.xLabelsObjects,voiceGraphicHolder.labelsHolder ,voiceGraphicHolder.labelTemplateX.gameObject).GetComponent<RectTransform>();
-            RectTransform lastXLabelObject = newVoiceGraphicHolder.xLabelsObjects[i].GetComponent<RectTransform>();
-           
-            poolXLabelObject.anchoredPosition = lastXLabelObject.anchoredPosition;
-            poolXLabelObject.GetComponent<TMP_Text>().text = lastXLabelObject.GetComponent<TMP_Text>().text;
-            poolXLabelObject.gameObject.SetActive(lastXLabelObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.xDotSeparationObjects.Count; i++)
-        {
-            RectTransform poolXDotSeparationObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.xDotSeparationObjects, voiceGraphicHolder.dotsHolder, voiceGraphicHolder.doteTemplateX.gameObject).GetComponent<RectTransform>();
-            RectTransform lastXDotSeparationObject = newVoiceGraphicHolder.xDotSeparationObjects[i].GetComponent<RectTransform>();
-
-            poolXDotSeparationObject.anchoredPosition = lastXDotSeparationObject.anchoredPosition;
-            poolXDotSeparationObject.gameObject.SetActive(lastXDotSeparationObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.xAxisObjects.Count; i++)
-        {
-            RectTransform poolXAxisObjectsObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.xAxisObjects, voiceGraphicHolder.axisHolder, voiceGraphicHolder.dashTemplateX.gameObject).GetComponent<RectTransform>();
-            RectTransform lastXAxisObjectsObject = newVoiceGraphicHolder.xAxisObjects[i].GetComponent<RectTransform>();
-
-            poolXAxisObjectsObject.anchoredPosition = lastXAxisObjectsObject.anchoredPosition;
-            poolXAxisObjectsObject.gameObject.SetActive(lastXAxisObjectsObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.yLabelsObjects.Count; i++)
-        {
-            RectTransform poolYLabelObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.yLabelsObjects, voiceGraphicHolder.labelsHolder, voiceGraphicHolder.labelTemplateY.gameObject).GetComponent<RectTransform>();
-            RectTransform lastYLabelObject = newVoiceGraphicHolder.yLabelsObjects[i].GetComponent<RectTransform>();
-
-            poolYLabelObject.anchoredPosition = lastYLabelObject.anchoredPosition;
-            poolYLabelObject.GetComponent<TMP_Text>().text = lastYLabelObject.GetComponent<TMP_Text>().text;
-            poolYLabelObject.gameObject.SetActive(lastYLabelObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.yDotSeparationObjects.Count; i++)
-        {
-            RectTransform poolYDotSeparationObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.yDotSeparationObjects, voiceGraphicHolder.dotsHolder, voiceGraphicHolder.doteTemplateY.gameObject).GetComponent<RectTransform>();
-            RectTransform lastYDotSeparationObject = newVoiceGraphicHolder.yDotSeparationObjects[i].GetComponent<RectTransform>();
-
-            poolYDotSeparationObject.anchoredPosition = lastYDotSeparationObject.anchoredPosition;
-            poolYDotSeparationObject.gameObject.SetActive(lastYDotSeparationObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.yAxisObjects.Count; i++)
-        {
-            RectTransform poolYAxisObjectsObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.yAxisObjects, voiceGraphicHolder.axisHolder, voiceGraphicHolder.dashTemplateY.gameObject).GetComponent<RectTransform>();
-            RectTransform lastYAxisObjectsObject = newVoiceGraphicHolder.yAxisObjects[i].GetComponent<RectTransform>();
-
-            poolYAxisObjectsObject.anchoredPosition = lastYAxisObjectsObject.anchoredPosition;
-            poolYAxisObjectsObject.gameObject.SetActive(lastYAxisObjectsObject.gameObject.activeSelf);
-        }
-
-        for (int i = 0; i < newVoiceGraphicHolder.objectPoolList.Count; i++)
-        {
-            RectTransform poolLineObject = GraphManager.Instance.pool.GetOrCreateObjectPooled(i, voiceGraphicHolder.objectPoolList, voiceGraphicHolder.linesHolder, voiceGraphicHolder.lineTemplate.gameObject).GetComponent<RectTransform>();
-            RectTransform lastLineObject = newVoiceGraphicHolder.objectPoolList[i].GetComponent<RectTransform>();
-
-            poolLineObject.anchorMin = new Vector2(0, 0);
-            poolLineObject.anchorMax = new Vector2(0, 0);
-            poolLineObject.sizeDelta = new Vector2(lastLineObject.sizeDelta.x, lastLineObject.sizeDelta.y);
-            poolLineObject.anchoredPosition = lastLineObject.anchoredPosition;
-            poolLineObject.localEulerAngles = lastLineObject.localEulerAngles;
-            poolLineObject.GetComponent<RawImage>().color = lastLineObject.GetComponent<RawImage>().color;
-            poolLineObject.gameObject.SetActive(lastLineObject.gameObject.activeSelf);
-        }
-
-        yield return StartCoroutine(ShowVoiceTips(GraphManager.Instance.currentToneOfVoice));
-    }
-
-    IEnumerator ShowHeatMapDetails()
-    {
-        heatMapGraphHolder.heatMapImage.GetComponent<Image>().color = Color.white;
-        heatMapGraphHolder.heatMapImage.GetComponent<Image>().sprite = newHeatMapGraphHolder.heatMapImage.GetComponent<Image>().sprite;
-
-        heatMapPieGraphHolder.value1NameText.text = newPieGraphHolder.value1NameText.text;
-        heatMapPieGraphHolder.value2NameText.text = newPieGraphHolder.value2NameText.text;
-
-        heatMapPieGraphHolder.value1Bar.color = newPieGraphHolder.colorsPie[0];
-        heatMapPieGraphHolder.value1Bar.fillAmount = newPieGraphHolder.value1Bar.fillAmount;
-        heatMapPieGraphHolder.value1Text.text = newPieGraphHolder.value1Text.text;
-            
-        heatMapPieGraphHolder.value2Bar.color = newPieGraphHolder.colorsPie[1];
-        heatMapPieGraphHolder.value2Bar.fillAmount = newPieGraphHolder.value2Bar.fillAmount;
-        heatMapPieGraphHolder.value2Text.text = newPieGraphHolder.value2Text.text;
-
-        yield return StartCoroutine(ShowHeatMapTips());
-    }
-
-    IEnumerator ShowPieHandsMoveTips()
-    {
-        TMP_Text tip1 = UIManager.Instance.practicalResultsPieDetailTip1Text.GetComponent<TMP_Text>();
-        tip1.text = string.Empty;
-        TMP_Text tip2 = UIManager.Instance.practicalResultsPieDetailTip2Text.GetComponent<TMP_Text>();
-        tip2.text = string.Empty;
-        TMP_Text tip3 = UIManager.Instance.practicalResultsPieDetailTip3Text.GetComponent<TMP_Text>();
-        tip3.text = string.Empty;
-
-        //averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneWeak");
-        yield return new WaitForSeconds(.5f);
-
-        tip1.text = LanguageManager.Instance.GetStringValue(handsMoveTipsHolder[0].tips[0]);
-        tip1.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip2.text = LanguageManager.Instance.GetStringValue(handsMoveTipsHolder[0].tips[1]);
-        tip2.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip3.text = LanguageManager.Instance.GetStringValue(handsMoveTipsHolder[0].tips[2]);
-        tip3.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-    }
-    
-    IEnumerator ShowPieGestureTips()
-    {
-        TMP_Text tip1 = UIManager.Instance.practicalResultsPieDetailTip1Text.GetComponent<TMP_Text>();
-        tip1.text = string.Empty;
-        TMP_Text tip2 = UIManager.Instance.practicalResultsPieDetailTip2Text.GetComponent<TMP_Text>();
-        tip2.text = string.Empty;
-        TMP_Text tip3 = UIManager.Instance.practicalResultsPieDetailTip3Text.GetComponent<TMP_Text>();
-        tip3.text = string.Empty;
-
-        //averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneWeak");
-        yield return new WaitForSeconds(.5f);
-
-        tip1.text = LanguageManager.Instance.GetStringValue(gestureTipsHolder[0].tips[0]);
-        tip1.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip2.text = LanguageManager.Instance.GetStringValue(gestureTipsHolder[0].tips[1]);
-        tip2.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip3.text = LanguageManager.Instance.GetStringValue(gestureTipsHolder[0].tips[2]);
-        tip3.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-    }
-
-    IEnumerator ShowPieVisionMoveTips()
-    {
-        TMP_Text tip1 = UIManager.Instance.practicalResultsPieDetailTip1Text.GetComponent<TMP_Text>();
-        tip1.text = string.Empty;
-        TMP_Text tip2 = UIManager.Instance.practicalResultsPieDetailTip2Text.GetComponent<TMP_Text>();
-        tip2.text = string.Empty;
-        TMP_Text tip3 = UIManager.Instance.practicalResultsPieDetailTip3Text.GetComponent<TMP_Text>();
-        tip3.text = string.Empty;
-
-        //averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneWeak");
-        yield return new WaitForSeconds(.5f);
-
-        tip1.text = LanguageManager.Instance.GetStringValue(visionTipsHolder[0].tips[0]);
-        tip1.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip2.text = LanguageManager.Instance.GetStringValue(visionTipsHolder[0].tips[1]);
-        tip2.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
-        tip3.text = LanguageManager.Instance.GetStringValue(visionTipsHolder[0].tips[2]);
-        tip3.gameObject.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-    }
-
-    IEnumerator ShowVoiceTips(ToneOfVoice kindOfVoice)
-    {
-        //TMP_Text averageText = UIManager.Instance.practicalResultsAverageText.GetComponent<TMP_Text>();
-        //averageText.text = string.Empty;
-
-        TMP_Text tip1 = UIManager.Instance.practicalResultsVoiceDetailTip1Text.GetComponent<TMP_Text>();
-        tip1.text = string.Empty;
-
-        TMP_Text tip2 = UIManager.Instance.practicalResultsVoiceDetailTip2Text.GetComponent<TMP_Text>();
-        tip2.text = string.Empty;
-
-        TMP_Text tip3 = UIManager.Instance.practicalResultsVoiceDetailTip3Text.GetComponent<TMP_Text>();
-        tip3.text = string.Empty;
-
-        switch (kindOfVoice)
-        {
-            case ToneOfVoice.WeakVoice:
-               // averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneWeak");
-                yield return new WaitForSeconds(.5f);
-
-                tip1.gameObject.SetActive(true);
-                tip1.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[0].tips[0]);
-                yield return new WaitForSeconds(.5f);
-
-                tip2.gameObject.SetActive(true);
-                tip2.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[0].tips[1]);
-                yield return new WaitForSeconds(.5f);
-
-                tip3.gameObject.SetActive(true);
-                tip3.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[0].tips[2]);
-                yield return new WaitForSeconds(.5f);
-                break;
-
-            case ToneOfVoice.ConversationalVoice:
-               // averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneConversational");
-                yield return new WaitForSeconds(.5f);
-
-                tip1.gameObject.SetActive(true);
-                tip1.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[1].tips[0]);
-                yield return new WaitForSeconds(.5f);
-
-                tip2.gameObject.SetActive(true);
-                tip2.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[1].tips[1]);
-                yield return new WaitForSeconds(.5f);
-
-                tip3.gameObject.SetActive(true);
-                tip3.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[1].tips[2]);
-                yield return new WaitForSeconds(.5f);
-                break;
-
-            case ToneOfVoice.ProjectedVoice:
-               // averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneProjected");
-                yield return new WaitForSeconds(.5f);
-
-                tip1.gameObject.SetActive(true);
-                tip1.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[2].tips[0]);
-                yield return new WaitForSeconds(1f);
-
-                tip2.gameObject.SetActive(true);
-                tip2.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[2].tips[1]);
-                yield return new WaitForSeconds(1f);
-
-                tip3.gameObject.SetActive(true);
-                tip3.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[2].tips[2]);
-                yield return new WaitForSeconds(1f);
-                break;
-
-            case ToneOfVoice.Screams:
-               // averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneShouting");
-                yield return new WaitForSeconds(.5f);
-
-                tip1.gameObject.SetActive(true);
-                tip1.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[3].tips[0]);
-                yield return new WaitForSeconds(1f);
-
-                tip2.gameObject.SetActive(true);
-                tip2.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[3].tips[1]);
-                yield return new WaitForSeconds(1f);
-
-                tip3.gameObject.SetActive(true);
-                tip3.text = LanguageManager.Instance.GetStringValue(voiceTipsHolder[3].tips[2]);
-                yield return new WaitForSeconds(1f);
-                break;
-        }
-
-        yield return new WaitForSeconds(1f);
-    }
-
-    IEnumerator ShowHeatMapTips()
-    {
-        TMP_Text tip1 = UIManager.Instance.practicalResultsHeatMapDetailTip1Text.GetComponent<TMP_Text>();
-        tip1.text = string.Empty;
-
-        TMP_Text tip2 = UIManager.Instance.practicalResultsHeatMapDetailTip2Text.GetComponent<TMP_Text>();
-        tip2.text = string.Empty;
-
-        TMP_Text tip3 = UIManager.Instance.practicalResultsHeatMapDetailTip3Text.GetComponent<TMP_Text>();
-        tip3.text = string.Empty;
-
-        //averageText.text = LanguageManager.Instance.GetStringValue("VoiceToneWeak");
-        yield return new WaitForSeconds(.5f);
-
-        tip1.gameObject.SetActive(true);
-        tip1.text = LanguageManager.Instance.GetStringValue(heatMapTipsHolder[0].tips[0]);
-        yield return new WaitForSeconds(.5f);
-
-        tip2.gameObject.SetActive(true);
-        tip2.text = LanguageManager.Instance.GetStringValue(heatMapTipsHolder[0].tips[1]);
-        yield return new WaitForSeconds(.5f);
-
-        tip3.gameObject.SetActive(true);
-        tip3.text = LanguageManager.Instance.GetStringValue(heatMapTipsHolder[0].tips[2]);
-        yield return new WaitForSeconds(.5f);
-    }
-
-    void ResetTipsDetails()
-    {
-        if (isPieGraphDetails)
-        {
-            UIManager.Instance.practicalResultsPieDetailTip1Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsPieDetailTip2Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsPieDetailTip3Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsPieDetailTip1Text.SetActive(false);
-            UIManager.Instance.practicalResultsPieDetailTip2Text.SetActive(false);
-            UIManager.Instance.practicalResultsPieDetailTip3Text.SetActive(false);
-        }
-
-        if (isHeatMapGraphDetails)
-        {
-            //UIManager.Instance.practicalResultsAverageText.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsHeatMapDetailTip1Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsHeatMapDetailTip2Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsHeatMapDetailTip3Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsHeatMapDetailTip1Text.SetActive(false);
-            UIManager.Instance.practicalResultsHeatMapDetailTip2Text.SetActive(false);
-            UIManager.Instance.practicalResultsHeatMapDetailTip3Text.SetActive(false);
+            if (index == 0) return LanguageManager.Instance.GetStringValue("GraphTitleKinesthesia");
+            if (index == 1) return LanguageManager.Instance.GetStringValue("DetailsButtonText");
+            return LanguageManager.Instance.GetStringValue("TipsTitle");
         }
 
         if (isVoiceGraphDetails)
         {
-            UIManager.Instance.practicalResultsVoiceDetailTip1Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsVoiceDetailTip2Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsVoiceDetailTip3Text.GetComponent<TMP_Text>().text = string.Empty;
-            UIManager.Instance.practicalResultsVoiceDetailTip1Text.SetActive(false);
-            UIManager.Instance.practicalResultsVoiceDetailTip2Text.SetActive(false);
-            UIManager.Instance.practicalResultsVoiceDetailTip3Text.SetActive(false);
+            if (index == 0) return LanguageManager.Instance.GetStringValue("GraphTitleVoice");
+            if (index == 1) return LanguageManager.Instance.GetStringValue("DetailsButtonText");
+            return LanguageManager.Instance.GetStringValue("TipsTitle");
         }
+
+        if (isHeatMapGraphDetails)
+        {
+            if (index == 0) return LanguageManager.Instance.GetStringValue("GraphTitleHeatMap");
+            if (index == 1) return LanguageManager.Instance.GetStringValue("DetailsButtonText");
+            return LanguageManager.Instance.GetStringValue("TipsTitle");
+        }
+
+        return "Título no definido";
     }
 
-    public override void EndGraph()
+
+    // =============================
+    // RESET GENERAL AL SALIR
+    // =============================
+    public void EndGraph()
     {
-        isPieGraphDetails = isVoiceGraphDetails = isHeatMapGraphDetails = false;
+        ResetTipsDetails();
+        tipsAreReady = false;
+        guideLinesAreReady = false;
+       // graphIsReady = false;
     }
-
 }

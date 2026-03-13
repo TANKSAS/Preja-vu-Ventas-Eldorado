@@ -26,7 +26,6 @@ public class AIChatController : MonoBehaviour
     public int maxRetries = 3;
     public bool isRecordingMessage;
 
-
     public void InitializeChatUI()
     {
         chatAIBoxUI = GameObject.FindGameObjectWithTag("ChatAIBoxUI").GetComponent<ChatBoxUI>();
@@ -63,7 +62,7 @@ public class AIChatController : MonoBehaviour
         isRetryingSendMessage = false;
         isPlayerConfirmed = false;
         hasJustRetried = false;
-        userFinished = false; 
+        userFinished = false;
 
         GameManager.Instance.chatController.chatAIBoxUI.ClearUI();
         ConvaiNPCManager.Instance.isEnabledToGetNewNPC = false;
@@ -106,8 +105,8 @@ public class AIChatController : MonoBehaviour
         Debug.Log("Entro a la confirmacion");
 
         chatAIBoxUI._playerCommandPromptPanelObject.SetActive(true);
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(true);
-        chatAIBoxUI._errorPanel.SetActive(true);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(true);
+        chatAIBoxUI._answerErrorHolderObject.SetActive(true);
 
         userChoseRetry = false;
         userChoseCancel = false;
@@ -116,31 +115,31 @@ public class AIChatController : MonoBehaviour
 
         Debug.Log("Envio la confirmacion");
         chatAIBoxUI._playerCommandPromptPanelObject.SetActive(false);
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
-        chatAIBoxUI._errorPanel.SetActive(false);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(false);
+        chatAIBoxUI._answerErrorHolderObject.SetActive(false);
     }
 
     public IEnumerator WaitForUserAudio()
     {
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(true);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(true);
         chatAIBoxUI._answerButtonsRecordingObject.SetActive(true);
-        
+
         isSendingMessage = false;
         isRetryingSendMessage = false;
         isPlayerConfirmed = false;
         hasJustRetried = false; // Se asume que ya lo tienes como campo en la clase
-        
+
         // Espera a que el usuario presione Audio u End
         yield return new WaitUntil(() => isSendingMessage);
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(false);
         chatAIBoxUI._answerButtonsRecordingObject.SetActive(false);
-        chatAIBoxUI._loadingObject.SetActive(true);
+        chatAIBoxUI._loadingPanelObject.SetActive(true);
     }
 
     public IEnumerator WaitForUserConfirmation()
     {
-        chatAIBoxUI._loadingObject.SetActive(false);
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(true);
+        chatAIBoxUI._loadingPanelObject.SetActive(false);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(true);
         chatAIBoxUI._answerButtonsObject.SetActive(true);
 
         // Inicializa flags
@@ -173,13 +172,13 @@ public class AIChatController : MonoBehaviour
 
                 Debug.Log("Retry seleccionado. Reproduciendo el mensaje anterior.");
 
-                chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+                chatAIBoxUI._answerButtonsPanelObject.SetActive(false);
                 chatAIBoxUI._answerButtonsObject.SetActive(false);
-                chatAIBoxUI._loadingObject.SetActive(true);
+                chatAIBoxUI._loadingPanelObject.SetActive(true);
 
                 // Espera a que IA comience y termine de hablar nuevamente
                 yield return new WaitUntil(() => currentNPC.isTalking);
-                chatAIBoxUI._loadingObject.SetActive(false);
+                chatAIBoxUI._loadingPanelObject.SetActive(false);
                 yield return new WaitUntil(() => !currentNPC.isTalking);
 
                 // Reinicia flags antes de volver a esperar
@@ -192,7 +191,7 @@ public class AIChatController : MonoBehaviour
                 yield return null;
 
                 // Reactiva botones
-                chatAIBoxUI._answerButtonsHolerObject.SetActive(true);
+                chatAIBoxUI._answerButtonsPanelObject.SetActive(true);
                 chatAIBoxUI._answerButtonsObject.SetActive(true);
                 yield return new WaitUntil(() => isSendingMessage || !isNarrativeDesingActive);
             }
@@ -213,8 +212,8 @@ public class AIChatController : MonoBehaviour
         }
 
         // Limpieza al salir del bucle
-        chatAIBoxUI._answerButtonsHolerObject.SetActive(false);
+        chatAIBoxUI._answerButtonsPanelObject.SetActive(false);
         chatAIBoxUI._answerButtonsObject.SetActive(false);
-        chatAIBoxUI._loadingObject.SetActive(true);
+        chatAIBoxUI._loadingPanelObject.SetActive(true);
     }
 }

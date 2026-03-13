@@ -58,31 +58,47 @@ public abstract class AssessmentModule : MonoBehaviour
         UIManager.Instance.countDownPanel.SetActive(false);
         UIManager.Instance.countDownPanel.GetComponentInChildren<TMP_Text>().text = string.Empty;
     }
-    
-    public IEnumerator SendSpeechToText(AssessmentModule assessment,Language language)
+
+    public IEnumerator SendSpeechToText()
     {
-        switch (language)
+        switch (LanguageManager.Instance.currentLenguaje)
         {
             case Language.Español:
-                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(assessment, filePath, apiUrl, apiKey, "es"));
+                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(this, filePath, apiUrl, apiKey, "es"));
                 break;
 
             case Language.Ingles:
-                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(assessment, filePath, apiUrl, apiKey, "en"));
+                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(this, filePath, apiUrl, apiKey, "en"));
                 break;
-            
+
             case Language.Portugues:
-                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(assessment, filePath, apiUrl, apiKey, "por"));
+                yield return StartCoroutine(WebRequestController.Instance.SendAudioToElevenLabs(this, filePath, apiUrl, apiKey, "por"));
                 break;
         }
     }
-    public void SaveSessionData()
+
+    public IEnumerator SaveSessionData()
     {
+        //GameManager.Instance.currentKinesthesiaRating = GraphManager.Instance.CalculateKiesthesiaRating(GameManager.Instance.trackingController.handsSafeZonaMovCounter, GameManager.Instance.trackingController.handsDangerMovCounter);
+        //GameManager.Instance.currentToneOfVoiceRating = GraphManager.Instance.CalculateVoiceQualification(audioRecordingController.dbData);
+        //GameManager.Instance.currentHeatMapRating = GraphManager.Instance.CalculateHeatMapRating(GameManager.Instance.trackingController.eyesSafeZoneCounter, GameManager.Instance.trackingController.eyesDangerZoneCounter);
+
         GameManager.Instance.trackingController.UpdateSessionData();
-        GameManager.Instance.playerStats.lastSessionIndex = GameManager.Instance.playerStats.sessions.Count - 1;
-        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].readingResultsvoices = new List<float>(audioRecordingController.dbData);
-        GameManager.Instance.playerStats.sessions[GameManager.Instance.playerStats.lastSessionIndex].kindOfVoice = GraphManager.Instance.currentToneOfVoice;
-        BaseDataManager.Instance.Save("/PlayerSalesData.json", GameManager.Instance.playerStats);
+       
+        SessionData newSession = new SessionData(GameManager.Instance.trackingController.moveHandsCounter, GameManager.Instance.trackingController.handsSafeZonaMovCounter,
+            GameManager.Instance.trackingController.handsDangerMovCounter, GameManager.Instance.trackingController.eyesContactCounter, GameManager.Instance.trackingController.eyesSafeZoneCounter,
+            GameManager.Instance.trackingController.eyesDangerZoneCounter, GameManager.Instance.backGroundController.currentVideoDuration,
+            GameManager.Instance.screenshotController.filePath, GameManager.Instance.elevatorPitchController.finalAnswer, GameManager.Instance.currentToneOfVoiceRating, GameManager.Instance.currentKinesthesiaRating,
+            GameManager.Instance.currentHeatMapRating, GameManager.Instance.currentAssessment, new List<float>(audioRecordingController.dbData));
+
+        GameManager.Instance.playerStats.sessions.Add(newSession);
+        yield return new WaitUntil(() => !WebRequestController.Instance.InProgress);
+
+        int lastSessionIndex = GameManager.Instance.playerStats.sessions.Count - 1;
+        GameManager.Instance.playerStats.sessions[lastSessionIndex].finalAnswer = GameManager.Instance.elevatorPitchController.finalAnswer;
+        Debug.Log("Index de Sesion: " + lastSessionIndex);
+
+        BaseDataManager.Instance.Save("/PlayerData.json", GameManager.Instance.playerStats);
         Debug.Log("Sesion Guardada");
     }
 

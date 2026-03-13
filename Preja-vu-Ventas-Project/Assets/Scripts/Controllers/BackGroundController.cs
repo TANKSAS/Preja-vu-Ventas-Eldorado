@@ -21,6 +21,8 @@ public class BackGroundController : MonoBehaviour
     [SerializeField] List<Material> videoSkyboxes = new List<Material>();
     [SerializeField] bool fade;
 
+    public float currentVideoDuration;
+
     void Awake()
     {
         GameManager.Instance.backGroundController = this;

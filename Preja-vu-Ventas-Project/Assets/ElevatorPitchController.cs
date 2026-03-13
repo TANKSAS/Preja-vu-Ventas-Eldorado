@@ -73,7 +73,7 @@ public class ElevatorPitchController : AssessmentModule
         
         Debug.Log("Enviando Fragmento de respuesta");
         
-        yield return StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
+        yield return StartCoroutine(SendSpeechToText());
         
         if (GameManager.Instance.elevatorPitchController.finalAnswer != string.Empty)
         {
@@ -113,8 +113,8 @@ public class ElevatorPitchController : AssessmentModule
         string newFilePath = GameManager.Instance.outputAudioRecorderController.currentFullPath;
         filePath = newFilePath;
 
-        yield return StartCoroutine(SendSpeechToText(this, LanguageManager.Instance.currentLenguaje));
-        SaveSessionData();
+        StartCoroutine(SendSpeechToText());
+        StartCoroutine(SaveSessionData());
     }
 
     public void DetermineVideoResponse(float mediaValue)

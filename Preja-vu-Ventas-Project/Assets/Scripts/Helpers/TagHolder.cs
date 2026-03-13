@@ -42,12 +42,13 @@ public enum Language
     Portugues
 }
 
-public enum ToneOfVoice
+public enum KinesthesiaRating
 {
-    WeakVoice,
-    ConversationalVoice,
-    ProjectedVoice,
-    Screams
+    Default,
+    Low,
+    Good,
+    Excellent,
+    Exaggerated
 }
 
 public enum ToneOfVoiceRating
@@ -66,12 +67,13 @@ public enum HeatMapRating
     Good,
     Excellent
 }
-public enum KinesthesiaRating
+
+public enum MetricResult
 {
-    Default,
-    Low,
-    Good,
-    Excellent
+    Improved,
+    Worse,
+    Equal,
+    NoData
 }
 
 public enum KindOfPieGraph
